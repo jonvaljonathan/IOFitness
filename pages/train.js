@@ -99,7 +99,7 @@ function Train(props) {
   const timerProps = {
     key,
     isPlaying,
-    duration: timerDuration,
+    liveGroup,
     updateLiveGroup,
     handleKey,
   };
