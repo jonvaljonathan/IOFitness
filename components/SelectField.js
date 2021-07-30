@@ -1,20 +1,25 @@
-import { FormControl, Select, MenuItem, InputLabel } from '@material-ui/core';
+import FormControl from '@material-ui/core/FormControl';
+import Select from '@material-ui/core/Select';
+import MenuItem from '@material-ui/core/MenuItem';
+import InputLabel from '@material-ui/core/InputLabel';
 import { Controller } from 'react-hook-form';
 import PropTypes from 'prop-types';
 import { styleSelectInput } from './SharedStyles';
+import InputBase from '@material-ui/core/InputBase';
+import { makeStyles, withStyles } from '@material-ui/core/styles';
 
-function SelectField({ label, defaultValue, name, array, control, handleMultiChange, errors, objectKey }) {
-  console.log(array);
-  console.log(objectKey);
+
+
+function SelectField({ label, defaultValue, name, array, control, handleMultiChange, errors, objectKey, input }) {
   return (
-    <FormControl className="formInput" error={Boolean(errors)} style={styleSelectInput}>
+    <section className="formInput" error={errors} style={styleSelectInput}>
       <InputLabel shrink id="demo-simple-select-placeholder-label-label">
         {label}
       </InputLabel>
       <Controller
-        render= {({ field }) => (
+        render={({ field }) => (
           // eslint-disable-next-line react/jsx-wrap-multilines
-          <Select defaultValue={defaultValue}>
+          <Select defaultValue={defaultValue} input={input}>
             {array.map((x) => (
               <MenuItem name={x} key={x} onChange={handleMultiChange} isMulti value={x}>
                 {x}
@@ -26,7 +31,7 @@ function SelectField({ label, defaultValue, name, array, control, handleMultiCha
         rules={{ required: 'this is required' }}
         control={control}
       />
-    </FormControl>
+    </section>
   );
 }
 

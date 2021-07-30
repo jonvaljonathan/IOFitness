@@ -1,9 +1,9 @@
 /* eslint-disable react/jsx-one-expression-per-line */
-import { useForm, Controller, useFieldArray } from "react-hook-form";
+import { useForm, Controller } from "react-hook-form";
 import { DevTool } from "@hookform/devtools";
 import PropTypes from "prop-types";
 import Button from "@material-ui/core/Button";
-import { makeStyles } from "@material-ui/core/styles";
+import { makeStyles, withStyles } from "@material-ui/core/styles";
 import Paper from "@material-ui/core/Paper";
 import { useRouter } from "next/router";
 import Table from "@material-ui/core/Table";
@@ -19,6 +19,19 @@ import SelectField from "../SelectField";
 import { styleForm, styleTextField } from "../SharedStyles";
 import { arraySelect } from "../../server/models/DBFiles/buildWorkoutDefaults";
 import { completeTrainingSession } from "../../lib/api/customer";
+import InputBase from '@material-ui/core/InputBase';
+
+
+const BootstrapInput = withStyles((theme) => ({
+  input: {
+    color: 'white',
+    borderRadius: 4,
+    position: 'relative',
+    border: '1px solid #ced4da',
+    fontSize: 16,
+    padding: '10px 26px 10px 12px',
+  },
+}))(InputBase);
 
 const useStyles = makeStyles(theme => ({
   1: {
@@ -77,11 +90,19 @@ const useStyles = makeStyles(theme => ({
   },
   TableRow: {
     height: "20px"
+  },
+  Checkbox: {
+    color: 'white',
+  },
+  SelectField: {
+      color: "white"
   }
 }));
 
+
+
 export default function SessionTableForm(props) {
-  console.log('sessionTableForm');
+  //console.log('sessionTableForm');
   const classes = useStyles();
   // liveGroup props
   const { trainingSession } = props;
@@ -89,7 +110,7 @@ export default function SessionTableForm(props) {
   const { localUser } = props;
 
   // timer settings
-  console.log({ liveGroupNumber });
+  //console.log({ liveGroupNumber });
   //console.log(trainingSession);
   // conditionally renders set rows by returning classes.set
   const handleLiveGroupStyle = realGroupNumber => {
@@ -224,14 +245,6 @@ export default function SessionTableForm(props) {
                       name={`liveTrainingSession.exercises[${exerciseIndex}].complete`}
                       defaultValue={exercise.complete}
                       control={control}
-                      /*
-                      render={(props) => (
-                        <Checkbox
-                          onChange={(e) => props.onChange(e.target.checked)}
-                          checked={props.value}
-                        />
-                      )}
-                      */
                       render={({
                         field: { onChange, value, name, ref },
                         formState
@@ -240,6 +253,7 @@ export default function SessionTableForm(props) {
                           onChange={onChange}
                           checked={value}
                           inputRef={ref}
+                          className={classes.Checkbox}
                         />
                       )}
                     />
@@ -261,7 +275,7 @@ export default function SessionTableForm(props) {
                   <TableCell align="right" className={classes.tCell}>
                     {exercise.totalSets}
                   </TableCell>
-                  <TableCell align="right" className={classes.tCell}>
+                  <TableCell align="right">
                     <SelectField
                       defaultValue={exercise.numReps}
                       objectKey={exercise.exerciseIntensity}
@@ -270,10 +284,11 @@ export default function SessionTableForm(props) {
                       control={control}
                       handleMultiChange={handleMultiChange}
                       errors={errors}
-                      className={classes.tCell}
+                      className={classes.SelectField}
+                      input={<BootstrapInput />}
                     />
                   </TableCell>
-                  <TableCell align="right" className={classes.tCell}>
+                  <TableCell align="right">
                     <SelectField
                       defaultValue={exercise.resistance}
                       objectKey={exercise.resistanceType}
@@ -282,7 +297,9 @@ export default function SessionTableForm(props) {
                       control={control}
                       handleMultiChange={handleMultiChange}
                       errors={errors}
-                      className={classes.tCell}
+                      className={classes.SelectField}
+                      input={<BootstrapInput />}
+
                     />
                   </TableCell>
                 </TableRow>
@@ -304,7 +321,6 @@ export default function SessionTableForm(props) {
           Save Workout
         </Button>
       </form>
-      <DevTool control={control} />
     </div>
   );
 }

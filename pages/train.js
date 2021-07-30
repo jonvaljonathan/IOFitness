@@ -17,8 +17,7 @@ import WorkoutTable from '../components/train/SessionTable';
 import SessionTableForm from '../components/train/SessionTableForm';
 import { executeTimerLogic } from '../lib/trainPage/timerLogic';
 import {serverSideHandler} from '../lib/serverSideHandler/serverSideHandler';
-import { useForm, Controller, useFieldArray } from 'react-hook-form';
-import { DevTool } from '@hookform/devtools';
+import { unstable_Profiler as Profiler } from "react";
 //const sound1 = new URL('../public/sounds/hero1.mp3', import.meta.url);
 /* 
 need to:
@@ -66,17 +65,9 @@ function Train(props) {
     workOrRest: 'start',
     setNumber: 1,
     totalSets: 3,
+    duration: 1,
     exercise: groupedExercises[1].exercises[0],
   });
-
-  /*
-  const initExerciseCompletionMap = new Map(trainingSession.exercises.map(obj => [obj.exerciseName, obj.complete]));
-  console.log({initExerciseCompletionMap});
-  */
-
-  /*
-  const [exerciseCompletionMap, setExerciseCompletionMap] = useState(initExerciseCompletionMap);
-  */
 
   const updateLiveGroup = (num) => {
     console.log('updateLiveGroup')
@@ -84,7 +75,7 @@ function Train(props) {
     setLiveGroup({
       ...updatedLiveGroup,
     });
-    console.log(updatedLiveGroup);
+    console.log({updatedLiveGroup});
   };
 
   const [key, setKey] = useState(1);
@@ -108,17 +99,16 @@ function Train(props) {
   const timerProps = {
     key,
     isPlaying,
-    duration: 2,
-    // duration: liveGroup.duration,
+    duration: timerDuration,
     updateLiveGroup,
     handleKey,
   };
 
   return (
     <Layout user={user} trainingSession={trainingSession} loading={false}>
-      <h1 align="center">{trainingSession.trainingSessionName}</h1>
       {loading && <p>Loading login info...</p>}
       {!trainingSession && <p> no workout</p>}
+      <h1>{trainingSession.trainingSessionName}</h1>
       <Grid container alignItems="center" spacing={5}>
         <Grid item xs={4} align="center">
           <WorkoutTimer timerProps={timerProps} />

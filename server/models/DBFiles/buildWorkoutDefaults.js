@@ -15,6 +15,7 @@ const lowerBody = [
   'Single Leg RDL',
   'Cossack Squat',
   'Front Squat',
+  'Eccentric Deadlift',
 ];
 const pull = [
   'Pull Up',
@@ -23,8 +24,17 @@ const pull = [
   'Chin Up',
   'Wide Grip Pull Up',
   'Bent Over Row',
+  'Overhand Pull Up',
+  'Underhand Chin Up',
 ];
-const push = ['Overhead Press', 'Dip', 'Bench Press', 'Push Up', 'Two Hand Overhead Press'];
+const push = [
+  'Overhead Press',
+  'Dip',
+  'Bench Press',
+  'Push Up',
+  'Two Hand Overhead Press',
+  'Crossover Overhead Press',
+];
 const warmup = [
   'Dowel Over Under',
   'Deadlift Pattern',
@@ -45,6 +55,7 @@ const warmup = [
   'Monster Walk',
   'Toes to Bar',
   'Hip Thrusters',
+  'Goblet Squat',
 ];
 const trueOrFalseArray = ['true', 'false'];
 const exerciseIntensityArray = ['strength', 'hypertrophy', 'endurance', 'finisher', 'warmup'];
@@ -59,10 +70,10 @@ const resistanceTypeArray = [
   'none',
   'lbs',
   'kgs',
-  'loop band assistance',
-  'loop band resistance',
-  'crossover cords',
-  'hip bands',
+  'loopBandAssistance',
+  'loopBandResistance',
+  'crossoverCords',
+  'hipBands',
 ];
 const lbsArray = range(0, 500, 5);
 const kgsArray = range(0, 300, 4);
@@ -76,54 +87,32 @@ const hipBandArray = ['yellow', 'red', 'blue'];
 // movement type - push, pull, lowerbody, coreStability, shoulderStability, shoulderMobility, hipMobility, hipStability, movementPattern
 
 const arraySelect = {
-  'push': push,
-  'pull': pull,
-  'lowerBody': lowerBody,
-  'warmup': repsArray,
-  'finisher': repsArray,
-  'coreStability': warmup,
-  'hipStability': warmup,
-  'shoulderStability': warmup,
-  'shoulderMobility': warmup, 
-  'movementPattern': warmup,
-  'lbs': lbsArray,
-  'kgs': kgsArray,
-  'loopBandAssistance': loopBandAssistanceArray,
-  'loopBandResistance': loopBandResistanceArray,
-  'crossoverCords': crossOverCordsArray,
-  'hip bands': hipBandArray,
-  'strength': strengthRepsArray,
-  'hypertrophy': hypertrophyRepsArray,
-  'endurance': enduranceRepsArray,
-  'none': repsArray,
-  };
+  push,
+  pull,
+  lowerBody,
+  warmup: repsArray,
+  finisher: repsArray,
+  coreStability: warmup,
+  hipStability: warmup,
+  shoulderStability: warmup,
+  shoulderMobility: warmup,
+  movementPattern: warmup,
+  lbs: lbsArray,
+  kgs: kgsArray,
+  loopBandAssistance: loopBandAssistanceArray,
+  loopBandResistance: loopBandResistanceArray,
+  crossoverCords: crossOverCordsArray,
+  hipBands: hipBandArray,
+  strength: strengthRepsArray,
+  hypertrophy: hypertrophyRepsArray,
+  endurance: enduranceRepsArray,
+  none: repsArray,
+};
 const groupArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
 
 const totalSetsArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 const timeArray = [
-  5,
-  10,
-  15,
-  20,
-  25,
-  30,
-  35,
-  40,
-  45,
-  50,
-  55,
-  60,
-  65,
-  70,
-  75,
-  80,
-  85,
-  90,
-  95,
-  100,
-  105,
-  110,
-  115,
+  5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90, 95, 100, 105, 110, 115,
   120,
 ];
 

@@ -24,7 +24,7 @@ import {
   exerciseIntensityArray,
   trueOrFalseArray,
 } from '../server/models/DBFiles/buildWorkoutDefaults';
-import { trainingSessions } from '../server/models/DBFiles/trainingSessions';
+import { trainingSessions } from '../server/models/DBFiles/whiteysTraining';
 
 const useStyles = makeStyles((theme) => ({
   email: {
@@ -80,7 +80,7 @@ function BuildProgram(props) {
     setValue('reactSelect', selectedOption);
   };
   // eslint-disable-next-line no-unused-vars
-  //const { newTrainingSessions } = watch();
+  const { newTrainingSessions } = watch();
 
   return (
     <Layout user={user} loading={false}>
@@ -205,7 +205,6 @@ function BuildProgram(props) {
         </Button>
       </form>
 
-      <DevTool control={control} />
     </Layout>
   );
 }

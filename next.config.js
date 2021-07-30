@@ -3,13 +3,9 @@ const dev = true;
 module.exports = {
   poweredByHeader: false,
   target: 'serverless',
-    webpack(config, { dev }) {
-      if (dev) {
-        config.devtool = 'cheap-module-source-map';
-      }
-      return config;
-    }
-  };
+  webpack5: true
+};
+
 
 /*
 module.exports = {

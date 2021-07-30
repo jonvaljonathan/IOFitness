@@ -13,6 +13,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 export default function WorkoutTimer({ timerProps }) {
+  console.log({timerProps});
   const classes = useStyles();
   // liveGroup props
   const { updateLiveGroup } = timerProps;
