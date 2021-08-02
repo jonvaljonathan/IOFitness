@@ -66,7 +66,11 @@ const useStyles = makeStyles((theme) => ({
   },
   TableRow: {
     height: '20px',
-  }
+  },
+  Checkbox: {
+    color: '#000000',
+    opacity: '50',
+  } 
 }));
 export default function SessionTable(props) {
   const classes = useStyles();

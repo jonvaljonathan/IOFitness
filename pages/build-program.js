@@ -1,10 +1,10 @@
 /* eslint-disable react/jsx-one-expression-per-line */
-import { useForm, Controller, useFieldArray } from 'react-hook-form';
+import { useForm } from 'react-hook-form';
 import { DevTool } from '@hookform/devtools';
 import PropTypes from 'prop-types';
 import Button from '@material-ui/core/Button';
 import { makeStyles } from '@material-ui/core/styles';
-import { TextField, Slider } from '@material-ui/core';
+import TextField from '@material-ui/core/TextField';
 import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
 import { useRouter } from 'next/router';
@@ -24,7 +24,7 @@ import {
   exerciseIntensityArray,
   trueOrFalseArray,
 } from '../server/models/DBFiles/buildWorkoutDefaults';
-import { trainingSessions } from '../server/models/DBFiles/trainingSessions';
+import { trainingSessions } from '../server/models/DBFiles/whiteysTraining';
 
 const useStyles = makeStyles((theme) => ({
   email: {
@@ -97,7 +97,7 @@ function BuildProgram(props) {
                   label="Session Name"
                   defaultValue={`Session ${trainingSessionIndex + 1}`}
                   autoFocus
-                  inputRef={register}
+                  {...register(`newTrainingSessions[${trainingSessionIndex}].trainingSessionName`)}
                 />
                 {trainingSession.map((exercise, exerciseIndex) => (
                   <Grid container className={classes.root} spacing={0} key={exerciseIndex}>
@@ -116,8 +116,9 @@ function BuildProgram(props) {
                       <SelectField
                         label={exercise.exerciseIntensity}
                         defaultValue={exercise.exerciseName}
+                        objectKey={exercise.exerciseType}
                         name={`newTrainingSessions[${trainingSessionIndex}][${exerciseIndex}].exerciseName`}
-                        array={arraySelect(exercise.exerciseType)}
+                        array={arraySelect[`${exercise.exerciseType}`]}
                         control={control}
                         handleMultiChange={handleMultiChange}
                         errors={errors}
@@ -138,8 +139,9 @@ function BuildProgram(props) {
                       <SelectField
                         label="Resistance"
                         defaultValue={exercise.resistance}
+                        objectKey={exercise.resistanceType}
                         name={`newTrainingSessions[${trainingSessionIndex}][${exerciseIndex}].resistance`}
-                        array={arraySelect(exercise.resistanceType)}
+                        array={arraySelect[`${exercise.resistanceType}`]}
                         control={control}
                         handleMultiChange={handleMultiChange}
                         errors={errors}
@@ -159,9 +161,10 @@ function BuildProgram(props) {
                     <Grid item xs={1}>
                       <SelectField
                         label="Reps"
+                        objectKey={exercise.exerciseIntensity}
                         defaultValue={exercise.numReps}
                         name={`newTrainingSessions[${trainingSessionIndex}][${exerciseIndex}].numReps`}
-                        array={arraySelect(exercise.exerciseIntensity)}
+                        array={arraySelect[`${exercise.exerciseIntensity}`]}
                         control={control}
                         handleMultiChange={handleMultiChange}
                         errors={errors}
@@ -178,8 +181,12 @@ function BuildProgram(props) {
                         errors={errors}
                       />
                     </Grid>
-                    <input type="hidden" ref={register({setValueAs: v => parseInt(v),})} name={`newTrainingSessions[${trainingSessionIndex}][${exerciseIndex}].workTime`} />
-                    <input type="hidden" ref={register({setValueAs: v => parseInt(v),})} name={`newTrainingSessions[${trainingSessionIndex}][${exerciseIndex}].restTime`} />
+                    <input
+                      type="hidden"
+                      name={`newTrainingSessions[${trainingSessionIndex}][${exerciseIndex}].workTime`} />
+                    <input
+                      type="hidden"
+                      name={`newTrainingSessions[${trainingSessionIndex}][${exerciseIndex}].restTime`} />
                   </Grid>
                 ))}
               </Paper>
@@ -198,7 +205,6 @@ function BuildProgram(props) {
         </Button>
       </form>
 
-      <DevTool control={control} />
     </Layout>
   );
 }

@@ -10,16 +10,15 @@ import { useRouter } from 'next/router';
 import Layout from '../components/layout';
 import { useUser, withPageAuthRequired } from '@auth0/nextjs-auth0';
 import { completeTrainingSession } from '../lib/api/customer';
-import sound1 from '../public/sounds/hero1.mp3';
 import ExerciseCard from '../components/train/ExerciseCard';
 import WorkoutTimer from '../components/train/SessionTimer';
 import TimerControl from '../components/train/TimerControl';
+import SoundButton from '../components/train/SoundButton';
 import WorkoutTable from '../components/train/SessionTable';
 import SessionTableForm from '../components/train/SessionTableForm';
 import { executeTimerLogic } from '../lib/trainPage/timerLogic';
 import {serverSideHandler} from '../lib/serverSideHandler/serverSideHandler';
-import { useForm, Controller, useFieldArray } from 'react-hook-form';
-import { DevTool } from '@hookform/devtools';
+import sound1 from '../public/sounds/hero1.mp3';
 /* 
 need to:
 - write a map function that creates
@@ -48,6 +47,13 @@ function Train(props) {
 
   const { exercises: dbExcercises } = trainingSession;
 
+
+  const sound = new Howl({
+    src: [sound1],
+    volume: 1,
+    onend() {},
+  });
+
   const groupedExercises = dbExcercises.reduce((acc, exercise) => {
     const { groupNumber, totalSets } = exercise;
     const { exercises: currExercise = [] } = acc[groupNumber] || [];
@@ -66,36 +72,25 @@ function Train(props) {
     workOrRest: 'start',
     setNumber: 1,
     totalSets: 3,
+    duration: 1,
     exercise: groupedExercises[1].exercises[0],
   });
 
-  /*
-  const initExerciseCompletionMap = new Map(trainingSession.exercises.map(obj => [obj.exerciseName, obj.complete]));
-  console.log({initExerciseCompletionMap});
-  */
-
-  /*
-  const [exerciseCompletionMap, setExerciseCompletionMap] = useState(initExerciseCompletionMap);
-  */
-
   const updateLiveGroup = (num) => {
     console.log('updateLiveGroup')
+    sound.play();
     const updatedLiveGroup = executeTimerLogic(liveGroup, num, groupedExercises);
     setLiveGroup({
       ...updatedLiveGroup,
     });
-    console.log(updatedLiveGroup);
+    console.log({updatedLiveGroup});
   };
 
   const [key, setKey] = useState(1);
   const [isPlaying, setIsPlaying] = useState(false);
-
-  const sound = new Howl({
-    src: [sound1],
-    volume: 1,
-    onend() {},
-  });
-
+  
+  
+  
   const handleKey = () => {
     setKey(key + 1);
   };
@@ -108,17 +103,17 @@ function Train(props) {
   const timerProps = {
     key,
     isPlaying,
-    duration: 2,
-    // duration: liveGroup.duration,
+    liveGroup,
     updateLiveGroup,
     handleKey,
   };
 
   return (
     <Layout user={user} trainingSession={trainingSession} loading={false}>
-      <h1 align="center">{trainingSession.trainingSessionName}</h1>
       {loading && <p>Loading login info...</p>}
       {!trainingSession && <p> no workout</p>}
+      <h1>{trainingSession.trainingSessionName}</h1>
+      <SoundButton></SoundButton>
       <Grid container alignItems="center" spacing={5}>
         <Grid item xs={4} align="center">
           <WorkoutTimer timerProps={timerProps} />

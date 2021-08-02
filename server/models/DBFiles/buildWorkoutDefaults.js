@@ -15,6 +15,7 @@ const lowerBody = [
   'Single Leg RDL',
   'Cossack Squat',
   'Front Squat',
+  'Eccentric Deadlift',
 ];
 const pull = [
   'Pull Up',
@@ -23,8 +24,17 @@ const pull = [
   'Chin Up',
   'Wide Grip Pull Up',
   'Bent Over Row',
+  'Overhand Pull Up',
+  'Underhand Chin Up',
 ];
-const push = ['Overhead Press', 'Dip', 'Bench Press', 'Push Up', 'Two Hand Overhead Press'];
+const push = [
+  'Overhead Press',
+  'Dip',
+  'Bench Press',
+  'Push Up',
+  'Two Hand Overhead Press',
+  'Crossover Overhead Press',
+];
 const warmup = [
   'Dowel Over Under',
   'Deadlift Pattern',
@@ -45,6 +55,7 @@ const warmup = [
   'Monster Walk',
   'Toes to Bar',
   'Hip Thrusters',
+  'Goblet Squat',
 ];
 const trueOrFalseArray = ['true', 'false'];
 const exerciseIntensityArray = ['strength', 'hypertrophy', 'endurance', 'finisher', 'warmup'];
@@ -52,17 +63,17 @@ const movement = ['push', 'pull', 'lower body'];
 const strengthRepsArray = [5, 6, 7];
 const hypertrophyRepsArray = [8, 9, 10];
 const enduranceRepsArray = [12, 13, 14];
-const repsArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
+const repsArray = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
 // make workouts array of objects
 
 const resistanceTypeArray = [
   'none',
   'lbs',
   'kgs',
-  'loop band assistance',
-  'loop band resistance',
-  'crossover cords',
-  'hip bands',
+  'loopBandAssistance',
+  'loopBandResistance',
+  'crossoverCords',
+  'hipBands',
 ];
 const lbsArray = range(0, 500, 5);
 const kgsArray = range(0, 300, 4);
@@ -75,94 +86,33 @@ const hipBandArray = ['yellow', 'red', 'blue'];
 // add exercise intensity - warmup, strength, hypertrophy, endurance, finisher
 // movement type - push, pull, lowerbody, coreStability, shoulderStability, shoulderMobility, hipMobility, hipStability, movementPattern
 
-const arraySelect = (str, exerciseName) => {
-  if (str === 'push') {
-    return push;
-  }
-  if (str === 'pull') {
-    return pull;
-  }
-  if (str === 'lower body') {
-    return lowerBody;
-  }
-  if (str === 'warmup') {
-    return repsArray;
-  }
-  if (str === 'finisher') {
-    return repsArray;
-  }
-  if (
-    str === 'coreStability' ||
-    str === 'hipStability' ||
-    str === 'shoulderStability' ||
-    str === 'shoulderMobility' ||
-    str === 'movementPattern'
-  ) {
-    return warmup;
-  }
-  if (str === 'lbs') {
-    return lbsArray;
-  }
-  if (str === 'kgs') {
-    return kgsArray;
-  }
-  if (str === 'loop band assistance') {
-    return loopBandAssistanceArray;
-  }
-  if (str === 'none') {
-    return lbsArray;
-  }
-  if (str === 'loop band resistance') {
-    return loopBandResistanceArray;
-  }
-  if (str === 'crossover cords') {
-    return crossOverCordsArray;
-  }
-  if (str === 'hip bands') {
-    return hipBandArray;
-  }
-  if (str === 'strength') {
-    return strengthRepsArray;
-  }
-  if (str === 'hypertrophy') {
-    return hypertrophyRepsArray;
-  }
-  if (str === 'endurance') {
-    return enduranceRepsArray;
-  }
-  if (str === null) {
-    console.log('null str entered to arraySelect');
-    return [0];
-  }
-  return str;
+const arraySelect = {
+  push,
+  pull,
+  lowerBody,
+  warmup: repsArray,
+  finisher: repsArray,
+  coreStability: warmup,
+  hipStability: warmup,
+  shoulderStability: warmup,
+  shoulderMobility: warmup,
+  movementPattern: warmup,
+  lbs: lbsArray,
+  kgs: kgsArray,
+  loopBandAssistance: loopBandAssistanceArray,
+  loopBandResistance: loopBandResistanceArray,
+  crossoverCords: crossOverCordsArray,
+  hipBands: hipBandArray,
+  strength: strengthRepsArray,
+  hypertrophy: hypertrophyRepsArray,
+  endurance: enduranceRepsArray,
+  none: repsArray,
 };
 const groupArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
 
 const totalSetsArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 const timeArray = [
-  5,
-  10,
-  15,
-  20,
-  25,
-  30,
-  35,
-  40,
-  45,
-  50,
-  55,
-  60,
-  65,
-  70,
-  75,
-  80,
-  85,
-  90,
-  95,
-  100,
-  105,
-  110,
-  115,
+  5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90, 95, 100, 105, 110, 115,
   120,
 ];
 

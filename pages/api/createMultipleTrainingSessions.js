@@ -14,6 +14,7 @@ export default async (req, res) => {
   const trainingSessionsArray = newTrainingSessions.newTrainingSessions;
 
   console.log('hit createMultipleSessions');
+  console.log({newTrainingSessions});
 
   // takes the trainingSessionName from each object and creates an array
   // saved as the localUser.trainingSessionOrder
