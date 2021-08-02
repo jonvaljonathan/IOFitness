@@ -1,6 +1,8 @@
 import { makeStyles } from '@material-ui/core/styles';
 import { CountdownCircleTimer } from 'react-countdown-circle-timer';
 import PropTypes from 'prop-types';
+const sound1 = new URL('../../public/sounds/hero1.mp3', import.meta.url);
+
 
 const useStyles = makeStyles((theme) => ({
   work: {
@@ -17,11 +19,18 @@ export default function WorkoutTimer({ timerProps }) {
   const classes = useStyles();
   // liveGroup props
   const { updateLiveGroup } = timerProps;
+  const {liveGroup} = timerProps;
 
   const { isPlaying } = timerProps;
   const { key } = timerProps;
   const { handleKey } = timerProps;
   const { duration } = timerProps;
+
+  const sound = new Howl({
+    src: [sound1],
+    volume: 1,
+    onend() {},
+  });
   // console.log(duration);
   // timer settings
   const renderTime = ({ remainingTime }) => {
@@ -41,10 +50,11 @@ export default function WorkoutTimer({ timerProps }) {
     <CountdownCircleTimer
       key={key}
       isPlaying={isPlaying}
-      duration={duration}
+      duration={liveGroup.duration}
       colors={[['#004777', 0.33], ['#F7B801', 0.33], ['#A30000']]}
       onComplete={() => {
         updateLiveGroup(1);
+        sound.play();
         handleKey();
         return [true, 1000];
       }}

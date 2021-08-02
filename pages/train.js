@@ -13,12 +13,12 @@ import { completeTrainingSession } from '../lib/api/customer';
 import ExerciseCard from '../components/train/ExerciseCard';
 import WorkoutTimer from '../components/train/SessionTimer';
 import TimerControl from '../components/train/TimerControl';
+import SoundButton from '../components/train/SoundButton';
 import WorkoutTable from '../components/train/SessionTable';
 import SessionTableForm from '../components/train/SessionTableForm';
 import { executeTimerLogic } from '../lib/trainPage/timerLogic';
 import {serverSideHandler} from '../lib/serverSideHandler/serverSideHandler';
-import { unstable_Profiler as Profiler } from "react";
-//const sound1 = new URL('../public/sounds/hero1.mp3', import.meta.url);
+import sound1 from '../public/sounds/hero1.mp3';
 /* 
 need to:
 - write a map function that creates
@@ -47,6 +47,13 @@ function Train(props) {
 
   const { exercises: dbExcercises } = trainingSession;
 
+
+  const sound = new Howl({
+    src: [sound1],
+    volume: 1,
+    onend() {},
+  });
+
   const groupedExercises = dbExcercises.reduce((acc, exercise) => {
     const { groupNumber, totalSets } = exercise;
     const { exercises: currExercise = [] } = acc[groupNumber] || [];
@@ -71,6 +78,7 @@ function Train(props) {
 
   const updateLiveGroup = (num) => {
     console.log('updateLiveGroup')
+    sound.play();
     const updatedLiveGroup = executeTimerLogic(liveGroup, num, groupedExercises);
     setLiveGroup({
       ...updatedLiveGroup,
@@ -80,13 +88,9 @@ function Train(props) {
 
   const [key, setKey] = useState(1);
   const [isPlaying, setIsPlaying] = useState(false);
-  /*
-  const sound = new Howl({
-    src: [sound1],
-    volume: 1,
-    onend() {},
-  });
-  */
+  
+  
+  
   const handleKey = () => {
     setKey(key + 1);
   };
@@ -109,6 +113,7 @@ function Train(props) {
       {loading && <p>Loading login info...</p>}
       {!trainingSession && <p> no workout</p>}
       <h1>{trainingSession.trainingSessionName}</h1>
+      <SoundButton></SoundButton>
       <Grid container alignItems="center" spacing={5}>
         <Grid item xs={4} align="center">
           <WorkoutTimer timerProps={timerProps} />

@@ -3,11 +3,18 @@ const dev = true;
 module.exports = {
   poweredByHeader: false,
   target: 'serverless',
-  webpack5: true
-};
+  webpack5: true,
+  webpack(config, options) {
+    const { isServer } = options;
+    config.module.rules.push({
+      test: /\.(ogg|mp3|wav|mpe?g)$/i,
+      type: 'asset/inline',
+    });
+    return config;
+},
 
 
-/*
+/* old config webpack4
 module.exports = {
   webpack(config, options) {
       const { isServer } = options;
