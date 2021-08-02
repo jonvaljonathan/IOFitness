@@ -1,30 +1,17 @@
-import { makeStyles } from '@material-ui/core/styles';
 import { CountdownCircleTimer } from 'react-countdown-circle-timer';
 import PropTypes from 'prop-types';
-const sound1 = new URL('../../public/sounds/hero1.mp3', import.meta.url);
+import { Howl } from 'howler';
 
+import sound1 from '../../public/sounds/hero1.mp3';
 
-const useStyles = makeStyles((theme) => ({
-  work: {
-    color: 'green',
-    width: '100%',
-  },
-  rest: {
-    color: 'red',
-    width: '100%',
-  },
-}));
 export default function WorkoutTimer({ timerProps }) {
-  console.log({timerProps});
-  const classes = useStyles();
   // liveGroup props
   const { updateLiveGroup } = timerProps;
-  const {liveGroup} = timerProps;
+  const { liveGroup } = timerProps;
 
   const { isPlaying } = timerProps;
   const { key } = timerProps;
   const { handleKey } = timerProps;
-  const { duration } = timerProps;
 
   const sound = new Howl({
     src: [sound1],
@@ -70,6 +57,15 @@ WorkoutTimer.propTypes = {
     key: PropTypes.number,
     handleKey: PropTypes.func,
     duration: PropTypes.number,
+    liveGroup: PropTypes.shape({
+      groupNum: PropTypes.number,
+      exerciseIndex: PropTypes.number,
+      workOrRest: PropTypes.string,
+      setNumber: PropTypes.number,
+      totalSets: PropTypes.number,
+      duration: PropTypes.number,
+      exercise: PropTypes.string,
+    }),
   }),
 };
 

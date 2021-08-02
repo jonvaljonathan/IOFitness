@@ -1,24 +1,16 @@
-
 /* eslint-disable no-nested-ternary */
 import React, { useState } from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import { Howl } from 'howler';
 import Grid from '@material-ui/core/Grid';
 import PropTypes from 'prop-types';
-import Button from '@material-ui/core/Button';
-import { useRouter } from 'next/router';
-import Layout from '../components/layout';
 import { useUser, withPageAuthRequired } from '@auth0/nextjs-auth0';
-import { completeTrainingSession } from '../lib/api/customer';
+import Layout from '../components/layout';
 import ExerciseCard from '../components/train/ExerciseCard';
 import WorkoutTimer from '../components/train/SessionTimer';
 import TimerControl from '../components/train/TimerControl';
 import SoundButton from '../components/train/SoundButton';
-import WorkoutTable from '../components/train/SessionTable';
 import SessionTableForm from '../components/train/SessionTableForm';
 import { executeTimerLogic } from '../lib/trainPage/timerLogic';
-import {serverSideHandler} from '../lib/serverSideHandler/serverSideHandler';
-import sound1 from '../public/sounds/hero1.mp3';
+import { serverSideHandler } from '../lib/serverSideHandler/serverSideHandler';
 /* 
 need to:
 - write a map function that creates
@@ -38,21 +30,12 @@ Problems to fix:
 
 */
 function Train(props) {
-  console.log("TRAIN PAGE");
   const loading = false;
-  const router = useRouter();
-  
-  const { user, error, isLoading } = useUser();
-  const {localUser, trainingSession} = props;
+
+  const { user } = useUser();
+  const { localUser, trainingSession } = props;
 
   const { exercises: dbExcercises } = trainingSession;
-
-
-  const sound = new Howl({
-    src: [sound1],
-    volume: 1,
-    onend() {},
-  });
 
   const groupedExercises = dbExcercises.reduce((acc, exercise) => {
     const { groupNumber, totalSets } = exercise;
@@ -77,20 +60,15 @@ function Train(props) {
   });
 
   const updateLiveGroup = (num) => {
-    console.log('updateLiveGroup')
-    sound.play();
     const updatedLiveGroup = executeTimerLogic(liveGroup, num, groupedExercises);
     setLiveGroup({
       ...updatedLiveGroup,
     });
-    console.log({updatedLiveGroup});
   };
 
   const [key, setKey] = useState(1);
   const [isPlaying, setIsPlaying] = useState(false);
-  
-  
-  
+
   const handleKey = () => {
     setKey(key + 1);
   };
@@ -113,7 +91,7 @@ function Train(props) {
       {loading && <p>Loading login info...</p>}
       {!trainingSession && <p> no workout</p>}
       <h1>{trainingSession.trainingSessionName}</h1>
-      <SoundButton></SoundButton>
+      <SoundButton />
       <Grid container alignItems="center" spacing={5}>
         <Grid item xs={4} align="center">
           <WorkoutTimer timerProps={timerProps} />
@@ -124,17 +102,19 @@ function Train(props) {
         </Grid>
       </Grid>
       <br />
-      <SessionTableForm trainingSession={trainingSession} liveGroupNumber={liveGroup.groupNum} localUser={localUser}/>
+      <SessionTableForm
+        trainingSession={trainingSession}
+        liveGroupNumber={liveGroup.groupNum}
+        localUser={localUser}
+      />
     </Layout>
   );
 }
 
-
-export async function getServerSideProps({ req, res }) {  
+export async function getServerSideProps({ req, res }) {
   withPageAuthRequired();
   return serverSideHandler(req, res);
 }
-
 
 Train.propTypes = {
   user: PropTypes.shape({

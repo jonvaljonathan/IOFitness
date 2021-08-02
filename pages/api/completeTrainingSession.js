@@ -12,12 +12,9 @@ export default async (req, res) => {
   await connectToDb();
   const { localUser } = req.body;
   const { liveTrainingSession } = req.body;
-  console.log('hit completeTrainingSesssion');
-  console.log(req.body);
-  
+
   const liveTrainingSessionId = liveTrainingSession._id;
   // delete the _id for the new trainingSession
-  
 
   try {
     // get previous trainingSession with the same user and name
@@ -25,13 +22,9 @@ export default async (req, res) => {
       liveTrainingSession.uid,
       liveTrainingSession.trainingSessionName,
     );
-    console.log('liveTrainingSession.exercises.complete');
-    console.log(liveTrainingSession.exercises[6].complete);
-    //console.log(lastCompletedSession);
+    // console.log(lastCompletedSession);
 
     const nextTrainingSession = analyzeTrainingSessions(lastCompletedSession, liveTrainingSession);
-    console.log('liveTrainingSession.exercises.complete');
-    console.log(liveTrainingSession.exercises[6].complete);
 
     const completeTrainingSession = await TrainingSession.completeTrainingSession(
       liveTrainingSessionId,
@@ -57,7 +50,6 @@ export default async (req, res) => {
 
     res.json({ completeTrainingSession, updateLocalUserNextSession });
   } catch (e) {
-    console.log(e);
     res.json(e);
   }
 };

@@ -1,5 +1,6 @@
+/* eslint-disable react/prop-types */
 import Head from 'next/head';
-import Header from './header';
+import Header from './Header';
 
 function Layout({ user, loading = false, children }) {
   return (

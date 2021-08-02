@@ -10,8 +10,11 @@ module.exports = {
   },
   plugins: ['react', 'jsx-a11y', 'import', 'prettier'],
   rules: {
+    'import/no-named-as-default': 'off',
+    'react/forbid-prop-types': 'off',
+    'react/jsx-props-no-spreading': 'off',
     'max-len': ['error', 100],
-    'no-underscore-dangle': ['error', { allow: ['_id'] }],
+    'no-underscore-dangle': ['error', { allow: ['_id', '__ENV__'] }],
     'no-mixed-operators': 'off',
     'prefer-destructuring': [
       'error',

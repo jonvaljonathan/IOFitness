@@ -1,6 +1,7 @@
+/* eslint-disable react/forbid-prop-types */
+/* eslint-disable max-len */
 /* eslint-disable react/jsx-one-expression-per-line */
 import { useForm } from 'react-hook-form';
-import { DevTool } from '@hookform/devtools';
 import PropTypes from 'prop-types';
 import Button from '@material-ui/core/Button';
 import { makeStyles } from '@material-ui/core/styles';
@@ -11,22 +12,20 @@ import { useRouter } from 'next/router';
 
 import { useUser, withPageAuthRequired } from '@auth0/nextjs-auth0';
 import Layout from '../components/layout';
-import {serverSideHandler} from '../lib/serverSideHandler/serverSideHandler';
+import { serverSideHandler } from '../lib/serverSideHandler/serverSideHandler';
 import SelectField from '../components/SelectField';
 import { styleForm, styleTextField } from '../components/SharedStyles';
-import { createMultipleTrainingSessions, loginLocal } from '../lib/api/customer';
+import { createMultipleTrainingSessions } from '../lib/api/customer';
 import {
   groupArray,
   totalSetsArray,
-  timeArray,
   resistanceTypeArray,
   arraySelect,
   exerciseIntensityArray,
-  trueOrFalseArray,
 } from '../server/models/DBFiles/buildWorkoutDefaults';
 import { trainingSessions } from '../server/models/DBFiles/whiteysTraining';
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles(() => ({
   email: {
     color: 'red',
   },
@@ -51,7 +50,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 function BuildProgram(props) {
-  const { user, error, isLoading } = useUser();
+  const { user } = useUser();
   const { localUser } = props;
   const classes = useStyles(props);
   const { register, handleSubmit, setValue, errors, control, watch } = useForm({
@@ -60,16 +59,13 @@ function BuildProgram(props) {
       newTrainingSessions: trainingSessions,
     },
   });
-  
+
   const router = useRouter();
 
   const onSubmit = async (data) => {
-    console.log('onSubmit!');
     const newTrainingSessions = data;
-    console.log('onSubmit localUser');
     try {
       const response = await createMultipleTrainingSessions({ localUser, newTrainingSessions });
-      console.log(response);
       router.push({ pathname: '/train', as: '/train' });
       return response;
     } catch (e) {
@@ -88,7 +84,7 @@ function BuildProgram(props) {
       <form style={styleForm} onSubmit={handleSubmit(onSubmit)}>
         <Grid container className={classes.root} spacing={2}>
           {trainingSessions.map((trainingSession, trainingSessionIndex) => (
-            <Grid item xs={12} key={trainingSessionIndex}>
+            <Grid item xs={12} key={trainingSessionIndex[0]}>
               <Paper align="center" className={classes.paper}>
                 <TextField
                   style={styleTextField}
@@ -97,14 +93,16 @@ function BuildProgram(props) {
                   label="Session Name"
                   defaultValue={`Session ${trainingSessionIndex + 1}`}
                   autoFocus
+                  // eslint-disable-next-line react/jsx-props-no-spreading
                   {...register(`newTrainingSessions[${trainingSessionIndex}].trainingSessionName`)}
                 />
                 {trainingSession.map((exercise, exerciseIndex) => (
-                  <Grid container className={classes.root} spacing={0} key={exerciseIndex}>
-                    <Grid item xs={1} >
+                  <Grid container className={classes.root} spacing={0} key={exerciseIndex[0]}>
+                    <Grid item xs={1}>
                       <SelectField
                         label="Group"
                         defaultValue={exercise.groupNumber}
+                        // eslint-disable-next-line max-len
                         name={`newTrainingSessions[${trainingSessionIndex}][${exerciseIndex}].groupNumber`}
                         array={groupArray}
                         control={control}
@@ -117,6 +115,7 @@ function BuildProgram(props) {
                         label={exercise.exerciseIntensity}
                         defaultValue={exercise.exerciseName}
                         objectKey={exercise.exerciseType}
+                        // eslint-disable-next-line max-len
                         name={`newTrainingSessions[${trainingSessionIndex}][${exerciseIndex}].exerciseName`}
                         array={arraySelect[`${exercise.exerciseType}`]}
                         control={control}
@@ -124,10 +123,11 @@ function BuildProgram(props) {
                         errors={errors}
                       />
                     </Grid>
-                    <Grid item xs={3} >
+                    <Grid item xs={3}>
                       <SelectField
                         label="Type"
                         defaultValue={exercise.resistanceType}
+                        // eslint-disable-next-line max-len
                         name={`newTrainingSessions[${trainingSessionIndex}][${exerciseIndex}].resistanceType`}
                         array={resistanceTypeArray}
                         control={control}
@@ -135,7 +135,7 @@ function BuildProgram(props) {
                         errors={errors}
                       />
                     </Grid>
-                    <Grid item xs={1} >
+                    <Grid item xs={1}>
                       <SelectField
                         label="Resistance"
                         defaultValue={exercise.resistance}
@@ -147,7 +147,7 @@ function BuildProgram(props) {
                         errors={errors}
                       />
                     </Grid>
-                    <Grid item xs={1} >
+                    <Grid item xs={1}>
                       <SelectField
                         label="totalSets"
                         defaultValue={exercise.totalSets}
@@ -170,7 +170,7 @@ function BuildProgram(props) {
                         errors={errors}
                       />
                     </Grid>
-                    <Grid item xs={1} key={exerciseIndex+.9}>
+                    <Grid item xs={1} key={exerciseIndex[0] + 0.9}>
                       <SelectField
                         label="exerciseIntensity"
                         defaultValue={exercise.exerciseIntensity}
@@ -183,17 +183,19 @@ function BuildProgram(props) {
                     </Grid>
                     <input
                       type="hidden"
-                      name={`newTrainingSessions[${trainingSessionIndex}][${exerciseIndex}].workTime`} />
+                      name={`newTrainingSessions[${trainingSessionIndex}][${exerciseIndex}].workTime`}
+                    />
                     <input
                       type="hidden"
-                      name={`newTrainingSessions[${trainingSessionIndex}][${exerciseIndex}].restTime`} />
+                      name={`newTrainingSessions[${trainingSessionIndex}][${exerciseIndex}].restTime`}
+                    />
                   </Grid>
                 ))}
               </Paper>
             </Grid>
           ))}
         </Grid>
-        
+
         <Button
           type="submit"
           className={classes.button}
@@ -204,18 +206,14 @@ function BuildProgram(props) {
           Save Workout
         </Button>
       </form>
-
     </Layout>
   );
 }
 
-export async function getServerSideProps({ req, res }) {  
+export async function getServerSideProps({ req, res }) {
   withPageAuthRequired();
-  console.log('build-program getServerSideProps');
-  console.log(req.props);
   return serverSideHandler(req, res);
 }
-
 
 BuildProgram.propTypes = {
   user: PropTypes.shape({
@@ -232,12 +230,23 @@ BuildProgram.propTypes = {
       }),
     ),
   }),
+  localUser: PropTypes.shape({
+    email: PropTypes.string,
+    isAdmin: PropTypes.bool,
+    given_name: PropTypes.string,
+    family_name: PropTypes.string,
+    nickname: PropTypes.string,
+    trainingSessionOrder: PropTypes.array,
+    nextSession: PropTypes.string,
+    sub: PropTypes.string,
+    updated_at: PropTypes.string,
+  }),
 };
 
 BuildProgram.defaultProps = {
   user: null,
   trainingSessions: null,
-  // progressions: null,
+  localUser: null,
 };
 
 export default BuildProgram;

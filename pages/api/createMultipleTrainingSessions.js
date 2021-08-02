@@ -13,9 +13,6 @@ export default async (req, res) => {
   const { newTrainingSessions } = req.body;
   const trainingSessionsArray = newTrainingSessions.newTrainingSessions;
 
-  console.log('hit createMultipleSessions');
-  console.log({newTrainingSessions});
-
   // takes the trainingSessionName from each object and creates an array
   // saved as the localUser.trainingSessionOrder
   const trainingSessionNameArray = trainingSessionsArray.map(
@@ -54,7 +51,6 @@ export default async (req, res) => {
     const addExerciseNumber = (array) => {
       const newArray = array.map((exerciseObject, index) => ({
         ...exerciseObject,
-        //numReps: new Array(exerciseObject.sets).fill(exerciseObject.numReps),
         exerciseNumber: index + 1,
       }));
       return newArray;
@@ -72,8 +68,6 @@ export default async (req, res) => {
   // inserts trainingSessions into TrainingSession collection
   // updates the trainingSession Order for the localUser
   try {
-    console.log('call createMultipleTrainingSessions');
-    console.log(trainingSessionNameArray);
     const response = await TrainingSession.createMultipleTrainingSessions(
       newTrainingSessionsToSave,
     );

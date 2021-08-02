@@ -1,20 +1,7 @@
-import { makeStyles } from '@material-ui/core/styles';
-import { CountdownCircleTimer } from 'react-countdown-circle-timer';
 import Button from '@material-ui/core/Button';
 import PropTypes from 'prop-types';
 
-const useStyles = makeStyles((theme) => ({
-  work: {
-    color: 'green',
-    width: '100%',
-  },
-  rest: {
-    color: 'red',
-    width: '100%',
-  },
-}));
 export default function TimerControl(props) {
-  const classes = useStyles();
   // liveGroup props
   const { updateLiveGroup } = props;
 

@@ -24,7 +24,6 @@ No flash of style
 
 class MyDocument extends Document {
   render() {
-    console.log('render');
     return (
       <Html
         lang="en"
@@ -48,7 +47,7 @@ class MyDocument extends Document {
         </Head>
         <body>
           <Main />
-          {/* eslint-disable-next-line ract/no-danger */}
+          {/* eslint-disable-next-line react/no-danger */}
           <script dangerouslySetInnerHTML={{ __html: `__ENV__ = ${htmlescape(env)}` }} />
           <NextScript />
         </body>

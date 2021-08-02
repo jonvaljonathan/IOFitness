@@ -1,23 +1,27 @@
-import FormControl from '@material-ui/core/FormControl';
 import Select from '@material-ui/core/Select';
 import MenuItem from '@material-ui/core/MenuItem';
 import InputLabel from '@material-ui/core/InputLabel';
 import { Controller } from 'react-hook-form';
 import PropTypes from 'prop-types';
 import { styleSelectInput } from './SharedStyles';
-import InputBase from '@material-ui/core/InputBase';
-import { makeStyles, withStyles } from '@material-ui/core/styles';
 
-
-
-function SelectField({ label, defaultValue, name, array, control, handleMultiChange, errors, objectKey, input }) {
+function SelectField({
+  input,
+  label,
+  defaultValue,
+  name,
+  array,
+  control,
+  handleMultiChange,
+  errors,
+}) {
   return (
     <section className="formInput" error={errors} style={styleSelectInput}>
       <InputLabel shrink id="demo-simple-select-placeholder-label-label">
         {label}
       </InputLabel>
       <Controller
-        render={({ field }) => (
+        render={() => (
           // eslint-disable-next-line react/jsx-wrap-multilines
           <Select defaultValue={defaultValue} input={input}>
             {array.map((x) => (
@@ -36,6 +40,7 @@ function SelectField({ label, defaultValue, name, array, control, handleMultiCha
 }
 
 SelectField.propTypes = {
+  input: PropTypes.object,
   user: PropTypes.shape({
     displayName: PropTypes.string,
     email: PropTypes.string.isRequired,
@@ -52,7 +57,10 @@ SelectField.propTypes = {
 };
 
 SelectField.defaultProps = {
+  input: null,
   user: null,
+  label: null,
+  errors: null,
 };
 
 export default SelectField;

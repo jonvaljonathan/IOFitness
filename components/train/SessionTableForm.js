@@ -1,28 +1,28 @@
+/* eslint-disable no-shadow */
+/* eslint-disable react/prop-types */
 /* eslint-disable react/jsx-one-expression-per-line */
-import { useForm, Controller } from "react-hook-form";
-import { DevTool } from "@hookform/devtools";
-import PropTypes from "prop-types";
-import Button from "@material-ui/core/Button";
-import { makeStyles, withStyles } from "@material-ui/core/styles";
-import Paper from "@material-ui/core/Paper";
-import { useRouter } from "next/router";
-import Table from "@material-ui/core/Table";
-import TableBody from "@material-ui/core/TableBody";
-import Checkbox from "@material-ui/core/Checkbox";
-import TableCell from "@material-ui/core/TableCell";
-import TableContainer from "@material-ui/core/TableContainer";
-import TableHead from "@material-ui/core/TableHead";
-import TableRow from "@material-ui/core/TableRow";
-import { useUser, withPageAuthRequired } from "@auth0/nextjs-auth0";
-import { serverSideHandler } from "../../lib/serverSideHandler/serverSideHandler";
-import SelectField from "../SelectField";
-import { styleForm, styleTextField } from "../SharedStyles";
-import { arraySelect } from "../../server/models/DBFiles/buildWorkoutDefaults";
-import { completeTrainingSession } from "../../lib/api/customer";
+import { useForm, Controller } from 'react-hook-form';
+import PropTypes from 'prop-types';
+import Button from '@material-ui/core/Button';
+import { makeStyles, withStyles } from '@material-ui/core/styles';
+import Paper from '@material-ui/core/Paper';
+import { useRouter } from 'next/router';
+import Table from '@material-ui/core/Table';
+import TableBody from '@material-ui/core/TableBody';
+import Checkbox from '@material-ui/core/Checkbox';
+import TableCell from '@material-ui/core/TableCell';
+import TableContainer from '@material-ui/core/TableContainer';
+import TableHead from '@material-ui/core/TableHead';
+import TableRow from '@material-ui/core/TableRow';
+import { withPageAuthRequired } from '@auth0/nextjs-auth0';
 import InputBase from '@material-ui/core/InputBase';
+import { serverSideHandler } from '../../lib/serverSideHandler/serverSideHandler';
+import SelectField from '../SelectField';
+import { styleForm } from '../SharedStyles';
+import { arraySelect } from '../../server/models/DBFiles/buildWorkoutDefaults';
+import { completeTrainingSession } from '../../lib/api/customer';
 
-
-const BootstrapInput = withStyles((theme) => ({
+const BootstrapInput = withStyles(() => ({
   input: {
     color: 'white',
     borderRadius: 4,
@@ -33,76 +33,74 @@ const BootstrapInput = withStyles((theme) => ({
   },
 }))(InputBase);
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles(() => ({
   1: {
-    backgroundColor: "#011f4b",
-    color: "white"
+    backgroundColor: '#011f4b',
+    color: 'white',
   },
   2: {
-    backgroundColor: "#03396c",
-    color: "white"
+    backgroundColor: '#03396c',
+    color: 'white',
   },
   3: {
-    backgroundColor: "#005b96",
-    color: "white"
+    backgroundColor: '#005b96',
+    color: 'white',
   },
   4: {
-    backgroundColor: "#6497b1",
-    color: "white"
+    backgroundColor: '#6497b1',
+    color: 'white',
   },
   5: {
-    backgroundColor: "#011f4b",
-    color: "white"
+    backgroundColor: '#011f4b',
+    color: 'white',
   },
   6: {
-    backgroundColor: "#03396c",
-    color: "white"
+    backgroundColor: '#03396c',
+    color: 'white',
   },
   7: {
-    backgroundColor: "#005b96",
-    color: "white"
+    backgroundColor: '#005b96',
+    color: 'white',
   },
   8: {
-    backgroundColor: "#6497b1",
-    color: "white"
+    backgroundColor: '#6497b1',
+    color: 'white',
   },
   9: {
-    backgroundColor: "#011f4b",
-    color: "white"
+    backgroundColor: '#011f4b',
+    color: 'white',
   },
   10: {
-    backgroundColor: "#03396c",
-    color: "white"
+    backgroundColor: '#03396c',
+    color: 'white',
   },
   11: {
-    backgroundColor: "#005b96",
-    color: "white"
+    backgroundColor: '#005b96',
+    color: 'white',
   },
   12: {
-    backgroundColor: "#6497b1",
-    color: "white"
+    backgroundColor: '#6497b1',
+    color: 'white',
   },
   liveGroupStyle: {
-    backgroundColor: "#02C769"
+    backgroundColor: '#02C769',
   },
   tCell: {
-    color: "white"
+    color: 'white',
   },
   TableRow: {
-    height: "20px"
+    height: '20px',
   },
   Checkbox: {
     color: 'white',
   },
   SelectField: {
-      color: "white"
-  }
+    color: 'white',
+  },
 }));
 
-
-
 export default function SessionTableForm(props) {
-  //console.log('sessionTableForm');
+  // console.log('sessionTableForm');
   const classes = useStyles();
   // liveGroup props
   const { trainingSession } = props;
@@ -110,10 +108,10 @@ export default function SessionTableForm(props) {
   const { localUser } = props;
 
   // timer settings
-  //console.log({ liveGroupNumber });
-  //console.log(trainingSession);
+  // console.log({ liveGroupNumber });
+  // console.log(trainingSession);
   // conditionally renders set rows by returning classes.set
-  const handleLiveGroupStyle = realGroupNumber => {
+  const handleLiveGroupStyle = (realGroupNumber) => {
     if (realGroupNumber === liveGroupNumber) {
       return classes.liveGroupStyle;
     }
@@ -124,54 +122,43 @@ export default function SessionTableForm(props) {
   // remove from completedExerciseArray if false
   // check all option
 
-  const handleChange = {};
-
-  const { register, handleSubmit, setValue, errors, control, getValues } = useForm({
+  const { handleSubmit, setValue, errors, control, getValues } = useForm({
     defaultValues: {
-      uid: localUser ? localUser.id : "",
-      liveTrainingSession: trainingSession
-    }
+      uid: localUser ? localUser.id : '',
+      liveTrainingSession: trainingSession,
+    },
   });
 
   const router = useRouter();
 
-  const onSubmit = async data => {
-    console.log("onSubmit!");
+  const onSubmit = async (data) => {
     const { liveTrainingSession } = data;
-    console.log("onSubmit localUser");
-    console.log(liveTrainingSession);
 
     try {
       const isComplete = await completeTrainingSession({
         localUser,
-        liveTrainingSession
+        liveTrainingSession,
       });
       if (isComplete) {
         router.reload();
-        return;
       }
     } catch (e) {
-      console.log(e);
+      Error(e);
     }
   };
-  const handleMultiChange = selectedOption => {
-    setValue("reactSelect", selectedOption);
+  const handleMultiChange = (selectedOption) => {
+    setValue('reactSelect', selectedOption);
   };
 
-  //const { liveTrainingSession } = watch();
+  // const { liveTrainingSession } = watch();
 
-  const completeAll = (event, data) => {
-    console.log("completeAll");
+  const completeAll = () => {
     const liveTrainingSession = getValues('liveTrainingSession');
     const toggleComplete = !liveTrainingSession.complete;
-    setValue("liveTrainingSession.complete", toggleComplete);
+    setValue('liveTrainingSession.complete', toggleComplete);
     trainingSession.exercises.forEach((exercise, exerciseIndex) => {
-      setValue(
-        `liveTrainingSession.exercises[${exerciseIndex}].complete`,
-        toggleComplete
-      );
+      setValue(`liveTrainingSession.exercises[${exerciseIndex}].complete`, toggleComplete);
     });
-    console.log('done');
   };
 
   return (
@@ -183,12 +170,12 @@ export default function SessionTableForm(props) {
               <TableRow>
                 <TableCell align="right">
                   <Controller
-                    name={`liveTrainingSession.complete`}
+                    name="liveTrainingSession.complete"
                     defaultValue={trainingSession.complete}
                     control={control}
-                    render={props => (
+                    render={(props) => (
                       <Checkbox
-                        onChange={e => completeAll(e.target.checked)}
+                        onChange={(e) => completeAll(e.target.checked)}
                         checked={props.value}
                       />
                     )}
@@ -245,10 +232,7 @@ export default function SessionTableForm(props) {
                       name={`liveTrainingSession.exercises[${exerciseIndex}].complete`}
                       defaultValue={exercise.complete}
                       control={control}
-                      render={({
-                        field: { onChange, value, name, ref },
-                        formState
-                      }) => (
+                      render={({ field: { onChange, value, ref } }) => (
                         <Checkbox
                           onChange={onChange}
                           checked={value}
@@ -258,18 +242,10 @@ export default function SessionTableForm(props) {
                       )}
                     />
                   </TableCell>
-                  <TableCell
-                    component="th"
-                    scope="row"
-                    className={classes.tCell}
-                  >
+                  <TableCell component="th" scope="row" className={classes.tCell}>
                     {exercise.groupNumber}
                   </TableCell>
-                  <TableCell
-                    component="th"
-                    scope="row"
-                    className={classes.tCell}
-                  >
+                  <TableCell component="th" scope="row" className={classes.tCell}>
                     {exercise.exerciseName}
                   </TableCell>
                   <TableCell align="right" className={classes.tCell}>
@@ -299,7 +275,6 @@ export default function SessionTableForm(props) {
                       errors={errors}
                       className={classes.SelectField}
                       input={<BootstrapInput />}
-
                     />
                   </TableCell>
                 </TableRow>
@@ -307,10 +282,10 @@ export default function SessionTableForm(props) {
             </TableBody>
           </Table>
         </TableContainer>
-        <input type="hidden" name={`liveTrainingSession._id`} />
-        <input type="hidden" name={`liveTrainingSession.date`} />
-        <input type="hidden" name={`liveTrainingSession.uid`} />
-        <input type="hidden" name={`liveTrainingSession.trainingSessionName`} />
+        <input type="hidden" name="liveTrainingSession._id" />
+        <input type="hidden" name="liveTrainingSession.date" />
+        <input type="hidden" name="liveTrainingSession.uid" />
+        <input type="hidden" name="liveTrainingSession.trainingSessionName" />
         <Button
           type="submit"
           className={classes.button}
@@ -331,6 +306,18 @@ export async function getServerSideProps({ req, res }) {
 }
 
 SessionTableForm.propTypes = {
+  localUser: PropTypes.shape({
+    email: PropTypes.string,
+    isAdmin: PropTypes.bool,
+    given_name: PropTypes.string,
+    family_name: PropTypes.string,
+    nickname: PropTypes.string,
+    // eslint-disable-next-line react/forbid-prop-types
+    trainingSessionOrder: PropTypes.array,
+    nextSession: PropTypes.string,
+    sub: PropTypes.string,
+    updated_at: PropTypes.string,
+  }),
   liveGroupNumber: PropTypes.number,
   trainingSession: PropTypes.shape({
     exercises: PropTypes.arrayOf(
@@ -345,14 +332,15 @@ SessionTableForm.propTypes = {
         setsCompleted: PropTypes.number,
         complete: PropTypes.bool,
         workTime: PropTypes.number,
-        restTime: PropTypes.number
-      })
-    )
-  })
+        restTime: PropTypes.number,
+      }),
+    ),
+  }),
 };
 
 SessionTableForm.defaultProps = {
-  user: null,
-  trainingSessions: null
+  localUser: null,
+  liveGroupNumber: 1,
+  trainingSession: null,
   // progressions: null,
 };

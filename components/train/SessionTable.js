@@ -9,7 +9,7 @@ import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
 import Checkbox from '@material-ui/core/Checkbox';
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles(() => ({
   1: {
     backgroundColor: '#011f4b',
     color: 'white',
@@ -70,7 +70,7 @@ const useStyles = makeStyles((theme) => ({
   Checkbox: {
     color: '#000000',
     opacity: '50',
-  } 
+  },
 }));
 export default function SessionTable(props) {
   const classes = useStyles();
@@ -78,7 +78,6 @@ export default function SessionTable(props) {
   const { trainingSession } = props;
   const { liveGroupNumber } = props;
   // timer settings
-  console.log({ liveGroupNumber});
   // conditionally renders set rows by returning classes.set
   const handleLiveGroupStyle = (realGroupNumber) => {
     if (realGroupNumber === liveGroupNumber) {
@@ -92,7 +91,6 @@ export default function SessionTable(props) {
   // check all option
 
   const handleChange = {};
-     
 
   return (
     <TableContainer component={Paper}>
@@ -114,12 +112,7 @@ export default function SessionTable(props) {
               className={handleLiveGroupStyle(exercise.groupNumber)}
             >
               <TableCell align="right" className={classes.tCell}>
-                <Checkbox
-                checked={false}
-                onChange={handleChange}
-                name="checkedF"
-                indeterminate
-                />    
+                <Checkbox checked={false} onChange={handleChange} name="checkedF" indeterminate />
               </TableCell>
               <TableCell component="th" scope="row" className={classes.tCell}>
                 {exercise.groupNumber}

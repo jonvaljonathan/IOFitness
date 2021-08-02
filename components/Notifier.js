@@ -1,3 +1,6 @@
+/* eslint-disable react/state-in-constructor */
+/* eslint-disable react/no-danger */
+/* eslint-disable react/destructuring-assignment */
 import React from 'react';
 import Snackbar from '@material-ui/core/Snackbar';
 

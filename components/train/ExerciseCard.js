@@ -6,7 +6,7 @@ import Button from '@material-ui/core/Button';
 import { makeStyles } from '@material-ui/core/styles';
 import PropTypes from 'prop-types';
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles(() => ({
   work: {
     color: 'green',
     width: '100%',
@@ -19,12 +19,12 @@ const useStyles = makeStyles((theme) => ({
 export default function ExerciseCard(props) {
   const classes = useStyles();
   // liveGroup props
-  const { groupNum, totalSets, setNumber, workOrRest, exercise } = props;
-  const setWorkOrRest = (workOrRest) => {
-    if (workOrRest === 'work') {
+  const { totalSets, setNumber, workOrRest, exercise } = props;
+  const setWorkOrRest = (wOR) => {
+    if (wOR === 'work') {
       return classes.work;
     }
-    if (workOrRest === 'rest') {
+    if (wOR === 'rest') {
       return classes.rest;
     }
     return null;
@@ -66,8 +66,6 @@ export default function ExerciseCard(props) {
 }
 
 ExerciseCard.propTypes = {
-  groupNum: PropTypes.number,
-  exerciseIndex: PropTypes.number,
   setNumber: PropTypes.number,
   totalSets: PropTypes.number,
   workOrRest: PropTypes.string,
@@ -81,10 +79,8 @@ ExerciseCard.propTypes = {
   }),
 };
 ExerciseCard.defaultProps = {
-  groupNum: 1,
   setNumber: 0,
   totalSets: 3,
-  exerciseIndex: 0,
   workOrRest: 'rest',
   exercise: {
     exerciseName: null,
