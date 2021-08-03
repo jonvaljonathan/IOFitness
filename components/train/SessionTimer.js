@@ -64,7 +64,7 @@ WorkoutTimer.propTypes = {
       setNumber: PropTypes.number,
       totalSets: PropTypes.number,
       duration: PropTypes.number,
-      exercise: PropTypes.string,
+      exercise: PropTypes.object,
     }),
   }),
 };

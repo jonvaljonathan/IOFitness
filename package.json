@@ -2,6 +2,7 @@
   "name": "iofitness",
   "version": "0.0.1",
   "license": "MIT",
+  "description": "IO Fitness trains you to do the things you love to do!",
   "scripts": {
     "dev": "next",
     "build": "next build",
@@ -14,6 +15,7 @@
   },
   "dependencies": {
     "@auth0/nextjs-auth0": "^1.4.0",
+    "@babel/core": "^7.14.8",
     "@babel/eslint-parser": "^7.14.9",
     "@hookform/devtools": "^3.1.0",
     "@material-ui/core": "^4.11.4",
