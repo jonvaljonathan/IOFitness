@@ -5,7 +5,7 @@
   "description": "IO Fitness trains you to do the things you love to do!",
   "scripts": {
     "dev": "next",
-    "build": "vercel",
+    "build": "next build",
     "lint": "eslint components pages lib server",
     "test": "mocha --exit --recursive -r esm",
     "test-one": "mocha --exit --grep",
