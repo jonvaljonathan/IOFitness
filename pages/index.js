@@ -1,6 +1,7 @@
 import React from 'react';
 import { useUser } from '@auth0/nextjs-auth0';
 
+import { Button } from '@material-ui/core';
 import Layout from '../components/layout';
 
 export default function Index() {
@@ -8,7 +9,7 @@ export default function Index() {
 
   return (
     <Layout user={user}>
-      <h1>Next.js and Auth0 Example</h1>
+      <h1>IO Fitness</h1>
 
       {isLoading && <p>Loading login info...</p>}
 
@@ -21,20 +22,15 @@ export default function Index() {
 
       {user && (
         <>
-          <h4>Rendered user info on the client</h4>
-          <pre data-testid="profile">{JSON.stringify(user, null, 2)}</pre>
+          <Button href="/train">Train</Button>
+          <Button href="/build-program">Build Program</Button>
         </>
       )}
 
       {!isLoading && !error && !user && (
         <>
-          <p>
-            To test the login click in <i>Login</i>
-          </p>
-          <p>
-            Once you have logged in you should be able to click in <i>Protected Page</i> and{' '}
-            <i>Logout</i>
-          </p>
+          <h2>Workout programs that work for you!</h2>
+          <Button href="/api/auth/login">Log in</Button>
         </>
       )}
     </Layout>
