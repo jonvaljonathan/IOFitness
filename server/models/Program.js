@@ -61,15 +61,11 @@ class ProgramClass {
 
   static async createProgram(program) {
     try {
-      console.log('hit build new program');
-      console.log(program);
-      console.log(program.workouts[0].exercises[1]);
+ 
       const newProgram = await this.create(program);
-      console.log('created new program!!!');
-      console.log(newProgram.workouts[0]);
+     
       return newProgram;
     } catch (e) {
-      console.log('failed to create new program');
       return e;
     }
   }
@@ -79,7 +75,6 @@ class ProgramClass {
       const program = await this.findOne({ uid });
       return program;
     } catch (e) {
-      console.log('could not find new program');
       return e;
     }
   }

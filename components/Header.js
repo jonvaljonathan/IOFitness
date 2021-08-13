@@ -6,8 +6,7 @@ import Button from '@material-ui/core/Button';
 import React from 'react';
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
-import { styleToolbar } from './SharedStyles';
-import theme from '../lib/theme';
+import styleToolbar from './SharedStyles';
 
 // Header component that is displayed on all pages
 
@@ -22,9 +21,6 @@ function Header({ user, hideHeader }) {
     setAnchorEl(null);
   };
 
-  console.log({theme});
-
-  console.log({ hideHeader });
   return (
     <div
       style={{
@@ -36,7 +32,7 @@ function Header({ user, hideHeader }) {
       }}
     >
       <Toolbar style={styleToolbar}>
-        <Grid container direction="row" justifyContent="space-around" alignItems="right">
+        <Grid container direction="row" justifyContent="space-around">
           <Grid item xs={9} style={{ textAlign: 'right' }}>
             {user ? (
               <div>

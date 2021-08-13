@@ -19,6 +19,7 @@ import InputBase from '@material-ui/core/InputBase';
 import { serverSideHandler } from '../../lib/serverSideHandler/serverSideHandler';
 import SelectField from '../SelectField';
 import { styleForm, styleSubmitButton } from '../SharedStyles';
+
 import { arraySelect } from '../../server/models/DBFiles/buildWorkoutDefaults';
 import { completeTrainingSession } from '../../lib/api/customer';
 
@@ -101,17 +102,11 @@ const useStyles = makeStyles(() => ({
 }));
 
 export default function SessionTableForm(props) {
-  // console.log('sessionTableForm');
   const classes = useStyles();
-  // liveGroup props
   const { trainingSession } = props;
   const { liveGroupNumber } = props;
   const { localUser } = props;
 
-  // timer settings
-  // console.log({ liveGroupNumber });
-  // console.log(trainingSession);
-  // conditionally renders set rows by returning classes.set
   const handleLiveGroupStyle = (realGroupNumber) => {
     if (realGroupNumber === liveGroupNumber) {
       return classes.liveGroupStyle;
@@ -146,7 +141,6 @@ export default function SessionTableForm(props) {
       Error(e);
     }
   };
-
 
   const completeAll = () => {
     const liveTrainingSession = getValues('liveTrainingSession');

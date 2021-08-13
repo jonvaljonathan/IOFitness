@@ -37,4 +37,3 @@ function Layout({ user, loading = false, hideHeader, children }) {
 }
 
 export default Layout;
-

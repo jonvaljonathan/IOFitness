@@ -22,7 +22,6 @@ export default async (req, res) => {
       liveTrainingSession.uid,
       liveTrainingSession.trainingSessionName,
     );
-    // console.log(lastCompletedSession);
 
     const nextTrainingSession = analyzeTrainingSessions(lastCompletedSession, liveTrainingSession);
 

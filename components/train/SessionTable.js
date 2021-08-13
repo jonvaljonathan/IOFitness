@@ -7,7 +7,6 @@ import TableContainer from '@material-ui/core/TableContainer';
 import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
-import Checkbox from '@material-ui/core/Checkbox';
 import Typography from '@material-ui/core/Typography';
 
 const useStyles = makeStyles(() => ({
@@ -74,20 +73,18 @@ const useStyles = makeStyles(() => ({
   },
   rest: {
     backgroundColor: 'red',
-  }
+  },
 }));
 export default function SessionTable(props) {
   const classes = useStyles();
   // liveGroup props
   const { groupedExercises } = props;
   const { liveGroup } = props;
-  console.log({ liveGroup });
 
   const liveGroupNumber = liveGroup.groupNum;
   // timer settings
   // conditionally renders set rows by returning classes.set
   const handleLiveExerciseStyle = (exerciseName) => {
-    console.log({ exerciseName });
     if (exerciseName === liveGroup.exercise.exerciseName) {
       return classes.liveGroupStyle;
     }
@@ -166,26 +163,10 @@ SessionTable.propTypes = {
     duration: PropTypes.number,
     exercise: PropTypes.object,
   }),
-  trainingSession: PropTypes.shape({
-    exercises: PropTypes.arrayOf(
-      PropTypes.shape({
-        exerciseNumber: PropTypes.number,
-        exerciseName: PropTypes.string,
-        totalSets: PropTypes.number,
-        groupNumber: PropTypes.number,
-        numReps: PropTypes.array,
-        resistance: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-        resistanceType: PropTypes.string,
-        setsCompleted: PropTypes.number,
-        complete: PropTypes.bool,
-        workTime: PropTypes.number,
-        restTime: PropTypes.number,
-      }),
-    ),
-  }),
+  groupedExercises: PropTypes.object,
 };
 
 SessionTable.defaultProps = {
+  groupedExercises: null,
   liveGroup: null,
-  trainingSession: null,
 };

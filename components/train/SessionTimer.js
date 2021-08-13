@@ -27,8 +27,6 @@ export default function WorkoutTimer({ timerProps }) {
     volume: 1,
     onend() {},
   });
-  // console.log(duration);
-  // timer settings
   const renderTime = ({ remainingTime }) => {
     if (remainingTime === 0) {
       return <div className="timer">Next Set!</div>;

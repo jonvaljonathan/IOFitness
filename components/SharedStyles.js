@@ -38,7 +38,7 @@ const styleRaisedButton = {
   border: '1px solid',
 };
 
-const styleSubmitButton = {
+export const styleSubmitButton = {
   margin: '8px 0 8px 0',
   font: '20px Muli',
   padding: '10px 30px 10px 30px',
@@ -85,7 +85,7 @@ const styleTextField = {
   width: '100%',
 };
 
-const styleForm = {
+export const styleForm = {
   margin: 'auto',
 };
 
@@ -107,7 +107,6 @@ const stylePaper = {
 const styleTitle = { margin: '45px auto', fontSize: '44px', fontWeight: '400' };
 
 module.exports = {
-  styleSubmitButton,
   styleTitle,
   styleBigAvatar,
   styleRaisedButton,

@@ -36,41 +36,28 @@ class TrainingSessionClass {
 
   static async createTrainingSession(trainingSession) {
     try {
-      console.log('hit build new program');
-      console.log(trainingSession.exercises[0]);
       const newTrainingSession = await this.create(trainingSession);
-      console.log('created new program!!!');
-      console.log(newTrainingSession.exercises[0]);
       return newTrainingSession;
     } catch (e) {
-      console.log('failed to create new program');
       return e;
     }
   }
 
   static async createMultipleTrainingSessions(trainingSessions) {
     try {
-      console.log('hit createMultipleTrainingSesssions');
-      console.log(trainingSessions[0].exercises[5]);
       const result = await this.insertMany(trainingSessions, { ordered: true });
-      console.log(result[0].exercises[5]);
       return result;
     } catch (e) {
-      console.log('error in createMultipleTrainingSessions');
       return e;
     }
   }
 
   static async getTrainingSession(uid, trainingSessionName) {
-    console.log('TrainingSession.getTrainingSession')
-    console.log(uid);
-    console.log(trainingSessionName);
+
     try {
       const trainingSession = await this.findOne({ uid, trainingSessionName, 'complete': false }, ).sort({'date': -1}).lean();
       return trainingSession;
     } catch (e) {
-      console.log(e);
-      console.log('could not find trainingSession');
       return e;
     }
   }
@@ -86,18 +73,15 @@ class TrainingSessionClass {
         .lean();
       return lastTrainingSession;
     } catch (e) {
-      console.log('could not getTrainingSessionsByName');
       return e;
     }
   }
 
   static async completeTrainingSession(completedSessionId, completedSession, nextSession) {
     // find and update the previous session
-    console.log('TrainingSession.completeTrainingSession');
     
     try {
       const trainingSession = await this.findOne({_id: completedSessionId});
-      console.log('found training session');
       trainingSession.exercises = completedSession.exercises;
       trainingSession.complete = completedSession.complete;
       trainingSession.date = Date.now();
@@ -108,21 +92,7 @@ class TrainingSessionClass {
 
       return createNextSession;
 
-      /*
-      const sessionComplete = await this.findOneAndUpdate(
-        { _id: completedSessionId },
-        { exercises: completedSession.exercises, complete: completedSession.complete, date: Date.now() },
-      );
-      // console.log(sessionComplete);
-      console.log(nextSession.exercises[8]);
-      console.log(nextSession.complete);
-      const createNextSession = await this.create(nextSession);
-      return [sessionComplete, createNextSession];
-      */
-      // create the next session
     } catch (e) {
-      console.log('could not completeTrainingSession');
-      console.log(e);
       return e;
     }
   }

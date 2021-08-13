@@ -14,7 +14,6 @@ import { useUser, withPageAuthRequired } from '@auth0/nextjs-auth0';
 import Layout from '../components/layout';
 import { serverSideHandler } from '../lib/serverSideHandler/serverSideHandler';
 import SelectField from '../components/SelectField';
-import { styleForm, styleTextField } from '../components/SharedStyles';
 import { createMultipleTrainingSessions } from '../lib/api/customer';
 import {
   groupArray,
@@ -81,13 +80,12 @@ function BuildProgram(props) {
   return (
     <Layout user={user} loading={false}>
       <h1 id="add-exercise">Build Your Training Session</h1>
-      <form style={styleForm} onSubmit={handleSubmit(onSubmit)}>
+      <form onSubmit={handleSubmit(onSubmit)}>
         <Grid container className={classes.root} spacing={2}>
           {trainingSessions.map((trainingSession, trainingSessionIndex) => (
             <Grid item xs={12} key={trainingSessionIndex[0]}>
               <Paper align="center" className={classes.paper}>
                 <TextField
-                  style={styleTextField}
                   required
                   name={`newTrainingSessions[${trainingSessionIndex}].trainingSessionName`}
                   label="Session Name"

@@ -25,11 +25,9 @@ const mongoSchema = new Schema({
 class ExerciseClass {
   static async findExercise({ name }) {
     try {
-      console.log("FINDEXERCISE");
       const exercise = await this.findOne({ name });
       return exercise;
     } catch (e) {
-      console.log(`Exercise.js findExercise error -  ${e}`);
       return e;
     }
   }

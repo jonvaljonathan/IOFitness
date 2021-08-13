@@ -18,20 +18,16 @@ class ProgressionClass {
       const Progression = await this.findOne({ name });
       return Progression;
     } catch (e) {
-      console.log(`Exercise.js findExercise error -  ${e}`);
       return e;
     }
   }
 
   static async getAll() {
     try {
-      console.log("Hit getAll()");
       const progressions = await this.find({}, 'name progression type');
-      console.log(progressions);
 
       return progressions;
     } catch (e) {
-      console.log(`Progression.js getAll error - ${e}`);
       return e;
     }
   }

@@ -6,7 +6,7 @@ import Layout from '../components/layout';
 import HomeHero from '../components/home/HomeHero';
 
 export default function Index() {
-  const { user, error, isLoading } = useUser();
+  const { user } = useUser();
   if (user) {
     return (
       <Layout user={user} hideHeader={false}>

@@ -25,7 +25,6 @@ export default function ExerciseCard(props) {
   const classes = useStyles();
   // liveGroup props
   const { totalSets, setNumber, workOrRest, exercise } = props;
-  console.log({ props });
 
   const setWorkOrRest = (wOR) => {
     if (wOR === 'work') {

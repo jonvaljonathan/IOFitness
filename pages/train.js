@@ -6,16 +6,13 @@ import PropTypes from 'prop-types';
 import { useUser, withPageAuthRequired } from '@auth0/nextjs-auth0';
 import { makeStyles, Typography } from '@material-ui/core';
 import Layout from '../components/layout';
-import ExerciseCard from '../components/train/ExerciseCard';
 import SessionTable from '../components/train/SessionTable';
 import WorkoutTimer from '../components/train/SessionTimer';
 import TimerControl from '../components/train/TimerControl';
-import SoundButton from '../components/train/SoundButton';
 import SessionTableForm from '../components/train/SessionTableForm';
 import { executeTimerLogic } from '../lib/trainPage/timerLogic';
 import { serverSideHandler } from '../lib/serverSideHandler/serverSideHandler';
 import stylePaper from '../components/SharedStyles';
-import LiveExercise from '../components/train/LiveExercise';
 /* 
 need to:
 - write a map function that creates

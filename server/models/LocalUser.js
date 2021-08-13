@@ -58,7 +58,6 @@ class LocalUserClass {
       const email = await this.findOne({ _id: uid }).select('email');
       return email;
     } catch (e) {
-      console.log(`User.js findEmail error -  ${e}`);
       return e;
     }
   }
@@ -75,62 +74,47 @@ class LocalUserClass {
   }
 
   static async updateNextSession(uid, nextSession) {
-    console.log('LocalUser.updateNextSession');
-    console.log(uid);
-    console.log(nextSession);
+  
     try {
       const updatedUser = await this.findOneAndUpdate({ _id: uid }, { nextSession });
       return updatedUser;
     } catch (e) {
-      console.log(e);
       return e;
     }
   }
 
   static async updateTrainingSessionOrder(uid, trainingSessionOrder) {
-    console.log('LocalUser.updateTrainingSessionOrder');
-    console.log(uid);
-    console.log(trainingSessionOrder);
 
     try {
       const updatedUser = await this.findOneAndUpdate(
         { _id: uid },
         { trainingSessionOrder, nextSession: trainingSessionOrder[0] },
       );
-      console.log(updatedUser);
       return updatedUser;
     } catch (e) {
-      console.log(e);
       return e;
     }
   }
 
   static async loginLocal({ user }) {
-    console.log('User.loginLocal');
 
     try {
       const userExists = await this.findOne({ sub: user.sub });
-      console.log(userExists);
 
       // if user does not exist, add user to local userDB,
       if (userExists === null) {
-        console.log('user does not exist add new user');
-        console.log('add new user');
+       
         const newUser = await this.create(user);
-        console.log('newUser');
-        console.log(newUser);
+   
         return newUser;
       }
       if (userExists != null && userExists.updated_at === user.updated_at) {
-        console.log('user is up to date');
         return userExists;
       }
       // update user
-      console.log('update user');
       await this.updateOne({ _id: userExists._id }, { user });
       return userExists;
     } catch (e) {
-      console.log(e);
       return e;
     }
   }

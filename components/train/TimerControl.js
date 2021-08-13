@@ -1,4 +1,3 @@
-import Button from '@material-ui/core/Button';
 import PropTypes from 'prop-types';
 import { makeStyles } from '@material-ui/core';
 import Grid from '@material-ui/core/Grid';
@@ -7,7 +6,7 @@ import PauseCircleFilledIcon from '@material-ui/icons/PauseCircleFilled';
 import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
 import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
 import IconButton from '@material-ui/core/IconButton';
-import { styleTimerControlButton } from '../SharedStyles';
+import styleTimerControlButton from '../SharedStyles';
 
 const useStyles = makeStyles(() => ({
   container: {
