@@ -18,7 +18,7 @@ import { withPageAuthRequired } from '@auth0/nextjs-auth0';
 import InputBase from '@material-ui/core/InputBase';
 import { serverSideHandler } from '../../lib/serverSideHandler/serverSideHandler';
 import SelectField from '../SelectField';
-import { styleForm } from '../SharedStyles';
+import { styleForm, styleSubmitButton } from '../SharedStyles';
 import { arraySelect } from '../../server/models/DBFiles/buildWorkoutDefaults';
 import { completeTrainingSession } from '../../lib/api/customer';
 
@@ -96,6 +96,7 @@ const useStyles = makeStyles(() => ({
   },
   SelectField: {
     color: 'white',
+    width: '100%',
   },
 }));
 
@@ -133,7 +134,6 @@ export default function SessionTableForm(props) {
 
   const onSubmit = async (data) => {
     const { liveTrainingSession } = data;
-
     try {
       const isComplete = await completeTrainingSession({
         localUser,
@@ -146,11 +146,7 @@ export default function SessionTableForm(props) {
       Error(e);
     }
   };
-  const handleMultiChange = (selectedOption) => {
-    setValue('reactSelect', selectedOption);
-  };
 
-  // const { liveTrainingSession } = watch();
 
   const completeAll = () => {
     const liveTrainingSession = getValues('liveTrainingSession');
@@ -168,7 +164,7 @@ export default function SessionTableForm(props) {
           <Table className={classes.table} aria-label="simple table">
             <TableHead>
               <TableRow>
-                <TableCell align="right">
+                <TableCell align="center">
                   <Controller
                     name="liveTrainingSession.complete"
                     defaultValue={trainingSession.complete}
@@ -184,9 +180,9 @@ export default function SessionTableForm(props) {
                 </TableCell>
                 <TableCell>Group Number</TableCell>
                 <TableCell>Exercise Name</TableCell>
-                <TableCell align="right">Total Sets</TableCell>
-                <TableCell align="right">Reps</TableCell>
-                <TableCell align="right">Resistance</TableCell>
+                <TableCell align="center">Total Sets</TableCell>
+                <TableCell align="center">Reps</TableCell>
+                <TableCell align="center">Resistance</TableCell>
               </TableRow>
             </TableHead>
             <TableBody>
@@ -195,7 +191,7 @@ export default function SessionTableForm(props) {
                   key={exercise.exerciseName}
                   className={handleLiveGroupStyle(exercise.groupNumber)}
                 >
-                  <TableCell align="right" className={classes.tCell}>
+                  <TableCell align="center" className={classes.tCell}>
                     <input
                       type="hidden"
                       name={`liveTrainingSession.exercises[${exerciseIndex}].exerciseName`}
@@ -242,36 +238,34 @@ export default function SessionTableForm(props) {
                       )}
                     />
                   </TableCell>
-                  <TableCell component="th" scope="row" className={classes.tCell}>
+                  <TableCell component="th" scope="row" align="center" className={classes.tCell}>
                     {exercise.groupNumber}
                   </TableCell>
-                  <TableCell component="th" scope="row" className={classes.tCell}>
+                  <TableCell component="th" scope="row" align="center" className={classes.tCell}>
                     {exercise.exerciseName}
                   </TableCell>
-                  <TableCell align="right" className={classes.tCell}>
+                  <TableCell align="center" className={classes.tCell}>
                     {exercise.totalSets}
                   </TableCell>
-                  <TableCell align="right">
+                  <TableCell align="center">
                     <SelectField
                       defaultValue={exercise.numReps}
                       objectKey={exercise.exerciseIntensity}
                       name={`liveTrainingSession.exercises[${exerciseIndex}].numReps`}
                       array={arraySelect[`${exercise.exerciseIntensity}`]}
                       control={control}
-                      handleMultiChange={handleMultiChange}
                       errors={errors}
                       className={classes.SelectField}
                       input={<BootstrapInput />}
                     />
                   </TableCell>
-                  <TableCell align="right">
+                  <TableCell align="center">
                     <SelectField
                       defaultValue={exercise.resistance}
                       objectKey={exercise.resistanceType}
                       name={`liveTrainingSession.exercises[${exerciseIndex}].resistance`}
                       array={arraySelect[`${exercise.resistanceType}`]}
                       control={control}
-                      handleMultiChange={handleMultiChange}
                       errors={errors}
                       className={classes.SelectField}
                       input={<BootstrapInput />}
@@ -286,13 +280,7 @@ export default function SessionTableForm(props) {
         <input type="hidden" name="liveTrainingSession.date" />
         <input type="hidden" name="liveTrainingSession.uid" />
         <input type="hidden" name="liveTrainingSession.trainingSessionName" />
-        <Button
-          type="submit"
-          className={classes.button}
-          fullWidth
-          variant="contained"
-          color="primary"
-        >
+        <Button type="submit" style={styleSubmitButton} fullWidth>
           Save Workout
         </Button>
       </form>

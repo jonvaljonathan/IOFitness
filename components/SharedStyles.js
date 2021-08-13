@@ -10,6 +10,8 @@ html {
   box-sizing: inherit;
 }
 */
+import theme from '../lib/theme';
+
 const styleBigAvatar = {
   width: '80px',
   height: '80px',
@@ -27,12 +29,41 @@ const styleSelectInput = {
 };
 
 const styleRaisedButton = {
-  margin: '15px 15px 30px 15px',
-  font: '15px Muli',
+  margin: 4,
+  font: '20px Muli',
+  padding: '10px 30px 10px 30px',
+  size: 'small',
+  borderRadius: '10px',
+  borderColor: 'white',
+  border: '1px solid',
+};
+
+const styleSubmitButton = {
+  margin: '8px 0 8px 0',
+  font: '20px Muli',
+  padding: '10px 30px 10px 30px',
+  size: 'small',
+  borderRadius: '10px',
+  borderColor: 'white',
+  border: '1px solid',
+  backgroundColor: '#02C769',
+};
+
+const styleInfoButton = {
+  backgroundColor: theme.palette.button.default.info,
+  borderColor: 'black',
+  ...styleRaisedButton,
+};
+
+const styleTimerControlButton = {
+  margin: 4,
+  fontSize: 'large',
+  padding: '10px 30px 10px 30px',
+  borderRadius: '2px',
 };
 
 const styleToolbar = {
-  background: '#FFF',
+  background: theme.palette.background.paper,
   height: '64px',
   paddingRight: '20px',
 };
@@ -56,7 +87,6 @@ const styleTextField = {
 
 const styleForm = {
   margin: 'auto',
-  width: '80%',
 };
 
 const styleGrid = {
@@ -68,8 +98,10 @@ const styleGrid = {
   align: 'center',
 };
 
-const styleSubmitButton = {
-  padding: 10,
+const stylePaper = {
+  width: '100%',
+  padding: 100,
+  backgroundColor: 'white',
 };
 
 const styleTitle = { margin: '45px auto', fontSize: '44px', fontWeight: '400' };
@@ -85,4 +117,8 @@ module.exports = {
   styleForm,
   styleGrid,
   styleSelectInput,
+  stylePaper,
+  styleInfoButton,
+  styleTimerControlButton,
+  styleSubmitButton,
 };

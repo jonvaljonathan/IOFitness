@@ -1,11 +1,20 @@
 import { CountdownCircleTimer } from 'react-countdown-circle-timer';
 import PropTypes from 'prop-types';
 import { Howl } from 'howler';
-
+import { makeStyles } from '@material-ui/core';
 import sound1 from '../../public/sounds/hero1.mp3';
+
+const useStyles = makeStyles({
+  container: {
+    paddingTop: '16px',
+    paddingBottom: '16px',
+    // backgroundColor: theme.palette.button.default.info,
+  },
+});
 
 export default function WorkoutTimer({ timerProps }) {
   // liveGroup props
+  const classes = useStyles();
   const { updateLiveGroup } = timerProps;
   const { liveGroup } = timerProps;
 
@@ -26,28 +35,28 @@ export default function WorkoutTimer({ timerProps }) {
     }
     return (
       <div className="timer">
-        <div className="text">Remaining</div>
         <div className="value">{remainingTime}</div>
-        <div className="text">seconds</div>
       </div>
     );
   };
 
   return (
-    <CountdownCircleTimer
-      key={key}
-      isPlaying={isPlaying}
-      duration={liveGroup.duration}
-      colors={[['#004777', 0.33], ['#F7B801', 0.33], ['#A30000']]}
-      onComplete={() => {
-        updateLiveGroup(1);
-        sound.play();
-        handleKey();
-        return [true, 1000];
-      }}
-    >
-      {renderTime}
-    </CountdownCircleTimer>
+    <div className={classes.container}>
+      <CountdownCircleTimer
+        key={key}
+        isPlaying={isPlaying}
+        duration={liveGroup.duration}
+        colors={[['#80d8ff', 0.33], ['#69f0ae', 0.33], ['#80d8ff']]}
+        onComplete={() => {
+          updateLiveGroup(1);
+          sound.play();
+          handleKey();
+          return [true, 1000];
+        }}
+      >
+        {renderTime}
+      </CountdownCircleTimer>
+    </div>
   );
 }
 WorkoutTimer.propTypes = {

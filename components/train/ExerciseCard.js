@@ -10,16 +10,23 @@ const useStyles = makeStyles(() => ({
   work: {
     color: 'green',
     width: '100%',
+    height: '100%',
   },
   rest: {
     color: 'red',
     width: '100%',
+    height: '100%',
+  },
+  card: {
+    height: '100%',
   },
 }));
 export default function ExerciseCard(props) {
   const classes = useStyles();
   // liveGroup props
   const { totalSets, setNumber, workOrRest, exercise } = props;
+  console.log({ props });
+
   const setWorkOrRest = (wOR) => {
     if (wOR === 'work') {
       return classes.work;
@@ -27,7 +34,7 @@ export default function ExerciseCard(props) {
     if (wOR === 'rest') {
       return classes.rest;
     }
-    return null;
+    return classes.card;
   };
   return (
     <Card className={setWorkOrRest(workOrRest)}>
@@ -51,11 +58,6 @@ export default function ExerciseCard(props) {
         <Typography className={classes.pos} color="textSecondary">
           Resistance:
           {exercise.resistance}
-        </Typography>
-        <Typography variant="body2" component="p">
-          Queues: Lift dowel over head...
-          <br />
-          Nope, you fucked it up.
         </Typography>
       </CardContent>
       <CardActions>

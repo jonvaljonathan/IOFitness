@@ -2,14 +2,14 @@
 import Head from 'next/head';
 import Header from './Header';
 
-function Layout({ user, loading = false, children }) {
+function Layout({ user, loading = false, hideHeader, children }) {
   return (
     <>
       <Head>
         <title>IO Fitness</title>
       </Head>
 
-      <Header user={user} loading={loading} />
+      <Header user={user} loading={loading} hideHeader={hideHeader} />
 
       <main>
         <div className="container">{children}</div>
@@ -27,7 +27,6 @@ function Layout({ user, loading = false, children }) {
         {`
           body {
             margin: 0;
-            color: #333;
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
               Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
           }
@@ -38,3 +37,4 @@ function Layout({ user, loading = false, children }) {
 }
 
 export default Layout;
+

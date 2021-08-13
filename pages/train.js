@@ -1,16 +1,21 @@
 /* eslint-disable no-nested-ternary */
 import React, { useState } from 'react';
 import Grid from '@material-ui/core/Grid';
+import Paper from '@material-ui/core/Paper';
 import PropTypes from 'prop-types';
 import { useUser, withPageAuthRequired } from '@auth0/nextjs-auth0';
+import { makeStyles, Typography } from '@material-ui/core';
 import Layout from '../components/layout';
 import ExerciseCard from '../components/train/ExerciseCard';
+import SessionTable from '../components/train/SessionTable';
 import WorkoutTimer from '../components/train/SessionTimer';
 import TimerControl from '../components/train/TimerControl';
 import SoundButton from '../components/train/SoundButton';
 import SessionTableForm from '../components/train/SessionTableForm';
 import { executeTimerLogic } from '../lib/trainPage/timerLogic';
 import { serverSideHandler } from '../lib/serverSideHandler/serverSideHandler';
+import stylePaper from '../components/SharedStyles';
+import LiveExercise from '../components/train/LiveExercise';
 /* 
 need to:
 - write a map function that creates
@@ -29,7 +34,28 @@ Problems to fix:
 
 
 */
+
+const useStyles = makeStyles((theme) => ({
+  root: {
+    flexGrow: 1,
+  },
+  paper: {
+    root: {
+      padding: '100px',
+      textAlign: 'right',
+      backgroundColor: 'white',
+      color: theme.palette.text.secondary,
+    },
+  },
+  container: {
+    margin: '0 10% 0 10%',
+    align: 'center',
+    textAlign: 'center',
+    // backgroundColor: theme.palette.button.default.info,
+  },
+}));
 function Train(props) {
+  const classes = useStyles();
   const loading = false;
 
   const { user } = useUser();
@@ -90,23 +116,31 @@ function Train(props) {
     <Layout user={user} trainingSession={trainingSession} loading={false}>
       {loading && <p>Loading login info...</p>}
       {!trainingSession && <p> no workout</p>}
-      <h1>{trainingSession.trainingSessionName}</h1>
-      <SoundButton />
-      <Grid container alignItems="center" spacing={5}>
-        <Grid item xs={4} align="center">
-          <WorkoutTimer timerProps={timerProps} />
-          <TimerControl pause={pause} isPlaying={isPlaying} updateLiveGroup={updateLiveGroup} />
+      <div className={classes.container}>
+        <Grid container alignItems="stretch" spacing={2}>
+          <Grid item xs={12} align="center">
+            <Paper>
+              <Typography variant="h2">{trainingSession.trainingSessionName}</Typography>
+            </Paper>
+          </Grid>
+          <Grid item xs={8}>
+            <SessionTable liveGroup={liveGroup} groupedExercises={groupedExercises} />
+          </Grid>
+          <Grid item xs={4} align="center">
+            <Paper className={classes.paper} style={stylePaper}>
+              <WorkoutTimer timerProps={timerProps} />
+              <TimerControl pause={pause} isPlaying={isPlaying} updateLiveGroup={updateLiveGroup} />
+            </Paper>
+          </Grid>
+          <Grid item xs={12}>
+            <SessionTableForm
+              trainingSession={trainingSession}
+              liveGroupNumber={liveGroup.groupNum}
+              localUser={localUser}
+            />
+          </Grid>
         </Grid>
-        <Grid item xs={4}>
-          <ExerciseCard {...liveGroup} />
-        </Grid>
-      </Grid>
-      <br />
-      <SessionTableForm
-        trainingSession={trainingSession}
-        liveGroupNumber={liveGroup.groupNum}
-        localUser={localUser}
-      />
+      </div>
     </Layout>
   );
 }

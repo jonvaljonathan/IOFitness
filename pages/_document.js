@@ -44,6 +44,10 @@ class MyDocument extends Document {
             rel="stylesheet"
             href="https://storage.googleapis.com/builderbook/nprogress.min.css"
           />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@1,100&display=swap"
+            rel="stylesheet"
+          />
         </Head>
         <body>
           <Main />

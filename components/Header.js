@@ -7,6 +7,7 @@ import React from 'react';
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
 import { styleToolbar } from './SharedStyles';
+import theme from '../lib/theme';
 
 // Header component that is displayed on all pages
 
@@ -21,6 +22,9 @@ function Header({ user, hideHeader }) {
     setAnchorEl(null);
   };
 
+  console.log({theme});
+
+  console.log({ hideHeader });
   return (
     <div
       style={{
@@ -32,8 +36,8 @@ function Header({ user, hideHeader }) {
       }}
     >
       <Toolbar style={styleToolbar}>
-        <Grid container direction="row" justifyContent="space-around" alignItems="center">
-          <Grid item xs={12} style={{ textAlign: 'center' }}>
+        <Grid container direction="row" justifyContent="space-around" alignItems="right">
+          <Grid item xs={9} style={{ textAlign: 'right' }}>
             {user ? (
               <div>
                 <Button
@@ -53,22 +57,22 @@ function Header({ user, hideHeader }) {
                 >
                   <MenuItem onClick={handleClose} id="my-account-button">
                     <Link href="/my-account" as="/my-account">
-                      <a style={{ color: '#000' }}> My Account</a>
+                      <a style={{ color: '#FFF' }}> My Account</a>
                     </Link>
                   </MenuItem>
                   <MenuItem onClick={handleClose} id="build-program-button">
                     <Link href="/build-program" as="/build-program">
-                      <a style={{ color: '#000' }}>Build Program</a>
+                      <a style={{ color: '#FFF' }}>Build Program</a>
                     </Link>
                   </MenuItem>
                   <MenuItem id="workout-button">
                     <Link href="/train" as="/train">
-                      <a style={{ color: '#000' }}>Train</a>
+                      <a style={{ color: '#FFF' }}>Train</a>
                     </Link>
                   </MenuItem>
                   <MenuItem id="logout-button">
                     <Link href="/api/auth/logout">
-                      <a style={{ color: '#000' }}>Logout</a>
+                      <a style={{ color: '#FFF' }}>Logout</a>
                     </Link>
                   </MenuItem>
                 </Menu>

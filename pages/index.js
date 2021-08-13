@@ -3,36 +3,23 @@ import { useUser } from '@auth0/nextjs-auth0';
 
 import { Button } from '@material-ui/core';
 import Layout from '../components/layout';
+import HomeHero from '../components/home/HomeHero';
 
 export default function Index() {
   const { user, error, isLoading } = useUser();
-
-  return (
-    <Layout user={user}>
-      <h1>IO Fitness</h1>
-
-      {isLoading && <p>Loading login info...</p>}
-
-      {error && (
-        <>
-          <h4>Error</h4>
-          <pre>{error.message}</pre>
-        </>
-      )}
-
-      {user && (
+  if (user) {
+    return (
+      <Layout user={user} hideHeader={false}>
         <>
           <Button href="/train">Train</Button>
           <Button href="/build-program">Build Program</Button>
         </>
-      )}
-
-      {!isLoading && !error && !user && (
-        <>
-          <h2>Workout programs that work for you!</h2>
-          <Button href="/api/auth/login">Log in</Button>
-        </>
-      )}
+      </Layout>
+    );
+  }
+  return (
+    <Layout user={user} hideHeader>
+      <HomeHero />
     </Layout>
   );
 }
