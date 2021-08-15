@@ -98,6 +98,7 @@ function Train(props) {
 
   // pause timer;
   const pause = () => {
+    console.log('PAUSE');
     return setIsPlaying(!isPlaying);
   };
 

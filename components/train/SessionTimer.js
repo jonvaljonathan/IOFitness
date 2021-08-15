@@ -17,6 +17,7 @@ export default function WorkoutTimer({ timerProps }) {
   const classes = useStyles();
   const { updateLiveGroup } = timerProps;
   const { liveGroup } = timerProps;
+  const { duration } = liveGroup;
 
   const { isPlaying } = timerProps;
   const { key } = timerProps;
@@ -29,21 +30,24 @@ export default function WorkoutTimer({ timerProps }) {
   });
   const renderTime = ({ remainingTime }) => {
     if (remainingTime === 0) {
-      return <div className="timer">Next Set!</div>;
+      return <div className="timer" style={{fontSize:'32px'}}>Next Set!</div>;
     }
     return (
       <div className="timer">
-        <div className="value">{remainingTime}</div>
+        <div className="value" style={{fontSize:'32px'}}>{remainingTime}</div>
       </div>
     );
   };
+  console.log({isPlaying});
+  console.log({liveGroup});
+  console.log({duration});
 
   return (
     <div className={classes.container}>
       <CountdownCircleTimer
-        key={key}
+        key={duration}
         isPlaying={isPlaying}
-        duration={liveGroup.duration}
+        duration={duration}
         colors={[['#80d8ff', 0.33], ['#69f0ae', 0.33], ['#80d8ff']]}
         onComplete={() => {
           updateLiveGroup(1);

@@ -11,13 +11,7 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: theme.palette.background.paper,
     padding: '5%',
   },
-  h1: {
-    align: 'center',
-    color: 'white',
-  },
-  h2: {
-    color: 'secondary',
-  },
+  
   Button: {
     ...styleRaisedButton,
     // backgroundColor: theme.palette.button.default.info,
@@ -29,7 +23,7 @@ export default function HomeHero() {
   return (
     <Box className={classes.HomeHero}>
       <Typography variant="h1">IO Fitness</Typography>
-      <h2 className={classes.h2}>Start small. Go Big.</h2>
+      <Typography variant="h2">Start small. Go Big.</Typography>
       <Button style={styleRaisedButton} href="/api/auth/login">
         Log In or Create an Account
       </Button>
