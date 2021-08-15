@@ -11,7 +11,7 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: theme.palette.background.paper,
     padding: '5%',
   },
-  
+
   Button: {
     ...styleRaisedButton,
     // backgroundColor: theme.palette.button.default.info,

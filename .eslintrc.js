@@ -3,7 +3,7 @@ module.exports = {
   parserOptions: {
     requireConfigFile: false,
   },
-  extends: ['airbnb', 'plugin:prettier/recommended'],
+  extends: ['airbnb', 'plugin:prettier/recommended', 'next'],
   env: {
     browser: true,
     jest: true,

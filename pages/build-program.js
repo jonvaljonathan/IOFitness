@@ -64,7 +64,10 @@ function BuildProgram(props) {
   const onSubmit = async (data) => {
     const newTrainingSessions = data;
     try {
-      const response = await createMultipleTrainingSessions({ localUser, newTrainingSessions });
+      const response = await createMultipleTrainingSessions({
+        localUser,
+        newTrainingSessions,
+      });
       router.push({ pathname: '/train', as: '/train' });
       return response;
     } catch (e) {

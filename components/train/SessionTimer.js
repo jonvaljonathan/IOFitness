@@ -20,7 +20,6 @@ export default function WorkoutTimer({ timerProps }) {
   const { duration } = liveGroup;
 
   const { isPlaying } = timerProps;
-  const { key } = timerProps;
   const { handleKey } = timerProps;
 
   const sound = new Howl({
@@ -30,17 +29,20 @@ export default function WorkoutTimer({ timerProps }) {
   });
   const renderTime = ({ remainingTime }) => {
     if (remainingTime === 0) {
-      return <div className="timer" style={{fontSize:'32px'}}>Next Set!</div>;
+      return (
+        <div className="timer" style={{ fontSize: '32px' }}>
+          Next Set!
+        </div>
+      );
     }
     return (
       <div className="timer">
-        <div className="value" style={{fontSize:'32px'}}>{remainingTime}</div>
+        <div className="value" style={{ fontSize: '32px' }}>
+          {remainingTime}
+        </div>
       </div>
     );
   };
-  console.log({isPlaying});
-  console.log({liveGroup});
-  console.log({duration});
 
   return (
     <div className={classes.container}>

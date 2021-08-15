@@ -129,7 +129,6 @@ const forceVectors = [
   'sidePlank',
 ];
 
-
 const jointMovements = [
   'anklePronation',
   'ankleSupination',
@@ -171,9 +170,7 @@ const jointMovements = [
   'elbowExtension',
   'wristFlexion',
   'wristExtension',
-
 ];
-
 
 const movementFaults = [
   'valgusKnees',

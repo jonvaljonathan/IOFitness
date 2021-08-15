@@ -24,12 +24,16 @@ export default function TimerControl(props) {
   const { pause } = props;
   const forward = () => {
     updateLiveGroup(1);
-    isPlaying ? pause() : null;
+    if (isPlaying) {
+      pause();
+    }
   };
 
   const backward = () => {
     updateLiveGroup(-1);
-    isPlaying ? pause() : null;
+    if (isPlaying) {
+      pause();
+    }
   };
 
   return (
@@ -37,17 +41,21 @@ export default function TimerControl(props) {
       <Grid container spacing={0}>
         <Grid item xs={4}>
           <IconButton variant="outlined" style={styleTimerControlButton} onClick={backward}>
-            <ArrowBackIosIcon fontSize='large'/>
+            <ArrowBackIosIcon fontSize="large" />
           </IconButton>
         </Grid>
         <Grid item xs={4}>
           <IconButton variant="outlined" style={styleTimerControlButton} onClick={pause}>
-            {isPlaying ? <PauseCircleFilledIcon fontSize='large' /> : <PlayCircleFilledIcon fontSize='large'/>}
+            {isPlaying ? (
+              <PauseCircleFilledIcon fontSize="large" />
+            ) : (
+              <PlayCircleFilledIcon fontSize="large" />
+            )}
           </IconButton>
         </Grid>
         <Grid item xs={4}>
           <IconButton variant="outlined" style={styleTimerControlButton} onClick={forward}>
-            <ArrowForwardIosIcon fontSize='large'/>
+            <ArrowForwardIosIcon fontSize="large" />
           </IconButton>
         </Grid>
       </Grid>

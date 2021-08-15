@@ -48,5 +48,4 @@ mongoSchema.loadClass(ExerciseClass);
 
 const Exercise = mongoose.model('Exercise', mongoSchema);
 
-
 module.exports = Exercise;

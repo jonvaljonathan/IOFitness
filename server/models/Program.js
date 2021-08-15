@@ -61,9 +61,8 @@ class ProgramClass {
 
   static async createProgram(program) {
     try {
- 
       const newProgram = await this.create(program);
-     
+
       return newProgram;
     } catch (e) {
       return e;

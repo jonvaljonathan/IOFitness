@@ -74,7 +74,6 @@ class LocalUserClass {
   }
 
   static async updateNextSession(uid, nextSession) {
-  
     try {
       const updatedUser = await this.findOneAndUpdate({ _id: uid }, { nextSession });
       return updatedUser;
@@ -84,7 +83,6 @@ class LocalUserClass {
   }
 
   static async updateTrainingSessionOrder(uid, trainingSessionOrder) {
-
     try {
       const updatedUser = await this.findOneAndUpdate(
         { _id: uid },
@@ -97,15 +95,13 @@ class LocalUserClass {
   }
 
   static async loginLocal({ user }) {
-
     try {
       const userExists = await this.findOne({ sub: user.sub });
 
       // if user does not exist, add user to local userDB,
       if (userExists === null) {
-       
         const newUser = await this.create(user);
-   
+
         return newUser;
       }
       if (userExists != null && userExists.updated_at === user.updated_at) {

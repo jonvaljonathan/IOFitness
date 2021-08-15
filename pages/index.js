@@ -2,13 +2,12 @@ import React from 'react';
 import { useUser } from '@auth0/nextjs-auth0';
 
 import Button from '@material-ui/core/Button';
+import Grid from '@material-ui/core/Grid';
 import Layout from '../components/layout';
 import HomeHero from '../components/home/HomeHero';
 import TotalWorkouts from '../components/home/TotalWorkouts';
 import WorkoutCalendar from '../components/home/WorkoutCalendar';
 import WeightLifted from '../components/home/WeightLifted';
-import Grid from '@material-ui/core/Grid';
-
 
 export default function Index() {
   const { user } = useUser();
@@ -23,13 +22,22 @@ export default function Index() {
             <WorkoutCalendar />
           </Grid>
           <Grid item xs={4}>
-          <WeightLifted />
+            <WeightLifted />
           </Grid>
           <Grid item xs={6}>
-            <Button href="/train" variant='contained' color="primary" style={{width:'100%'}}>Train</Button>
+            <Button href="/train" variant="contained" color="primary" style={{ width: '100%' }}>
+              Train
+            </Button>
           </Grid>
           <Grid item xs={6}>
-            <Button href="/build-program" variant='contained' color="primary" style={{width:'100%'}}>Build Program</Button>
+            <Button
+              href="/build-program"
+              variant="contained"
+              color="primary"
+              style={{ width: '100%' }}
+            >
+              Build Program
+            </Button>
           </Grid>
         </Grid>
       </Layout>
