@@ -12,10 +12,11 @@ export default async (req, res) => {
   await connectToDb();
   const { localUser } = req.body;
   const { liveTrainingSession } = req.body;
+  console.log(req.url);
 
   const liveTrainingSessionId = liveTrainingSession._id;
   // delete the _id for the new trainingSession
-
+  
   try {
     // get previous trainingSession with the same user and name
     const lastCompletedSession = await TrainingSession.getLastCompletedTrainingSessionByName(
