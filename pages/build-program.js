@@ -83,6 +83,7 @@ function BuildProgram(props) {
 
   return (
     <Layout user={user} loading={false}>
+      <h1>RootURL</h1>
       <h1>{getRootUrl()}</h1>
       <h1 id="add-exercise">Build Your Training Session</h1>
       <form onSubmit={handleSubmit(onSubmit)}>
