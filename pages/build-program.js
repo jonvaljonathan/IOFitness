@@ -23,6 +23,7 @@ import {
   exerciseIntensityArray,
 } from '../server/models/DBFiles/buildWorkoutDefaults';
 import { trainingSessions } from '../server/models/DBFiles/whiteysTraining';
+import getRootUrl from '../lib/api/getRootUrl';
 
 const useStyles = makeStyles(() => ({
   email: {
@@ -82,6 +83,7 @@ function BuildProgram(props) {
 
   return (
     <Layout user={user} loading={false}>
+      <h1>{getRootUrl()}</h1>
       <h1 id="add-exercise">Build Your Training Session</h1>
       <form onSubmit={handleSubmit(onSubmit)}>
         <Grid container className={classes.root} spacing={2}>
