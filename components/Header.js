@@ -52,8 +52,8 @@ function Header({ user, hideHeader }) {
                   onClose={handleClose}
                 >
                   <MenuItem onClick={handleClose} id="my-account-button">
-                    <Link href="/my-account" as="/my-account">
-                      <a style={{ color: '#FFF' }}> My Account</a>
+                    <Link href="/dashboard" as="/dashboard">
+                      <a style={{ color: '#FFF' }}>Dashboard</a>
                     </Link>
                   </MenuItem>
                   <MenuItem onClick={handleClose} id="build-program-button">

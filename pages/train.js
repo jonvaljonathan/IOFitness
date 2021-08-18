@@ -53,9 +53,8 @@ const useStyles = makeStyles((theme) => ({
 }));
 function Train(props) {
   const classes = useStyles();
-  const loading = false;
 
-  const { user } = useUser();
+  const { user, loading } = useUser();
   const { localUser, trainingSession } = props;
 
   const { exercises: dbExcercises } = trainingSession;

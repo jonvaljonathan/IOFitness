@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import Button from '@material-ui/core/Button';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
-import { useUser, withPageAuthRequired } from '@auth0/nextjs-auth0';
+import { useUser } from '@auth0/nextjs-auth0';
 import Layout from '../components/layout';
 import TotalWorkouts from '../components/home/TotalWorkouts';
 import WorkoutCalendar from '../components/home/WorkoutCalendar';
@@ -51,8 +51,8 @@ export default function Dashboard(props) {
 }
 
 export async function getServerSideProps({ req, res }) {
-  withPageAuthRequired();
   const data = await serverSideHandler(req, res);
+  console.log({ data });
   return data;
 }
 

@@ -10,7 +10,7 @@ import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
 import { useRouter } from 'next/router';
 
-import { useUser, withPageAuthRequired } from '@auth0/nextjs-auth0';
+import { useUser } from '@auth0/nextjs-auth0';
 import Layout from '../components/layout';
 import { serverSideHandler } from '../lib/serverSideHandler/serverSideHandler';
 import SelectField from '../components/SelectField';
@@ -212,7 +212,6 @@ function BuildProgram(props) {
 }
 
 export async function getServerSideProps({ req, res }) {
-  withPageAuthRequired();
   return serverSideHandler(req, res);
 }
 
