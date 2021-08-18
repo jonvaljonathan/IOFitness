@@ -52,7 +52,8 @@ export default function Dashboard(props) {
 
 export async function getServerSideProps({ req, res }) {
   withPageAuthRequired();
-  return serverSideHandler(req, res);
+  const data = await serverSideHandler(req, res);
+  return data;
 }
 
 Dashboard.propTypes = {
