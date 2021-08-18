@@ -14,7 +14,7 @@ export default function Dashboard(props) {
   const { user } = useUser();
   const { localUser } = props;
   console.log('Dashboard');
-  console.log(localUser);
+  console.log(props);
 
   return (
     <Layout user={user} hideHeader={false}>
