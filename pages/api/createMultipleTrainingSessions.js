@@ -19,27 +19,7 @@ export default async (req, res) => {
     ({ trainingSessionName }) => trainingSessionName,
   );
 
-  /*
-  trainingSessionsArray = [
-    {
-      trainingSessionName: 'Session 1'
-      '0': [Object],
-      '1': [Object],
-      '2': [Object],
-      ...
-    },
-    {
-      trainingSessionName: 'Session 2'
-      '0': [Object],
-      '1': [Object],
-      '2': [Object],
-      ...
-    }
-  ] 
-  newTrainingSessionsToSave is an array of TrainingSessions
-  */
   const newTrainingSessionsToSave = trainingSessionsArray.map((trainingSession) => {
-    // creates the exercisesArray
     const exercisesArray = [];
 
     Object.keys(trainingSession).forEach((key) => {
@@ -47,7 +27,6 @@ export default async (req, res) => {
         exercisesArray.push(trainingSession[key]);
       }
     });
-    // adds the exerciseNumber and turn numReps into an array
     const addExerciseNumber = (array) => {
       const newArray = array.map((exerciseObject, index) => ({
         ...exerciseObject,
@@ -55,7 +34,7 @@ export default async (req, res) => {
       }));
       return newArray;
     };
-    // creates the final object
+
     const trainingSessionObject = {
       uid: localUser._id,
       date: '',

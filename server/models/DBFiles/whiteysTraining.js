@@ -502,7 +502,7 @@ const workout2 = [
     totalSets: 3,
     numReps: 5,
     setsCompleted: 0,
-    resistance: 7,
+    resistance: 0,
     resistanceType: 'lbs',
     exerciseType: 'push',
     exerciseIntensity: 'strength',

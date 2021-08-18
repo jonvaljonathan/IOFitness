@@ -49,6 +49,7 @@ const warmup = [
   'Ass to Heals',
   'Curl Up',
   'Mule Curl Up',
+  'Mule Russian Twist',
   'Reverse Hyper',
   'Pallof Press',
   'Carries',

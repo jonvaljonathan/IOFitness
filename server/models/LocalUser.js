@@ -83,11 +83,15 @@ class LocalUserClass {
   }
 
   static async updateTrainingSessionOrder(uid, trainingSessionOrder) {
+    console.log('HIT UPDATETRAININGSESSION ORDER');
+    console.log({ uid });
+    console.log(trainingSessionOrder);
     try {
       const updatedUser = await this.findOneAndUpdate(
         { _id: uid },
-        { trainingSessionOrder, nextSession: trainingSessionOrder[0] },
+        { trainingSessionOrder: trainingSessionOrder, nextSession: trainingSessionOrder[0] },
       );
+      console.log({ updatedUser });
       return updatedUser;
     } catch (e) {
       return e;
