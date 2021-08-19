@@ -52,8 +52,8 @@ function BuildProgram(props) {
   const { user } = useUser();
   const { localUser } = props;
   const classes = useStyles(props);
-  console.log({localUser});
-  const { register, handleSubmit, setValue, errors, control, watch } = useForm({
+  console.log({ localUser });
+  const { handleSubmit, setValue, errors, control, watch } = useForm({
     defaultValues: {
       uid: localUser ? localUser._id : '',
       newTrainingSessions: trainingSessions,
@@ -90,12 +90,12 @@ function BuildProgram(props) {
           {trainingSessions.map((trainingSession, trainingSessionIndex) => (
             <Grid item xs={12} key={trainingSessionIndex[0]}>
               <Paper align="center" className={classes.paper}>
-              <Controller
-                name={`newTrainingSessions[${trainingSessionIndex}].trainingSessionName`}
-                control={control}
-                defaultValue={`Session ${trainingSessionIndex + 1}`}
-                label="Session Name"
-                render={({ field }) => <TextField {...field} />}
+                <Controller
+                  name={`newTrainingSessions[${trainingSessionIndex}].trainingSessionName`}
+                  control={control}
+                  defaultValue={`Session ${trainingSessionIndex + 1}`}
+                  label="Session Name"
+                  render={({ field }) => <TextField {...field} />}
                 />
                 {trainingSession.map((exercise, exerciseIndex) => (
                   <Grid container className={classes.root} spacing={0} key={exerciseIndex[0]}>
@@ -212,7 +212,7 @@ function BuildProgram(props) {
 }
 
 export async function getServerSideProps({ req, res }) {
-  return await serverSideHandler(req, res);
+  return serverSideHandler(req, res);
 }
 
 BuildProgram.propTypes = {
