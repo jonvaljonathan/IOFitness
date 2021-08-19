@@ -7,8 +7,8 @@ const { Schema } = mongoose;
 // setsCompleted
 
 const mongoSchema = new Schema({
-  uid: String,
-  trainingSessionName: String,
+  uid: {type: String, required: true},
+  trainingSessionName: {type: String, required: true},
   date: Date,
   complete: Boolean,
   exercises: [

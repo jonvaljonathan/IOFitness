@@ -1,7 +1,7 @@
 /* eslint-disable react/forbid-prop-types */
 /* eslint-disable max-len */
 /* eslint-disable react/jsx-one-expression-per-line */
-import { useForm } from 'react-hook-form';
+import { useForm, Controller } from 'react-hook-form';
 import PropTypes from 'prop-types';
 import Button from '@material-ui/core/Button';
 import { makeStyles } from '@material-ui/core/styles';
@@ -52,9 +52,10 @@ function BuildProgram(props) {
   const { user } = useUser();
   const { localUser } = props;
   const classes = useStyles(props);
+  console.log({localUser});
   const { register, handleSubmit, setValue, errors, control, watch } = useForm({
     defaultValues: {
-      uid: user ? user.id : '',
+      uid: localUser ? localUser._id : '',
       newTrainingSessions: trainingSessions,
     },
   });
@@ -63,6 +64,7 @@ function BuildProgram(props) {
 
   const onSubmit = async (data) => {
     const newTrainingSessions = data;
+    console.log(data);
     try {
       const response = await createMultipleTrainingSessions({
         localUser,
@@ -88,14 +90,12 @@ function BuildProgram(props) {
           {trainingSessions.map((trainingSession, trainingSessionIndex) => (
             <Grid item xs={12} key={trainingSessionIndex[0]}>
               <Paper align="center" className={classes.paper}>
-                <TextField
-                  required
-                  name={`newTrainingSessions[${trainingSessionIndex}].trainingSessionName`}
-                  label="Session Name"
-                  defaultValue={`Session ${trainingSessionIndex + 1}`}
-                  autoFocus
-                  // eslint-disable-next-line react/jsx-props-no-spreading
-                  {...register(`newTrainingSessions[${trainingSessionIndex}].trainingSessionName`)}
+              <Controller
+                name={`newTrainingSessions[${trainingSessionIndex}].trainingSessionName`}
+                control={control}
+                defaultValue={`Session ${trainingSessionIndex + 1}`}
+                label="Session Name"
+                render={({ field }) => <TextField {...field} />}
                 />
                 {trainingSession.map((exercise, exerciseIndex) => (
                   <Grid container className={classes.root} spacing={0} key={exerciseIndex[0]}>
@@ -212,7 +212,7 @@ function BuildProgram(props) {
 }
 
 export async function getServerSideProps({ req, res }) {
-  return serverSideHandler(req, res);
+  return await serverSideHandler(req, res);
 }
 
 BuildProgram.propTypes = {

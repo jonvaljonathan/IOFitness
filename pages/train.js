@@ -142,6 +142,7 @@ function Train(props) {
 }
 
 export async function getServerSideProps({ req, res }) {
+  console.log('getServerSideProps');
   withPageAuthRequired();
   return serverSideHandler(req, res);
 }
