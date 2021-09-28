@@ -7,8 +7,8 @@ const { Schema } = mongoose;
 // setsCompleted
 
 const mongoSchema = new Schema({
-  uid: {type: String, required: true},
-  trainingSessionName: {type: String, required: true},
+  uid: { type: String, required: true },
+  trainingSessionName: { type: String, required: true },
   date: Date,
   complete: Boolean,
   exercises: [
@@ -43,6 +43,15 @@ class TrainingSessionClass {
     }
   }
 
+  static async getCompletedSessionsByName(uid, trainingSessionName) {
+    try {
+      const completedSessions = await this.find({ uid, trainingSessionName, complete: true });
+      return completedSessions;
+    } catch (e) {
+      return e;
+    }
+  }
+
   static async createMultipleTrainingSessions(trainingSessions) {
     try {
       const result = await this.insertMany(trainingSessions, { ordered: true });
@@ -62,6 +71,24 @@ class TrainingSessionClass {
         .sort({ date: -1 })
         .lean();
       return trainingSession;
+    } catch (e) {
+      return e;
+    }
+  }
+
+  static async getAllCompletedSessions(uid) {
+    try {
+      const allCompletedSessions = await this.find({ uid, complete: true });
+      return allCompletedSessions;
+    } catch (e) {
+      return e;
+    }
+  }
+
+  static async deleteUserSessions(uid) {
+    try {
+      const deletedSessions = await this.deleteMany(uid);
+      return deletedSessions;
     } catch (e) {
       return e;
     }

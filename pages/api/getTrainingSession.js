@@ -3,7 +3,7 @@ import TrainingSession from '../../server/models/TrainingSession';
 
 // gets a localUsers nextSession from the TrainingSession collection
 
-export default async (req, res) => {
+const getTrainingSession = async (req, res) => {
   await connectToDb();
   const { localUser } = req.body;
 
@@ -18,3 +18,5 @@ export default async (req, res) => {
     res.json(e);
   }
 };
+
+export default getTrainingSession;

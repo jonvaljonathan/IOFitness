@@ -7,11 +7,11 @@ import LocalUser from '../../server/models/LocalUser';
 3. saves multiple training sessions to the trainingSessions collection
 */
 
-export default async (req, res) => {
+const createMultipleTrainingSessions = async (req, res) => {
   await connectToDb();
   const { localUser } = req.body;
   const { newTrainingSessions } = req.body;
-  const trainingSessionsArray = newTrainingSessions.newTrainingSessions;
+  const trainingSessionsArray = newTrainingSessions;
 
   // takes the trainingSessionName from each object and creates an array
   // saved as the localUser.trainingSessionOrder
@@ -44,8 +44,6 @@ export default async (req, res) => {
     };
     return trainingSessionObject;
   });
-  // inserts trainingSessions into TrainingSession collection
-  // updates the trainingSession Order for the localUser
   try {
     const response = await TrainingSession.createMultipleTrainingSessions(
       newTrainingSessionsToSave,
@@ -54,8 +52,10 @@ export default async (req, res) => {
       localUser._id,
       trainingSessionNameArray,
     );
-    res.json(response, updateUserSessionOrder);
+    res.json({ response, updateUserSessionOrder });
   } catch (e) {
     res.json(e);
   }
 };
+
+export default createMultipleTrainingSessions;

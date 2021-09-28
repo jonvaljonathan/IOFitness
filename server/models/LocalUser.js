@@ -62,12 +62,25 @@ class LocalUserClass {
     }
   }
 
-  static async deleteUser(email) {
-    let response = 'error';
+  static async findUserByEmail(email) {
     try {
-      await this.deleteOne({ email });
-      response = 'deleted user';
-      return response;
+      const user = await this.findOne(email);
+      return user;
+    } catch (e) {
+      return e;
+    }
+  }
+
+  static async deleteLocalUser(email) {
+    // if no user exists... return something expressive
+    // if user found and deleted, return something else expressive
+    try {
+      const user = await this.findUserByEmail(email);
+      if (user) {
+        const deleted = await this.findOneAndDelete(email);
+        return deleted;
+      }
+      return 0;
     } catch (e) {
       return e;
     }
@@ -75,7 +88,7 @@ class LocalUserClass {
 
   static async updateNextSession(uid, nextSession) {
     try {
-      const updatedUser = await this.findOneAndUpdate({ _id: uid }, { nextSession });
+      const updatedUser = await this.findOneAndUpdate({ _id: uid }, { nextSession }, { new: true });
       return updatedUser;
     } catch (e) {
       return e;
@@ -83,13 +96,11 @@ class LocalUserClass {
   }
 
   static async updateTrainingSessionOrder(uid, trainingSessionOrder) {
-    
     try {
       const updatedUser = await this.findOneAndUpdate(
         { _id: uid },
-        { trainingSessionOrder: trainingSessionOrder, nextSession: trainingSessionOrder[0] },
+        { trainingSessionOrder, nextSession: trainingSessionOrder[0] },
       );
-      console.log({ updatedUser });
       return updatedUser;
     } catch (e) {
       return e;
@@ -97,13 +108,12 @@ class LocalUserClass {
   }
 
   static async loginLocal({ user }) {
+    const { sub } = user;
     try {
-      const userExists = await this.findOne({ sub: user.sub });
-
+      const userExists = await this.findOne({ sub });
       // if user does not exist, add user to local userDB,
       if (userExists === null) {
         const newUser = await this.create(user);
-
         return newUser;
       }
       if (userExists != null && userExists.updated_at === user.updated_at) {

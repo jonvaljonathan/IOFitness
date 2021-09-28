@@ -2,7 +2,7 @@ import connectToDb from '../../server/middleware/database';
 
 const Progression = require('../../server/models/Progression');
 
-export default async (req, res) => {
+const getAllProgressions = async (req, res) => {
   await connectToDb();
   try {
     const progressions = await Progression.getAll();
@@ -13,3 +13,5 @@ export default async (req, res) => {
     res.json(err);
   }
 };
+
+export default getAllProgressions;

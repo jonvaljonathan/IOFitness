@@ -8,11 +8,11 @@ import { analyzeTrainingSessions } from '../../lib/analyzeTrainingSession/analyz
 2.  if no other trainingSessions have the same name -> log complete and repeat the same session
 3.  else, compare the previous trainingSessions and use the 2x2 rule to create the next session
 */
-export default async (req, res) => {
+const completeTrainingSession = async (req, res) => {
   await connectToDb();
+
   const { localUser } = req.body;
   const { liveTrainingSession } = req.body;
-  console.log(req.url);
 
   const liveTrainingSessionId = liveTrainingSession._id;
   // delete the _id for the new trainingSession
@@ -26,7 +26,7 @@ export default async (req, res) => {
 
     const nextTrainingSession = analyzeTrainingSessions(lastCompletedSession, liveTrainingSession);
 
-    const completeTrainingSession = await TrainingSession.completeTrainingSession(
+    const nextSessionWithSameName = await TrainingSession.completeTrainingSession(
       liveTrainingSessionId,
       liveTrainingSession,
       nextTrainingSession,
@@ -34,6 +34,7 @@ export default async (req, res) => {
 
     // update localUser.nextSession
     const { trainingSessionOrder } = localUser;
+
     const tSessionOrderLength = trainingSessionOrder.length;
     const tSessionIndex = trainingSessionOrder.indexOf(liveTrainingSession.trainingSessionName);
     let nextSessionIndex = tSessionIndex + 1;
@@ -48,8 +49,10 @@ export default async (req, res) => {
       nextSessionName,
     );
 
-    res.json({ completeTrainingSession, updateLocalUserNextSession });
+    res.json({ nextSessionWithSameName, updateLocalUserNextSession });
   } catch (e) {
     res.json(e);
   }
 };
+
+export default completeTrainingSession;

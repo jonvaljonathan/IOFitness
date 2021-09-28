@@ -6,7 +6,7 @@ module.exports = {
   extends: ['airbnb', 'plugin:prettier/recommended', 'next'],
   env: {
     browser: true,
-    jest: true,
+    mocha: true,
   },
   plugins: ['react', 'jsx-a11y', 'import', 'prettier'],
   rules: {

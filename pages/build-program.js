@@ -52,7 +52,6 @@ function BuildProgram(props) {
   const { user } = useUser();
   const { localUser } = props;
   const classes = useStyles(props);
-  console.log({ localUser });
   const { handleSubmit, setValue, errors, control, watch } = useForm({
     defaultValues: {
       uid: localUser ? localUser._id : '',
@@ -64,7 +63,6 @@ function BuildProgram(props) {
 
   const onSubmit = async (data) => {
     const newTrainingSessions = data;
-    console.log(data);
     try {
       const response = await createMultipleTrainingSessions({
         localUser,
@@ -250,27 +248,3 @@ BuildProgram.defaultProps = {
 };
 
 export default BuildProgram;
-/*
-<Grid item xs={1}>
-                      <SelectField
-                        label="Work"
-                        defaultValue={exercise.workTime}
-                        name={`newTrainingSessions[${trainingSessionIndex}][${exerciseIndex}].workTime`}
-                        array={timeArray}
-                        control={control}
-                        handleMultiChange={handleMultiChange}
-                        errors={errors}
-                      />
-                    </Grid>
-                    <Grid item xs={1} key={exerciseIndex+.8}>
-                      <SelectField
-                        label="Rest"
-                        defaultValue={exercise.restTime}
-                        name={`newTrainingSessions[${trainingSessionIndex}][${exerciseIndex}].restTime`}
-                        array={timeArray}
-                        control={control}
-                        handleMultiChange={handleMultiChange}
-                        errors={errors}
-                      />
-                    </Grid>
-                    */

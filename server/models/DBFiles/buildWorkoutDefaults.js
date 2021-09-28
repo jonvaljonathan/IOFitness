@@ -1,5 +1,4 @@
 import range from 'lodash.range';
-import { trainingSessions } from './trainingSessions';
 
 const lowerBody = [
   'Back Squat',
@@ -85,7 +84,8 @@ const crossOverCordsArray = ['purple', 'red', 'blue', 'orange'];
 const hipBandArray = ['yellow', 'red', 'blue'];
 
 // add exercise intensity - warmup, strength, hypertrophy, endurance, finisher
-// movement type - push, pull, lowerbody, coreStability, shoulderStability, shoulderMobility, hipMobility, hipStability, movementPattern
+// movement type - push, pull, lowerbody, coreStability, shoulderStability, 
+// shoulderMobility, hipMobility, hipStability, movementPattern
 
 const arraySelect = {
   push,

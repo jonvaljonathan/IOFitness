@@ -13,8 +13,6 @@ import { serverSideHandler } from '../lib/serverSideHandler/serverSideHandler';
 export default function Dashboard(props) {
   const { user } = useUser();
   const { localUser } = props;
-  console.log('Dashboard');
-  console.log(props);
 
   return (
     <Layout user={user} hideHeader={false}>
@@ -53,9 +51,7 @@ export default function Dashboard(props) {
 }
 
 export async function getServerSideProps({ req, res }) {
-  console.log('getServerSieProps');
   const data = await serverSideHandler(req, res);
-  console.log({ data });
   return data;
 }
 

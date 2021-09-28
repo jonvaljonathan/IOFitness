@@ -2,7 +2,7 @@ import connectToDb from '../../server/middleware/database';
 
 import LocalUser from '../../server/models/LocalUser';
 
-export default async (req, res) => {
+const loginLocal = async (req, res) => {
   await connectToDb();
   const { user } = req.body;
   try {
@@ -14,3 +14,5 @@ export default async (req, res) => {
     res.json(e);
   }
 };
+
+export default loginLocal;

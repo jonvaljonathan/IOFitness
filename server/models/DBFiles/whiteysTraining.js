@@ -1135,7 +1135,7 @@ export const partiallyProgressedSquatExercises = squatWarmup.concat(
 
 export const unprogressedSquatExercises = squatWarmup.concat(unprogressedCoreSquatExercises);
 
-const fullWorkout1 = squatWarmup.concat(workout1, tTBAndThrusterFinisher);
+export const fullWorkout1 = squatWarmup.concat(workout1, tTBAndThrusterFinisher);
 const fullWorkout2 = squatWarmup.concat(workout2, pallofAndMonsterFinisher);
 const fullWorkout3 = squatWarmup.concat(workout3, muleFinisher);
 /*
@@ -1143,15 +1143,31 @@ const fullWorkout3 = squatWarmup.concat(workout3, muleFinisher);
   const fullWorkout5 = squatWarmup.concat(workout5, pallofAndMonsterFinisher);
   const fullWorkout6 = deadliftWarmup.concat(workout6, muleFinisher);
   */
-export const trainingSessions = [
-  fullWorkout2,
-  fullWorkout3,
-  fullWorkout1,
+export const trainingSessions = [fullWorkout2, fullWorkout3, fullWorkout1];
 
-  /*
-    fullWorkout3,
-    fullWorkout4,
-    fullWorkout5,
-    fullWorkout6,
-    */
-];
+export const transformWorkout = (workout) => {
+  console.log(workout);
+  return workout.reduce((map, exercise, index) => {
+    map[index + 1] = exercise;
+    console.log(map);
+    return map;
+  }, {});
+};
+
+export const transformTrainingSession = (trainingSession) => {
+  const transformedTrainingSession = trainingSession.map((session, tSessionIndex) => {
+    const transformedSession = session.reduce((map, exercise, index) => {
+      map[index + 1] = exercise;
+      return map;
+    }, {});
+    transformedSession.trainingSessionName = `Session ${tSessionIndex + 1}`;
+    return transformedSession;
+  });
+  return transformedTrainingSession;
+};
+
+
+/*
+it comes through as a big object
+'3': { exercise }
+*/
