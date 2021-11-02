@@ -58,7 +58,7 @@ function Header({ user, hideHeader }) {
                   </MenuItem>
                   <MenuItem onClick={handleClose} id="build-program-button">
                     <Link href="/build-program" as="/build-program">
-                      <a style={{ color: '#FFF' }}>Build Program</a>
+                      <a style={{ color: '#FFF' }}>Build Your Program</a>
                     </Link>
                   </MenuItem>
                   <MenuItem id="workout-button">
