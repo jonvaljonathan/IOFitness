@@ -8,20 +8,21 @@ Marketing and content site for [IOFitness](https://io.fitness). This is not the 
 - TypeScript
 - Tailwind CSS
 - Server Components by default
+- Postgres (Neon) for early-access signups
 
 ## Local development
 
 ```bash
-pnpm install
-pnpm dev
+npm install
+npm run dev
 ```
 
 ## Checks
 
 ```bash
-pnpm lint
-pnpm typecheck
-pnpm build
+npm run lint
+npm run typecheck
+npm run build
 ```
 
 ## Content
@@ -32,6 +33,15 @@ pnpm build
 
 ## Early access
 
-The homepage form validates an email address and an optional goal. Persistence is not connected yet.
+The homepage form validates an email address and an optional goal, then upserts a row in Postgres via a server action.
 
-Set `EARLY_ACCESS_WEBHOOK_URL` to POST signups as JSON. Until that is set, submissions are logged only.
+Required environment variable:
+
+- `DATABASE_URL` — Postgres connection string (Neon free tier works on Vercel)
+
+Schema:
+
+- Table `early_access_signups` (`email` unique, optional `goal`, timestamps)
+- Created automatically on first signup; SQL is also in `sql/early-access.sql`
+
+Re-submitting the same email updates the existing row (and refreshes `goal` when provided) instead of creating a duplicate.
