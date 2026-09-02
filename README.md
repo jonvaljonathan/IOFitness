@@ -8,7 +8,7 @@ Marketing and content site for [IOFitness](https://io.fitness). This is not the 
 - TypeScript
 - Tailwind CSS
 - Server Components by default
-- Resend Contacts API for early-access signups
+- Postgres (Neon) for early-access signups
 
 ## Local development
 
@@ -33,14 +33,15 @@ npm run build
 
 ## Early access
 
-The homepage form validates an email address and an optional goal, then upserts a Resend contact via a server action.
+The homepage form validates an email address and an optional goal, then upserts a row in Postgres via a server action.
 
 Required environment variable:
 
-- `RESEND_API_KEY` — Resend API key with Full access (not send-only)
+- `DATABASE_URL` — Postgres connection string (Neon free tier works on Vercel)
 
-Optional environment variable:
+Schema:
 
-- `RESEND_EARLY_ACCESS_SEGMENT_ID` — Segment ID for an "IOFitness Early Access" segment in Resend
+- Table `early_access_signups` (`email` unique, optional `goal`, timestamps)
+- Created automatically on first signup; SQL is also in `sql/early-access.sql`
 
-Optional goal answers are stored on the contact as the `early_access_goal` custom property (created automatically on first use if missing).
+Re-submitting the same email updates the existing row (and refreshes `goal` when provided) instead of creating a duplicate.
