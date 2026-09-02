@@ -12,10 +12,13 @@ export const homepageCopy = {
     emailPlaceholder: "you@example.com",
     goalLabel: "What do you want to get better at?",
     goalPlaceholder: "Optional",
+    consent:
+      "We'll email you about IOFitness early access and product updates. Unsubscribe anytime.",
     success: "You are on the list. We will be in touch.",
     invalidEmail: "Please enter a valid email address.",
     error: "Something went wrong. Please try again.",
   },
+
   goals: {
     heading: "Goals are more complicated than simple categories",
     body: "Anyone who knows what they want their body to be capable of but doesn't know how to program the path there already has a goal. It is rarely one checkbox. Strength, endurance, skill, and the activities you care about usually sit together, and they do not move on the same schedule.",
