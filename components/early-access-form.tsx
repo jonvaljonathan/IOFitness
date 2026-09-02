@@ -78,7 +78,10 @@ export function EarlyAccessForm({ id = "early-access" }: EarlyAccessFormProps) {
           >
             {pending ? "Sending…" : copy.submit}
           </button>
+
+          <p className="text-xs leading-relaxed text-muted/80">{copy.consent}</p>
         </form>
+
       )}
     </div>
   );

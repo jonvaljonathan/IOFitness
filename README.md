@@ -8,20 +8,21 @@ Marketing and content site for [IOFitness](https://io.fitness). This is not the 
 - TypeScript
 - Tailwind CSS
 - Server Components by default
+- Resend Contacts API for early-access signups
 
 ## Local development
 
 ```bash
-pnpm install
-pnpm dev
+npm install
+npm run dev
 ```
 
 ## Checks
 
 ```bash
-pnpm lint
-pnpm typecheck
-pnpm build
+npm run lint
+npm run typecheck
+npm run build
 ```
 
 ## Content
@@ -32,6 +33,14 @@ pnpm build
 
 ## Early access
 
-The homepage form validates an email address and an optional goal. Persistence is not connected yet.
+The homepage form validates an email address and an optional goal, then upserts a Resend contact via a server action.
 
-Set `EARLY_ACCESS_WEBHOOK_URL` to POST signups as JSON. Until that is set, submissions are logged only.
+Required environment variable:
+
+- `RESEND_API_KEY` — Resend API key with Full access (not send-only)
+
+Optional environment variable:
+
+- `RESEND_EARLY_ACCESS_SEGMENT_ID` — Segment ID for an "IOFitness Early Access" segment in Resend
+
+Optional goal answers are stored on the contact as the `early_access_goal` custom property (created automatically on first use if missing).
