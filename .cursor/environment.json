@@ -1,0 +1,17 @@
+{
+  "name": "iofitness",
+  "install": "pnpm install --frozen-lockfile",
+  "ports": [
+    {
+      "name": "next-dev",
+      "port": 3000
+    }
+  ],
+  "terminals": [
+    {
+      "name": "next-dev",
+      "command": "pnpm dev",
+      "description": "Next.js dev server (App Router) on http://localhost:3000"
+    }
+  ]
+}
