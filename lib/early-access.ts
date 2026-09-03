@@ -1,3 +1,5 @@
+import { createClient, type SupabaseClient } from "@supabase/supabase-js";
+
 export type EarlyAccessSignup = {
   email: string;
   goal?: string;
@@ -25,30 +27,78 @@ export function parseEarlyAccessForm(formData: FormData): {
   };
 }
 
+function getServiceRoleKey(): string | undefined {
+  // Prefer iofit's canonical .env.example name; accept the edge-function alias.
+  return (
+    process.env.SUPABASE_SERVICE_KEY?.trim() ||
+    process.env.SUPABASE_SERVICE_ROLE_KEY?.trim() ||
+    undefined
+  );
+}
+
+function getSupabaseAdmin(): SupabaseClient {
+  const supabaseUrl = process.env.SUPABASE_URL?.trim();
+  const serviceKey = getServiceRoleKey();
+
+  if (!supabaseUrl || !serviceKey) {
+    throw new Error("Supabase server credentials are not configured");
+  }
+
+  return createClient(supabaseUrl, serviceKey, {
+    auth: {
+      persistSession: false,
+      autoRefreshToken: false,
+    },
+  });
+}
+
+/**
+ * Upsert by email. Re-submits update `updated_at` and refresh `goal` when
+ * provided; an empty goal on a re-submit leaves the existing goal alone.
+ */
 export async function saveEarlyAccessSignup(
   signup: EarlyAccessSignup,
 ): Promise<{ persisted: boolean }> {
-  const webhookUrl = process.env.EARLY_ACCESS_WEBHOOK_URL;
+  const supabase = getSupabaseAdmin();
 
-  if (webhookUrl) {
-    const response = await fetch(webhookUrl, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(signup),
-    });
+  const row: {
+    email: string;
+    goal?: string;
+    updated_at: string;
+  } = {
+    email: signup.email,
+    updated_at: signup.receivedAt,
+  };
 
-    if (!response.ok) {
-      throw new Error(`Early access webhook failed with ${response.status}`);
-    }
-
-    return { persisted: true };
+  if (signup.goal) {
+    row.goal = signup.goal;
   }
 
-  console.info("[early-access] signup received, persistence not connected", {
-    email: signup.email,
-    hasGoal: Boolean(signup.goal),
-    receivedAt: signup.receivedAt,
-  });
+  try {
+    const { error } = await supabase.from("early_access_signups").upsert(row, {
+      onConflict: "email",
+      ignoreDuplicates: false,
+    });
 
-  return { persisted: false };
+    if (error) {
+      console.error("[early-access] persistence failed", {
+        code: error.code,
+      });
+      throw new Error("Failed to persist early access signup");
+    }
+  } catch (error) {
+    if (
+      error instanceof Error &&
+      error.message === "Failed to persist early access signup"
+    ) {
+      throw error;
+    }
+
+    console.error("[early-access] persistence failed", {
+      name: error instanceof Error ? error.name : "unknown",
+    });
+    throw new Error("Failed to persist early access signup");
+  }
+
+  return { persisted: true };
 }
