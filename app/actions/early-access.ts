@@ -26,8 +26,8 @@ export async function submitEarlyAccess(
       goal,
       receivedAt: new Date().toISOString(),
     });
-  } catch (error) {
-    console.error("[early-access] failed to save signup", error);
+  } catch {
+    console.error("[early-access] failed to save signup");
     return { status: "error" };
   }
 
