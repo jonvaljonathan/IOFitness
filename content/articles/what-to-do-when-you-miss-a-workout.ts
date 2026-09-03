@@ -19,7 +19,7 @@ export const missedWorkoutArticle: LearnArticle = {
     },
     {
       type: "p",
-      text: "Most advice stops at the calendar. Skip it. Make it up tomorrow. Slide the whole week forward. Do not double up. That advice is often sensible as far as it goes, and the last point especially matters. Stacking two full hard sessions because you feel behind is a common way to turn one disruption into several days of worse training [1][2].",
+      text: "Most advice stops at the calendar. Skip it. Make it up tomorrow. Slide the whole week forward. Do not double up. That advice is often sensible as far as it goes, and the last point especially matters. Stacking two full hard sessions because you feel behind is a common way to raise fatigue, lower session quality, and make the rest of the week harder to recover from [1][2].",
     },
     {
       type: "p",
@@ -37,7 +37,7 @@ export const missedWorkoutArticle: LearnArticle = {
     },
     {
       type: "p",
-      text: "Those two can diverge quickly. Imagine Monday's session is a heavy lower-body day that also includes the week's main squat progression. You miss Monday. On paper, Tuesday is still conditioning. In training terms, you have not yet given the week its main lower-body strength stimulus. Treating Tuesday as sacred because the calendar says so can leave the more important exposure orphaned.",
+      text: "Those two can diverge quickly. Imagine Monday's session is a heavy lower-body day that also includes the week's main squat progression. You miss Monday. On paper, Tuesday is still conditioning. In training terms, you have not yet given the week its main lower-body strength stimulus. Treating Tuesday as sacred because the calendar says so can leave the more important exposure unfinished.",
     },
     {
       type: "p",
@@ -98,13 +98,13 @@ export const missedWorkoutArticle: LearnArticle = {
     },
     {
       type: "p",
-      text: "It is also the right call when illness, poor sleep, or accumulating soreness caused the miss. In that case, \"catching up\" often means stacking stress onto a system that already asked for less.",
+      text: "It is also the right call when illness, poor sleep, or accumulating soreness caused the miss. In that case, catching up often means stacking stress onto a system that already asked for less.",
     },
 
     { type: "h3", text: "2. Shift the remaining schedule" },
     {
       type: "p",
-      text: "Sliding everything one day can work when the week is sparse, the sessions are similar in cost, and the shift does not collide with sport, travel, or another hard day. It works poorly when the week already has incompatible hard sessions lined up. A blanket +1 day rule is calendar thinking wearing a programming costume.",
+      text: "Sliding remaining sessions one day can work when the week is sparse, the sessions are similar in cost, and the shift does not collide with sport, travel, or another hard day. It works poorly when the week already has incompatible hard sessions lined up. A blanket +1 day rule treats dates as the plan. It does not ask whether the new order still fits the training you still need to do.",
     },
 
     { type: "h3", text: "3. Preserve the planned training sequence" },
@@ -126,11 +126,11 @@ export const missedWorkoutArticle: LearnArticle = {
     { type: "h2", text: "Why automatically doubling full sessions is a bad default" },
     {
       type: "p",
-      text: "Doubling feels fair. You missed Monday, so Monday plus Tuesday happens on Tuesday. The body does not grade fairness. Two full hard sessions in one day raise local and systemic fatigue, can reduce the quality of both, and can leave you under-recovered for whatever comes next [1][2][3].",
+      text: "Doubling feels fair. You missed Monday, so Monday plus Tuesday happens on Tuesday. Fairness is not a recovery variable. Two full hard sessions in one day raise local and systemic fatigue. That can reduce the quality of the second session and may make the rest of the week harder to recover from [1][2][3].",
     },
     {
       type: "p",
-      text: "If the two sessions tax the same tissue or quality, the problem is obvious: heavy squats and hard running intervals both load the lower body. Even when they look different on paper, concurrent hard work close together can impair the quality of the second bout [2]. If they tax different qualities, you may finish both and still create a recovery hole that ruins Thursday.",
+      text: "If the two sessions tax the same tissue or quality, the problem is obvious: heavy squats and hard running intervals both load the lower body. Concurrent-training research is useful here as a caution about quality and spacing, not as a direct trial of \"missed Monday, doubled Tuesday.\" Hard aerobic work close to strength work can impair strength-endurance performance when recovery between bouts is short [1][2]. Even when the sessions look different on paper, finishing both can still leave you under-recovered for whatever comes next. That last point is a programming judgment based on fatigue management, not a single study outcome [3].",
     },
     {
       type: "p",
@@ -142,36 +142,63 @@ export const missedWorkoutArticle: LearnArticle = {
       text: "A week where sliding everything one day makes the plan worse",
     },
     {
+      type: "p",
+      text: "Assume Saturday recreational sport is the highest-priority event of the week, and the athlete missed Monday's heavy lower-body session.",
+    },
+    {
       type: "example",
-      title: "Planned week",
+      title: "Original planned week",
       body: [
         "Monday: Heavy lower-body strength, including the week's main squat progression",
         "Tuesday: Easy aerobic work and mobility",
         "Wednesday: Upper-body strength",
         "Thursday: Hard conditioning intervals",
         "Friday: Off",
-        "Saturday: Sport or recreational play",
+        "Saturday: Recreational sport (highest priority)",
         "Sunday: Off",
       ],
     },
     {
       type: "p",
-      text: "You miss Monday because work runs late. The calendar-shift answer is mechanical: Monday becomes Tuesday, Tuesday becomes Wednesday, and so on. That produces heavy lower-body work on Tuesday, upper-body work on Wednesday, hard intervals on Thursday, and sport still on Saturday. On paper it looks tidy.",
-    },
-    {
-      type: "p",
-      text: "Look at training state instead. By Saturday you now have hard lower-body strength earlier in the week, hard intervals two days before sport, and no real buffer if the intervals leave your legs flat. The original plan separated the costliest lower-body stress from the weekend. The shifted plan compresses that stress toward the thing you care about most.",
+      text: "The mechanical response is a true +1-day shift of the remaining gym sessions. Monday's work moves to Tuesday, Tuesday's work to Wednesday, Wednesday's to Thursday, and Thursday's to Friday. Saturday sport stays put.",
     },
     {
       type: "example",
-      title: "Better response from training state",
+      title: "Mechanical shifted week",
       body: [
-        "Tuesday: keep the easy day, or use a short lower-body session if you are fresh and sport matters less this week",
-        "Wednesday: keep upper-body strength",
-        "Thursday: decide between hard intervals and a moderated version based on Saturday's importance",
-        "If Saturday is the priority, do Monday's squat progression on Tuesday or Wednesday only if recovery allows, and make Thursday easier rather than sliding the whole calendar",
-        "If the week is already shot, keep Wednesday upper work, protect Saturday, and write Monday off rather than forcing every label onto a new date",
+        "Monday: Missed",
+        "Tuesday: Heavy lower-body strength (from Monday)",
+        "Wednesday: Easy aerobic work and mobility (from Tuesday)",
+        "Thursday: Upper-body strength (from Wednesday)",
+        "Friday: Hard conditioning intervals (from Thursday)",
+        "Saturday: Recreational sport",
+        "Sunday: Off",
       ],
+    },
+    {
+      type: "p",
+      text: "That shift creates an obvious programming conflict. Hard lower-body strength now lands on Tuesday, and hard conditioning lands on Friday, the day before the week's priority event. The original plan left Friday empty so Saturday sport could start fresh. The shifted plan puts a hard interval day immediately before it. From a training-state view, that is a poor trade: you recovered the calendar labels, then compromised the session that mattered most.",
+    },
+    {
+      type: "p",
+      text: "One coherent reprogrammed week, with Saturday sport as the non-negotiable priority:",
+    },
+    {
+      type: "example",
+      title: "Reprogrammed week",
+      body: [
+        "Monday: Missed",
+        "Tuesday: Heavy lower-body strength, including the squat progression",
+        "Wednesday: Upper-body strength",
+        "Thursday: Easy aerobic work and mobility",
+        "Friday: Off",
+        "Saturday: Recreational sport",
+        "Sunday: Off",
+      ],
+    },
+    {
+      type: "p",
+      text: "What changed, and why: the missed squat progression moves to Tuesday while there is still room for it. Upper-body work stays midweek. Hard intervals are dropped for this week rather than parked on Friday. Easy work moves to Thursday so the athlete arrives at Saturday with fresher legs. That is programming judgment: protect the priority event, keep the unfinished strength stimulus, and let the lowest-value hard session wait.",
     },
     {
       type: "p",
@@ -218,7 +245,7 @@ export const missedWorkoutArticle: LearnArticle = {
     },
     {
       type: "p",
-      text: "If you need one sentence: finish the week's most important unfinished training without creating a fatigue traffic jam.",
+      text: "If you need one sentence: finish the week's most important unfinished training without stacking so much fatigue that the remaining sessions suffer.",
     },
 
     { type: "h2", text: "What this means for adaptive training" },
@@ -242,17 +269,17 @@ export const missedWorkoutArticle: LearnArticle = {
       id: "1",
       label: "NSCA / concurrent fatigue",
       citation:
-        "Panissa VLG, et al. Concurrent Training and the Acute Interference Effect on Strength-Endurance Performance. Strength Cond J. 2022.",
+        "Panissa VLG, Greco CC, Ribeiro N, Julio UF, Tricoli V, Franchini E. Concurrent Training and the Acute Interference Effect on Strength: Reviewing the Relevant Variables. Strength Cond J. 2022;44(3):46-57.",
       url: "https://journals.lww.com/nsca-scj/fulltext/2022/06000/concurrent_training_and_the_acute_interference.5.aspx",
-      note: "Useful for the programming claim that hard aerobic work can impair later strength-endurance quality when recovery between bouts is short.",
+      note: "Supports acute interference and recovery-spacing concerns when hard aerobic work precedes or sits close to strength work. Used for quality/fatigue caution, not as a direct trial of missed-workout doubling.",
     },
     {
       id: "2",
       label: "Concurrent training recovery intervals",
       citation:
-        "Chen Y, et al. Optimizing concurrent training programs: A review on factors that enhance muscle strength. Medicine (Baltimore). 2024.",
+        "Wang T, Bo S. Optimizing concurrent training programs: A review on factors that enhance muscle strength. Medicine (Baltimore). 2024;103(52):e41055.",
       url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC11688070/",
-      note: "Supports separating costly modalities when both quality and adaptation matter.",
+      note: "Supports separating costly modalities and allowing adequate recovery when both quality and adaptation matter. Used for sequencing principles, not as proof that one miss ruins several later days.",
     },
     {
       id: "3",
@@ -282,9 +309,9 @@ export const missedWorkoutArticle: LearnArticle = {
       id: "6",
       label: "ACSM 2026 resistance training position stand",
       citation:
-        "Phillips SM, et al. ACSM Position Stand. Resistance Training Prescription for Muscle Function, Hypertrophy, and Physical Performance in Healthy Adults: An Overview of Reviews. Med Sci Sports Exerc. 2026.",
+        "Currier BS, D'Souza AC, Fiatarone Singh MA, Lowisz CV, Rawson ES, Schoenfeld BJ, Smith-Ryan AE, Steen JP, Thomas GA, Triplett NT, Washington TA, Werner TJ, Phillips SM. American College of Sports Medicine Position Stand. Resistance Training Prescription for Muscle Function, Hypertrophy, and Physical Performance in Healthy Adults: An Overview of Reviews. Med Sci Sports Exerc. 2026;58(4):851-872.",
       url: "https://doi.org/10.1249/MSS.0000000000003897",
-      note: "Used for frequency and progressive overload principles in healthy adults, not as a direct trial of missed workouts.",
+      note: "Used for frequency and progressive overload principles in healthy adults, not as a direct trial of missed workouts. Currier BS is first author; Phillips SM is senior/last author.",
     },
     {
       id: "7",
@@ -298,7 +325,7 @@ export const missedWorkoutArticle: LearnArticle = {
       id: "8",
       label: "Reduced training frequency and strength",
       citation:
-        "Graves JE, et al. Effect of reduced training frequency on muscular strength. Int J Sports Med. 1988;9(5):316-319.",
+        "Graves JE, Pollock ML, Leggett SH, Braith RW, Carpenter DM, Colvin LB. Effect of reduced training frequency on muscular strength. Int J Sports Med. 1988;9(5):316-319.",
       url: "https://doi.org/10.1055/s-2007-1025031",
       note: "Early evidence that cutting frequency is less damaging than stopping when the remaining work stays hard.",
     },
