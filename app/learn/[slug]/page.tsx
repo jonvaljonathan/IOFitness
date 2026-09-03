@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { ArticleBody, ArticleSources } from "@/components/article-body";
 import { LearnArticleJsonLd } from "@/components/json-ld";
 import { getLearnArticle, getLearnArticles } from "@/content/learn";
 import { absoluteUrl } from "@/lib/site";
@@ -39,8 +40,18 @@ export async function generateMetadata({
       locale: "en_US",
       type: "article",
       publishedTime: article.date,
+      modifiedTime: article.dateModified,
     },
   };
+}
+
+function formatDate(isoDate: string): string {
+  return new Intl.DateTimeFormat("en-US", {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+    timeZone: "UTC",
+  }).format(new Date(`${isoDate}T00:00:00.000Z`));
 }
 
 export default async function LearnArticlePage({ params }: LearnArticleParams) {
@@ -63,6 +74,19 @@ export default async function LearnArticlePage({ params }: LearnArticleParams) {
         {article.title}
       </h1>
       <p className="mt-6 text-lg leading-8 text-muted">{article.description}</p>
+      <p className="mt-4 text-sm text-muted">
+        Published {formatDate(article.date)}
+        {article.dateModified !== article.date
+          ? ` · Updated ${formatDate(article.dateModified)}`
+          : null}
+      </p>
+      <ArticleBody blocks={article.body} />
+      <ArticleSources sources={article.sources} />
+      <p className="mt-12 text-sm text-muted">
+        <Link href="/learn" className="hover:text-ink">
+          Back to Learn
+        </Link>
+      </p>
     </main>
   );
 }

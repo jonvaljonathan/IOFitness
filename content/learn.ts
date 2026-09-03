@@ -1,3 +1,32 @@
+import { missedWorkoutArticle } from "./articles/what-to-do-when-you-miss-a-workout";
+
+export type ArticleSource = {
+  id: string;
+  label: string;
+  citation: string;
+  url?: string;
+  note?: string;
+};
+
+export type ArticleBlock =
+  | { type: "p"; text: string }
+  | { type: "h2"; text: string }
+  | { type: "h3"; text: string }
+  | { type: "ul"; items: string[] }
+  | { type: "ol"; items: string[] }
+  | { type: "example"; title: string; body: string[] }
+  | { type: "callout"; text: string };
+
+export type LearnArticle = {
+  slug: string;
+  title: string;
+  description: string;
+  date: string;
+  dateModified: string;
+  body: ArticleBlock[];
+  sources: ArticleSource[];
+};
+
 export const learnCopy = {
   heading: "IOFitness Learn",
   intro:
@@ -6,14 +35,7 @@ export const learnCopy = {
     "Guides will live here as they are written. Nothing is published yet.",
 } as const;
 
-export type LearnArticle = {
-  slug: string;
-  title: string;
-  description: string;
-  date: string;
-};
-
-export const learnArticles: LearnArticle[] = [];
+export const learnArticles: LearnArticle[] = [missedWorkoutArticle];
 
 export function getLearnArticles(): LearnArticle[] {
   return [...learnArticles].sort((a, b) => b.date.localeCompare(a.date));
