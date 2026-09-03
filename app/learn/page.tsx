@@ -1,18 +1,20 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { getLearnArticles, learnCopy } from "@/content/learn";
-import { absoluteUrl } from "@/lib/site";
+import { absoluteUrl, siteConfig } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: { absolute: learnCopy.heading },
+  title: { absolute: `${learnCopy.heading} — ${siteConfig.name}` },
   description: learnCopy.intro,
   alternates: {
     canonical: absoluteUrl("/learn"),
   },
   openGraph: {
-    title: `${learnCopy.heading} — IOFitness`,
+    title: `${learnCopy.heading} — ${siteConfig.name}`,
     description: learnCopy.intro,
     url: absoluteUrl("/learn"),
+    siteName: siteConfig.name,
+    locale: "en_US",
     type: "website",
   },
 };

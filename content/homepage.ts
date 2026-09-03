@@ -4,18 +4,6 @@ export const homepageCopy = {
     product:
       "IOFitness is an adaptive training system that figures out how to make you physically better and continuously evolves your training as you progress.",
   },
-  earlyAccess: {
-    heading: "Get early access",
-    body: "Leave your email if you want to hear when IOFitness is ready to try.",
-    submit: "Request early access",
-    emailLabel: "Email address",
-    emailPlaceholder: "you@example.com",
-    goalLabel: "What do you want to get better at?",
-    goalPlaceholder: "Optional",
-    success: "You are on the list. We will be in touch.",
-    invalidEmail: "Please enter a valid email address.",
-    error: "Something went wrong. Please try again.",
-  },
   goals: {
     heading: "Goals are more complicated than simple categories",
     body: "Anyone who knows what they want their body to be capable of but doesn't know how to program the path there already has a goal. It is rarely one checkbox. Strength, endurance, skill, and the activities you care about usually sit together, and they do not move on the same schedule.",
@@ -37,7 +25,9 @@ export const homepageCopy = {
     body: "A climber managing a tender finger still wants to get stronger elsewhere. A parent wants to carry a child up the stairs without thinking twice. Someone training for a first race also wants to stay capable in the gym. Someone returning after time off needs work that respects where they are today. The details differ. The job is the same: get better.",
   },
   closing: {
-    heading: "Get early access",
-    body: "If this is the kind of training you have been looking for, join the list.",
+    heading: "Learn more",
+    body: "Read practical guides on training, progression, consistency, recovery, and physical development.",
+    cta: "Learn how IOFitness works",
+    ctaHref: "/learn",
   },
 } as const;
