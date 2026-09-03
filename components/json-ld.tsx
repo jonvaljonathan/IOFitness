@@ -49,7 +49,7 @@ export function LearnArticleJsonLd({ slug }: { slug: string }) {
     headline: article.title,
     description: article.description,
     datePublished: article.date,
-    dateModified: article.date,
+    dateModified: article.dateModified,
     mainEntityOfPage: absoluteUrl(`/learn/${article.slug}`),
     author: {
       "@type": "Organization",

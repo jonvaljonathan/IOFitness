@@ -44,6 +44,14 @@ export default function LearnPage() {
                 <p className="mt-3 max-w-2xl text-base leading-7 text-muted">
                   {article.description}
                 </p>
+                <p className="mt-3 text-sm text-muted">
+                  {new Intl.DateTimeFormat("en-US", {
+                    year: "numeric",
+                    month: "short",
+                    day: "numeric",
+                    timeZone: "UTC",
+                  }).format(new Date(`${article.date}T00:00:00.000Z`))}
+                </p>
               </article>
             </li>
           ))}

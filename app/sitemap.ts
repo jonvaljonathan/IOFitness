@@ -12,7 +12,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const articleRoutes = getLearnArticles().map((article) => ({
     url: absoluteUrl(`/learn/${article.slug}`),
-    lastModified: article.date,
+    lastModified: article.dateModified,
     changeFrequency: "monthly" as const,
     priority: 0.6,
   }));
