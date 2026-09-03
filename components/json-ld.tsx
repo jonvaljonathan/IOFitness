@@ -1,4 +1,5 @@
-import { siteConfig } from "@/lib/site";
+import { getLearnArticle } from "@/content/learn";
+import { absoluteUrl, siteConfig } from "@/lib/site";
 
 export function JsonLd() {
   const organization = {
@@ -15,6 +16,7 @@ export function JsonLd() {
     name: siteConfig.name,
     url: siteConfig.url,
     description: siteConfig.description,
+    inLanguage: "en-US",
     publisher: {
       "@type": "Organization",
       name: siteConfig.name,
@@ -32,5 +34,39 @@ export function JsonLd() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(website) }}
       />
     </>
+  );
+}
+
+export function LearnArticleJsonLd({ slug }: { slug: string }) {
+  const article = getLearnArticle(slug);
+  if (!article) {
+    return null;
+  }
+
+  const data = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: article.title,
+    description: article.description,
+    datePublished: article.date,
+    dateModified: article.date,
+    mainEntityOfPage: absoluteUrl(`/learn/${article.slug}`),
+    author: {
+      "@type": "Organization",
+      name: siteConfig.name,
+      url: siteConfig.url,
+    },
+    publisher: {
+      "@type": "Organization",
+      name: siteConfig.name,
+      url: siteConfig.url,
+    },
+  };
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }}
+    />
   );
 }

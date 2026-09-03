@@ -18,6 +18,19 @@ const sans = Source_Sans_3({
   display: "swap",
 });
 
+const verification: NonNullable<Metadata["verification"]> = {};
+
+if (process.env.GOOGLE_SITE_VERIFICATION?.trim()) {
+  verification.google = process.env.GOOGLE_SITE_VERIFICATION.trim();
+}
+
+if (process.env.BING_SITE_VERIFICATION?.trim()) {
+  verification.other = {
+    ...(verification.other ?? {}),
+    "msvalidate.01": process.env.BING_SITE_VERIFICATION.trim(),
+  };
+}
+
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
@@ -53,6 +66,7 @@ export const metadata: Metadata = {
       follow: true,
     },
   },
+  ...(Object.keys(verification).length > 0 ? { verification } : {}),
 };
 
 export const viewport: Viewport = {

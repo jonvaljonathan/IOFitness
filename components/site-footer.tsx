@@ -19,11 +19,6 @@ export function SiteFooter() {
                 Learn
               </Link>
             </li>
-            <li>
-              <Link href="/#early-access" className="hover:text-ink">
-                Early access
-              </Link>
-            </li>
           </ul>
         </nav>
       </div>

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { LearnArticleJsonLd } from "@/components/json-ld";
 import { getLearnArticle, getLearnArticles } from "@/content/learn";
 import { absoluteUrl } from "@/lib/site";
 
@@ -34,7 +35,10 @@ export async function generateMetadata({
       title: `${article.title} — IOFitness`,
       description: article.description,
       url: absoluteUrl(`/learn/${article.slug}`),
+      siteName: "IOFitness",
+      locale: "en_US",
       type: "article",
+      publishedTime: article.date,
     },
   };
 }
@@ -49,6 +53,7 @@ export default async function LearnArticlePage({ params }: LearnArticleParams) {
 
   return (
     <main id="main" className="mx-auto max-w-3xl px-5 py-16 sm:px-8 sm:py-24">
+      <LearnArticleJsonLd slug={article.slug} />
       <p className="text-sm text-muted">
         <Link href="/learn" className="hover:text-ink">
           Learn

@@ -1,4 +1,4 @@
-import { EarlyAccessForm } from "@/components/early-access-form";
+import Link from "next/link";
 import { homepageCopy } from "@/content/homepage";
 import { absoluteUrl, siteConfig } from "@/lib/site";
 import type { Metadata } from "next";
@@ -13,6 +13,8 @@ export const metadata: Metadata = {
     title: siteConfig.title,
     description: siteConfig.description,
     url: siteConfig.url,
+    siteName: siteConfig.name,
+    locale: "en_US",
     type: "website",
   },
 };
@@ -38,10 +40,14 @@ export default function Home() {
         <p className="mt-8 max-w-2xl text-lg leading-8 text-muted sm:text-xl sm:leading-9">
           {homepageCopy.hero.product}
         </p>
-        <div id="early-access" className="mt-10 max-w-md scroll-mt-24">
-          <p className="mb-3 text-sm text-muted">{homepageCopy.earlyAccess.body}</p>
-          <EarlyAccessForm />
-        </div>
+        <p className="mt-10">
+          <Link
+            href={homepageCopy.closing.ctaHref}
+            className="inline-flex min-h-12 items-center rounded-sm bg-accent px-4 text-base text-paper hover:bg-accent-hover"
+          >
+            {homepageCopy.closing.cta}
+          </Link>
+        </p>
       </section>
 
       {sections.map((section) => (
@@ -63,9 +69,14 @@ export default function Home() {
           <p className="mt-6 max-w-2xl text-lg leading-8 text-muted">
             {homepageCopy.closing.body}
           </p>
-          <div className="mt-8 max-w-md">
-            <EarlyAccessForm id="early-access-close" />
-          </div>
+          <p className="mt-8">
+            <Link
+              href={homepageCopy.closing.ctaHref}
+              className="inline-flex min-h-12 items-center rounded-sm border border-rule bg-field px-4 text-base text-ink hover:border-accent"
+            >
+              {homepageCopy.closing.cta}
+            </Link>
+          </p>
         </div>
       </section>
     </main>

@@ -15,11 +15,6 @@ export function SiteHeader() {
                 Learn
               </Link>
             </li>
-            <li>
-              <Link href="/#early-access" className="text-muted hover:text-ink">
-                Early access
-              </Link>
-            </li>
           </ul>
         </nav>
       </div>
