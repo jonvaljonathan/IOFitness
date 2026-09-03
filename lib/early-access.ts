@@ -1,4 +1,4 @@
-import { neon, type NeonQueryFunction } from "@neondatabase/serverless";
+import { createClient, type SupabaseClient } from "@supabase/supabase-js";
 
 export type EarlyAccessSignup = {
   email: string;
@@ -7,8 +7,6 @@ export type EarlyAccessSignup = {
 };
 
 const EMAIL_PATTERN = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
-let schemaReady: Promise<void> | null = null;
 
 export function isValidEmail(value: string): boolean {
   return EMAIL_PATTERN.test(value) && value.length <= 254;
@@ -29,59 +27,74 @@ export function parseEarlyAccessForm(formData: FormData): {
   };
 }
 
-function getSql(): NeonQueryFunction<false, false> {
-  const databaseUrl = process.env.DATABASE_URL?.trim();
-
-  if (!databaseUrl) {
-    throw new Error("DATABASE_URL is not configured");
-  }
-
-  return neon(databaseUrl);
+function getServiceRoleKey(): string | undefined {
+  // Prefer iofit's canonical .env.example name; accept the edge-function alias.
+  return (
+    process.env.SUPABASE_SERVICE_KEY?.trim() ||
+    process.env.SUPABASE_SERVICE_ROLE_KEY?.trim() ||
+    undefined
+  );
 }
 
-async function ensureSchema(sql: NeonQueryFunction<false, false>): Promise<void> {
-  if (!schemaReady) {
-    schemaReady = (async () => {
-      await sql`
-        CREATE TABLE IF NOT EXISTS early_access_signups (
-          id BIGSERIAL PRIMARY KEY,
-          email TEXT NOT NULL UNIQUE,
-          goal TEXT,
-          created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
-          updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
-        )
-      `;
-    })().catch((error) => {
-      schemaReady = null;
-      throw error;
-    });
+function getSupabaseAdmin(): SupabaseClient {
+  const supabaseUrl = process.env.SUPABASE_URL?.trim();
+  const serviceKey = getServiceRoleKey();
+
+  if (!supabaseUrl || !serviceKey) {
+    throw new Error("Supabase server credentials are not configured");
   }
 
-  await schemaReady;
+  return createClient(supabaseUrl, serviceKey, {
+    auth: {
+      persistSession: false,
+      autoRefreshToken: false,
+    },
+  });
 }
 
+/**
+ * Upsert by email. Re-submits update `updated_at` and refresh `goal` when
+ * provided; an empty goal on a re-submit leaves the existing goal alone.
+ */
 export async function saveEarlyAccessSignup(
   signup: EarlyAccessSignup,
 ): Promise<{ persisted: boolean }> {
-  const sql = getSql();
+  const supabase = getSupabaseAdmin();
+
+  const row: {
+    email: string;
+    goal?: string;
+    updated_at: string;
+  } = {
+    email: signup.email,
+    updated_at: signup.receivedAt,
+  };
+
+  if (signup.goal) {
+    row.goal = signup.goal;
+  }
 
   try {
-    await ensureSchema(sql);
+    const { error } = await supabase.from("early_access_signups").upsert(row, {
+      onConflict: "email",
+      ignoreDuplicates: false,
+    });
 
-    await sql`
-      INSERT INTO early_access_signups (email, goal, created_at, updated_at)
-      VALUES (
-        ${signup.email},
-        ${signup.goal ?? null},
-        ${signup.receivedAt}::timestamptz,
-        ${signup.receivedAt}::timestamptz
-      )
-      ON CONFLICT (email) DO UPDATE SET
-        goal = COALESCE(EXCLUDED.goal, early_access_signups.goal),
-        updated_at = EXCLUDED.updated_at
-    `;
+    if (error) {
+      console.error("[early-access] persistence failed", {
+        code: error.code,
+      });
+      throw new Error("Failed to persist early access signup");
+    }
   } catch (error) {
-    console.error("[early-access] database persistence failed", {
+    if (
+      error instanceof Error &&
+      error.message === "Failed to persist early access signup"
+    ) {
+      throw error;
+    }
+
+    console.error("[early-access] persistence failed", {
       name: error instanceof Error ? error.name : "unknown",
     });
     throw new Error("Failed to persist early access signup");
