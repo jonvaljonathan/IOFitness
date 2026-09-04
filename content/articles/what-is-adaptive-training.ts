@@ -109,7 +109,7 @@ export const adaptiveTrainingArticle: LearnArticle = {
     { type: "h3", text: "Level 4: Schedule and sequence adaptation" },
     {
       type: "p",
-      text: "The system can reason about a disrupted week. Missed workouts, travel, added sport, or fewer training days change which future sessions are recommended, and in what order, rather than merely sliding calendar labels. This is where [what to do when you miss a workout](/learn/what-to-do-when-you-miss-a-workout) stops being a user improvisation problem and becomes a programming problem [5][6].",
+      text: "The system can reason about a disrupted week. Missed workouts, travel, added sport, or fewer training days change which future sessions are recommended, and in what order, rather than merely sliding calendar labels. This is where [what to do when you miss a workout](/learn/what-to-do-when-you-miss-a-workout) stops being a user improvisation problem and becomes a programming problem [5][6]. A longer layoff raises the same issue at a larger scale: [returning to training after time off](/learn/how-to-return-to-training-after-time-off) means the old plan is still useful history, but current capacity has to be re-estimated from new sessions.",
     },
 
     { type: "h3", text: "Level 5: Program adaptation" },
