@@ -119,7 +119,7 @@ export const adaptiveTrainingArticle: LearnArticle = {
     },
     {
       type: "p",
-      text: "A product can sit between levels. Many current systems are strong at Level 2 or 3 and weaker at Levels 4 and 5. The point of the framework is not to crown winners. It is to stop treating the word \"adaptive\" as if it meant one thing.",
+      text: "A product can sit between levels or combine capabilities from several of them. The point of the framework is not to crown winners. It is to stop treating the word \"adaptive\" as if it meant one thing.",
     },
 
     { type: "h2", text: "Three examples that make the levels concrete" },
