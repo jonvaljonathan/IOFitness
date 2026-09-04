@@ -12,7 +12,7 @@ export const returnToTrainingArticle: LearnArticle = {
   description:
     "After a training break, treat your old program as useful history rather than today's prescription. Scale load, volume, frequency, and exercise complexity independently, then let the first sessions update the ramp.",
   date: "2026-09-04",
-  dateModified: "2026-09-04", // revised evidence framing same day as publish draft
+  dateModified: "2026-09-04",
   body: [
     {
       type: "p",
@@ -265,7 +265,7 @@ export const returnToTrainingArticle: LearnArticle = {
       citation:
         "Sharples AP, Turner DC. Skeletal muscle memory. Am J Physiol Cell Physiol. 2023;324(6):C1274-C1294.",
       url: "https://doi.org/10.1152/ajpcell.00099.2023",
-      note: "Reviews cellular and epigenetic accounts of skeletal muscle memory and their implications for later retraining. Used to support retained responsiveness after prior training without claiming a universal regain-speed multiplier.",
+      note: "Reviews cellular and epigenetic accounts of skeletal muscle memory and their implications for later retraining. Used for plausible mechanisms of retained training history, not as proof of a universal regain-speed multiplier or a fixed practical effect size.",
     },
     {
       id: "7",
