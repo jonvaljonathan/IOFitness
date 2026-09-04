@@ -65,7 +65,7 @@ export const liftingWithSportsArticle: LearnArticle = {
     },
     {
       type: "p",
-      text: "This is the common IOFitness case. You want more muscle and a respectable Saturday. The week needs allocation, not denial. One quality usually still needs to be primary for the current block. The other gets a real dose without permission to wreck the first.",
+      text: "This is the common IOFitness case. You want more muscle and still want to perform well enough on Saturday. The week needs allocation, not denial. One quality usually still needs to be primary for the current block. The other gets a real dose without permission to wreck the first.",
     },
 
     { type: "h2", text: "Concurrent training does not automatically erase gym progress" },
@@ -117,7 +117,15 @@ export const liftingWithSportsArticle: LearnArticle = {
     { type: "h2", text: "Sport load is not binary" },
     {
       type: "p",
-      text: "\"Played soccer\" is not enough information. Estimate the session across a few dimensions rather than inventing a fake numerical score.",
+      text: "\"Played soccer\" is not enough information. Separate two questions: what did the session physically cost, and how much does performance on that day matter? They are related in programming, but they are not the same thing.",
+    },
+    {
+      type: "h3",
+      text: "Sport cost",
+    },
+    {
+      type: "p",
+      text: "Estimate the physical exposure rather than inventing a fake numerical score:",
     },
     {
       type: "ul",
@@ -126,12 +134,19 @@ export const liftingWithSportsArticle: LearnArticle = {
         "Conditioning cost: sustained or repeated high-intensity work",
         "Contact or collision cost: rugby, hockey, football, and some soccer or basketball contexts",
         "Duration and playing time: 20 minutes is not 90 minutes",
-        "Performance importance: casual recreation versus a match you actually care about",
       ],
     },
     {
+      type: "h3",
+      text: "Sport priority",
+    },
+    {
       type: "p",
-      text: "Tennis, pickleball, basketball, soccer, rugby, skiing, and hockey load people differently. Do not chase a universal sport-equivalence chart. Ask what this exposure did to the qualities and joints you need for the next gym session and the next sport day.",
+      text: "Separately ask how much that day's performance matters. A brutal casual game can have high physical cost and low competitive priority. A short tournament match can have moderate physical cost and very high performance priority. Casual recreation and a match you actually care about should not get the same protection rules just because both are \"sport.\"",
+    },
+    {
+      type: "p",
+      text: "Tennis, pickleball, basketball, soccer, rugby, skiing, and hockey load people differently. Do not chase a universal sport-equivalence chart. Ask what this exposure cost physically, how much the day matters, and what that means for the next gym session and the next sport day.",
     },
 
     { type: "h2", text: "Sport is stimulus and fatigue, not \"leg day\"" },
@@ -158,7 +173,7 @@ export const liftingWithSportsArticle: LearnArticle = {
       items: [
         "Anchor the sport: put the fixed sport session on the calendar first",
         "Decide its priority: primary performance day, shared priority, or secondary recreation",
-        "Estimate its actual training cost across mechanical load, conditioning, contact, duration, and importance",
+        "Estimate its actual training cost across mechanical load, conditioning, contact, and duration",
         "Identify what it already supplies: conditioning, acceleration, jumping, reactive movement, or skill",
         "Identify what it does not adequately supply: maximal strength, hypertrophy, upper body, structured posterior-chain work, or controlled power practice",
         "Place the highest-quality gym work where it can actually be performed well",
@@ -190,7 +205,7 @@ export const liftingWithSportsArticle: LearnArticle = {
     },
     {
       type: "p",
-      text: "Why this shape: Saturday is anchored first. Sunday absorbs some residual fatigue. Monday is far enough from the previous match, and early enough in the week, to carry the highest-quality lower-body developmental work if the athlete has recovered enough to train well. A short athletic primer can sit on Monday while he is relatively fresh, instead of inventing another hard plyometric day later. Wednesday uses the fact that fatigue is somewhat local: hard lower-body sport often leaves more room for upper-body training than for another heavy lower dose [9]. Thursday keeps a second hypertrophy exposure without turning the end of the week into another brutal eccentric lower day. Friday stays cheap so Saturday is not paying for unnecessary gym fatigue.",
+      text: "Why this shape: Saturday is anchored first. Sunday absorbs some residual fatigue. Monday is the first practical candidate for the main lower-body developmental session because it leaves several days before the next Saturday sport exposure. Whether it actually carries the normal lower-body dose depends on how the athlete has recovered from the previous Saturday. Calendar position makes Monday useful; recovery evidence determines Monday's dose. A short athletic primer can sit on Monday when he is relatively fresh, instead of inventing another hard plyometric day later. Wednesday uses the fact that fatigue is somewhat local: hard lower-body sport often leaves more room for upper-body training than for another heavy lower dose [9]. Thursday keeps a second hypertrophy exposure without turning the end of the week into another brutal eccentric lower day. Friday stays cheap so Saturday is not paying for unnecessary gym fatigue.",
     },
     {
       type: "p",
@@ -216,7 +231,7 @@ export const liftingWithSportsArticle: LearnArticle = {
     },
     {
       type: "p",
-      text: "Saturday was closer to 90 minutes, lots of accelerations and hard cuts, and soreness still interferes with clean lower-body work on Monday. Keep the session, but change the dose: fewer hard sets, more familiar exercises, less eccentric novelty, or shift emphasis toward upper body and lighter lower accessories. Do not interpret the temporary drop in squat performance as a long-term strength plateau. Recent sport load can alter Monday's output without rewriting the whole progression model. That distinction matters for [progressive overload without adding weight](/learn/progressive-overload-without-adding-weight): compare sessions under comparable conditions before deciding the plan failed.",
+      text: "Saturday was closer to 90 minutes, lots of accelerations and hard cuts, and soreness still interferes with clean lower-body work on Monday. Treat Monday as a programming decision point, not as a mandatory heavy-lower appointment. If Monday performance is clearly suppressed, the plan can reduce the lower-body dose, shift the session emphasis toward upper body or a low-cost lower exposure, or move the main developmental work later rather than forcing the normal prescription. Do not interpret the temporary drop in squat performance as a long-term strength plateau. Recent sport load can alter Monday's output without rewriting the whole progression model. That distinction matters for [progressive overload without adding weight](/learn/progressive-overload-without-adding-weight): compare sessions under comparable conditions before deciding the plan failed.",
     },
 
     { type: "h2", text: "Day before, day after, and same-day training" },
@@ -336,9 +351,9 @@ export const liftingWithSportsArticle: LearnArticle = {
       id: "9",
       label: "Sabag upper-body training after soccer",
       citation:
-        "Sabag A, Lovell R, Walsh NP, Grantham N, Coutts AJ. Upper-body resistance training following soccer match play: compatible, complementary, or contraindicated? Int J Sports Physiol Perform. 2021;16(2):165-175.",
-      url: "https://doi.org/10.1123/ijspp.2020-0291",
-      note: "Narrative review concluding that low-volume upper-body resistance training the day after soccer is often compatible with recovery but not clearly recovery-enhancing. Used for local-versus-systemic fatigue nuance and day-after options, not as proof that upper-body work improves recovery.",
+        "Sabag A, Lovell R, Walsh NP, Grantham N, Lacome M, Buchheit M. Upper-body resistance training following soccer match play: compatible, complementary, or contraindicated? Int J Sports Physiol Perform. 2021;16(2):165-175.",
+      url: "https://doi.org/10.1123/ijspp.2020-0762",
+      note: "Narrative review concluding that low-volume, low-intensity upper-body resistance training on the day after soccer appears potentially compatible with recovery, but has not been shown to accelerate recovery. Used for local-versus-systemic fatigue nuance and day-after options, not as proof that upper-body work improves recovery.",
     },
   ],
 };
