@@ -1,21 +1,41 @@
 import type { ArticleBlock, ArticleSource } from "@/content/learn";
 
 function renderTextWithCitations(text: string) {
-  const parts = text.split(/(\[\d+\])/g);
-  return parts.map((part, index) => {
-    const match = part.match(/^\[(\d+)\]$/);
-    if (!match) {
-      return <span key={index}>{part}</span>;
+  const segments = text.split(/(\[[^\]]+\]\([^)]+\)|\[\d+\])/g);
+
+  return segments.map((segment, index) => {
+    const linkMatch = segment.match(/^\[([^\]]+)\]\(([^)]+)\)$/);
+    if (linkMatch) {
+      const [, label, href] = linkMatch;
+      const external = /^https?:\/\//.test(href);
+      return (
+        <a
+          key={index}
+          href={href}
+          className="text-accent hover:text-accent-hover"
+          {...(external
+            ? { rel: "noopener noreferrer", target: "_blank" }
+            : {})}
+        >
+          {label}
+        </a>
+      );
     }
-    return (
-      <a
-        key={index}
-        href={`#source-${match[1]}`}
-        className="text-accent hover:text-accent-hover"
-      >
-        [{match[1]}]
-      </a>
-    );
+
+    const citationMatch = segment.match(/^\[(\d+)\]$/);
+    if (citationMatch) {
+      return (
+        <a
+          key={index}
+          href={`#source-${citationMatch[1]}`}
+          className="text-accent hover:text-accent-hover"
+        >
+          [{citationMatch[1]}]
+        </a>
+      );
+    }
+
+    return <span key={index}>{segment}</span>;
   });
 }
 
