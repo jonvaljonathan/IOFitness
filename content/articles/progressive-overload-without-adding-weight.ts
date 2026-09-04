@@ -25,7 +25,7 @@ export const progressiveOverloadArticle: LearnArticle = {
     },
     {
       type: "callout",
-      text: "Short version: when you cannot add weight, the cleanest next lever is usually more high-quality reps at the same load within an intended range. More sets, harder variations, longer ranges of motion, and other changes can also progress training, but only when they raise the relevant stimulus without destroying comparability. Making a set feel harder is not the same thing as useful progression.",
+      text: "Short version: for many hypertrophy and general-strength exercises, especially when the next load jump is too large or external resistance is temporarily capped, adding high-quality reps within the intended range is often the cleanest next step. Maximal strength, power, and endurance work may need a different lever. More sets, harder variations, and other changes can also progress training, but only when they raise the relevant stimulus without destroying comparability. Making a set feel harder is not the same thing as useful progression.",
     },
 
     { type: "h2", text: "Progressive overload is not \"add weight every session\"" },
@@ -77,7 +77,7 @@ export const progressiveOverloadArticle: LearnArticle = {
     { type: "h3", text: "1. The next equipment jump is too large" },
     {
       type: "p",
-      text: "A 20 lb dumbbell to a 25 lb dumbbell is a 25% jump. For many upper-body accessories, that is not a small progression. It is a cliff. In that case, building reps inside the intended range, using microplates if they exist, or holding the current load until performance earns the jump is usually better than forcing a missed set and calling it toughness.",
+      text: "A 20 lb dumbbell to a 25 lb dumbbell is a 25% jump. For many upper-body accessories, that is not a small progression. It is a large relative increase. In that case, building reps inside the intended range, using microplates if they exist, or holding the current load until performance earns the jump is usually better than forcing a missed set.",
     },
 
     { type: "h3", text: "2. Heavier equipment is simply unavailable" },
@@ -95,13 +95,13 @@ export const progressiveOverloadArticle: LearnArticle = {
     { type: "h3", text: "4. You can add weight, but doing so breaks the exercise" },
     {
       type: "p",
-      text: "If the heavier set shortens range of motion, changes the target muscle contribution, needs momentum, or collapses outside the intended rep range, the larger number may not be useful progress. The load should serve the training goal. Making the logbook look braver is not the goal.",
+      text: "If the heavier set shortens range of motion, changes the target muscle contribution, needs momentum, or collapses outside the intended rep range, the larger number may not be useful progress. The load should serve the training goal, not merely increase the number written in the log.",
     },
 
-    { type: "h2", text: "Repetition progression is often the cleanest next lever" },
+    { type: "h2", text: "Repetition progression is often the cleanest next lever for hypertrophy and general-strength work" },
     {
       type: "p",
-      text: "Double progression is a practical way to progress without forcing load every session. You work inside a rep range at a fixed load. When performance reaches the top of that range under comparable conditions, you increase load if an appropriate increment exists.",
+      text: "Double progression is a practical way to progress without forcing load every session on hypertrophy and general-strength exercises. You work inside a rep range at a fixed load. When performance reaches the top of that range under comparable conditions, you increase load if an appropriate increment exists.",
     },
     {
       type: "example",
@@ -126,7 +126,7 @@ export const progressiveOverloadArticle: LearnArticle = {
     { type: "h3", text: "Hypertrophy" },
     {
       type: "p",
-      text: "Current evidence suggests muscle growth can occur across a broad loading range when effort is high enough, with weekly volume mattering more than a narrow \"hypertrophy load zone\" [1]. So more high-quality reps at the same load, and eventually more load, are both coherent options. Extra sets can help when more productive volume is actually warranted and recoverable. Greater usable range of motion can matter if prior ROM was constrained. Harder leverage can help when external resistance is capped. None of that means every added rep forever is equally useful. Past a point, endless high-rep sets at a light load may stop being the best use of recovery.",
+      text: "Current evidence suggests muscle growth can occur across a broad loading range when effort is high enough, with weekly volume mattering more than a narrow \"hypertrophy load zone\" [1]. So more high-quality reps at the same load, and eventually more load, are both coherent options. Extra sets can help when more productive volume is actually warranted and recoverable. Restoring the intended range of motion after it had shortened under load is better framed as cleaner execution of the planned stimulus than as a separate overload method. Harder leverage can help when external resistance is capped. None of that means every added rep forever is equally useful. Past a point, endless high-rep sets at a light load may stop being the best use of recovery.",
     },
 
     { type: "h3", text: "Maximal strength" },
@@ -147,10 +147,13 @@ export const progressiveOverloadArticle: LearnArticle = {
       text: "More reps, longer unbroken work, and density are often closer to the target. A set that becomes harder only because rest was cut may be more relevant here than in a maximal-strength block. Match the lever to the quality you want.",
     },
 
-    { type: "h2", text: "A practical progression hierarchy" },
+    {
+      type: "h2",
+      text: "A practical progression hierarchy for hypertrophy and general-strength work",
+    },
     {
       type: "p",
-      text: "No single hierarchy is scientifically settled for every lifter. The sequence below is a practical decision framework for choosing the next progression when load is unavailable, inappropriate, or premature.",
+      text: "No single hierarchy is scientifically settled for every lifter. The sequence below is a practical decision framework for rep-based resistance training when hypertrophy or general strength is the main goal, especially when load is unavailable, inappropriate, or premature.",
     },
     {
       type: "ol",
@@ -160,20 +163,20 @@ export const progressiveOverloadArticle: LearnArticle = {
         "If the rep range still has room, add quality reps before changing other variables",
         "When the top of the intended range is reached consistently, increase load if a sensible increment exists",
         "If the increment is too large, use microloading or continue another legitimate same-exercise progression",
-        "Add sets only when more volume is useful and recoverable, not as a default boredom fix",
+        "Add sets only when more volume is useful and recoverable",
         "Change exercise difficulty when equipment or exercise design requires it",
         "If progression repeatedly stalls under comparable conditions, review the program instead of endlessly adding difficulty",
       ],
     },
     {
       type: "p",
-      text: "The hierarchy prefers comparability and goal fit over novelty. That is programming judgment informed by the evidence above, not a claim that one order is proven optimal for every outcome.",
+      text: "This order is not universal. Maximal strength may prioritize load specificity sooner. Power may prioritize velocity, output, and movement quality. Muscular endurance may progress through reps, duration, or density. The hierarchy prefers comparability and goal fit over novelty. That is programming judgment informed by the evidence above, not a claim that one order is proven optimal for every outcome.",
     },
 
     { type: "h2", text: "Performance can improve before the prescription changes" },
     {
       type: "p",
-      text: "Suppose week 1 is 100 × 8 at a hard 9 RPE. Weeks later, the same prescription is 100 × 8 at about 7.5 RPE, with cleaner reps and no change in range of motion. The written program did not progress. The athlete may still have improved.",
+      text: "Suppose week 1 is 100 × 8 at a hard 9 RPE. Across later sessions, the same standardized prescription is repeatedly closer to 7.5 RPE under similar conditions, with cleaner reps and no change in range of motion. The written program did not progress. Capacity may still have improved.",
     },
     {
       type: "p",
@@ -182,13 +185,13 @@ export const progressiveOverloadArticle: LearnArticle = {
     {
       type: "ul",
       items: [
-        "Progress in adaptation: the same work costs less or produces a better result",
+        "Progress in capacity or performance: the same work costs less or produces a better result",
         "Progression of prescription: the planned load, reps, sets, or exercise demand changes",
       ],
     },
     {
       type: "p",
-      text: "A good system notices the first before it forces the second. RPE and similar effort ratings are imperfect. They are still often enough to show that the same external work is no longer the same internal demand. Waiting for the bar to move every Monday can make people miss that kind of progress, or rush a load jump they have not earned under clean conditions.",
+      text: "A good system notices the first before it forces the second. RPE is subjective. Sleep, stress, motivation, and familiarity can move it from day to day, so one easier session does not prove adaptation. If the same standardized work repeatedly feels easier under similar conditions, that can be evidence of improved capacity even before the prescription changes. Waiting for the bar to move every Monday can make people miss that kind of progress, or rush a load jump they have not earned under clean conditions.",
     },
 
     { type: "h2", text: "Do not reward bad comparability" },
@@ -234,7 +237,7 @@ export const progressiveOverloadArticle: LearnArticle = {
     { type: "h2", text: "Bottom line" },
     {
       type: "p",
-      text: "Progressive overload without adding weight is still progressive overload when the relevant stimulus rises over time. For many lifters, especially when equipment jumps are coarse and hypertrophy is the goal, more high-quality reps at the same load is the cleanest next step. Sets, range of motion, exercise leverage, and eventually load can all matter. Shorter rest and slower tempo mainly help when they serve the actual goal, not when they only make the set feel worse. Judge progress by comparable performance and goal fit. If the heavier option breaks the exercise, or if progression keeps failing for no clear equipment reason, review the program. Harder is easy. Useful progression takes more judgment.",
+      text: "Progressive overload without adding weight is still progressive overload when the relevant stimulus rises over time. For many hypertrophy and general-strength exercises, especially when equipment jumps are coarse, more high-quality reps at the same load is often the cleanest next step. Other goals may need a different lever sooner. Sets, exercise leverage, and eventually load can all matter. Shorter rest and slower tempo mainly help when they serve the actual goal, not when they only make the set feel worse. Judge progress by comparable performance and goal fit. If the heavier option breaks the exercise, or if progression keeps failing for no clear equipment reason, review the program. Useful progression depends on choosing the right lever, not on making every set feel harder.",
     },
   ],
   sources: [
