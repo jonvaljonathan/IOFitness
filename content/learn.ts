@@ -1,4 +1,5 @@
 import { twoGoalsArticle } from "./articles/how-to-train-for-two-goals-at-once";
+import { progressiveOverloadArticle } from "./articles/progressive-overload-without-adding-weight";
 import { adaptiveTrainingArticle } from "./articles/what-is-adaptive-training";
 import { missedWorkoutArticle } from "./articles/what-to-do-when-you-miss-a-workout";
 
@@ -41,6 +42,7 @@ export const learnArticles: LearnArticle[] = [
   missedWorkoutArticle,
   twoGoalsArticle,
   adaptiveTrainingArticle,
+  progressiveOverloadArticle,
 ];
 
 export function getLearnArticles(): LearnArticle[] {
