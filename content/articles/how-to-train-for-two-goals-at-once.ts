@@ -9,21 +9,21 @@ export const twoGoalsArticle: LearnArticle = {
   slug: "how-to-train-for-two-goals-at-once",
   title: "How to Train for Two Goals at Once",
   description:
-    "You can train for two goals at once, but only if you decide what gets pushed, what gets maintained, and how much fatigue each goal is allowed to create.",
+    "You can train for two goals at once if you decide which goal is primary, which work is shared, what needs a maintenance dose, and how fatigue gets spent across the week.",
   date: "2026-09-04",
   dateModified: "2026-09-04",
   body: [
     {
       type: "p",
-      text: "Most people do not have one clean fitness goal. They want more muscle and better conditioning. More strength and a faster 5K. A bigger squat and enough speed left for weekend sport. The advice they usually get is to pick one. That advice is tidy. It is also often wrong for how real training lives look.",
+      text: "Most people do not have one clean fitness goal. They want more muscle and better conditioning. More strength and a faster 5K. A bigger squat and enough speed left for weekend sport. The advice they usually get is to pick one. Sometimes that is the right call. Often it is too blunt for how people actually train.",
     },
     {
       type: "p",
-      text: "The better question is not whether two goals can coexist. It is how much training each goal should receive, what work serves both, where the goals collide, and which one takes priority when time or recovery runs out.",
+      text: "The better question is not whether two goals can coexist. It is how much training each goal should get, which work serves both, where the goals collide, and which one takes priority when time or recovery runs out.",
     },
     {
       type: "callout",
-      text: "Short version: you can train more than one quality at a time. You cannot push every quality maximally at once. Good programming decides what is being developed, what is being maintained, and how fatigue is budgeted across the week.",
+      text: "Short version: you can train more than one quality at a time. You cannot push every quality hard at once. Good programming decides what is being developed, what is being maintained, and how fatigue is spent across the week.",
     },
 
     { type: "h2", text: "Two goals share a limited budget" },
@@ -33,142 +33,142 @@ export const twoGoalsArticle: LearnArticle = {
     },
     {
       type: "p",
-      text: "That does not mean every combination causes classic interference. Interference is a specific finding from concurrent-training research: adding endurance work to a strength program can reduce some strength, power, or hypertrophy adaptations compared with strength training alone, depending on how the work is arranged [1][2][3]. Recreational athletes often face a broader problem first: too many hard qualities stacked into too little recovery, whether or not the lab label fits.",
+      text: "That does not mean every combination causes classic interference. Interference is a specific finding from concurrent-training research: adding endurance work to a strength program can reduce some strength, power, or hypertrophy adaptations compared with strength training alone, depending on how the work is arranged [1][2][3]. Recreational athletes often hit a simpler problem first. They stack too many hard qualities into too little recovery, whether or not the lab label fits.",
     },
     {
       type: "p",
-      text: "So start with allocation, not with a slogan. If both goals matter this month, one of them usually needs to be primary. The other can still progress, or it may need to be held with a smaller dose. Pretending they are equal often means both get an incomplete stimulus and too much leftover fatigue.",
+      text: "So start with allocation. If both goals matter this month, one of them usually needs to be primary. The other can still improve, or it may need to be held with a smaller dose. Treating them as equal often leaves both undertrained and the week too expensive.",
     },
 
     { type: "h2", text: "Some work helps both goals" },
     {
       type: "p",
-      text: "Not every session is a zero-sum trade. Lower-body strength work can support hypertrophy and also transfer to sprint and jump performance in many trainees [4][5]. That matters for the person who wants to add muscle without becoming slower. The squat progression is not only a bodybuilding tool. It can also be part of the athletic foundation, as long as speed and power are not abandoned entirely.",
+      text: "Not every session is a straight trade. Lower-body strength work can support hypertrophy and also transfer to sprint and jump performance in many trainees [4][5]. That matters for someone who wants to add muscle without getting slower. A squat progression can feed both muscle gain and athletic force production, as long as speed and power are not dropped completely.",
     },
     {
       type: "p",
-      text: "Basic aerobic conditioning can support work capacity and recovery between harder efforts, which may help both gym progress and sport readiness. That is a programming inference from how those qualities are used, not a claim that easy cardio magically builds muscle. Low-cost aerobic work and high-cost interval work are not interchangeable here. One can support the week. The other can consume it.",
+      text: "Easy aerobic work can help work capacity and recovery between harder sessions. That may support both gym progress and sport readiness. That is a programming inference from how those qualities are used, not a claim that easy cardio builds muscle. Easy aerobic work and hard interval work are not the same thing here. One can fit under the week. The other can take the week over.",
     },
     {
       type: "p",
-      text: "This is why combining two full plans is usually a bad default. Two plans assume every quality needs a maximal dedicated dose. A better plan asks which exposures are unique to each goal and which exposures do double duty.",
+      text: "This is why gluing two full plans together is usually a poor default. Two plans assume every quality needs a maximal dedicated dose. A better plan asks which exposures are unique to each goal and which ones do useful work for both.",
     },
     {
       type: "ul",
       items: [
-        "Shared: heavy or hard lower-body strength that feeds both muscle gain and athletic force production",
-        "Shared: some aerobic work that improves conditioning without wrecking the next lift",
+        "Shared: hard lower-body strength that feeds muscle gain and athletic force production",
+        "Shared: some easy aerobic work that improves conditioning without wrecking the next lift",
         "Unique to muscle gain: enough weekly hard sets, progressive loading, and enough food to grow",
         "Unique to sport readiness: sprinting, jumping, change-of-direction work, and actual sport practice",
       ],
     },
 
-    { type: "h2", text: "Where the tradeoffs actually show up" },
+    { type: "h2", text: "Where the tradeoffs show up" },
     {
       type: "p",
-      text: "Concurrent-training research is most useful when you treat it as a map of risk factors, not as a verdict that hybrid training is doomed.",
+      text: "Concurrent-training research is most useful as a map of risk factors, not as a warning that hybrid training always fails.",
     },
     {
       type: "p",
-      text: "Updated meta-analyses suggest that maximal strength and hypertrophy are often more compatible with aerobic training than older commentary implied, while explosive strength is more vulnerable, especially when endurance and strength are done in the same session [2]. In already-trained people, lower-body strength gains can also suffer when endurance is bolted onto the same session rather than spaced apart [3]. Older meta-analytic work found larger interference when endurance volume and frequency climb, and when running rather than cycling is the endurance mode [1].",
+      text: "Updated meta-analyses suggest that maximal strength and hypertrophy are often more compatible with aerobic training than older commentary implied. Explosive strength looks more vulnerable, especially when endurance and strength are done in the same session [2]. In already-trained people, lower-body strength gains can also suffer when endurance is added to the same session rather than spaced apart [3]. Older meta-analytic work found larger interference when endurance volume and frequency climb, and when running rather than cycling is the endurance mode [1].",
     },
     {
       type: "p",
-      text: "That evidence does not say a recreational athlete cannot build muscle while staying athletic. It says the cost rises when hard endurance work is dense, frequent, poorly spaced, or parked on top of the sessions that were supposed to develop strength or power. The research finding is about average adaptation under concurrent loading. The programming judgment is what to protect in a real week.",
+      text: "That evidence does not say a recreational athlete cannot build muscle while staying athletic. It says the cost rises when hard endurance work is dense, frequent, poorly spaced, or parked on top of the sessions meant to develop strength or power. The research describes average adaptation under concurrent loading. Deciding what to protect in a given week is still a programming call.",
     },
     {
       type: "p",
-      text: "Session order and spacing matter for quality as well as for adaptation. Hard aerobic work close to strength work can reduce the quality of the strength bout [6][7]. Within a session, a resistance-then-endurance order has been associated with better lower-body strength outcomes than the reverse in prolonged concurrent programs [8]. None of that proves one universal template. It does support a practical rule: protect the session that carries the week's priority.",
+      text: "Session order and spacing matter for quality as well as for adaptation. Hard aerobic work close to strength work can reduce the quality of the strength bout [6][7]. Within a session, a resistance-then-endurance order has been associated with better lower-body strength outcomes than the reverse in prolonged concurrent programs [8]. That does not create one universal template. It does support a practical rule: protect the session that carries the week's priority.",
     },
     {
       type: "p",
-      text: "For a recreational field-sport athlete trying to add muscle, the common collision looks like this: high gym volume for hypertrophy, plus hard conditioning, plus sprint or plyometric work, plus a weekend match. Any one of those can be useful. All of them at once, at high cost, is how both goals get watered down [12].",
+      text: "For a recreational field-sport athlete trying to add muscle, the usual collision looks like this: high gym volume for hypertrophy, hard conditioning, sprint or plyometric work, and a weekend match. Any one of those can be useful. All of them at once, at high cost, is how both goals get watered down [12].",
     },
 
     { type: "h2", text: "Primary goal, secondary goal, maintenance dose" },
     {
       type: "p",
-      text: "Priority is the missing piece in most train-for-everything advice.",
+      text: "Priority is the part most train-for-everything advice skips.",
     },
     {
       type: "ul",
       items: [
         "Primary goal: gets the freshest sessions, more weekly volume, and first claim on progression",
-        "Secondary goal: still trained on purpose, but with less volume and less right to disrupt the primary work",
+        "Secondary goal: still trained on purpose, but with less volume and less freedom to disrupt the primary work",
         "Maintenance dose: enough hard stimulus to hold a quality without trying to improve it right now",
       ],
     },
     {
       type: "p",
-      text: "Maintenance is not the same as neglect. Reviews of reduced training suggest that strength and some endurance qualities can be preserved for weeks to months with fairly large cuts in frequency or volume if intensity stays high [9]. That is one reason a secondary athletic quality does not always need a full second program. It may need a small number of high-quality exposures.",
+      text: "Maintenance is not neglect. Reviews of reduced training suggest that strength and some endurance qualities can be preserved for weeks to months with fairly large cuts in frequency or volume if intensity stays high [9]. That is one reason a secondary athletic quality does not always need a full second program. It may need a small number of high-quality exposures.",
     },
     {
       type: "p",
-      text: "Example. A 36-year-old recreational Gaelic football player wants to add muscle in the off-season while staying fast enough and durable enough for the sport he actually plays. If hypertrophy is primary, the week should clearly develop muscle. Speed, power, and change-of-direction work do not disappear. They get a maintenance or modest-development dose, placed so they do not trash the lifting that is supposed to drive the main goal.",
+      text: "Take a 36-year-old recreational Gaelic football player who wants to add muscle in the off-season while staying fast enough for the sport he actually plays. If hypertrophy is primary, the week should clearly develop muscle. Speed, power, and change-of-direction work should not vanish. They get a maintenance dose, placed so they do not wreck the lifting meant to drive the main goal.",
     },
     {
       type: "p",
-      text: "A generic hypertrophy plan that deletes sprinting and jumping may grow tissue while making him less prepared for football. A plan that chases every athletic quality at bodybuilding volume may leave him sore, under-recovered, and not much bigger. The useful middle is explicit priority: muscle gain is being pushed, athletic qualities are being protected, and fatigue is not allowed to erase either side of that bargain.",
+      text: "A conventional hypertrophy plan can answer \"gain muscle\" on paper while ignoring the qualities he still needs for football. Delete the sprinting and jumping, and the plan may grow tissue while making him less prepared for the game. Chase every athletic quality at bodybuilding volume, and he may end up sore, under-recovered, and not much bigger. The useful middle is explicit priority: muscle gain is being pushed, athletic qualities are being kept alive, and fatigue is not allowed to erase either side.",
     },
 
     { type: "h2", text: "Emphasis should change over time" },
     {
       type: "p",
-      text: "Two goals do not need the same weighting forever. Off-season can bias toward muscle and general strength. As competitive play increases, more of the week may need to protect speed, freshness, and match performance. That is ordinary periodization logic: stress, fatigue, recovery, and adaptation are managed over time, not only inside one week [10].",
+      text: "Two goals do not need the same weighting forever. Off-season can lean toward muscle and general strength. As competitive play increases, more of the week may need to protect speed, freshness, and match performance. That is ordinary periodization logic: stress, fatigue, recovery, and adaptation are managed over time, not only inside one week [10].",
     },
     {
       type: "p",
-      text: "A simple way to use that without turning the plan into a textbook:",
+      text: "A simple way to use that:",
     },
     {
       type: "ol",
       items: [
         "Choose an emphasis block of several weeks where one goal is clearly primary",
         "Keep a maintenance dose for the qualities you cannot afford to lose",
-        "When the season, race, or life calendar changes, rewrite the priority instead of stacking another full plan on top",
+        "When the season, race, or calendar changes, rewrite the priority instead of stacking another full plan on top",
       ],
     },
     {
       type: "p",
-      text: "Resistance-training guidelines for healthy adults still support regular progressive loading across the week [11]. They do not require every quality to receive a maximal dose in every block. A person can keep lifting year-round while changing what the lifting is for: growth in one phase, freshness and force retention in another.",
+      text: "Resistance-training guidelines for healthy adults still support regular progressive loading across the week [11]. They do not require every quality to get a maximal dose in every block. Someone can keep lifting year-round while changing what the lifting is for: growth in one phase, freshness and force retention in another.",
     },
 
     { type: "h2", text: "A week where priority decides the schedule" },
     {
       type: "p",
-      text: "Take the same 36-year-old Gaelic football player. Hypertrophy is primary this block. Saturday match play is non-negotiable. He can train hard on three other days and do a lighter fourth day if recovery allows.",
+      text: "Use the same 36-year-old Gaelic football player. For this block, muscle gain is primary. Maintaining speed, power, and sport readiness is secondary. Saturday sport is fixed and important. He has three real training days available, plus an optional very-low-cost fourth exposure if recovery is good.",
     },
     {
       type: "example",
       title: "Example week: muscle gain primary, sport readiness protected",
       body: [
-        "Monday: Lower-body strength and hypertrophy focus, including the main squat or hinge progression",
-        "Tuesday: Off or easy aerobic work only",
-        "Wednesday: Upper-body strength and hypertrophy, plus a short low-volume sprint or jump primer early if legs feel fresh",
-        "Thursday: Off from hard lower-body loading",
-        "Friday: Short power and change-of-direction session, then stop. No exhaustion work",
+        "Monday: Short sprint and jump primer while fresh, then lower-body hypertrophy as the main session",
+        "Tuesday: Optional easy aerobic work only, or full rest",
+        "Wednesday: Upper-body hypertrophy",
+        "Thursday: Second hypertrophy session, mostly lower-body or lower-dominant accessories",
+        "Friday: Off from hard training",
         "Saturday: Match / sport",
-        "Sunday: Optional easy movement. No hard lifting",
+        "Sunday: Easy movement only, or full rest",
       ],
     },
     {
       type: "p",
-      text: "Why this shape: Monday gets fresh legs for the main muscle-building lower session. Hard lower-body work is kept away from Friday and Saturday so match speed is not paid for with leftover squat fatigue. Friday keeps a small high-quality dose of the athletic qualities the gym plan would otherwise erase. Wednesday carries upper-body progress without competing as directly with match-day lower-body freshness. This is programming judgment informed by concurrent-training spacing and transfer evidence, not a universal athlete template [2][3][4][6][12].",
+      text: "Why this shape: hypertrophy is visibly primary because the week contains two clear muscle-building days for the lower body plus one upper-body day. The athletic work sits on Monday as a short primer before lifting, while he is fresh and while there is still room before Saturday. Friday stays empty so the match is not loaded with leftover gym fatigue. Tuesday's easy aerobic work is optional and cheap. It supports conditioning without competing with the main progression days.",
     },
     {
       type: "p",
-      text: "Notice what the week does not do. It does not run a full second athletic program beside a full hypertrophy program. It does not place the hardest lower-body fatigue on the doorstep of match day. It does not treat Saturday sport as optional accessory work. The sport is part of the training load, so the gym has to negotiate with it.",
+      text: "This is a programming example, not a study result. Concurrent-training research supports the broad ideas that hard qualities compete for recovery, that explosive qualities can be more vulnerable under concurrent loading, and that strength work can transfer to sprint performance [2][3][4][6][12]. The exact days, the choice to put the athletic dose on Monday, and the decision to leave Friday empty are coaching judgment for this athlete and this priority.",
     },
     {
       type: "p",
-      text: "If he only has three available days outside the match, the week compresses. Keep Monday lower-body hypertrophy, keep one upper-body session, and keep a short Friday power primer or fold a few jumps and accelerations into the warm-up before Monday lifting. The first thing to drop is extra conditioning volume that is not specific to the sport. The last things to drop are the primary hypertrophy stimulus and the smallest effective dose of speed or power. That compression problem deserves its own guide later. The point here is the rule: when the week shrinks, protect the primary goal and the minimum athletic exposures that make the secondary goal real.",
+      text: "If the week shrinks to only three total training exposures outside the match, drop the optional Tuesday first. Keep Monday's primer plus lower-body hypertrophy, Wednesday's upper-body work, and Thursday's second hypertrophy session. If one of those hard days has to go as well, Thursday is usually the first hard day to cut or shrink. Protect the freshest lower-body hypertrophy session, keep enough upper-body work to leave the week clearly muscle-focused, and keep a small athletic dose attached to Monday rather than inventing a separate power day later in the week. The longer version of that compression problem belongs in a later guide. The rule here is simple: when time disappears, protect the primary goal and the smallest athletic dose that still makes the secondary goal real.",
     },
 
     { type: "h2", text: "A practical decision process" },
     {
       type: "ol",
       items: [
-        "Name the two goals in training language, not mood language: more muscle, stronger squat, better repeat sprints, faster 10K, and so on",
+        "Name the two goals in concrete training terms: more muscle, stronger squat, better repeat sprints, faster 10K, and so on",
         "Choose the primary goal for this block of weeks",
         "List the training that helps both goals",
         "List the training unique to each goal",
@@ -179,27 +179,27 @@ export const twoGoalsArticle: LearnArticle = {
     },
     {
       type: "p",
-      text: "If you need the idea in one sentence: train multiple qualities if you must, but decide which ones are being pushed, which ones are being maintained, and how much fatigue each is allowed to create.",
+      text: "In one sentence: if you train more than one quality, decide which ones are being pushed, which ones are being maintained, and how much fatigue each is allowed to create.",
     },
     {
       type: "p",
-      text: "Missed sessions make this sharper. Once a week is already carrying two goals, a missed lower-body day is not just a blank calendar square. It changes what still needs to get done before the next match or hard session. That is the same [training-state logic as deciding what to do when you miss a workout](/learn/what-to-do-when-you-miss-a-workout).",
+      text: "Missed sessions make the same problem sharper. Once a week is already carrying two goals, a missed lower-body day is not just a blank square on the calendar. It changes what still needs to get done before the next match or hard session. That is the same [training-state logic as deciding what to do when you miss a workout](/learn/what-to-do-when-you-miss-a-workout).",
     },
 
     { type: "h2", text: "What this means for adaptive programming" },
     {
       type: "p",
-      text: "A generic muscle-building plan knows the selected goal. It does not automatically know that you also need to remain capable of accelerating, changing direction, or showing up for Saturday sport with usable legs. A more complete system has to account for the activities you still need to perform and allocate training accordingly.",
+      text: "A generic muscle-building plan knows the selected goal. It does not automatically know that you also need to keep accelerating, changing direction, or arriving at Saturday sport with usable legs. A more complete system has to account for the activities you still need to perform and allocate training accordingly.",
     },
     {
       type: "p",
-      text: "That is one reason adaptive programming matters. The plan should know which goal is primary this block, which qualities are on maintenance, and what soft constraints like match day or travel do to the week's fatigue budget. IOFitness is being built around that kind of allocation problem. The framework above still works with a notebook if you are honest about priority.",
+      text: "That is one reason adaptive programming matters. A useful plan should be able to hold a primary goal, keep secondary qualities alive with a maintenance dose, and adjust when match day, travel, or a missed session changes the week's fatigue budget. IOFitness is being designed around that allocation problem. The framework above still works with a notebook if you are honest about priority.",
     },
 
     { type: "h2", text: "Bottom line" },
     {
       type: "p",
-      text: "Training for two goals at once is normal. Maximizing both at once is not. Use shared work where it exists, separate or reorder the hard collisions, give the primary goal the freshest progressive work, and keep the secondary goal alive with a real maintenance dose. Rewrite the priority when the season changes. That is how both goals stay in the plan without turning the week into a pile-up.",
+      text: "Training for two goals at once is normal. Maximizing both at once is not. Use shared work where it exists, separate or reorder the hard collisions, give the primary goal the freshest progressive work, and keep the secondary goal alive with a real maintenance dose. Change the priority when the season changes. That is how both goals stay in the plan without the week collapsing under its own load.",
     },
   ],
   sources: [
