@@ -231,7 +231,7 @@ export const progressiveOverloadArticle: LearnArticle = {
     },
     {
       type: "p",
-      text: "The same logic applies after a longer layoff. Once early return sessions show that familiar work is tolerable again, ordinary progression resumes: restore quality reps and sets, then load, rather than copying old working weights on day one. That re-entry problem is covered in [how to return to training after time off](/learn/how-to-return-to-training-after-time-off).",
+      text: "The same logic applies after a longer layoff. Once early return sessions show that familiar work is tolerable again, ordinary progression resumes: restore quality reps and sets, then load, rather than copying old working weights on day one. That re-entry problem is covered in [how to return to training after time off](/learn/how-to-return-to-training-after-time-off). A hard weekend sport session can create the same kind of temporary performance dip: Monday's squat may look worse because Saturday was brutal, not because the progression model failed. That sport-week case is covered in [how to combine lifting with a weekend sport](/learn/how-to-combine-lifting-with-sports).",
     },
     {
       type: "p",

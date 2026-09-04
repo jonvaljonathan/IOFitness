@@ -1,3 +1,4 @@
+import { liftingWithSportsArticle } from "./articles/how-to-combine-lifting-with-sports";
 import { twoGoalsArticle } from "./articles/how-to-train-for-two-goals-at-once";
 import { returnToTrainingArticle } from "./articles/how-to-return-to-training-after-time-off";
 import { progressiveOverloadArticle } from "./articles/progressive-overload-without-adding-weight";
@@ -45,6 +46,7 @@ export const learnArticles: LearnArticle[] = [
   adaptiveTrainingArticle,
   progressiveOverloadArticle,
   returnToTrainingArticle,
+  liftingWithSportsArticle,
 ];
 
 export function getLearnArticles(): LearnArticle[] {
