@@ -231,6 +231,10 @@ export const progressiveOverloadArticle: LearnArticle = {
     },
     {
       type: "p",
+      text: "The same logic applies after a longer layoff. Once early return sessions show that familiar work is tolerable again, ordinary progression resumes: restore quality reps and sets, then load, rather than copying old working weights on day one. That re-entry problem is covered in [how to return to training after time off](/learn/how-to-return-to-training-after-time-off).",
+    },
+    {
+      type: "p",
       text: "IOFitness is being designed around that kind of decision. The programming model is intended to treat progression as evidence-driven parameter change, not as a fixed calendar of heavier weights. The framework in this article still works with a notebook if you keep the comparisons honest.",
     },
 

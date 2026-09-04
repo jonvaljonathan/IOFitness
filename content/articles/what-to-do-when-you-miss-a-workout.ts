@@ -208,7 +208,7 @@ export const missedWorkoutArticle: LearnArticle = {
     { type: "h2", text: "When the miss is several workouts, not one" },
     {
       type: "p",
-      text: "One missed session is usually a local edit. Several missed sessions are a rebuild.",
+      text: "One missed session is usually a local edit. Several missed sessions are a rebuild. If the gap stretches into weeks, the problem becomes [how to return to training after time off](/learn/how-to-return-to-training-after-time-off): the old plan remains useful history, but current capacity and tolerance need to be re-checked before the previous weekly dose returns.",
     },
     {
       type: "p",
