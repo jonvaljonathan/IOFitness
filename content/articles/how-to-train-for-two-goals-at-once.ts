@@ -153,7 +153,7 @@ export const twoGoalsArticle: LearnArticle = {
     },
     {
       type: "p",
-      text: "Why this shape: hypertrophy is visibly primary because the week contains two clear muscle-building days for the lower body plus one upper-body day. The athletic work sits on Monday as a short primer before lifting, while he is fresh and while there is still room before Saturday. Friday stays empty so the match is not loaded with leftover gym fatigue. Tuesday's easy aerobic work is optional and cheap. It supports conditioning without competing with the main progression days.",
+      text: "Why this shape: hypertrophy is visibly primary because the week contains two clear muscle-building days for the lower body plus one upper-body day. The athletic work sits on Monday as a short primer before lifting, while he is fresh and while there is still room before Saturday. Friday stays empty to give him a buffer before the match instead of adding another hard session. Tuesday's easy aerobic work is optional and cheap. It supports conditioning without competing with the main progression days.",
     },
     {
       type: "p",
