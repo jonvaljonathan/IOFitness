@@ -11,7 +11,7 @@ export const missedWorkoutArticle: LearnArticle = {
   description:
     "Missed a workout? Decide whether to skip, shift, preserve sequence, or reprogram based on what you actually trained, not only the calendar.",
   date: "2026-09-03",
-  dateModified: "2026-09-03",
+  dateModified: "2026-09-04",
   body: [
     {
       type: "p",
@@ -255,7 +255,7 @@ export const missedWorkoutArticle: LearnArticle = {
     },
     {
       type: "p",
-      text: "That is one reason an adaptive training system should treat completed training as ground truth. The calendar is a proposal. The log is what happened. IOFitness is being built around that idea: programs should update from real training state when life moves sessions around. The same allocation problem shows up when [two goals are competing for the same week](/learn/how-to-train-for-two-goals-at-once). The decision framework above still stands on its own if you program with a notebook.",
+      text: "That is one reason an [adaptive training](/learn/what-is-adaptive-training) system should treat completed training as ground truth. The calendar is a proposal. The log is what happened. IOFitness is being built around that idea: programs should update from real training state when life moves sessions around. The same allocation problem shows up when [two goals are competing for the same week](/learn/how-to-train-for-two-goals-at-once). The decision framework above still stands on its own if you program with a notebook.",
     },
 
     { type: "h2", text: "Bottom line" },

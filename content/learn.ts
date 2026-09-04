@@ -1,4 +1,5 @@
 import { twoGoalsArticle } from "./articles/how-to-train-for-two-goals-at-once";
+import { adaptiveTrainingArticle } from "./articles/what-is-adaptive-training";
 import { missedWorkoutArticle } from "./articles/what-to-do-when-you-miss-a-workout";
 
 export type ArticleSource = {
@@ -39,6 +40,7 @@ export const learnCopy = {
 export const learnArticles: LearnArticle[] = [
   missedWorkoutArticle,
   twoGoalsArticle,
+  adaptiveTrainingArticle,
 ];
 
 export function getLearnArticles(): LearnArticle[] {
