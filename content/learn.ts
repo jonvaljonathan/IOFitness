@@ -1,3 +1,4 @@
+import { twoGoalsArticle } from "./articles/how-to-train-for-two-goals-at-once";
 import { missedWorkoutArticle } from "./articles/what-to-do-when-you-miss-a-workout";
 
 export type ArticleSource = {
@@ -35,7 +36,10 @@ export const learnCopy = {
     "Guides will live here as they are written. Nothing is published yet.",
 } as const;
 
-export const learnArticles: LearnArticle[] = [missedWorkoutArticle];
+export const learnArticles: LearnArticle[] = [
+  missedWorkoutArticle,
+  twoGoalsArticle,
+];
 
 export function getLearnArticles(): LearnArticle[] {
   return [...learnArticles].sort((a, b) => b.date.localeCompare(a.date));
