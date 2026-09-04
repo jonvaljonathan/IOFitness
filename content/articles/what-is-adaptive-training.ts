@@ -97,7 +97,7 @@ export const adaptiveTrainingArticle: LearnArticle = {
     { type: "h3", text: "Level 2: Parameter adaptation" },
     {
       type: "p",
-      text: "The basic structure stays familiar, but numbers change because of what the athlete actually did: load, pace, reps, intensity, or difficulty. Strength apps that raise weight after repeated successful sets, or endurance tools that recalibrate intensity from recent performance, often live here [2][6][7][8].",
+      text: "The basic structure stays familiar, but numbers change because of what the athlete actually did: load, pace, reps, intensity, or difficulty. Strength apps that raise weight after repeated successful sets, or endurance tools that recalibrate intensity from recent performance, often live here [2][6][7][8]. That is also where decisions like [progressive overload without adding weight](/learn/progressive-overload-without-adding-weight) live: more quality reps at the same load, a small jump when earned, or holding the prescription when conditions do not support a change.",
     },
 
     { type: "h3", text: "Level 3: Session adaptation" },
