@@ -12,7 +12,7 @@ export const returnToTrainingArticle: LearnArticle = {
   description:
     "After a training break, treat your old program as useful history rather than today's prescription. Scale load, volume, frequency, and exercise complexity independently, then let the first sessions update the ramp.",
   date: "2026-09-04",
-  dateModified: "2026-09-04",
+  dateModified: "2026-09-04", // revised evidence framing same day as publish draft
   body: [
     {
       type: "p",
@@ -20,7 +20,7 @@ export const returnToTrainingArticle: LearnArticle = {
     },
     {
       type: "p",
-      text: "That is different from both common defaults. One default resumes last month's weights and weekly schedule as if nothing changed. The other treats every layoff as a full beginner restart with a fixed percentage cut. Neither matches how capacity actually returns.",
+      text: "That is different from both common defaults. One default resumes last month's weights and weekly schedule as if nothing changed. The other treats every layoff as starting over from scratch with a fixed percentage cut. Neither matches how capacity actually returns.",
     },
     {
       type: "callout",
@@ -30,7 +30,7 @@ export const returnToTrainingArticle: LearnArticle = {
     { type: "h2", text: "Not every interruption is the same problem" },
     {
       type: "p",
-      text: "This article is mainly about ordinary training interruptions: travel, work, family, schedule chaos, lost motivation, or a stretch where lifting simply did not happen.",
+      text: "This article is mainly about ordinary training interruptions: travel, work, family, a crowded schedule, lost motivation, or a stretch where lifting simply did not happen.",
     },
     {
       type: "p",
@@ -58,7 +58,7 @@ export const returnToTrainingArticle: LearnArticle = {
     },
     {
       type: "p",
-      text: "Recent work also shows that a planned training break is not automatically catastrophic for long-term progress. In previously untrained adults, two 10-week resistance-training blocks separated by 10 weeks off produced similar final strength and muscle-size outcomes to 20 weeks of continuous training, because losses during the break were regained quickly during retraining [3]. That supports urgency about returning, not panic about one interruption erasing the whole training history.",
+      text: "Recent work also shows that a substantial break need not erase the ability to regain what was lost. In previously untrained adults who completed an initial supervised 10-week training block, a 10-week break, then another 10 weeks of training, final strength and muscle-size outcomes were similar to 20 weeks of continuous training because losses during the break were regained during retraining [3]. The useful takeaway is that a substantial break did not erase the participants' ability to regain prior adaptations once training resumed. That finding belongs to that population and protocol; it should not be treated as a universal result for trained athletes or every break length.",
     },
 
     { type: "h2", text: "Why retained strength can fool you" },
@@ -84,13 +84,13 @@ export const returnToTrainingArticle: LearnArticle = {
     { type: "h3", text: "1. Load / intensity" },
     {
       type: "p",
-      text: "Do not automatically slash load if the movement still feels familiar and early sets show substantial capacity. Old working weights are also not owed to you. Choose load from current performance under the intended execution. Autoregulated effort ratings can help here as rough guides, not as perfect sensors [4][5].",
+      text: "Do not automatically slash load if the movement still feels familiar and early sets show substantial capacity. Previous working weights are reference points, not guaranteed starting loads. Choose load from current performance under the intended execution. Autoregulated effort ratings can help here as rough guides, not as perfect sensors [4][5].",
     },
 
     { type: "h3", text: "2. Volume" },
     {
       type: "p",
-      text: "Hard-set volume is often the best place to be conservative at first. Someone may still handle a recognizable weight while no longer being accustomed to four hard working sets. Keeping a familiar load with fewer working sets is often cleaner than cutting the weight in half and still doing the old amount of hard work.",
+      text: "A practical programming default is to be conservative with hard-set volume at first, particularly when familiar loads still move well. Someone may still handle a recognizable weight while no longer being accustomed to four hard working sets. Keeping a familiar load with fewer working sets is often cleaner than cutting the weight in half and still doing the old amount of hard work. This is a re-entry heuristic, not a universally tested ordering of which variable must be reduced first. The detraining literature cited here did not randomize returners to load-first versus volume-first versus frequency-first cuts.",
     },
 
     { type: "h3", text: "3. Frequency" },
@@ -181,11 +181,15 @@ export const returnToTrainingArticle: LearnArticle = {
     { type: "h2", text: "How prior training changes the return" },
     {
       type: "p",
-      text: "Someone who trained consistently for years and stopped for six weeks is not the same problem as someone who completed a handful of beginner sessions last year. Previous resistance training can leave retained adaptations that make later retraining more efficient than building the quality the first time [6][7]. In the periodic-training study above, strength and muscle size lost during a 10-week break returned rapidly once training resumed [3]. Proteomic work from the same project found that some training-related protein changes remained elevated even after the break, which is one biological candidate for that retained responsiveness [7].",
+      text: "Someone who trained consistently for years and stopped for six weeks is not the same problem as someone who completed a handful of beginner sessions last year. Previous training can make lost adaptations return rapidly during retraining. In Halonen et al., previously untrained adults regained the measured strength and muscle-size losses from a 10-week break within about five weeks of retraining [3]. That does not prove retraining is universally faster than the original acquisition of those adaptations. In that study, the first five weeks of retraining were not faster than the participants' original first five weeks of training. The authors also could not determine whether any advantage relative to the later phase of continuous training reflected muscle memory or resensitization after the break [3].",
     },
     {
       type: "p",
-      text: "That is the useful meaning of muscle memory here. It is not a promise that you will regain everything twice as fast, or that nothing was lost. Previous training changes the starting information available to the program and may allow lost adaptations to return faster than they were originally built. The magnitude and timeline are not universal [6].",
+      text: "Proteomic work from the same project found that many training-induced protein changes reversed during detraining, while some remained altered after the break [7]. That provides evidence that prior training leaves a molecular trace after detraining. Whether those retained protein changes directly explain faster reacquisition of strength or muscle is not established.",
+    },
+    {
+      type: "p",
+      text: "Muscle-memory research provides plausible biological mechanisms for retained training history, but the size and practical effect of that memory vary and are not yet a universal programming rule [6][7]. The useful meaning here is simpler: previous training changes the starting information available to the program, and lost adaptations can return rapidly once training resumes. It is not a promise that you will regain everything twice as fast, or that nothing was lost.",
     },
 
     { type: "h2", text: "When normal progression resumes" },
@@ -195,7 +199,7 @@ export const returnToTrainingArticle: LearnArticle = {
     },
     {
       type: "p",
-      text: "Early retraining may move faster than ordinary long-term progression because the athlete is regaining prior capacity rather than building it from scratch [3][6]. That does not mean old PRs are immediately available, and it does not mean the athlete should be forced onto a beginner linear plan simply because there was a break. Let the current log decide.",
+      text: "Early retraining can produce rapid gains as prior capacity is reacquired [3]. That means the appropriate ramp may accelerate if repeated sessions show that load, volume, and frequency are being tolerated well. It does not mean the athlete should assume an automatic regain rate, and it does not mean old PRs are immediately available. Do not force a beginner linear plan simply because there was a break. Let the current log decide.",
     },
 
     { type: "h2", text: "What adaptive programming should do" },
@@ -211,7 +215,7 @@ export const returnToTrainingArticle: LearnArticle = {
     { type: "h2", text: "Bottom line" },
     {
       type: "p",
-      text: "Coming back after time off is not a choice between pretending nothing changed and starting from zero. Keep enough of the old plan to stay comparable. Reduce the variables that are most uncertain, especially hard-set volume and weekly density. Use the first sessions as both training and evidence. Then progress from the response. Prior training history may help you regain capacity faster than you built it the first time, but it does not hand you your old working weights on day one. The return should be scaled and evidence-driven.",
+      text: "Coming back after time off is not a choice between pretending nothing changed and starting from zero. Keep enough of the old plan to stay comparable. Reduce the variables that are most uncertain, especially hard-set volume and weekly density. Use the first sessions as both training and evidence. Then progress from the response. Prior training history can support rapid regain of lost adaptations, but it does not hand you your old working weights on day one or guarantee a faster ramp than your original progress. The return should be scaled and evidence-driven.",
     },
   ],
   sources: [
@@ -237,7 +241,7 @@ export const returnToTrainingArticle: LearnArticle = {
       citation:
         "Halonen EJ, Gabriel I, Kelahaara MM, Ahtiainen JP, Hulmi JJ. Does taking a break matter—adaptations in muscle strength and size between continuous and periodic resistance training. Scand J Med Sci Sports. 2024;34(10):e14739.",
       url: "https://doi.org/10.1111/sms.14739",
-      note: "In previously untrained adults, 10 weeks on, 10 weeks off, 10 weeks on produced similar final strength and hypertrophy outcomes to 20 weeks continuous training because detraining losses were regained quickly. Used as evidence that re-gains can be rapid after a break, not as a prescription to take planned layoffs.",
+      note: "In previously untrained adults, 10 weeks on, 10 weeks off, 10 weeks on produced similar final strength and hypertrophy outcomes to 20 weeks continuous training because detraining losses were regained during retraining (about five weeks back to prior post-training levels). First five weeks of retraining were not faster than original first five weeks; authors could not separate muscle memory from resensitization versus later continuous-training phases. Used for rapid regain after a break within that protocol, not as a universal regain-speed rule or a prescription to take planned layoffs.",
     },
     {
       id: "4",
@@ -269,7 +273,7 @@ export const returnToTrainingArticle: LearnArticle = {
       citation:
         "Hulmi JJ, Halonen EJ, Sharples AP, O'Connell TM, Kuikka L, Lappi VM, Salokas K, Keskitalo S, Varjosalo M, Ahtiainen JP. Human skeletal muscle possesses both reversible proteomic signatures and a retained proteomic memory after repeated resistance training. J Physiol. 2025;603(9):2655-2673.",
       url: "https://doi.org/10.1113/JP288104",
-      note: "Shows that some resistance-training-related protein changes remain elevated after a multi-week training break, while many others reverse and rise again with retraining. Used as mechanistic support for retained training history, not as a consumer guarantee of faster progress.",
+      note: "Shows that some resistance-training-related protein changes remain altered after a multi-week training break, while many others reverse and rise again with retraining. Used as evidence of a retained molecular trace after detraining, not as proof that those protein changes cause faster strength or hypertrophy reacquisition.",
     },
   ],
 };
