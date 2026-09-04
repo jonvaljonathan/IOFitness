@@ -69,7 +69,7 @@ export const adaptiveTrainingArticle: LearnArticle = {
     },
     {
       type: "p",
-      text: "Readiness and recovery metrics need more caution. Sleep scores, HRV, soreness ratings, and wearable summaries can provide context. They should not automatically become commands. A system should be able to explain why it is changing the plan. If it cannot point to a relevant signal, the change is guesswork dressed up as intelligence.",
+      text: "Readiness and recovery metrics need more caution. Sleep scores, HRV, soreness ratings, and wearable summaries can provide context. They should not automatically become commands. A system should be able to explain why it is changing the plan. If it cannot identify a relevant signal behind the adjustment, the change is difficult to justify.",
     },
 
     { type: "h2", text: "A practical framework: levels of adaptation" },
@@ -77,41 +77,45 @@ export const adaptiveTrainingArticle: LearnArticle = {
       type: "p",
       text: "There does not appear to be a settled scientific taxonomy that every fitness product uses for \"adaptive training.\" The levels below are a practical framework proposed by IOFitness for judging how deep the adaptation actually goes. They are informed by coaching practice and by research on autoregulation, progression, and training-load management [1][2][4]. They are not an official consensus scale.",
     },
+    {
+      type: "p",
+      text: "Levels 0 and 1 are useful reference points. In this framework, ongoing adaptation begins at Level 2, when new evidence starts changing future prescriptions.",
+    },
 
     { type: "h3", text: "Level 0: Static plan" },
     {
       type: "p",
-      text: "The plan does not change. PDFs, fixed templates, and locked calendars sit here. They can still be useful. They are not adaptive.",
+      text: "The plan does not change in response to new evidence about the athlete. It may still include planned progression, deload weeks, changing rep ranges, or predefined phases. Those changes were decided in advance. A template that raises squat load from 100 lb to 105 lb to 110 lb across three weeks because the spreadsheet already said so is still static in this sense. PDFs, fixed templates, and locked calendars sit here. They can still be useful. They are not adaptive.",
     },
 
     { type: "h3", text: "Level 1: Personalized starting plan" },
     {
       type: "p",
-      text: "Inputs shape the initial program. After that, the plan mostly runs as generated. This is common and often valuable. It is still closer to custom setup than ongoing adaptation.",
+      text: "Inputs shape the initial program. After that, the plan mostly runs as generated, including any progression that was written into it up front. This is common and often valuable. It is a better starting point than a generic PDF. By itself, it is still not ongoing adaptation.",
     },
 
     { type: "h3", text: "Level 2: Parameter adaptation" },
     {
       type: "p",
-      text: "The basic structure stays familiar, but numbers change: load, pace, reps, intensity, or difficulty. Strength apps that raise weight after repeated successful sets, or endurance tools that recalibrate intensity from recent performance, often live here [2][5][6][8].",
+      text: "The basic structure stays familiar, but numbers change because of what the athlete actually did: load, pace, reps, intensity, or difficulty. Strength apps that raise weight after repeated successful sets, or endurance tools that recalibrate intensity from recent performance, often live here [2][6][7][8].",
     },
 
     { type: "h3", text: "Level 3: Session adaptation" },
     {
       type: "p",
-      text: "The system can change today's actual session: exercise selection, volume, duration, substitutions, or which muscles get trained. The feedback loop reaches the content of the workout, not only the numbers on a fixed template [5][6][7].",
+      text: "The system can change the content of the session itself: exercise selection, volume, duration, substitutions, or which muscles get trained. The feedback loop reaches what the workout contains, not only the numbers on a fixed template [2][7].",
     },
 
     { type: "h3", text: "Level 4: Schedule and sequence adaptation" },
     {
       type: "p",
-      text: "The system can reason about a disrupted week. Missed workouts, travel, added sport, or fewer training days change future sequence rather than merely sliding calendar labels. This is where [what to do when you miss a workout](/learn/what-to-do-when-you-miss-a-workout) stops being a user improvisation problem and becomes a programming problem.",
+      text: "The system can reason about a disrupted week. Missed workouts, travel, added sport, or fewer training days change which future sessions are recommended, and in what order, rather than merely sliding calendar labels. This is where [what to do when you miss a workout](/learn/what-to-do-when-you-miss-a-workout) stops being a user improvisation problem and becomes a programming problem [5][6].",
     },
 
     { type: "h3", text: "Level 5: Program adaptation" },
     {
       type: "p",
-      text: "The system can alter the larger training strategy: goal allocation, weekly dose, progression model, exercise emphasis, block structure, or which qualities are being developed versus maintained. This is the deepest level. It is also the rarest. It matters when someone is [training for two goals at once](/learn/how-to-train-for-two-goals-at-once) and the week has to keep reallocating limited recovery.",
+      text: "The system can alter the larger training strategy: goal allocation, weekly dose, progression model, exercise emphasis, block structure, or which qualities are being developed versus maintained. This is the deepest level in this framework. It matters when someone is [training for two goals at once](/learn/how-to-train-for-two-goals-at-once) and the week has to keep reallocating limited recovery.",
     },
     {
       type: "p",
@@ -123,8 +127,8 @@ export const adaptiveTrainingArticle: LearnArticle = {
       type: "example",
       title: "Example A: you beat the target reps twice",
       body: [
-        "Static plan: same prescription next time",
-        "Parameter-adaptive plan: increases load or revises the target",
+        "Preplanned/static plan: follows the progression that was already written, whether you barely hit the target or exceeded it easily",
+        "Parameter-adaptive plan: changes the next load or target because of what you actually did",
         "Deeper adaptation: also checks whether that faster progress should change nearby sessions, weekly dose, or the current block emphasis",
       ],
     },
@@ -148,7 +152,7 @@ export const adaptiveTrainingArticle: LearnArticle = {
     },
     {
       type: "p",
-      text: "Current products already show how differently \"adaptive\" can behave. TrainerRoad's Adaptive Training monitors workout performance and can change upcoming plan workouts as fitness and schedule change [5]. Stryd Adaptive Training builds and revises running plans around Critical Power, schedule, and interruptions [6]. Fitbod generates strength sessions from training history, recovery estimates, goals, and equipment, and updates loads, sets, and exercise choices from logged performance [7]. Those are real forms of adaptation. They are not identical forms.",
+      text: "Current products already show how differently \"adaptive\" can behave. TrainerRoad's Adaptive Training monitors workout performance and can swap upcoming structured cycling workouts as fitness and schedule change; its documentation states that it changes which future workouts the plan recommends, not the internals of individual workouts [5]. Stryd Adaptive Training recalibrates running prescription from Critical Power and can alter schedule, phases, and return logic when fitness or circumstances change [6]. Fitbod generates future strength sessions, including exercise selection, sets, reps, and loads, from logged history and recovery estimates [7]. Those are real forms of adaptation. They are not identical forms.",
     },
 
     { type: "h2", text: "More adaptation is not automatically better" },
@@ -158,7 +162,7 @@ export const adaptiveTrainingArticle: LearnArticle = {
     },
     {
       type: "p",
-      text: "A system can overreact. It can treat one bad workout as a new identity. It can chase wearable noise. It can swap exercises so often that progression becomes hard to judge. It can protect short-term comfort while quietly abandoning the quality the block was supposed to develop. Autoregulation research is useful here as a reminder that adjustments should be tied to relevant performance or readiness signals, not to restlessness [1][2][8].",
+      text: "A system can overreact. It can treat one unusually poor workout as more informative than it is. It can chase wearable noise. It can swap exercises so often that progression becomes hard to judge. It can protect short-term comfort while quietly abandoning the quality the block was supposed to develop. Autoregulation research is useful here as a reminder that adjustments should be tied to relevant performance or readiness signals, not to restlessness [1][2][8].",
     },
 
     { type: "h2", text: "Stability and responsiveness both matter" },
@@ -268,7 +272,7 @@ export const adaptiveTrainingArticle: LearnArticle = {
       citation:
         "TrainerRoad. Adaptive Training Overview. TrainerRoad Support.",
       url: "https://support.trainerroad.com/hc/en-us/articles/4404060687387-Adaptive-Training-Overview",
-      note: "Vendor documentation: Adaptive Training monitors workout performance and can change upcoming plan workouts as fitness and schedule change. Used as an example of plan-level workout substitution, not as a universal definition.",
+      note: "Vendor documentation: Adaptive Training monitors workout performance and can change upcoming plan workouts as fitness and schedule change. It swaps future recommended workouts rather than modifying the internals of individual workouts. Used as an example of future-workout / schedule-plan adaptation.",
     },
     {
       id: "6",
@@ -276,7 +280,7 @@ export const adaptiveTrainingArticle: LearnArticle = {
       citation:
         "Stryd. Stryd Adaptive Training How To. Stryd Help Center.",
       url: "https://help.stryd.com/en/articles/12580285-stryd-adaptive-training-how-to",
-      note: "Vendor documentation: Adaptive Training builds and adjusts running plans from Critical Power, schedule, goals, and interruptions. Used to illustrate schedule- and fitness-responsive endurance planning.",
+      note: "Vendor documentation: Adaptive Training recalibrates running prescription from Critical Power and can adjust schedule, phases, and return logic after interruptions. Used for parameter/fitness recalibration and schedule-responsive planning, not as evidence of rewriting a session's exercise list mid-workout.",
     },
     {
       id: "7",
