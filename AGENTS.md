@@ -7,3 +7,13 @@ This version has breaking changes — APIs, conventions, and file structure may 
 This block is written and re-added by `next dev` — verify at `node_modules/next/dist/server/lib/generate-agent-files.js`. Removing it from a diff only re-creates the uncommitted change; committing it with your work keeps the tree clean.
 
 <!-- END:nextjs-agent-rules -->
+
+## Marketing and Learn copy
+
+Before drafting or revising homepage/marketing copy or Learn articles, read the relevant skills:
+
+- `.cursor/skills/copywriting/SKILL.md` (mirrored from `.agents/skills/copywriting`) — conversion copy for pages
+- `.cursor/skills/copy-editing/SKILL.md` (mirrored from `.agents/skills/copy-editing`) — seven-sweep edit of existing copy
+- `.cursor/skills/learn-copy-tone/SKILL.md` — IOFitness Learn house voice
+
+Keep skills in sync under both `.agents/skills/` and `.cursor/skills/`.
