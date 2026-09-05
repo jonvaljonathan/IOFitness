@@ -148,6 +148,7 @@ export const adaptiveTrainingArticle: LearnArticle = {
         "Simple personalization: chooses a muscle-building template",
         "Better adaptation: tracks which goal is primary, which athletic qualities need maintenance, and how match day changes the fatigue budget",
         "Weak adaptation: grows gym volume while quietly deleting the speed or power work the sport still needs",
+        "Deeper adaptation: treats Saturday sport as an anchor session and changes Monday's lower-body dose when the match was easy versus brutal; see [how to combine lifting with a weekend sport](/learn/how-to-combine-lifting-with-sports)",
       ],
     },
     {
