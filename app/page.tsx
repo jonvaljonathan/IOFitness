@@ -39,20 +39,14 @@ export default function Home() {
         <p className="mt-8 max-w-2xl text-lg leading-8 text-muted sm:text-xl sm:leading-9">
           {homepageCopy.hero.product}
         </p>
-        <div className="mt-10 flex flex-wrap items-center gap-4">
+        <p className="mt-10">
           <a
             href={homepageCopy.cta.href}
             className="inline-flex min-h-12 items-center rounded-sm bg-accent px-4 text-base text-paper hover:bg-accent-hover"
           >
             {homepageCopy.cta.label}
           </a>
-          <Link
-            href={homepageCopy.secondaryCta.href}
-            className="inline-flex min-h-12 items-center rounded-sm border border-rule bg-field px-4 text-base text-ink hover:border-accent"
-          >
-            {homepageCopy.secondaryCta.label}
-          </Link>
-        </div>
+        </p>
       </section>
 
       {proseSections.map((section) => (
@@ -118,20 +112,14 @@ export default function Home() {
           <p className="mt-6 max-w-2xl text-lg leading-8 text-muted">
             {homepageCopy.closing.body}
           </p>
-          <div className="mt-8 flex flex-wrap items-center gap-4">
+          <p className="mt-8">
             <a
               href={homepageCopy.cta.href}
               className="inline-flex min-h-12 items-center rounded-sm bg-accent px-4 text-base text-paper hover:bg-accent-hover"
             >
               {homepageCopy.cta.label}
             </a>
-            <Link
-              href={homepageCopy.secondaryCta.href}
-              className="inline-flex min-h-12 items-center rounded-sm border border-rule bg-field px-4 text-base text-ink hover:border-accent"
-            >
-              {homepageCopy.secondaryCta.label}
-            </Link>
-          </div>
+          </p>
         </div>
       </section>
     </main>
