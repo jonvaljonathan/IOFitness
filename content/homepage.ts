@@ -2,7 +2,7 @@ export const homepageCopy = {
   hero: {
     heading: "Get better.",
     product:
-      "IOFitness is an adaptive training system that figures out how to make you physically better and continuously evolves your training as you progress.",
+      "IOFitness builds adaptive training around your goals, sports, limitations, and how you actually progress — so the plan keeps changing as you get better.",
   },
   goals: {
     heading: "Goals are more complicated than simple categories",
@@ -25,9 +25,9 @@ export const homepageCopy = {
     body: "A climber managing a tender finger still wants to get stronger elsewhere. A parent wants to carry a child up the stairs without thinking twice. Someone training for a first race also wants to stay capable in the gym. Someone returning after time off needs work that respects where they are today. The details differ. The job is the same: get better.",
   },
   closing: {
-    heading: "Learn more",
-    body: "Read practical guides on training, progression, consistency, recovery, and physical development.",
-    cta: "Learn how IOFitness works",
+    heading: "Practical training guides",
+    body: "Missed sessions, two goals at once, weekend sport, progressive overload without chasing the next plate — guides that answer what the plan should do next.",
+    cta: "Browse the guides",
     ctaHref: "/learn",
   },
 } as const;
