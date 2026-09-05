@@ -7,3 +7,7 @@ This version has breaking changes — APIs, conventions, and file structure may 
 This block is written and re-added by `next dev` — verify at `node_modules/next/dist/server/lib/generate-agent-files.js`. Removing it from a diff only re-creates the uncommitted change; committing it with your work keeps the tree clean.
 
 <!-- END:nextjs-agent-rules -->
+
+## Learn articles
+
+When drafting or revising Learn authority articles under `content/articles/`, follow `.cursor/skills/learn-copy-tone/SKILL.md`. Match the plain human coach voice of published articles 1–6. Do not ship internal/programming jargon in reader-facing copy.
