@@ -14,6 +14,7 @@ Before drafting or revising homepage/marketing copy or Learn articles, read the 
 
 - `.cursor/skills/copywriting/SKILL.md` (mirrored from `.agents/skills/copywriting`) — conversion copy for pages
 - `.cursor/skills/copy-editing/SKILL.md` (mirrored from `.agents/skills/copy-editing`) — seven-sweep edit of existing copy
+- `.cursor/skills/cro/SKILL.md` (mirrored from `.agents/skills/cro`) — conversion-rate review of marketing pages
 - `.cursor/skills/learn-copy-tone/SKILL.md` — IOFitness Learn house voice
 
 Keep skills in sync under both `.agents/skills/` and `.cursor/skills/`.

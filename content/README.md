@@ -11,7 +11,8 @@ Before writing or revising homepage or Learn copy, read:
 
 1. `.cursor/skills/copywriting/SKILL.md` for persuasive page copy
 2. `.cursor/skills/copy-editing/SKILL.md` for editing passes on existing copy
-3. `.cursor/skills/learn-copy-tone/SKILL.md` for Learn article house voice
+3. `.cursor/skills/cro/SKILL.md` for conversion review of homepage and marketing pages
+4. `.cursor/skills/learn-copy-tone/SKILL.md` for Learn article house voice
 
 These are also mirrored under `.agents/skills/`.
 
