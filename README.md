@@ -2,15 +2,12 @@
 
 Marketing and content site for [IOFitness](https://io.fitness). This is not the training application.
 
-Training app / Supabase project: [jonvaljonathan/iofit](https://github.com/jonvaljonathan/iofit).
-
 ## Stack
 
 - Next.js App Router
 - TypeScript
 - Tailwind CSS
 - Server Components by default
-- Supabase (shared with iofit) for early-access signups
 
 ## Local development
 
@@ -18,8 +15,6 @@ Training app / Supabase project: [jonvaljonathan/iofit](https://github.com/jonva
 npm install
 npm run dev
 ```
-
-Copy `.env.example` to `.env.local` and set `SUPABASE_URL` + `SUPABASE_SERVICE_KEY` if you want the early-access form to persist locally (same values as iofit).
 
 ## Checks
 

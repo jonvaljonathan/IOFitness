@@ -4,21 +4,12 @@ export const homepageCopy = {
     product:
       "IOFitness builds adaptive training around your goals, sports, limitations, and how you actually progress — so the plan keeps changing as you get better.",
   },
-  earlyAccess: {
-    body: "Leave your email if you want to hear when IOFitness is ready to try.",
-    emailLabel: "Email address",
-    emailPlaceholder: "you@example.com",
-    goalLabel: "What do you want to get better at?",
-    goalPlaceholder: "Optional",
-    submit: "Request early access",
-    consent:
-      "We'll email you about IOFitness early access and product updates. Unsubscribe anytime.",
-    success: "You are on the list. We will be in touch.",
-    invalidEmail: "Please enter a valid email address.",
-    error: "Something went wrong. Please try again.",
+  cta: {
+    label: "Get the App",
+    href: "#",
   },
   secondaryCta: {
-    label: "Or browse the training guides",
+    label: "Browse the guides",
     href: "/learn",
   },
   goals: {
@@ -96,9 +87,7 @@ export const homepageCopy = {
     ],
   },
   closing: {
-    heading: "Get early access",
-    body: "If this is the kind of training you have been looking for, join the list. Or keep reading the guides while we build.",
-    secondaryLabel: "Browse the guides",
-    secondaryHref: "/learn",
+    heading: "Practical training guides",
+    body: "Missed sessions, two goals at once, weekend sport, progressive overload without chasing the next plate — guides that answer what the plan should do next.",
   },
 } as const;

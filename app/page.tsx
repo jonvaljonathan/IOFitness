@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { EarlyAccessForm } from "@/components/early-access-form";
 import { homepageCopy } from "@/content/homepage";
 import { absoluteUrl, siteConfig } from "@/lib/site";
 import type { Metadata } from "next";
@@ -40,17 +39,19 @@ export default function Home() {
         <p className="mt-8 max-w-2xl text-lg leading-8 text-muted sm:text-xl sm:leading-9">
           {homepageCopy.hero.product}
         </p>
-        <div id="early-access" className="mt-10 max-w-md scroll-mt-24">
-          <p className="mb-3 text-sm text-muted">{homepageCopy.earlyAccess.body}</p>
-          <EarlyAccessForm />
-          <p className="mt-4 text-sm text-muted">
-            <Link
-              href={homepageCopy.secondaryCta.href}
-              className="underline decoration-rule underline-offset-4 hover:text-ink hover:decoration-accent"
-            >
-              {homepageCopy.secondaryCta.label}
-            </Link>
-          </p>
+        <div className="mt-10 flex flex-wrap items-center gap-4">
+          <a
+            href={homepageCopy.cta.href}
+            className="inline-flex min-h-12 items-center rounded-sm bg-accent px-4 text-base text-paper hover:bg-accent-hover"
+          >
+            {homepageCopy.cta.label}
+          </a>
+          <Link
+            href={homepageCopy.secondaryCta.href}
+            className="inline-flex min-h-12 items-center rounded-sm border border-rule bg-field px-4 text-base text-ink hover:border-accent"
+          >
+            {homepageCopy.secondaryCta.label}
+          </Link>
         </div>
       </section>
 
@@ -117,17 +118,20 @@ export default function Home() {
           <p className="mt-6 max-w-2xl text-lg leading-8 text-muted">
             {homepageCopy.closing.body}
           </p>
-          <div className="mt-8 max-w-md">
-            <EarlyAccessForm id="early-access-close" />
-          </div>
-          <p className="mt-6">
+          <div className="mt-8 flex flex-wrap items-center gap-4">
+            <a
+              href={homepageCopy.cta.href}
+              className="inline-flex min-h-12 items-center rounded-sm bg-accent px-4 text-base text-paper hover:bg-accent-hover"
+            >
+              {homepageCopy.cta.label}
+            </a>
             <Link
-              href={homepageCopy.closing.secondaryHref}
+              href={homepageCopy.secondaryCta.href}
               className="inline-flex min-h-12 items-center rounded-sm border border-rule bg-field px-4 text-base text-ink hover:border-accent"
             >
-              {homepageCopy.closing.secondaryLabel}
+              {homepageCopy.secondaryCta.label}
             </Link>
-          </p>
+          </div>
         </div>
       </section>
     </main>
