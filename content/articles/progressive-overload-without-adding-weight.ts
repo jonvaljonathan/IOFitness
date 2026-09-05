@@ -227,7 +227,7 @@ export const progressiveOverloadArticle: LearnArticle = {
     { type: "h2", text: "What adaptive programming should do" },
     {
       type: "p",
-      text: "Parameter adaptation is one of the simplest forms of [adaptive training](/learn/what-is-adaptive-training). A useful system does not add 5 lb every Monday forever. It observes completed performance, missed sessions, effort, and constraints, then chooses an appropriate next target: more reps, a small load increase, unchanged prescription after a hard week, or a different lever when equipment forces the issue.",
+      text: "Parameter adaptation is one of the simplest forms of [adaptive training](/learn/what-is-adaptive-training). A useful system does not add 5 lb every Monday forever. It observes completed performance, missed sessions, effort, and constraints, then chooses an appropriate next target: more reps, a small load increase, unchanged prescription after a hard week, or a different lever when equipment forces the issue. The same decision appears when a body part will not tolerate the usual lift: keep the training intent, change the stress profile, and progress the substitute from evidence. That constraint case is covered in [how to train around a limitation](/learn/how-to-train-around-a-limitation).",
     },
     {
       type: "p",

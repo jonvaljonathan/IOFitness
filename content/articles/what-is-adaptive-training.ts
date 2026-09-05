@@ -221,7 +221,7 @@ export const adaptiveTrainingArticle: LearnArticle = {
     { type: "h2", text: "What this means for IOFitness" },
     {
       type: "p",
-      text: "IOFitness is being designed around the deeper end of this framework. The intended model is not only to generate a starting plan, and not only to nudge today's numbers. It is to use what someone actually did, plus their goals, activities, limitations, and progression history, to decide what training should do next.",
+      text: "IOFitness is being designed around the deeper end of this framework. The intended model is not only to generate a starting plan, and not only to nudge today's numbers. It is to use what someone actually did, plus their goals, activities, limitations, and progression history, to decide what training should do next. A local limitation is one of the clearest tests of that idea: the plan should keep developing what is still available, substitute by training intent where needed, and update from tolerance evidence rather than freezing the whole week. That case is covered in [how to train around a limitation](/learn/how-to-train-around-a-limitation).",
     },
     {
       type: "p",
