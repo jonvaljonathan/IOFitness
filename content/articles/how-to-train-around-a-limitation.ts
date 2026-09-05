@@ -2,256 +2,261 @@ import type { LearnArticle } from "../learn";
 
 /**
  * Authority article #7.
- * Primary intent: how to train around a body part / movement you cannot load normally
- * Thesis: a local limitation constrains some slots; keep developing the rest, substitute
- * by training intent, and update from tolerance evidence rather than pausing the whole plan.
+ * Primary intent: how to keep training when one body part or movement will not load normally
+ * Thesis: one sore or limited area changes some exercises; it should not shut down the whole
+ * plan. Keep training what still works, swap lifts for ones that still do the same job, and
+ * let the next day or two tell you whether to progress, hold, or back off.
  */
 export const trainAroundLimitationArticle: LearnArticle = {
   slug: "how-to-train-around-a-limitation",
-  title: "How to Train Around a Limitation Without Pausing Everything",
+  title: "How to Keep Training When One Body Part Won't Cooperate",
   description:
-    "When one body part or movement will not tolerate normal loading, keep developing everything else. Substitute by training intent, protect the constrained tissue from unnecessary dose, and update the next sessions from tolerance evidence.",
+    "When a shoulder, knee, or back will not tolerate the usual lifts, keep training everything else. Swap the painful exercise for one that still does the same job, protect the irritated area from unnecessary junk, and let the next sessions tell you what to do.",
   date: "2026-09-05",
   dateModified: "2026-09-05",
   body: [
     {
       type: "p",
-      text: "A sore shoulder, angry knee, or irritable low back often gets treated like a reason to stop training. That is usually the wrong unit of analysis. A local limitation constrains some exercises, ranges, or loading strategies. It does not automatically erase the rest of your training goals.",
+      text: "A sore shoulder, angry knee, or irritable low back often gets treated like a reason to stop training. That is usually the wrong move. One body part can take some exercises off the table without taking the whole plan with it.",
     },
     {
       type: "p",
-      text: "The useful question is the same one that drives the rest of this Learn series: what should the training plan do next? When one slot is constrained, the plan should keep developing the qualities that are still available, replace the blocked work with a tolerable version of the same intent when possible, and use the next sessions as evidence rather than guessing from a diagnosis Google search.",
+      text: "The useful question is the same one that runs through the rest of this Learn series: what should training do next? Keep working the stuff that still feels fine. Replace the painful lift with something that still trains the same thing when you can. Then use the next day or two as feedback instead of guessing from a diagnosis Google search.",
     },
     {
       type: "callout",
-      text: "Short version: name the constrained pattern, keep training everything else, substitute by training intent instead of by exercise name, and let tolerance over the next day or two decide whether the constrained work can progress. Do not shut the whole program down because one lift is unavailable.",
+      text: "Short version: figure out which movement is the problem, keep training everything else, swap the painful lift for one that still does the same job, and let how you feel afterward decide whether that area can do more. Do not shut the whole program down because one lift is unavailable.",
     },
 
-    { type: "h2", text: "This is a programming constraint, not a diagnosis" },
+    { type: "h2", text: "This is a training decision, not a diagnosis" },
     {
       type: "p",
-      text: "This article is about training decisions once a body part or movement will not tolerate the usual dose. It is not medical advice, injury diagnosis, rehab protocol design, or a claim that training replaces clinical care.",
+      text: "This article is about what to do in the gym once a body part or movement will not tolerate the usual work. It is not medical advice, injury diagnosis, rehab-protocol design, or a claim that training replaces clinical care.",
     },
     {
       type: "p",
-      text: "Get professional input when symptoms are sudden and severe, follow trauma, include numbness or weakness that is new, keep worsening across sessions, or leave you unsure whether loading is appropriate at all. The framework below assumes you are cleared to keep training in some form and need a better plan than \"rest everything until it feels perfect.\"",
+      text: "Get professional input when symptoms are sudden and severe, follow a bad fall or collision, include new numbness or weakness, keep getting worse across sessions, or leave you unsure whether loading is appropriate at all. Everything below assumes you are cleared to keep training in some form and need a better plan than \"rest everything until it feels perfect.\"",
     },
     {
       type: "p",
-      text: "That distinction matters because search results for this problem often collapse into clinic marketing or app slogans about being \"injury-aware.\" Almost none answer the structural question: how do you keep developing the other 90% of the body, and how do you substitute without losing the training effect?",
-    },
-
-    { type: "h2", text: "A local limit is not a full layoff" },
-    {
-      type: "p",
-      text: "Missing a week because life got busy and being unable to overhead press because the shoulder flares are different problems. One is a temporary absence from training. The other is a constrained slot inside an otherwise active week.",
-    },
-    {
-      type: "p",
-      text: "Full time off raises questions about detraining, re-entry dose, and how fast to climb back. That problem belongs in [how to return to training after time off](/learn/how-to-return-to-training-after-time-off). A local limitation raises a different set: which qualities are still trainable, which exercise slots need substitution, and what evidence would justify reintroducing the constrained pattern.",
-    },
-    {
-      type: "p",
-      text: "If you pause the whole plan every time one region is irritable, you create an artificial layoff on top of the local problem. That stacks two costs: lost progress elsewhere, and a larger re-entry problem later.",
+      text: "That matters because search results for this problem often turn into clinic ads or app slogans about being \"injury-aware.\" Almost none answer the practical question: how do you keep getting stronger everywhere else, and how do you change the lift without losing the point of the exercise?",
     },
 
-    { type: "h2", text: "Separate three decisions" },
+    { type: "h2", text: "One sore joint is not a full layoff" },
     {
       type: "p",
-      text: "Useful programming here usually needs three separate answers. Mixing them is how people either do nothing or keep hammering the same painful lift.",
+      text: "Missing a week because life got busy and skipping overhead press because your shoulder flares are different problems. One is time away from training. The other is one bad movement inside a week that is otherwise still live.",
+    },
+    {
+      type: "p",
+      text: "Full time off raises questions about how much you lost and how fast to climb back. That problem belongs in [how to return to training after time off](/learn/how-to-return-to-training-after-time-off). A sore joint raises a different set: what can still be trained hard, what needs a swap, and what would justify bringing the old lift back.",
+    },
+    {
+      type: "p",
+      text: "If you pause the whole plan every time one area is irritable, you invent a layoff on top of the original problem. Now you have two costs: lost progress elsewhere, and a bigger comeback later.",
+    },
+
+    { type: "h2", text: "Ask three separate questions" },
+    {
+      type: "p",
+      text: "Useful decisions here usually need three answers. Mixing them is how people either do nothing or keep hammering the same painful lift.",
     },
     {
       type: "ol",
       items: [
-        "What is constrained: the joint, the pattern, the range, the load, the volume, the speed, or the surface?",
-        "What is still fully available: other body regions, other patterns, other goals, conditioning, the opposite limb?",
-        "What does the constrained slot still need: the same quality with a different stress profile, a temporary maintenance dose, or a true temporary omission?",
+        "What is actually the problem: the joint, the movement, the depth, the load, the volume, the speed, or the surface?",
+        "What is still fine: other body parts, other movements, conditioning, the other arm or leg?",
+        "What does the blocked exercise still need to do: the same job with a different setup, a lighter holding pattern for now, or a true temporary skip?",
       ],
     },
     {
       type: "p",
-      text: "A shoulder that hates end-range overhead pressing is not the same constraint as a shoulder that hates all pressing. A knee that dislikes deep loaded squats is not the same constraint as a knee that cannot tolerate any knee flexion under load. Precision here is programming hygiene, not pedantry.",
+      text: "A shoulder that hates locking out overhead is not the same problem as a shoulder that hates all pressing. A knee that dislikes deep loaded squats is not the same problem as a knee that cannot bend under any load. Getting that specific is how you keep most of the week intact.",
     },
 
-    { type: "h2", text: "Substitute by training intent, not by exercise name" },
+    { type: "h2", text: "Swap the lift for one that still does the same job" },
     {
       type: "p",
-      text: "The common mistake is to ask, \"What is the alternative to bench press?\" The better question is, \"What training job was that slot doing?\"",
+      text: "The common mistake is to ask, \"What is the alternative to bench press?\" The better question is, \"What was that exercise there to do?\"",
     },
     {
       type: "p",
-      text: "A slot might be there for horizontal pressing strength, hypertrophy of the chest and triceps, upper-body loading density, or a specific sport transfer. Those jobs can often survive a change of implement, grip, range, or body position. They do not all survive an aimless swap to whatever machine is free.",
+      text: "It might be there to build horizontal pressing strength, grow the chest and triceps, put hard upper-body work into the week, or support a sport. Those jobs can often survive a change of grip, range, machine, or body position. They do not all survive an aimless swap to whatever is free.",
     },
     {
       type: "p",
-      text: "Exercise variation research is useful here with a narrow reading. Systematic differences in exercise selection can change which adaptations you get, while random or excessive rotation can blunt progress [1]. That supports intent-matched substitution. It does not support constant novelty as a solution to pain.",
+      text: "Exercise-variation research is useful here if you read it narrowly. Changing exercises on purpose can change what you adapt to. Changing them randomly or too often can blunt progress [1]. That supports thoughtful swaps. It does not support constant novelty as a pain strategy.",
     },
     {
       type: "ul",
       items: [
-        "Keep the pattern when possible: press, squat, hinge, pull, carry, locomote",
-        "Change the stress profile: neutral grip, shorter range, landmine path, machine or cable support, slower eccentric, lower absolute load",
-        "Keep the quality the week still needs: strength, hypertrophy, power, or work capacity",
-        "Avoid fake substitutes that only look similar while deleting the intended stimulus",
+        "Keep the same kind of movement when you can: press, squat, hinge, pull, carry, run or bike",
+        "Change how it loads you: neutral grip, shorter range, landmine path, machine or cable support, slower lowering, less weight",
+        "Keep the quality the week still needs: strength, muscle, power, or work capacity",
+        "Avoid fake swaps that look similar but no longer train what you cared about",
       ],
     },
     {
       type: "p",
-      text: "This is the same logic that shows up when you cannot add weight and need another progression lever: the next step has to preserve a comparable stimulus [progressive overload without adding weight](/learn/progressive-overload-without-adding-weight). A limitation just forces that choice earlier.",
+      text: "This is the same logic that shows up when you cannot add weight and need another way to progress: the next step still has to train the thing you care about [progressive overload without adding weight](/learn/progressive-overload-without-adding-weight). A flare-up just forces that choice sooner.",
     },
 
-    { type: "h2", text: "Keep developing the other 90%" },
+    { type: "h2", text: "Keep training the rest of your body" },
     {
       type: "p",
-      text: "If the right shoulder is limited, the left shoulder, both hips, the trunk, the lower body, and conditioning capacity are not automatically on medical leave. The plan should still ask what can progress this week.",
+      text: "If the right shoulder is limited, the left shoulder, both hips, your trunk, your legs, and your conditioning are not automatically on leave. The plan should still ask what can get better this week.",
     },
     {
       type: "p",
-      text: "That is an allocation problem as much as a medical one. When one quality is temporarily expensive, other qualities may deserve more of the week's recoverable work. The same budgeting mindset used when [training for two goals at once](/learn/how-to-train-for-two-goals-at-once) applies here: spend fatigue where it still buys adaptation.",
+      text: "That is a budgeting problem as much as a medical one. When one area is expensive to train, other areas may deserve more of the week's recoverable work. The same mindset used when [training for two goals at once](/learn/how-to-train-for-two-goals-at-once) applies here: spend fatigue where it still buys progress.",
     },
     {
       type: "example",
-      title: "What usually still deserves dose",
+      title: "What usually still deserves hard work",
       body: [
-        "Unrelated regions and patterns that do not aggravate the constraint",
-        "The opposite limb, when unilateral work is available and appropriate",
-        "Conditioning modes that do not repeatedly irritate the limited tissue",
-        "Technique, tempo, or range work that stays inside current tolerance",
-        "Maintenance work for the constrained quality if a low-cost version exists",
+        "Other body parts and movements that do not aggravate the problem",
+        "The other arm or leg, when single-limb work is available and makes sense",
+        "Conditioning that does not keep poking the irritated area",
+        "Technique, slower tempos, or shorter ranges that stay comfortable",
+        "A lighter version of the blocked movement if one exists and still feels productive",
       ],
     },
     {
       type: "p",
-      text: "This is programming judgment, not a research-derived checklist. The point is to stop treating one constrained slot as permission to abandon every other stimulus.",
+      text: "That list is coaching judgment, not a research checklist. The point is simple: one sore area is not permission to abandon every other kind of training.",
     },
 
-    { type: "h2", text: "When the opposite side still matters" },
+    { type: "h2", text: "When the other side still matters" },
     {
       type: "p",
-      text: "If one limb cannot train normally, training the other limb is not busywork. Unilateral resistance training can increase strength in the untrained contralateral limb, a phenomenon usually called cross-education [2]. During immobilization, training the free limb can also help attenuate strength and muscle-size loss in the immobilized limb compared with immobilization alone [3].",
+      text: "If one limb cannot train normally, training the other limb is not busywork. Strength work on one side can raise strength on the untrained side. That effect is usually called cross-education [2]. During immobilization, training the free limb can also help reduce strength and muscle-size loss on the immobilized side compared with doing nothing [3].",
     },
     {
       type: "p",
-      text: "Those findings support keeping the healthy side working. They do not prove that contralateral training rehabilitates an injured joint, replaces clinical care, or restores sport-specific capacity by itself. Use them as a reason to keep trainable tissue training, not as a miracle workaround.",
+      text: "Those findings are a reason to keep the healthy side working. They do not prove that training the other arm fixes an injured joint, replaces clinical care, or restores sport readiness by itself. Keep trainable tissue training. Do not treat the other side as a miracle workaround.",
     },
 
-    { type: "h2", text: "Pain is information. It is not a simple on/off switch." },
+    { type: "h2", text: "Pain is information, not a simple on/off switch" },
     {
       type: "p",
-      text: "\"Never train with pain\" and \"push through anything\" are both crude rules. In chronic musculoskeletal pain research, exercise protocols that allow some pain during therapeutic loading have not been shown to be inferior to pain-free protocols, and short-term pain outcomes can even favor allowing pain in some comparisons [4]. That evidence comes from clinical exercise settings with people already in care pathways. It is not a blank check for recreational athletes to chase flare-ups.",
+      text: "\"Never train with pain\" and \"push through anything\" are both blunt rules. In chronic musculoskeletal pain research, exercise plans that allow some pain during therapeutic loading have not been shown to be worse than pain-free plans, and short-term pain outcomes can even favor allowing some pain in some comparisons [4]. That evidence comes from clinical exercise settings with people already in care. It is not a blank check for recreational athletes to chase flare-ups.",
     },
     {
       type: "p",
-      text: "A practical training filter is narrower:",
+      text: "A practical gym filter is narrower:",
     },
     {
       type: "ul",
       items: [
-        "Mild, familiar discomfort that settles during or soon after the session can sometimes be compatible with continued loading",
-        "Sharp, worsening, radiating, or next-day escalating symptoms are a reason to change the exercise, reduce the dose, or stop that slot",
-        "If you cannot tell which category you are in, reduce complexity and seek professional input rather than guessing harder",
+        "Mild, familiar discomfort that settles during or soon after the session can sometimes be compatible with continuing",
+        "Sharp, worsening, radiating, or next-day escalating symptoms are a reason to change the exercise, reduce the work, or stop that movement",
+        "If you cannot tell which category you are in, simplify and get professional input rather than guessing harder",
       ],
     },
     {
       type: "p",
-      text: "Evidence and coaching judgment need to stay labeled. The literature says pain during some therapeutic exercise is not automatically a barrier to short-term improvement [4]. Your session still has to answer a simpler question: did this exposure leave the tissue more workable next time, or less?",
+      text: "Keep the labels straight. Research says pain during some therapeutic exercise is not automatically a barrier to short-term improvement [4]. Your session still has to answer a simpler question: did this leave the area more workable next time, or less?",
     },
 
-    { type: "h2", text: "A practical way to rebuild the session" },
+    { type: "h2", text: "A simple way to rebuild the session" },
     {
       type: "p",
-      text: "The sequence below is IOFitness programming synthesis. Evidence supports pieces of it: exercise selection changes the stimulus [1], contralateral training can preserve or transfer some capacity [2][3], and pain is not an absolute veto in every clinical exercise context [4]. The exact decision order is coaching judgment.",
+      text: "The sequence below is IOFitness coaching synthesis. Evidence supports pieces of it: exercise choice changes what you train [1], the other limb can help preserve some capacity [2][3], and pain is not an absolute veto in every clinical exercise setting [4]. The exact order is judgment.",
     },
     {
       type: "ol",
       items: [
-        "Name the constrained slot: which pattern, range, or loading mode is limited?",
-        "Protect it from unnecessary high-cost versions of the same stress",
-        "Keep every unaffected slot on a normal progression track",
-        "Choose an intent-matched substitute when the quality still matters this block",
-        "If no tolerable substitute exists, omit that slot temporarily rather than inventing junk volume",
-        "Train the opposite limb when the constraint is unilateral and the healthy side is available",
-        "Use the next 24 to 48 hours as evidence: better, same, or worse?",
-        "Only then decide whether to progress, hold, regress, or reintroduce the original pattern",
+        "Name the problem movement: which pattern, range, or loading style is the issue?",
+        "Stop feeding it unnecessary high-cost versions of the same stress",
+        "Keep every unaffected exercise on a normal progression track",
+        "Choose a swap that still does the same job when that quality still matters this block",
+        "If no comfortable swap exists, skip that movement for now instead of inventing junk volume",
+        "Train the other limb when the problem is one-sided and the healthy side is available",
+        "Use the next 24 to 48 hours as feedback: better, same, or worse?",
+        "Only then decide whether to progress, hold, regress, or bring the original lift back",
       ],
     },
     {
       type: "p",
-      text: "A week fails this test when one irritable body part deletes the entire program, the substitute no longer trains the intended quality, every session becomes random machine work with no progression target, or the original lift returns the moment pain drops to a 2 out of 10 with no intermediate steps.",
+      text: "A week fails this test when one irritable body part deletes the entire program, the swap no longer trains what you cared about, every session becomes random machine work with no target, or the old lift returns the moment pain drops to a 2 out of 10 with no middle steps.",
     },
 
     { type: "h2", text: "Worked example: pressing with an irritable shoulder" },
     {
       type: "p",
-      text: "Athlete: 34 years old. Primary goal is upper-body muscle and general strength. Overhead pressing and wide-grip benching flare the right shoulder. Horizontal pulling, lower-body training, and conditioning feel fine. No red-flag symptoms. The current block still needs pressing work, not a full upper-body vacation.",
+      text: "Athlete: 34 years old. Main goal is upper-body muscle and general strength. Overhead pressing and wide-grip benching flare the right shoulder. Rows, lower-body training, and conditioning feel fine. No red-flag symptoms. This block still needs pressing work, not a full upper-body vacation.",
     },
     {
       type: "example",
-      title: "Plausible adjusted week",
+      title: "A plausible adjusted week",
       body: [
         "Keep lower-body sessions unchanged",
-        "Keep horizontal and vertical pulling if tolerated",
+        "Keep rows and pulldowns if they feel fine",
         "Replace painful overhead press with a landmine or neutral-grip press in a shorter range",
         "Replace painful flat barbell bench with neutral-grip dumbbell floor press or a machine press that does not provoke symptoms",
-        "Keep left-arm unilateral pressing if right-arm options are limited",
-        "Leave direct end-range overhead work out until tolerance improves",
-        "Judge the next session from symptom response and pressing quality, not from nostalgia for the old lift",
+        "Keep left-arm single-arm pressing if right-arm options are limited",
+        "Leave direct end-range overhead work out until the shoulder calms down",
+        "Judge the next session from how the shoulder feels and how clean the pressing looks, not from nostalgia for the old lift",
       ],
     },
     {
       type: "p",
-      text: "Why this shape: the constrained pattern is overhead and provocative pressing ranges, not \"all upper-body training.\" The week still develops lower body, pulling, and a pressing quality with a different stress profile. Progression can continue on the substitute if the stimulus remains comparable. That is more useful than waiting for the exact old lift to become available again.",
+      text: "Why this shape: the problem is overhead and provocative pressing ranges, not all upper-body training. The week still develops legs, pulling, and a pressing quality with a different setup. You can keep progressing the swap if it still feels like hard, useful pressing. That is more useful than waiting for the exact old lift to come back.",
     },
     {
-      type: "h3", text: "Branch A: the substitute lands cleanly" },
-    {
-      type: "p",
-      text: "Symptoms stay stable or improve across two or three exposures, and the substitute still provides a hard, clean pressing stimulus. Keep progressing that version. Later, reintroduce fragments of the old pattern: longer range, different grip, then the original lift at a reduced dose.",
+      type: "h3",
+      text: "If the swap feels fine",
     },
     {
-      type: "h3", text: "Branch B: the substitute still provokes" },
+      type: "p",
+      text: "Symptoms stay stable or improve across two or three sessions, and the new press still feels hard and clean. Keep progressing that version. Later, bring pieces of the old pattern back: longer range, different grip, then the original lift at a reduced dose.",
+    },
+    {
+      type: "h3",
+      text: "If the swap still flares it",
+    },
     {
       type: "p",
-      text: "If even the lower-cost pressing options flare symptoms or degrade next-day function, the plan should change more than load. That may mean temporary omission of pressing, more emphasis on pulling and lower body, or professional assessment. Forcing \"some kind of press\" every session is still parameter stubbornness. A real limitation can change what session comes next.",
+      text: "If even the easier pressing options aggravate symptoms or make the next day worse, change more than the weight. That may mean skipping pressing for a bit, putting more work into pulling and legs, or getting professional assessment. Forcing \"some kind of press\" every session is still stubbornness. A real problem can change what the next session should be.",
     },
 
-    { type: "h2", text: "Reintroduce the constrained pattern on evidence" },
+    { type: "h2", text: "Bring the old movement back carefully" },
     {
       type: "p",
-      text: "Getting pain-free in daily life is not the same as being ready for the old working sets. Reintroduction should look like a ladder, not a jump:",
+      text: "Feeling better walking around is not the same as being ready for the old working sets. Coming back should look like a ladder, not a jump:",
     },
     {
       type: "ul",
       items: [
-        "Restore the pattern with low cost: lighter load, shorter range, slower speed, or supported variation",
+        "Restore the movement at low cost: lighter load, shorter range, slower speed, or a supported variation",
         "Confirm that two or three exposures leave symptoms and performance stable",
-        "Restore volume before ego load",
+        "Bring volume back before ego load",
         "Only then chase the old working weights or the original exercise",
       ],
     },
     {
       type: "p",
-      text: "This is the same evidence logic used after time off and after a brutal sport weekend: the next prescription should answer to what the last exposure actually did [adaptive training](/learn/what-is-adaptive-training). A static plan either bans the lift forever or brings it back the moment the athlete feels optimistic. An adaptive plan can hold the substitute, test a partial return, and change course from the response.",
+      text: "This is the same feedback logic used after time off and after a brutal sport weekend: the next session should answer to what the last one actually did [adaptive training](/learn/what-is-adaptive-training). A rigid plan either bans the lift forever or brings it back the moment you feel optimistic. A better plan can hold the swap, test a partial return, and change course from the response.",
     },
 
-    { type: "h2", text: "What adaptive programming should do with a limitation" },
+    { type: "h2", text: "What a smart plan should do here" },
     {
       type: "p",
-      text: "A static template has two bad defaults: ignore the limitation and keep prescribing the same lift, or panic and replace the whole week with random \"safe\" exercises. Neither answers what the plan should do next.",
+      text: "A fixed template has two bad defaults: ignore the sore area and keep prescribing the same lift, or panic and replace the whole week with random \"safe\" exercises. Neither answers what training should do next.",
     },
     {
       type: "p",
-      text: "An adaptive plan should treat the limitation as durable context until evidence says otherwise. That means remembering which pattern is constrained, choosing intent-matched substitutes, keeping unaffected work progressive, and using tolerance plus performance to decide whether the original slot can return.",
+      text: "A better plan remembers which movement is the problem, picks swaps that still do the same job, keeps everything else progressing, and uses how the area responds to decide whether the original lift can return.",
     },
     {
       type: "p",
-      text: "IOFitness is being designed around that kind of constraint handling. The intended model treats limitations as inputs to exercise selection and weekly allocation, not as a reason to freeze the entire program or invent a new unrelated workout every day.",
+      text: "IOFitness is being designed around that kind of decision. The intended model treats sore joints and limited movements as inputs to exercise choice and weekly priorities, not as a reason to freeze the whole program or invent a new unrelated workout every day.",
     },
 
     { type: "h2", text: "Bottom line" },
     {
       type: "p",
-      text: "Training around a limitation is still training. Name what is actually constrained. Keep developing everything else. Substitute by training intent when the quality still matters. Use the opposite limb when the problem is unilateral. Let tolerance evidence decide whether the constrained pattern can progress, hold, or wait. Do not confuse a local limit with a full layoff, and do not confuse staying active with repeatedly poking the same aggravated slot.",
+      text: "Training around a sore body part is still training. Figure out what is actually the problem. Keep training everything else. Swap the painful lift for one that still does the same job when that quality still matters. Use the other limb when the problem is one-sided. Let the next day or two decide whether that area can do more, hold, or wait. Do not confuse one bad joint with a full layoff, and do not confuse staying active with repeatedly poking the same aggravated movement.",
     },
   ],
   sources: [
@@ -261,7 +266,7 @@ export const trainAroundLimitationArticle: LearnArticle = {
       citation:
         "Kassiano W, Nunes JP, Costa B, Ribeiro AS, Schoenfeld BJ, Cyrino ES. Does varying resistance exercises promote superior muscle hypertrophy and strength gains? A systematic review. J Strength Cond Res. 2022;36(6):1753-1762.",
       url: "https://doi.org/10.1519/JSC.0000000000004258",
-      note: "Finds that systematic exercise variation can influence hypertrophy and strength adaptations, while excessive or random variation may blunt gains. Used to support intent-matched substitution based on biomechanical job, not novelty for its own sake.",
+      note: "Finds that systematic exercise variation can influence hypertrophy and strength adaptations, while excessive or random variation may blunt gains. Used to support thoughtful swaps based on what the exercise was there to do, not novelty for its own sake.",
     },
     {
       id: "2",
@@ -277,7 +282,7 @@ export const trainAroundLimitationArticle: LearnArticle = {
       citation:
         "Haggert M, Pearce AJ, Frazer AK, Rahman S, Kidgell DJ, Siddique U. Determining the effects of cross-education on muscle strength, thickness and cortical activation following limb immobilization: a systematic review and meta-analysis. J Sci Med. 2020;2(4).",
       url: "https://doi.org/10.37714/josam.v2i4.54",
-      note: "Reports that training the free limb during immobilization attenuates losses in strength and muscle thickness of the immobilized limb relative to immobilization alone. Used for the \"opposite side still matters\" claim, not as a standalone rehab protocol.",
+      note: "Reports that training the free limb during immobilization attenuates losses in strength and muscle thickness of the immobilized limb relative to immobilization alone. Used for the \"other side still matters\" claim, not as a standalone rehab protocol.",
     },
     {
       id: "4",
