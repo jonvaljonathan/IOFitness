@@ -12,7 +12,7 @@ export const adaptiveTrainingArticle: LearnArticle = {
   description:
     "Adaptive training is training that changes the future program in response to evidence about the athlete. Personalization alone is not enough, and more change is not automatically better.",
   date: "2026-09-04",
-  dateModified: "2026-09-04",
+  dateModified: "2026-09-05",
   body: [
     {
       type: "p",
@@ -221,7 +221,7 @@ export const adaptiveTrainingArticle: LearnArticle = {
     { type: "h2", text: "What this means for IOFitness" },
     {
       type: "p",
-      text: "IOFitness is being designed around the deeper end of this framework. The intended model is not only to generate a starting plan, and not only to nudge today's numbers. It is to use what someone actually did, plus their goals, activities, limitations, and progression history, to decide what training should do next. A local limitation is one of the clearest tests of that idea: the plan should keep developing what is still available, substitute by training intent where needed, and update from tolerance evidence rather than freezing the whole week. That case is covered in [how to train around a limitation](/learn/how-to-train-around-a-limitation).",
+      text: "IOFitness is being designed around the deeper end of this framework. The intended model is not only to generate a starting plan, and not only to nudge today's numbers. It is to use what someone actually did, plus their goals, activities, limitations, and progression history, to decide what training should do next. One body part that will not cooperate is one of the clearest tests of that idea: keep training what still works, swap the lifts that aggravate the area for ones that still do the same job, and update from how the next sessions feel rather than freezing the whole week. That case is covered in [how to train around a limitation](/learn/how-to-train-around-a-limitation).",
     },
     {
       type: "p",
