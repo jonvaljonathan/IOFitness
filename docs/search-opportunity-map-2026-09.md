@@ -381,6 +381,14 @@ Ranked in recommended publishing order. Ranking logic: originality of the IOFitn
 - **Primary query:** 3 day workout plan when you planned 5
 - **Thesis:** Compress the plan you already have. Protect high-value work, shrink or cut the rest, keep progression comparable. Do not swap in an unrelated starter split.
 
+### 11. Start a training habit (New Year / consistency hub)
+
+- **Published slug:** `/learn/start-a-training-habit` (drafted 2026-09-06)
+- **Title:** Start a Training Habit (Even If You Don't Know What You're Doing)
+- **Primary query:** how to start a workout habit / new year workout plan for beginners who don't know what to do
+- **Thesis:** Uncertainty and program-hopping kill progress. A repeatable basic week beats another perfect plan you abandon. Fat loss follows adherence.
+- **Launch note:** Strong New Year entry page. Links to missed workout, shrinking week, exercise-for-goals, return after time off.
+
 ### Deliberately excluded from the top 10
 
 - Anything targeting "best AI personal trainer app" or "best AI workout generator" — high competition, near-zero originality, and it argues against our positioning.

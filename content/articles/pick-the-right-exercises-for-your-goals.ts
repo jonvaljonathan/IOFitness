@@ -173,6 +173,11 @@ export const exerciseSelectionArticle: LearnArticle = {
       text: "That is deeper than a personalized PDF. It is also deeper than an algorithm that only changes the weight on the same menu. If you want a broader product test, use [does your fitness app actually personalize anything](/learn/do-fitness-apps-actually-personalize-workouts).",
     },
 
+    {
+      type: "p",
+      text: "If you are still stuck at \"I do not even know where to start,\" build the habit first. That New Year case is covered in [start a training habit](/learn/start-a-training-habit). Come back to finer exercise matching once you are already someone who trains.",
+    },
+
     { type: "h2", text: "Bottom line" },
     {
       type: "p",

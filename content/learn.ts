@@ -5,6 +5,7 @@ import { returnToTrainingArticle } from "./articles/how-to-return-to-training-af
 import { trainWithLimitationArticle } from "./articles/how-to-train-with-a-limitation";
 import { exerciseSelectionArticle } from "./articles/pick-the-right-exercises-for-your-goals";
 import { progressiveOverloadArticle } from "./articles/progressive-overload-without-adding-weight";
+import { trainingHabitArticle } from "./articles/start-a-training-habit";
 import { adaptiveTrainingArticle } from "./articles/what-is-adaptive-training";
 import { missedWorkoutArticle } from "./articles/what-to-do-when-you-miss-a-workout";
 import { shrinkingWeekArticle } from "./articles/when-your-week-shrinks";
@@ -55,6 +56,7 @@ export const learnArticles: LearnArticle[] = [
   appPersonalizationArticle,
   exerciseSelectionArticle,
   shrinkingWeekArticle,
+  trainingHabitArticle,
 ];
 
 export function getLearnArticles(): LearnArticle[] {
