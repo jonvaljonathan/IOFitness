@@ -386,14 +386,76 @@ Ranked in recommended publishing order. Ranking logic: originality of the IOFitn
 - **Published slug:** `/learn/start-a-training-habit` (drafted 2026-09-06)
 - **Title:** Start a Training Habit (Even If You Don't Know What You're Doing)
 - **Primary query:** how to start a workout habit / new year workout plan for beginners who don't know what to do
-- **Thesis:** Uncertainty and program-hopping kill progress. A repeatable basic week beats another perfect plan you abandon. Fat loss follows adherence.
+- **Thesis:** Uncertainty and program-hopping kill progress. A repeatable basic week beats another perfect plan you abandon. Fat loss follows adherence. Day one should leave you able to come back tomorrow.
 - **Launch note:** Strong New Year entry page. Links to missed workout, shrinking week, exercise-for-goals, return after time off.
 
 ### Deliberately excluded from the top 10
 
 - Anything targeting "best AI personal trainer app" or "best AI workout generator" — high competition, near-zero originality, and it argues against our positioning.
-- "Progressive overload explained" and "how long until I see results" — authority walls; useful later as supporting spokes, not as opening bets.
+- Generic encyclopedia versions of "progressive overload explained" or "how long until I see results" written as Healthline clones — authority walls if framed that way. The **Expectations** cluster below covers the same reader need in IOFitness voice instead.
 - Any programmatic exercise-page or template-page expansion.
+
+---
+
+## F. Expectations cluster (planned)
+
+Honest timelines and tradeoffs for muscle, fat loss, food, and consistency. Hub relationship: [start a training habit](/learn/start-a-training-habit) and [pick the right exercises for your goals](/learn/pick-the-right-exercises-for-your-goals) feed into this cluster; this cluster feeds goal hubs later.
+
+### Headline / tone rule for this cluster
+
+Learn titles should **name the situation**, not punchline the advice.
+
+| Move away from | Move toward |
+|---|---|
+| Punchy / snappy | Plain |
+| Slogan-like | Explanatory |
+| Manifesto / "train like you mean it" | Coach-to-adult |
+| Clever-contrarian | Honest and specific |
+| Tweet-thread energy | Calm, complete thoughts |
+| Ad copy | Teaching copy |
+
+**On-brand title pattern:** plain, explanatory, calm, specific, low-drama.  
+**Examples we already like:** *Pick the Right Exercises for Your Goals*; *Start a Training Habit (Even If You Don't Know What You're Doing)*; *What Should Actually Happen to Your Plan When You Miss a Workout*.
+
+**Brand vocabulary to repeat:** show up; come back tomorrow; pick a primary goal; give it enough weeks; eat for the goal; keep the week repeatable; don't blow the streak for one heroic session.
+
+### Planned articles
+
+Draft order: 3 → 1 → 4 → 2 → 5 → 7 → 6 → 8.
+
+1. **What to Expect When You're Building Muscle**  
+   Primary need: realistic muscle timelines (weeks vs months). Early signals vs visible change. Why one hard month is not enough.
+
+2. **What to Expect When You're Losing Fat**  
+   Primary need: realistic fat-loss timelines. Why the scale jumps around. Why crash phases break the habit.
+
+3. **Why Building Muscle Usually Needs a Calorie Surplus**  
+   Primary need: the honesty gap — people say they want muscle without planning to eat for it. Training alone does not force growth.
+
+4. **How Training Changes When You're in a Deficit**  
+   Primary need: what a fat-loss phase does to recovery, progression, and expectations. Deficit drives fat loss; training protects muscle and the habit.
+
+5. **When Building Muscle and Losing Fat Compete**  
+   Primary need: recomp rules in plain language. Beginners/returners can sometimes do both slowly; advanced trainees usually need a primary.
+
+6. **How Long to Follow a Plan Before You Change It**  
+   Primary need: stop program-hopping. Adherence and technique first; measurable change later; don't scrap a plan after a chaotic week.
+
+7. **How to Stay Consistent After Motivation Drops**  
+   Primary need: consistency after the New Year spike. Pairs with the habit hub. Showing up beats optimizing.
+
+8. **How to Set Goals That Match Real Timelines**  
+   Primary need: New Year / life goals that fit physiological clocks. "Get jacked and lean by February" is usually two conflicting plans.
+
+### Optional later spokes
+
+9. **How to Decide Whether to Stay the Course or Change the Plan**  
+10. **How to Track Progress When the Scale Barely Moves**
+
+### Status
+
+- Planned 2026-09-06 after headline-tone correction (punchy drafts rejected; calm explanatory titles locked).
+- Not drafted yet.
 
 ---
 
