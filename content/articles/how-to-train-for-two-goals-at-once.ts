@@ -11,7 +11,7 @@ export const twoGoalsArticle: LearnArticle = {
   description:
     "You can train for two goals at once if you decide which goal is primary, which work is shared, what needs a maintenance dose, and how fatigue gets spent across the week.",
   date: "2026-09-04",
-  dateModified: "2026-09-04",
+  dateModified: "2026-09-05",
   body: [
     {
       type: "p",
@@ -193,7 +193,7 @@ export const twoGoalsArticle: LearnArticle = {
     },
     {
       type: "p",
-      text: "That is one reason [adaptive training](/learn/what-is-adaptive-training) matters. A useful plan should be able to hold a primary goal, keep secondary qualities alive with a maintenance dose, and adjust when match day, travel, or a missed session changes the week's fatigue budget. When the second goal is a fixed weekend sport, the same allocation problem becomes concrete scheduling: [how to combine lifting with a weekend sport](/learn/how-to-combine-lifting-with-sports). IOFitness is being designed around that allocation problem. The framework above still works with a notebook if you are honest about priority.",
+      text: "That is one reason [adaptive training](/learn/what-is-adaptive-training) matters. A useful plan should be able to hold a primary goal, keep secondary qualities alive with a maintenance dose, and adjust when match day, travel, or a missed session changes the week's fatigue budget. When the second goal is a fixed weekend sport, the same allocation problem becomes concrete scheduling: [how to combine lifting with a weekend sport](/learn/how-to-combine-lifting-with-sports). A sore shoulder or angry knee creates a related problem: find a version of the movement you can still load, attack that capacity so the weak link improves, and keep the rest of the week moving. That case is covered in [how to train with a limitation](/learn/how-to-train-with-a-limitation). IOFitness is being designed around that allocation problem. The framework above still works with a notebook if you are honest about priority.",
     },
 
     { type: "h2", text: "Bottom line" },
