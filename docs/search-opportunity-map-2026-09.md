@@ -362,36 +362,24 @@ Ranked in recommended publishing order. Ranking logic: originality of the IOFitn
 
 ### 8. How to tell whether a fitness app really personalizes anything
 
+- **Published slug:** `/learn/do-fitness-apps-actually-personalize-workouts` (drafted 2026-09-06)
 - **Proposed title:** Does Your Fitness App Actually Personalize Anything? A Test You Can Run
 - **Primary query:** do fitness apps actually personalize workouts
-- **Secondary queries:** what to look for in a personalized training app; are ai workout plans any good; difference between workout tracker and workout planner; why do fitness apps give everyone the same plan
-- **User intent:** problem-solving shading into commercial; a burned app user
-- **Why it matters to IOFitness:** It reframes the entire commercial category on criteria we satisfy, without needing to win "best AI trainer." It's also the most citable page in the map for AI assistants answering prompts #12, #26, and #31.
-- **What current results miss:** The SERP is roundups written by app companies about themselves. Rizin ranks itself first in its own "best AI fitness apps" post. Nobody offers a neutral test.
-- **Why IOFitness can do better:** We can publish a concrete four-question test — does it change exercise *selection* or only load? does it handle two goals? does it survive a missed week? does it remember a constraint you told it once? — and answer honestly, including where we're weaker.
-- **Suggested internal links:** `/learn/what-is-adaptive-training`, `/learn/how-workout-apps-choose-exercises`, `/learn/what-to-do-when-you-miss-a-workout`, `/learn/training-for-two-goals-at-once`.
+- **Thesis:** Most "personalized" apps answer onboarding once, then hand you a template. Run four tests: selection vs load, two goals, missed week, remembered constraints.
 
 ### 9. How exercise selection actually gets decided
 
+- **Published slug:** `/learn/how-workout-apps-choose-exercises` (drafted 2026-09-06)
 - **Proposed title:** How an Exercise Gets Chosen for You (and Why Most Apps Get It Wrong)
 - **Primary query:** how do workout apps decide what exercises to give you
-- **Secondary queries:** how do i know what exercises to do; how to build a workout plan from scratch; sport specific training vs general strength; exercise progression from easiest to hardest
-- **User intent:** informational; curious, semi-technical, high trust-building value
-- **Why it matters to IOFitness:** Transparency about selection logic is a moat competitors can't copy without exposing that their logic is thinner. It also makes every other article's claims credible.
-- **What current results miss:** Nothing in the consumer SERP explains selection at all. The closest content is "choose a compound then accessories," which is a heuristic, not a system.
-- **Why IOFitness can do better:** Slot templates, movement patterns, progression tiers, equipment resolution, and variety scoring are all explainable in plain language, and explaining them is inherently differentiating.
-- **Suggested internal links:** `/learn/do-fitness-apps-actually-personalize-workouts`, `/learn/what-is-adaptive-training`, `/learn/how-to-progress-when-you-cant-add-weight`, `/learn/exercise-substitutions-same-training-effect`.
+- **Thesis:** Name the job first, then filter by equipment, tolerance, skill, and progression. Frozen menus and random shuffles both fail.
 
 ### 10. Training when the week shrinks
 
+- **Published slug:** `/learn/when-your-week-shrinks` (drafted 2026-09-06)
 - **Proposed title:** When Your Week Shrinks: How to Cut a Plan Down Without Breaking It
 - **Primary query:** 3 day workout plan when you planned 5
-- **Secondary queries:** how to train when your schedule keeps changing; workout plan for unpredictable schedule; how to work out with only 30 minutes; how to keep progress while travelling
-- **User intent:** problem-solving; competent trainee with a temporary constraint
-- **Why it matters to IOFitness:** Duration tiers and priority-ordered session content are real mechanisms, and this is the query where they're most legible. It also feeds the missed-workout article and the equipment-change article.
-- **What current results miss:** Almost all content answers with a *different* plan ("try this 3-day split"). Nobody answers the actual question, which is how to compress the plan you're already on and keep the progression intact.
-- **Why IOFitness can do better:** Compression rules — what stays, what shrinks, what's cut — are how duration-aware templates work. We can also address the 30-minute session honestly instead of pretending it holds a 60-minute session's content.
-- **Suggested internal links:** `/learn/what-to-do-when-you-miss-a-workout`, `/learn/minimum-training-to-maintain-strength`, `/learn/workout-program-that-adapts-to-your-equipment`, `/learn/training-for-two-goals-at-once`.
+- **Thesis:** Compress the plan you already have. Protect high-value work, shrink or cut the rest, keep progression comparable. Do not swap in an unrelated starter split.
 
 ### Deliberately excluded from the top 10
 

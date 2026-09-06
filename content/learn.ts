@@ -1,10 +1,13 @@
+import { appPersonalizationArticle } from "./articles/do-fitness-apps-actually-personalize-workouts";
 import { liftingWithSportsArticle } from "./articles/how-to-combine-lifting-with-sports";
 import { twoGoalsArticle } from "./articles/how-to-train-for-two-goals-at-once";
 import { returnToTrainingArticle } from "./articles/how-to-return-to-training-after-time-off";
 import { trainWithLimitationArticle } from "./articles/how-to-train-with-a-limitation";
+import { exerciseSelectionArticle } from "./articles/how-workout-apps-choose-exercises";
 import { progressiveOverloadArticle } from "./articles/progressive-overload-without-adding-weight";
 import { adaptiveTrainingArticle } from "./articles/what-is-adaptive-training";
 import { missedWorkoutArticle } from "./articles/what-to-do-when-you-miss-a-workout";
+import { shrinkingWeekArticle } from "./articles/when-your-week-shrinks";
 
 export type ArticleSource = {
   id: string;
@@ -49,6 +52,9 @@ export const learnArticles: LearnArticle[] = [
   returnToTrainingArticle,
   liftingWithSportsArticle,
   trainWithLimitationArticle,
+  appPersonalizationArticle,
+  exerciseSelectionArticle,
+  shrinkingWeekArticle,
 ];
 
 export function getLearnArticles(): LearnArticle[] {
