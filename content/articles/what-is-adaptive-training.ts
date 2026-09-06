@@ -225,7 +225,7 @@ export const adaptiveTrainingArticle: LearnArticle = {
     },
     {
       type: "p",
-      text: "That includes problems already covered in this Learn series: reprogramming after a missed session, allocating a week when more than one goal is active, choosing exercises by the job they need to do, and compressing a plan when the week shrinks. Those are not cosmetic features. They are tests of whether the system can adapt the future program while protecting the point of the training. Exercise choice is covered in [how to choose exercises for your training plan](/learn/how-to-choose-exercises-for-your-training-plan). Compression is covered in [when your week shrinks](/learn/when-your-week-shrinks).",
+      text: "That includes problems already covered in this Learn series: reprogramming after a missed session, allocating a week when more than one goal is active, choosing exercises by the job they need to do, and compressing a plan when the week shrinks. Those are not cosmetic features. They are tests of whether the system can adapt the future program while protecting the point of the training. Exercise choice is covered in [pick the right exercises for your goals](/learn/pick-the-right-exercises-for-your-goals). Compression is covered in [when your week shrinks](/learn/when-your-week-shrinks).",
     },
 
     { type: "h2", text: "Bottom line" },
