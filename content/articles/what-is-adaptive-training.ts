@@ -12,7 +12,7 @@ export const adaptiveTrainingArticle: LearnArticle = {
   description:
     "Adaptive training is training that changes the future program in response to evidence about the athlete. Personalization alone is not enough, and more change is not automatically better.",
   date: "2026-09-04",
-  dateModified: "2026-09-05",
+  dateModified: "2026-09-06",
   body: [
     {
       type: "p",
@@ -225,7 +225,7 @@ export const adaptiveTrainingArticle: LearnArticle = {
     },
     {
       type: "p",
-      text: "That includes problems already covered in this Learn series: reprogramming after a missed session, and allocating a week when more than one goal is active. Those are not cosmetic features. They are tests of whether the system can adapt the future program while protecting the point of the training.",
+      text: "That includes problems already covered in this Learn series: reprogramming after a missed session, allocating a week when more than one goal is active, and starting strength work later in life without recreating an unsafe old habit. Those are not cosmetic features. They are tests of whether the system can adapt the future program while protecting the point of the training. The later-life case is covered in [how to start strength training later in life](/learn/how-to-start-strength-training-later-in-life).",
     },
 
     { type: "h2", text: "Bottom line" },

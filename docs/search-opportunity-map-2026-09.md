@@ -229,7 +229,7 @@ Legend — **Fit** = product/positioning fit (1–5), **Opp** = opportunity give
 | training with limited range of motion | problem-solving | Mobility-limited | 5 | 4 | 5 | mediocre | Guide | Work within available range and expand it as a programmed variable |
 | how to get back into skiing shape | informational | Seasonal, high-intent | 5 | 5 | 4 | app-marketing-heavy | Seasonal guide | Physio clinics and listicles dominate. Give a dated, progressive pre-season block |
 | return to running after time off structure | problem-solving | Lapsed runner | 4 | 4 | 3 | strong | Guide | Runner's World is strong. Our add: strength work alongside the run ramp |
-| how to train when you're older and things ache | problem-solving | 45+ trainee | 5 | 5 | 5 | generic | Guide | Age as a starting-level and progression-rate input, not an exercise ban list |
+| how to train when you're older and things ache | problem-solving | 45+ trainee | 5 | 5 | 5 | generic | Guide | Covered in part by `/learn/how-to-start-strength-training-later-in-life` (age + careful start). Deeper "things ache" follow-up still open |
 | exercise substitutions that keep the same training effect | problem-solving | Constrained trainee | 5 | 5 | 5 | mediocre | Reference guide | Substitution by *training intent* rather than muscle group. Directly our slot model |
 | how to progress after a setback without starting over | problem-solving | Discouraged trainee | 5 | 5 | 5 | mediocre | Guide | Partial regression vs full restart — a decision almost nobody writes about |
 | training when you can only do certain movements | problem-solving | Highly constrained | 5 | 4 | 5 | mediocre | Guide | Show that a coherent program can be built from a small movement set |
@@ -336,9 +336,15 @@ Ranked in recommended publishing order. Ranking logic: originality of the IOFitn
 - **Why it matters to IOFitness:** Re-entry is a built feature with real design behind it — absence-scaled multi-cycle ramps, philosophy-aware deloads, and a recommend-never-force principle. It also captures a large, recurring, seasonal audience.
 - **What current results miss:** Detraining research (Mujika & Padilla, and the tendon-lag work) is well summarized but never converted into a plan. Consumer advice collapses to "start with 50–60% and build up," with no distinction between two weeks off and eight months off, and no acknowledgement that different tissues and qualities return at different rates.
 - **Why IOFitness can do better:** We scale the ramp to the length of the absence, run multiple ramp cycles rather than one, and treat strength, connective tissue, and conditioning as returning on separate clocks. We can also present the honest choice — ease back in, jump back in, or start fresh — instead of one prescription.
-- **Suggested internal links:** `/learn/what-to-do-when-you-miss-a-workout`, `/learn/minimum-training-to-maintain-strength`, `/learn/how-to-train-when-youre-older`, `/learn/how-to-progress-when-you-cant-add-weight`.
+- **Suggested internal links:** `/learn/what-to-do-when-you-miss-a-workout`, `/learn/minimum-training-to-maintain-strength`, `/learn/how-to-start-strength-training-later-in-life`, `/learn/how-to-progress-when-you-cant-add-weight`.
 
-### 6. A gym program that supports your weekend sport
+### 5b. Starting strength training later in life (shipped draft 2026-09-06)
+
+- **Published slug:** `/learn/how-to-start-strength-training-later-in-life`
+- **Primary query:** how to start strength training later in life / training for seniors
+- **Secondary queries:** how to train when you're older and things ache; strength training after 60; is weightlifting safe for older adults
+- **Thesis:** Older adults can get meaningfully stronger; the risky move is recreating an old gym habit too fast. Train for life tasks; start carefully; progress from evidence.
+- **Evidence anchors:** NSCA Fragala 2019; WHO 2020; Peterson 2010 meta-analysis; Stathokostas 2013 injury incidence.
 
 - **Proposed title:** Lifting Around a Sport You Actually Play
 - **Primary query:** gym program that supports my weekend sport

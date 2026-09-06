@@ -12,7 +12,7 @@ export const returnToTrainingArticle: LearnArticle = {
   description:
     "After a training break, treat your old program as useful history rather than today's prescription. Scale load, volume, frequency, and exercise complexity independently, then let the first sessions update the ramp.",
   date: "2026-09-04",
-  dateModified: "2026-09-05",
+  dateModified: "2026-09-06",
   body: [
     {
       type: "p",
@@ -176,6 +176,10 @@ export const returnToTrainingArticle: LearnArticle = {
     {
       type: "p",
       text: "These categories are programming judgment informed by the pattern that longer cessation tends to cost more performance [1][2], not a claim that every athlete crosses the same threshold on the same day.",
+    },
+    {
+      type: "p",
+      text: "If the gap is measured in years rather than weeks, or you are starting strength work later in life rather than restarting a recent program, the same caution applies with a higher cost of getting the first month wrong. That case is covered in [how to start strength training later in life](/learn/how-to-start-strength-training-later-in-life).",
     },
 
     { type: "h2", text: "How prior training changes the return" },
