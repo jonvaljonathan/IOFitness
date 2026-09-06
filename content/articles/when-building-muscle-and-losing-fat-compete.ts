@@ -87,7 +87,7 @@ export const muscleFatCompeteArticle: LearnArticle = {
     },
     {
       type: "p",
-      text: "IOFitness is built around that kind of priority call. The intended model is not to pretend every goal can be maximized together. It is to make the tradeoff explicit so the week has a point.",
+      text: "IOFitness is built around that kind of priority call: make the tradeoff explicit so the week has a point, instead of pretending every goal can be maximized together.",
     },
 
     { type: "h2", text: "Bottom line" },

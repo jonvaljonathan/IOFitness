@@ -96,7 +96,7 @@ export const deficitTrainingArticle: LearnArticle = {
     },
     {
       type: "p",
-      text: "IOFitness is built around that kind of phase awareness. The intended model is not to run the same progression logic forever regardless of goal. It is to recognize when fat loss is primary and adjust training stress so the plan still fits a real life in a deficit.",
+      text: "IOFitness is built to recognize when fat loss is primary and ease training stress so the plan still fits a real life in a deficit — not run the same progression forever.",
     },
 
     { type: "h2", text: "Bottom line" },

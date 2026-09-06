@@ -24,7 +24,7 @@ export default function LearnPage() {
 
   return (
     <main id="main" className="mx-auto max-w-5xl px-5 py-16 sm:px-8 sm:py-24">
-      <h1 className="font-display text-4xl tracking-tight sm:text-5xl">
+      <h1 className="font-sans text-4xl tracking-tight sm:text-5xl">
         {learnCopy.heading}
       </h1>
       <p className="mt-6 max-w-2xl text-lg leading-8 text-muted">{learnCopy.intro}</p>
@@ -36,7 +36,7 @@ export default function LearnPage() {
           {articles.map((article) => (
             <li key={article.slug} className="border-t border-rule pt-8">
               <article>
-                <h2 className="font-display text-2xl tracking-tight">
+                <h2 className="font-sans text-2xl tracking-tight">
                   <Link href={`/learn/${article.slug}`} className="hover:text-accent">
                     {article.title}
                   </Link>

@@ -8,16 +8,15 @@ import type { LearnArticle } from "../learn";
  */
 export const progressiveOverloadArticle: LearnArticle = {
   slug: "progressive-overload-without-adding-weight",
-  title:
-    "Progressive Overload Without Adding Weight: What Actually Counts as Progress?",
+  title: "How to Progress When You Cannot Add Weight",
   description:
     "Progressive overload means increasing the relevant training stimulus over time. When you cannot add weight, the next lever depends on your goal, the exercise, and whether the work stays comparable.",
   date: "2026-09-04",
-  dateModified: "2026-09-05",
+  dateModified: "2026-09-06",
   body: [
     {
       type: "p",
-      text: "Progressive overload means increasing the relevant training stimulus over time as the athlete adapts. Adding weight is one way to do that. It is not the only way, and it is not always the right next step.",
+      text: "You are stuck on the same dumbbells, or the next jump ruins your form. Progress is supposed to keep moving — so what counts as progress when you cannot add weight?",
     },
     {
       type: "p",
@@ -235,7 +234,7 @@ export const progressiveOverloadArticle: LearnArticle = {
     },
     {
       type: "p",
-      text: "IOFitness is built around that kind of decision. The programming model is intended to treat progression as evidence-driven parameter change, not as a fixed calendar of heavier weights. The framework in this article still works with a notebook if you keep the comparisons honest.",
+      text: "IOFitness is built around that kind of decision: watch what you actually did, then choose the next lever — more reps, a small load bump, or hold — instead of adding weight every Monday. The framework in this article still works with a notebook if you keep the comparisons honest.",
     },
 
     { type: "h2", text: "Bottom line" },

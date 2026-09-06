@@ -49,7 +49,7 @@ export const liftingWithSportsArticle: LearnArticle = {
     },
     {
       type: "p",
-      text: "If Saturday match quality is what you care about most, the gym supports the sport. Protect sprint capacity, change-of-direction quality, and legs that feel reasonably fresh. Hard lower-body volume gets more constrained as the match approaches. Strength and muscle still matter, but they do not get unlimited claim on the fatigue budget.",
+      text: "If Saturday match quality is what you care about most, the gym supports the sport. Protect sprint capacity, change-of-direction quality, and legs that feel reasonably fresh. Hard lower-body work gets smaller as the match approaches. Strength and muscle still matter, but they do not get unlimited claim on the fatigue budget.",
     },
     {
       type: "h3",
@@ -273,7 +273,7 @@ export const liftingWithSportsArticle: LearnArticle = {
     },
     {
       type: "p",
-      text: "IOFitness is built around that kind of evidence. The intended model treats the fixed sport day as part of total weekly training, estimates what it already supplied and cost, places gym work around the remaining gaps, and updates the next lower-body dose from the actual weekend rather than from a frozen template.",
+      text: "IOFitness is built around that kind of week: Saturday counts as training, the gym fills what sport did not cover, and a brutal weekend changes Monday instead of pretending every match was the same.",
     },
 
     { type: "h2", text: "Bottom line" },

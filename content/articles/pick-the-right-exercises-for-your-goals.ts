@@ -152,10 +152,10 @@ export const exerciseSelectionArticle: LearnArticle = {
       text: "You still trained for skiing. You changed the tool, not the goal. That is selection.",
     },
 
-    { type: "h2", text: "How IOFitness should choose" },
+    { type: "h2", text: "How a good plan chooses exercises" },
     {
       type: "p",
-      text: "This is the selection logic IOFitness is built around: start from what you want to become able to do, turn that into weekly jobs, then pick lifts you can actually progress.",
+      text: "IOFitness is built around that selection logic: start from what you want to become able to do, turn that into weekly jobs, then pick lifts you can actually progress.",
     },
     {
       type: "ol",

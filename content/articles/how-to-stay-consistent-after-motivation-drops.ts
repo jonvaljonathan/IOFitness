@@ -91,7 +91,7 @@ export const consistencyAfterMotivationArticle: LearnArticle = {
     },
     {
       type: "p",
-      text: "IOFitness is built around that kind of durability. The intended model is not to rely on endless hype. It is to keep the next session obvious and doable when motivation is quiet.",
+      text: "IOFitness is built to keep the next session obvious and doable when motivation is quiet — not to rely on endless hype.",
     },
 
     { type: "h2", text: "Bottom line" },

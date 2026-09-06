@@ -7,11 +7,11 @@ import type { LearnArticle } from "../learn";
  */
 export const missedWorkoutArticle: LearnArticle = {
   slug: "what-to-do-when-you-miss-a-workout",
-  title: "What Should Actually Happen to Your Plan When You Miss a Workout",
+  title: "What to Do With Your Plan When You Miss a Workout",
   description:
     "Missed a workout? Decide whether to skip, shift, preserve sequence, or reprogram based on what you actually trained, not only the calendar.",
   date: "2026-09-03",
-  dateModified: "2026-09-04",
+  dateModified: "2026-09-06",
   body: [
     {
       type: "p",
@@ -27,13 +27,13 @@ export const missedWorkoutArticle: LearnArticle = {
     },
     {
       type: "callout",
-      text: "Short version: decide from training state, not only calendar state. Ask what you completed, what important exposure you missed, how much fatigue you still carry, and whether fitting the missed work back in would create an unreasonable pile-up.",
+      text: "Short version: decide from what you actually trained, not only from what the calendar printed. Ask what you completed, what important exposure you missed, how much fatigue you still carry, and whether fitting the missed work back in would create an unreasonable pile-up.",
     },
 
-    { type: "h2", text: "Calendar state is not training state" },
+    { type: "h2", text: "What the calendar says vs what you actually trained" },
     {
       type: "p",
-      text: "Calendar state is what the plan assigned to a day: Lower A on Monday, Conditioning on Tuesday, Upper on Wednesday. Training state is what you actually did, what you skipped, and what that means for the next useful session.",
+      text: "The calendar is what the plan assigned to a day: Lower A on Monday, Conditioning on Tuesday, Upper on Wednesday. What you actually trained is what you did, what you skipped, and what that means for the next useful session.",
     },
     {
       type: "p",
@@ -255,7 +255,7 @@ export const missedWorkoutArticle: LearnArticle = {
     },
     {
       type: "p",
-      text: "That is one reason an [adaptive training](/learn/what-is-adaptive-training) system should treat completed training as ground truth. The calendar is a proposal. The log is what happened. IOFitness is built around that idea: programs should update from real training state when life moves sessions around. The same allocation problem shows up when [two goals are competing for the same week](/learn/how-to-train-for-two-goals-at-once). If the whole week is smaller up front, that is a compression problem rather than a single missed day: [when your week shrinks](/learn/when-your-week-shrinks). The decision framework above still stands on its own if you program with a notebook.",
+      text: "That is one reason [adaptive training](/learn/what-is-adaptive-training) matters. The calendar is a proposal. The log is what happened. IOFitness is built around that idea: when life moves sessions around, the plan should update from what you actually did. The same problem shows up when [two goals are competing for the same week](/learn/how-to-train-for-two-goals-at-once). If the whole week is smaller up front, that is compression rather than a single miss: [when your week shrinks](/learn/when-your-week-shrinks). The decision framework above still works with a notebook.",
     },
 
     { type: "h2", text: "Bottom line" },

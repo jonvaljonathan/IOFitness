@@ -33,7 +33,7 @@ export default function Home() {
         <p className="text-sm tracking-[0.18em] text-muted uppercase">
           {siteConfig.name}
         </p>
-        <h1 className="mt-5 max-w-3xl font-display text-5xl leading-[1.05] tracking-tight text-ink sm:text-7xl">
+        <h1 className="mt-5 max-w-3xl font-sans text-5xl leading-[1.05] tracking-tight text-ink sm:text-7xl">
           {homepageCopy.hero.heading}
         </h1>
         <p className="mt-8 max-w-2xl text-lg leading-8 text-muted sm:text-xl sm:leading-9">
@@ -52,7 +52,7 @@ export default function Home() {
       {proseSections.map((section) => (
         <section key={section.heading} className="border-t border-rule">
           <div className="mx-auto max-w-5xl px-5 py-14 sm:px-8 sm:py-20">
-            <h2 className="max-w-3xl font-display text-3xl leading-tight tracking-tight sm:text-4xl">
+            <h2 className="max-w-3xl font-sans text-3xl leading-tight tracking-tight sm:text-4xl">
               {section.heading}
             </h2>
             <p className="mt-6 max-w-2xl text-lg leading-8 text-muted">{section.body}</p>
@@ -62,7 +62,7 @@ export default function Home() {
 
       <section className="border-t border-rule">
         <div className="mx-auto max-w-5xl px-5 py-14 sm:px-8 sm:py-20">
-          <h2 className="max-w-3xl font-display text-3xl leading-tight tracking-tight sm:text-4xl">
+          <h2 className="max-w-3xl font-sans text-3xl leading-tight tracking-tight sm:text-4xl">
             {homepageCopy.process.heading}
           </h2>
           <p className="mt-6 max-w-2xl text-lg leading-8 text-muted">
@@ -71,7 +71,7 @@ export default function Home() {
           <ul className="mt-10 grid max-w-3xl gap-8">
             {homepageCopy.process.items.map((item) => (
               <li key={item.title}>
-                <h3 className="font-display text-xl tracking-tight text-ink sm:text-2xl">
+                <h3 className="font-sans text-xl tracking-tight text-ink sm:text-2xl">
                   {item.title}
                 </h3>
                 <p className="mt-3 max-w-2xl text-base leading-7 text-muted">{item.body}</p>
@@ -83,7 +83,7 @@ export default function Home() {
 
       <section className="border-t border-rule">
         <div className="mx-auto max-w-5xl px-5 py-14 sm:px-8 sm:py-20">
-          <h2 className="max-w-3xl font-display text-3xl leading-tight tracking-tight sm:text-4xl">
+          <h2 className="max-w-3xl font-sans text-3xl leading-tight tracking-tight sm:text-4xl">
             {homepageCopy.situations.heading}
           </h2>
           <p className="mt-6 max-w-2xl text-lg leading-8 text-muted">
@@ -93,7 +93,7 @@ export default function Home() {
             {homepageCopy.situations.items.map((item) => (
               <li key={item.href} className="border-t border-rule py-6 sm:pr-8">
                 <Link href={item.href} className="group block">
-                  <h3 className="font-display text-xl tracking-tight text-ink group-hover:text-accent sm:text-2xl">
+                  <h3 className="font-sans text-xl tracking-tight text-ink group-hover:text-accent sm:text-2xl">
                     {item.title}
                   </h3>
                   <p className="mt-3 text-base leading-7 text-muted">{item.body}</p>
@@ -106,7 +106,7 @@ export default function Home() {
 
       <section className="border-t border-rule">
         <div className="mx-auto max-w-5xl px-5 py-14 sm:px-8 sm:py-20">
-          <h2 className="max-w-3xl font-display text-3xl leading-tight tracking-tight sm:text-4xl">
+          <h2 className="max-w-3xl font-sans text-3xl leading-tight tracking-tight sm:text-4xl">
             {homepageCopy.closing.heading}
           </h2>
           <p className="mt-6 max-w-2xl text-lg leading-8 text-muted">

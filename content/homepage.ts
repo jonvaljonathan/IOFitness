@@ -21,8 +21,8 @@ export const homepageCopy = {
     body: "A single score cannot tell you whether you are becoming more capable. Strength, fitness, athleticism, and the ability to do the things you care about all count, and they count differently for different people.",
   },
   why: {
-    heading: "Why we're building IOFitness",
-    body: "Programming that path is hard to do well on your own. Generic plans do not account for your limitations, the activities you care about, or how you actually progress. We are building IOFitness so the plan can be specific to you, and so it can change when you change.",
+    heading: "Why IOFitness exists",
+    body: "Programming that path is hard to do well on your own. Generic plans do not account for your limitations, the activities you care about, or how you actually progress. IOFitness is built to make the plan specific to you — and to change it when you change.",
   },
   process: {
     heading: "What the plan should decide next",
