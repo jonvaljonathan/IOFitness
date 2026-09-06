@@ -219,7 +219,7 @@ Legend — **Fit** = product/positioning fit (1–5), **Opp** = opportunity give
 
 | Query | Intent | Searcher | Fit | Opp | Orig | Landscape | Page type | Gap / IOFitness contribution |
 |---|---|---|---|---|---|---|---|---|
-| how to train around a body part you can't load | problem-solving | Limited trainee | 5 | 5 | 5 | mediocre | Guide | Reframe from "rest it" to "keep developing everywhere else." Non-medical and genuinely original |
+| how to train with a limitation | problem-solving | Limited trainee | 5 | 5 | 5 | mediocre | Guide | Reframe from "rest it" or "train around it" to "find a version you can load and improve the weak link." Non-medical and genuinely original |
 | how to keep training when something hurts | problem-solving | Cautious trainee | 5 | 5 | 5 | generic | Decision guide | Substitute-and-continue logic, plus a clear line for when to seek professional input |
 | returning to training after time off how to structure it | problem-solving | Returner | 5 | 5 | 5 | mediocre | Cornerstone guide | Absence-scaled multi-cycle ramps rather than one generic deload week |
 | how to rebuild strength after a long break | problem-solving | Long-lapsed lifter | 5 | 5 | 4 | generic | Guide | Muscle-memory framing: conservative loads, faster re-progression |
@@ -351,8 +351,8 @@ Ranked in recommended publishing order. Ranking logic: originality of the IOFitn
 
 ### 7. Training around a body part that won't tolerate everything
 
-- **Proposed title:** Training Around a Limitation Without Putting Everything on Hold
-- **Primary query:** how to train around a body part you can't load
+- **Proposed title:** How to Train With a Limitation
+- **Primary query:** how to train with a limitation / how to keep training with a sore joint
 - **Secondary queries:** how to keep training when something hurts; exercise substitutions that keep the same training effect; training with limited range of motion; training when you can only do certain movements
 - **User intent:** problem-solving; wants to keep training, doesn't want a diagnosis
 - **Why it matters to IOFitness:** Limitations are a core input, not an edge case, and the honest non-medical training answer is genuinely underserved.

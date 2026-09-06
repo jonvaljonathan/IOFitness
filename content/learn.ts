@@ -1,7 +1,7 @@
 import { liftingWithSportsArticle } from "./articles/how-to-combine-lifting-with-sports";
 import { twoGoalsArticle } from "./articles/how-to-train-for-two-goals-at-once";
 import { returnToTrainingArticle } from "./articles/how-to-return-to-training-after-time-off";
-import { trainAroundLimitationArticle } from "./articles/how-to-train-around-a-limitation";
+import { trainWithLimitationArticle } from "./articles/how-to-train-with-a-limitation";
 import { progressiveOverloadArticle } from "./articles/progressive-overload-without-adding-weight";
 import { adaptiveTrainingArticle } from "./articles/what-is-adaptive-training";
 import { missedWorkoutArticle } from "./articles/what-to-do-when-you-miss-a-workout";
@@ -48,7 +48,7 @@ export const learnArticles: LearnArticle[] = [
   progressiveOverloadArticle,
   returnToTrainingArticle,
   liftingWithSportsArticle,
-  trainAroundLimitationArticle,
+  trainWithLimitationArticle,
 ];
 
 export function getLearnArticles(): LearnArticle[] {

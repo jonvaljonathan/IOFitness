@@ -34,7 +34,7 @@ export const returnToTrainingArticle: LearnArticle = {
     },
     {
       type: "p",
-      text: "Illness-related time off can leave residual systemic effects that go beyond detraining. Injury-related time off is not only a detraining problem; the limiting tissue or movement may have its own capacity constraints. The framework below applies once you are actually ready to resume the relevant training. It cannot decide medical readiness. If you are still training and only one body part or movement is limited, that is usually a keep-training-and-swap problem rather than a full re-entry problem. That case is covered in [how to train around a limitation](/learn/how-to-train-around-a-limitation).",
+      text: "Illness-related time off can leave residual systemic effects that go beyond detraining. Injury-related time off is not only a detraining problem; the limiting tissue or movement may have its own capacity constraints. The framework below applies once you are actually ready to resume the relevant training. It cannot decide medical readiness. If you are still training and only one body part or movement is limited, that is usually a train-with-the-limitation problem rather than a full re-entry problem. That case is covered in [how to train with a limitation](/learn/how-to-train-with-a-limitation).",
     },
 
     { type: "h2", text: "Your old program is history, not today's dose" },
