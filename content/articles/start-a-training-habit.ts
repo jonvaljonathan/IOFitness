@@ -167,7 +167,11 @@ export const trainingHabitArticle: LearnArticle = {
     },
     {
       type: "p",
-      text: "Later, once the habit sticks, you can chase prettier goals: more muscle, a sport, ski season, a better press. Habit is the entry ticket. Optimization is the upstairs room.",
+      text: "Later, once the habit sticks, you can chase prettier goals: more muscle, a sport, ski season, a better press. Habit is the entry ticket. Optimization is the upstairs room. When you get there, set goals that match real timelines, and use honest muscle and fat-loss expectations instead of January deadlines.",
+    },
+    {
+      type: "p",
+      text: "Useful next reads once you are showing up: [how to set goals that match real timelines](/learn/how-to-set-goals-that-match-real-timelines), [how to stay consistent after motivation drops](/learn/how-to-stay-consistent-after-motivation-drops), [what to expect when you're building muscle](/learn/what-to-expect-when-youre-building-muscle), and [what to expect when you're losing fat](/learn/what-to-expect-when-youre-losing-fat).",
     },
 
     { type: "h2", text: "What a smart plan should do here" },

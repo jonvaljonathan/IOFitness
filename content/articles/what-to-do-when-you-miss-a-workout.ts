@@ -51,7 +51,7 @@ export const missedWorkoutArticle: LearnArticle = {
     },
     {
       type: "p",
-      text: "The cost of a miss is usually more about stimulus distribution than about immediate detraining. If your plan only gives lower-body strength two meaningful exposures a week, missing one of them is a bigger programming problem than missing an accessory session that repeats later. Frequency recommendations for resistance training exist because repeated exposure matters for continued progress [6]. Missing the only hard lower day in a week is different from missing a second upper accessory day.",
+      text: "The cost of a miss is usually more about which hard exposures you lose than about immediate detraining. If your plan only gives lower-body strength two meaningful exposures a week, missing one of them is a bigger programming problem than missing an accessory session that repeats later. Frequency recommendations for resistance training exist because repeated exposure matters for continued progress [6]. Missing the only hard lower day in a week is different from missing a second upper accessory day.",
     },
     {
       type: "p",
@@ -255,7 +255,7 @@ export const missedWorkoutArticle: LearnArticle = {
     },
     {
       type: "p",
-      text: "That is one reason an [adaptive training](/learn/what-is-adaptive-training) system should treat completed training as ground truth. The calendar is a proposal. The log is what happened. IOFitness is being built around that idea: programs should update from real training state when life moves sessions around. The same allocation problem shows up when [two goals are competing for the same week](/learn/how-to-train-for-two-goals-at-once). If the whole week is smaller up front, that is a compression problem rather than a single missed day: [when your week shrinks](/learn/when-your-week-shrinks). The decision framework above still stands on its own if you program with a notebook.",
+      text: "That is one reason an [adaptive training](/learn/what-is-adaptive-training) system should treat completed training as ground truth. The calendar is a proposal. The log is what happened. IOFitness is being designed around that idea: programs should update from real training state when life moves sessions around. The same allocation problem shows up when [two goals are competing for the same week](/learn/how-to-train-for-two-goals-at-once). If the whole week is smaller up front, that is a compression problem rather than a single missed day: [when your week shrinks](/learn/when-your-week-shrinks). The decision framework above still stands on its own if you program with a notebook.",
     },
 
     { type: "h2", text: "Bottom line" },

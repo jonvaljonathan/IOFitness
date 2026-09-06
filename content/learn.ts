@@ -9,6 +9,14 @@ import { trainingHabitArticle } from "./articles/start-a-training-habit";
 import { adaptiveTrainingArticle } from "./articles/what-is-adaptive-training";
 import { missedWorkoutArticle } from "./articles/what-to-do-when-you-miss-a-workout";
 import { shrinkingWeekArticle } from "./articles/when-your-week-shrinks";
+import { muscleSurplusArticle } from "./articles/why-building-muscle-usually-needs-a-calorie-surplus";
+import { buildingMuscleExpectationsArticle } from "./articles/what-to-expect-when-youre-building-muscle";
+import { deficitTrainingArticle } from "./articles/how-training-changes-when-youre-in-a-deficit";
+import { losingFatExpectationsArticle } from "./articles/what-to-expect-when-youre-losing-fat";
+import { muscleFatCompeteArticle } from "./articles/when-building-muscle-and-losing-fat-compete";
+import { consistencyAfterMotivationArticle } from "./articles/how-to-stay-consistent-after-motivation-drops";
+import { followPlanBeforeChangingArticle } from "./articles/how-long-to-follow-a-plan-before-you-change-it";
+import { goalsMatchTimelinesArticle } from "./articles/how-to-set-goals-that-match-real-timelines";
 
 export type ArticleSource = {
   id: string;
@@ -57,6 +65,14 @@ export const learnArticles: LearnArticle[] = [
   exerciseSelectionArticle,
   shrinkingWeekArticle,
   trainingHabitArticle,
+  muscleSurplusArticle,
+  buildingMuscleExpectationsArticle,
+  deficitTrainingArticle,
+  losingFatExpectationsArticle,
+  muscleFatCompeteArticle,
+  consistencyAfterMotivationArticle,
+  followPlanBeforeChangingArticle,
+  goalsMatchTimelinesArticle,
 ];
 
 export function getLearnArticles(): LearnArticle[] {

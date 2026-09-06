@@ -397,7 +397,7 @@ Ranked in recommended publishing order. Ranking logic: originality of the IOFitn
 
 ---
 
-## F. Expectations cluster (planned)
+## F. Expectations cluster (drafted)
 
 Honest timelines and tradeoffs for muscle, fat loss, food, and consistency. Hub relationship: [start a training habit](/learn/start-a-training-habit) and [pick the right exercises for your goals](/learn/pick-the-right-exercises-for-your-goals) feed into this cluster; this cluster feeds goal hubs later.
 
@@ -419,32 +419,32 @@ Learn titles should **name the situation**, not punchline the advice.
 
 **Brand vocabulary to repeat:** show up; come back tomorrow; pick a primary goal; give it enough weeks; eat for the goal; keep the week repeatable; don't blow the streak for one heroic session.
 
-### Planned articles
+### Articles (drafted 2026-09-06)
 
-Draft order: 3 → 1 → 4 → 2 → 5 → 7 → 6 → 8.
+Draft order used: 3 → 1 → 4 → 2 → 5 → 7 → 6 → 8.
 
-1. **What to Expect When You're Building Muscle**  
+1. **What to Expect When You're Building Muscle** — `/learn/what-to-expect-when-youre-building-muscle`  
    Primary need: realistic muscle timelines (weeks vs months). Early signals vs visible change. Why one hard month is not enough.
 
-2. **What to Expect When You're Losing Fat**  
+2. **What to Expect When You're Losing Fat** — `/learn/what-to-expect-when-youre-losing-fat`  
    Primary need: realistic fat-loss timelines. Why the scale jumps around. Why crash phases break the habit.
 
-3. **Why Building Muscle Usually Needs a Calorie Surplus**  
+3. **Why Building Muscle Usually Needs a Calorie Surplus** — `/learn/why-building-muscle-usually-needs-a-calorie-surplus`  
    Primary need: the honesty gap — people say they want muscle without planning to eat for it. Training alone does not force growth.
 
-4. **How Training Changes When You're in a Deficit**  
+4. **How Training Changes When You're in a Deficit** — `/learn/how-training-changes-when-youre-in-a-deficit`  
    Primary need: what a fat-loss phase does to recovery, progression, and expectations. Deficit drives fat loss; training protects muscle and the habit.
 
-5. **When Building Muscle and Losing Fat Compete**  
+5. **When Building Muscle and Losing Fat Compete** — `/learn/when-building-muscle-and-losing-fat-compete`  
    Primary need: recomp rules in plain language. Beginners/returners can sometimes do both slowly; advanced trainees usually need a primary.
 
-6. **How Long to Follow a Plan Before You Change It**  
+6. **How Long to Follow a Plan Before You Change It** — `/learn/how-long-to-follow-a-plan-before-you-change-it`  
    Primary need: stop program-hopping. Adherence and technique first; measurable change later; don't scrap a plan after a chaotic week.
 
-7. **How to Stay Consistent After Motivation Drops**  
+7. **How to Stay Consistent After Motivation Drops** — `/learn/how-to-stay-consistent-after-motivation-drops`  
    Primary need: consistency after the New Year spike. Pairs with the habit hub. Showing up beats optimizing.
 
-8. **How to Set Goals That Match Real Timelines**  
+8. **How to Set Goals That Match Real Timelines** — `/learn/how-to-set-goals-that-match-real-timelines`  
    Primary need: New Year / life goals that fit physiological clocks. "Get jacked and lean by February" is usually two conflicting plans.
 
 ### Optional later spokes
@@ -455,7 +455,7 @@ Draft order: 3 → 1 → 4 → 2 → 5 → 7 → 6 → 8.
 ### Status
 
 - Planned 2026-09-06 after headline-tone correction (punchy drafts rejected; calm explanatory titles locked).
-- Not drafted yet.
+- Drafted and registered in `content/learn.ts` on `cursor/learn-articles-batch-c123`. Hold publish / IndexNow until approval.
 
 ---
 

@@ -177,6 +177,10 @@ export const exerciseSelectionArticle: LearnArticle = {
       type: "p",
       text: "If you are still stuck at \"I do not even know where to start,\" build the habit first. That New Year case is covered in [start a training habit](/learn/start-a-training-habit). Come back to finer exercise matching once you are already someone who trains.",
     },
+    {
+      type: "p",
+      text: "If the harder problem is the goal itself — too many outcomes, too little time, timelines that fight biology — start with [how to set goals that match real timelines](/learn/how-to-set-goals-that-match-real-timelines) before you refine the exercise menu.",
+    },
 
     { type: "h2", text: "Bottom line" },
     {

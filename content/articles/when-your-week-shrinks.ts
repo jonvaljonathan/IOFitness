@@ -141,7 +141,7 @@ export const shrinkingWeekArticle: LearnArticle = {
     },
     {
       type: "p",
-      text: "IOFitness is being designed around that kind of decision. The intended model is duration-aware and priority-aware: when time or days shrink, the system should cut from the bottom of the priority list, not hand you an unrelated starter template and call it adaptation. If the deeper issue is that you still do not have a habit to compress, start with [start a training habit](/learn/start-a-training-habit).",
+      text: "IOFitness is being designed around that kind of decision. The intended model is duration-aware and priority-aware: when time or days shrink, the system should cut from the bottom of the priority list, not hand you an unrelated starter template and call it adaptation. If the deeper issue is that you still do not have a habit to compress, start with [start a training habit](/learn/start-a-training-habit). If the week is available but motivation is quiet, use [how to stay consistent after motivation drops](/learn/how-to-stay-consistent-after-motivation-drops).",
     },
 
     { type: "h2", text: "Bottom line" },
