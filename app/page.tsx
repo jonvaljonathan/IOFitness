@@ -19,12 +19,11 @@ export const metadata: Metadata = {
   },
 };
 
-const sections = [
+const proseSections = [
   homepageCopy.goals,
   homepageCopy.plan,
   homepageCopy.moreThanANumber,
   homepageCopy.why,
-  homepageCopy.examples,
 ] as const;
 
 export default function Home() {
@@ -41,16 +40,16 @@ export default function Home() {
           {homepageCopy.hero.product}
         </p>
         <p className="mt-10">
-          <Link
-            href={homepageCopy.closing.ctaHref}
+          <a
+            href={homepageCopy.cta.href}
             className="inline-flex min-h-12 items-center rounded-sm bg-accent px-4 text-base text-paper hover:bg-accent-hover"
           >
-            {homepageCopy.closing.cta}
-          </Link>
+            {homepageCopy.cta.label}
+          </a>
         </p>
       </section>
 
-      {sections.map((section) => (
+      {proseSections.map((section) => (
         <section key={section.heading} className="border-t border-rule">
           <div className="mx-auto max-w-5xl px-5 py-14 sm:px-8 sm:py-20">
             <h2 className="max-w-3xl font-display text-3xl leading-tight tracking-tight sm:text-4xl">
@@ -64,18 +63,62 @@ export default function Home() {
       <section className="border-t border-rule">
         <div className="mx-auto max-w-5xl px-5 py-14 sm:px-8 sm:py-20">
           <h2 className="max-w-3xl font-display text-3xl leading-tight tracking-tight sm:text-4xl">
+            {homepageCopy.process.heading}
+          </h2>
+          <p className="mt-6 max-w-2xl text-lg leading-8 text-muted">
+            {homepageCopy.process.body}
+          </p>
+          <ul className="mt-10 grid max-w-3xl gap-8">
+            {homepageCopy.process.items.map((item) => (
+              <li key={item.title}>
+                <h3 className="font-display text-xl tracking-tight text-ink sm:text-2xl">
+                  {item.title}
+                </h3>
+                <p className="mt-3 max-w-2xl text-base leading-7 text-muted">{item.body}</p>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+
+      <section className="border-t border-rule">
+        <div className="mx-auto max-w-5xl px-5 py-14 sm:px-8 sm:py-20">
+          <h2 className="max-w-3xl font-display text-3xl leading-tight tracking-tight sm:text-4xl">
+            {homepageCopy.situations.heading}
+          </h2>
+          <p className="mt-6 max-w-2xl text-lg leading-8 text-muted">
+            {homepageCopy.situations.body}
+          </p>
+          <ul className="mt-10 grid gap-0 sm:grid-cols-2">
+            {homepageCopy.situations.items.map((item) => (
+              <li key={item.href} className="border-t border-rule py-6 sm:pr-8">
+                <Link href={item.href} className="group block">
+                  <h3 className="font-display text-xl tracking-tight text-ink group-hover:text-accent sm:text-2xl">
+                    {item.title}
+                  </h3>
+                  <p className="mt-3 text-base leading-7 text-muted">{item.body}</p>
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+
+      <section className="border-t border-rule">
+        <div className="mx-auto max-w-5xl px-5 py-14 sm:px-8 sm:py-20">
+          <h2 className="max-w-3xl font-display text-3xl leading-tight tracking-tight sm:text-4xl">
             {homepageCopy.closing.heading}
           </h2>
           <p className="mt-6 max-w-2xl text-lg leading-8 text-muted">
             {homepageCopy.closing.body}
           </p>
           <p className="mt-8">
-            <Link
-              href={homepageCopy.closing.ctaHref}
-              className="inline-flex min-h-12 items-center rounded-sm border border-rule bg-field px-4 text-base text-ink hover:border-accent"
+            <a
+              href={homepageCopy.cta.href}
+              className="inline-flex min-h-12 items-center rounded-sm bg-accent px-4 text-base text-paper hover:bg-accent-hover"
             >
-              {homepageCopy.closing.cta}
-            </Link>
+              {homepageCopy.cta.label}
+            </a>
           </p>
         </div>
       </section>

@@ -37,7 +37,7 @@ export const learnCopy = {
   intro:
     "Practical guides to getting stronger, fitter, more athletic and more capable, covering training, progression, consistency, recovery and physical development.",
   empty:
-    "Guides will live here as they are written. Nothing is published yet.",
+    "Published guides will appear here as new articles ship.",
 } as const;
 
 export const learnArticles: LearnArticle[] = [
