@@ -77,6 +77,32 @@ Headings should sound spoken:
 - Good: "Keep training the rest of your body"
 - Bad: "Maintain progressive stimulus in unconstrained regions"
 
+## Titles
+
+Learn titles should **name the situation**, not punchline the advice.
+
+| Move away from | Move toward |
+|---|---|
+| Punchy / snappy | Plain |
+| Slogan-like | Explanatory |
+| Manifesto energy | Coach-to-adult |
+| Clever-contrarian | Honest and specific |
+| Tweet-thread cadence | Calm, complete thoughts |
+| Ad copy | Teaching copy |
+
+Good title pattern: plain, explanatory, calm, specific, low-drama.
+
+- Good: "Pick the Right Exercises for Your Goals"
+- Good: "Start a Training Habit (Even If You Don't Know What You're Doing)"
+- Good: "What to Expect When You're Building Muscle"
+- Bad: "Muscle Takes Months. Train Like You Mean It."
+- Bad: "If You Want Muscle, Eat for Muscle."
+- Bad: "How Workout Apps Choose Exercises"
+
+Brand vocabulary worth repeating when it fits: show up; come back tomorrow; pick a primary goal; give it enough weeks; eat for the goal; keep the week repeatable.
+
+Planned Expectations cluster titles live in `docs/search-opportunity-map-2026-09.md` section F.
+
 ## Quick self-check
 
 Before calling Learn copy done, answer yes to all:
@@ -86,5 +112,6 @@ Before calling Learn copy done, answer yes to all:
 3. Would I say this out loud to a client without cringing?
 4. Did I remove internal/product jargon from reader-facing lines?
 5. Does the piece still match the tone of articles 1–6?
+6. Is the title plain and explanatory rather than punchy or slogan-like?
 
 If any answer is no, rewrite before shipping.
