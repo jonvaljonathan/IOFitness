@@ -112,7 +112,7 @@ export const muscleSurplusArticle: LearnArticle = {
     },
     {
       type: "p",
-      text: "IOFitness is being designed around that kind of honesty. The intended model is not to slap \"build muscle\" on a questionnaire and ignore whether the rest of the plan can support it. It is to match training, recovery demand, and goal priority so the block you chose is the block you are actually living.",
+      text: "IOFitness is built around that kind of honesty: match training, recovery demand, and goal priority so the block you chose is the block you are actually living — not slap \"build muscle\" on a questionnaire and ignore whether the rest of the plan can support it.",
     },
 
     { type: "h2", text: "Bottom line" },

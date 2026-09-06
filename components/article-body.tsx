@@ -54,7 +54,7 @@ export function ArticleBody({ blocks }: { blocks: ArticleBlock[] }) {
             return (
               <h2
                 key={index}
-                className="font-display pt-6 text-2xl tracking-tight text-ink sm:text-3xl"
+                className="font-sans pt-6 text-2xl tracking-tight text-ink sm:text-3xl"
               >
                 {block.text}
               </h2>
@@ -124,7 +124,7 @@ export function ArticleSources({ sources }: { sources: ArticleSource[] }) {
 
   return (
     <section className="mt-14 border-t border-rule pt-10">
-      <h2 className="font-display text-2xl tracking-tight">Sources</h2>
+      <h2 className="font-sans text-2xl tracking-tight">Sources</h2>
       <ol className="mt-6 list-decimal space-y-4 pl-5 text-sm leading-7 text-muted">
         {sources.map((source) => (
           <li key={source.id} id={`source-${source.id}`}>

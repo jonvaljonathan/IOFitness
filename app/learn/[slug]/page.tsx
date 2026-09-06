@@ -70,7 +70,7 @@ export default async function LearnArticlePage({ params }: LearnArticleParams) {
           Learn
         </Link>
       </p>
-      <h1 className="font-display mt-4 text-4xl tracking-tight sm:text-5xl">
+      <h1 className="font-sans mt-4 text-4xl tracking-tight sm:text-5xl">
         {article.title}
       </h1>
       <p className="mt-6 text-lg leading-8 text-muted">{article.description}</p>

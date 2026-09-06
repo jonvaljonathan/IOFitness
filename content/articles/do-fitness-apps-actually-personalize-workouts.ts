@@ -9,7 +9,7 @@ import type { LearnArticle } from "../learn";
  */
 export const appPersonalizationArticle: LearnArticle = {
   slug: "do-fitness-apps-actually-personalize-workouts",
-  title: "Does Your Fitness App Actually Personalize Anything?",
+  title: "Does Your Fitness App Personalize Your Workouts?",
   description:
     "Most fitness apps ask good onboarding questions and still hand you a template. Run a four-question test: does it change exercise selection, handle two goals, survive a missed week, and remember a constraint you told it once?",
   date: "2026-09-06",
@@ -136,7 +136,7 @@ export const appPersonalizationArticle: LearnArticle = {
     },
     {
       type: "p",
-      text: "IOFitness is being designed around that deeper end of the test. The intended model is not only to generate a starting plan, and not only to nudge today's numbers. It is to change exercise selection, weekly structure, and next-block decisions when the evidence says the old plan is no longer honest.",
+      text: "IOFitness is built to go past a starting questionnaire. When the evidence says the old plan is no longer honest, exercise selection, the week, and the next block should be allowed to change.",
     },
 
     { type: "h2", text: "Bottom line" },

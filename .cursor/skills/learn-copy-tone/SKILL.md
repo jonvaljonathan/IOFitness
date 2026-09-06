@@ -59,8 +59,10 @@ Avoid these patterns unless quoting another source:
 - Label evidence and judgment separately
 - Cite carefully; do not overclaim
 - Stay on the training side of the medical line
-- Soft product close only: "IOFitness is being designed..."
+- Soft product close only, active voice: "IOFitness is built to..."
+- Never use passive "is being designed..."
 - No diagnosis, rehab-protocol, or treatment claims
+- Full brand rules: `docs/brand-bible.md`
 
 ## Structure voice
 

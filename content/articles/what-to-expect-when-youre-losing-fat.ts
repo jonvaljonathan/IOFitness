@@ -111,7 +111,7 @@ export const losingFatExpectationsArticle: LearnArticle = {
     },
     {
       type: "p",
-      text: "IOFitness is being designed around that kind of sustainable phase. The intended model is not a crash challenge. It is a plan that can hold a fat-loss primary, keep training meaningful, and stay repeatable long enough to matter.",
+      text: "IOFitness is built to hold a fat-loss primary, keep training meaningful, and stay repeatable long enough to matter — not run a crash challenge.",
     },
 
     { type: "h2", text: "Bottom line" },

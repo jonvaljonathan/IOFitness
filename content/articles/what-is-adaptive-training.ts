@@ -16,15 +16,15 @@ export const adaptiveTrainingArticle: LearnArticle = {
   body: [
     {
       type: "p",
-      text: "Adaptive training is training in which the future program changes in response to evidence about the athlete. That evidence might be completed sessions, missed sessions, performance, schedule changes, available equipment, sport demands, or a shift in goals. The useful idea is simple: the plan is not finished when it is first generated. It keeps updating as reality shows up.",
+      text: "You finish Tuesday strong, miss Thursday, play Saturday soccer, and next week's plan still shows up like nothing happened. Adaptive training is the opposite: the future program changes because of what you actually did — completed sessions, misses, performance, schedule changes, equipment, sport demands, or a shift in goals. The plan is not finished when it is first written. It keeps updating as reality shows up.",
     },
     {
       type: "p",
-      text: "That definition is broader than any one app feature. Fitness companies use \"adaptive\" for many different things. Some change the weight on a lift. Some swap today's workout. Some reshuffle a week after you miss sessions. Some claim to revise the larger training strategy. Those are not the same depth of adaptation.",
+      text: "Fitness companies use \"adaptive\" for many different things. Some change the weight on a lift. Some swap today's workout. Some reshuffle a week after you miss sessions. Some claim to revise the larger training strategy. Those are not the same depth of adaptation.",
     },
     {
       type: "callout",
-      text: "Short version: a personalized plan is built for you. An adaptive plan keeps changing because of what you actually do. The hard questions are what the system can observe, what it is allowed to change, how quickly it responds, and whether it still protects the long-term goal while making those changes.",
+      text: "Short version: a personalized plan is built for you. An adaptive plan keeps changing because of what you actually do. The hard questions are what gets observed, what is allowed to change, how quickly it responds, and whether it still protects the long-term goal while making those changes.",
     },
 
     { type: "h2", text: "Personalization is not the same as adaptation" },
@@ -221,7 +221,7 @@ export const adaptiveTrainingArticle: LearnArticle = {
     { type: "h2", text: "What this means for IOFitness" },
     {
       type: "p",
-      text: "IOFitness is being designed around the deeper end of this framework. The intended model is not only to generate a starting plan, and not only to nudge today's numbers. It is to use what someone actually did, plus their goals, activities, limitations, and progression history, to decide what training should do next. One body part that will not cooperate is one of the clearest tests of that idea: find a version of the movement you can still load, attack that capacity so the weak link improves, keep the rest of training moving, and update from how the next sessions feel rather than freezing the whole week. That case is covered in [how to train with a limitation](/learn/how-to-train-with-a-limitation).",
+      text: "IOFitness is built around the deeper end of this framework: use what someone actually did, plus their goals, activities, limitations, and progression history, to decide what training should do next. One body part that will not cooperate is a clear test — find a version you can still load, attack that capacity, keep the rest of training moving, and update from how the next sessions feel. That case is covered in [how to train with a limitation](/learn/how-to-train-with-a-limitation).",
     },
     {
       type: "p",

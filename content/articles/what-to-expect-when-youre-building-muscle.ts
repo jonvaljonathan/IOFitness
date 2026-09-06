@@ -121,7 +121,7 @@ export const buildingMuscleExpectationsArticle: LearnArticle = {
     },
     {
       type: "p",
-      text: "IOFitness is being designed around that kind of expectation setting. The intended model is not to promise fast transformation copy. It is to match the plan to a real muscle-building block and help you keep going long enough for the work to matter.",
+      text: "IOFitness is built to match the plan to a real muscle-building block and help you keep going long enough for the work to matter — not promise fast transformation copy.",
     },
 
     { type: "h2", text: "Bottom line" },

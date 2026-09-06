@@ -238,7 +238,7 @@ export const trainWithLimitationArticle: LearnArticle = {
     },
     {
       type: "p",
-      text: "IOFitness is being designed around that kind of decision. The intended model treats sore joints and limited movements as inputs to exercise choice and progression, not as a reason to freeze the whole program or abandon the quality the athlete still needs.",
+      text: "IOFitness is built around that kind of decision: a sore joint changes the lift and how you progress it, not whether the rest of training gets to keep moving.",
     },
 
     { type: "h2", text: "Bottom line" },
