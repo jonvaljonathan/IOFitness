@@ -314,7 +314,7 @@ Ranked in recommended publishing order. Ranking logic: originality of the IOFitn
 - **Why it matters to IOFitness:** We need a definitional page for our own category, and we need it to be neutral enough to be cited by AI assistants answering prompt #8.
 - **What current results miss:** TrainerRoad owns the term but only in a cycling, FTP-driven sense. Flux, Rizin, Sculpt, and SensAI each define adaptive training as whatever their product does — load autoregulation, HRV response, or LLM chat. No page separates the *levels* of adaptation (load → exercise selection → session structure → program structure).
 - **Why IOFitness can do better:** We can publish that ladder of adaptation levels and be honest that most products stop at level one. Being the page that classifies competitors fairly is what earns citations.
-- **Suggested internal links:** `/learn/do-fitness-apps-actually-personalize-workouts`, `/learn/how-workout-apps-choose-exercises`, `/learn/training-for-two-goals-at-once`, `/learn/what-to-do-when-you-miss-a-workout`.
+- **Suggested internal links:** `/learn/do-fitness-apps-actually-personalize-workouts`, `/learn/pick-the-right-exercises-for-your-goals`, `/learn/training-for-two-goals-at-once`, `/learn/what-to-do-when-you-miss-a-workout`.
 
 ### 4. Progressing when you can't add weight
 
@@ -362,42 +362,100 @@ Ranked in recommended publishing order. Ranking logic: originality of the IOFitn
 
 ### 8. How to tell whether a fitness app really personalizes anything
 
+- **Published slug:** `/learn/do-fitness-apps-actually-personalize-workouts` (drafted 2026-09-06)
 - **Proposed title:** Does Your Fitness App Actually Personalize Anything? A Test You Can Run
 - **Primary query:** do fitness apps actually personalize workouts
-- **Secondary queries:** what to look for in a personalized training app; are ai workout plans any good; difference between workout tracker and workout planner; why do fitness apps give everyone the same plan
-- **User intent:** problem-solving shading into commercial; a burned app user
-- **Why it matters to IOFitness:** It reframes the entire commercial category on criteria we satisfy, without needing to win "best AI trainer." It's also the most citable page in the map for AI assistants answering prompts #12, #26, and #31.
-- **What current results miss:** The SERP is roundups written by app companies about themselves. Rizin ranks itself first in its own "best AI fitness apps" post. Nobody offers a neutral test.
-- **Why IOFitness can do better:** We can publish a concrete four-question test — does it change exercise *selection* or only load? does it handle two goals? does it survive a missed week? does it remember a constraint you told it once? — and answer honestly, including where we're weaker.
-- **Suggested internal links:** `/learn/what-is-adaptive-training`, `/learn/how-workout-apps-choose-exercises`, `/learn/what-to-do-when-you-miss-a-workout`, `/learn/training-for-two-goals-at-once`.
+- **Thesis:** Most "personalized" apps answer onboarding once, then hand you a template. Run four tests: selection vs load, two goals, missed week, remembered constraints.
 
 ### 9. How exercise selection actually gets decided
 
-- **Proposed title:** How an Exercise Gets Chosen for You (and Why Most Apps Get It Wrong)
-- **Primary query:** how do workout apps decide what exercises to give you
-- **Secondary queries:** how do i know what exercises to do; how to build a workout plan from scratch; sport specific training vs general strength; exercise progression from easiest to hardest
-- **User intent:** informational; curious, semi-technical, high trust-building value
-- **Why it matters to IOFitness:** Transparency about selection logic is a moat competitors can't copy without exposing that their logic is thinner. It also makes every other article's claims credible.
-- **What current results miss:** Nothing in the consumer SERP explains selection at all. The closest content is "choose a compound then accessories," which is a heuristic, not a system.
-- **Why IOFitness can do better:** Slot templates, movement patterns, progression tiers, equipment resolution, and variety scoring are all explainable in plain language, and explaining them is inherently differentiating.
-- **Suggested internal links:** `/learn/do-fitness-apps-actually-personalize-workouts`, `/learn/what-is-adaptive-training`, `/learn/how-to-progress-when-you-cant-add-weight`, `/learn/exercise-substitutions-same-training-effect`.
+- **Published slug:** `/learn/pick-the-right-exercises-for-your-goals` (rewritten 2026-09-06)
+- **Title:** Pick the Right Exercises for Your Goals
+- **Primary query:** how to choose exercises for your goals / pick exercises for specific goals
+- **Thesis:** Start from the outcome (ski, grandkids, injury capacity, physique), translate into qualities/jobs, then pick tools. Goal-first selection, not template-first.
 
 ### 10. Training when the week shrinks
 
+- **Published slug:** `/learn/when-your-week-shrinks` (drafted 2026-09-06)
 - **Proposed title:** When Your Week Shrinks: How to Cut a Plan Down Without Breaking It
 - **Primary query:** 3 day workout plan when you planned 5
-- **Secondary queries:** how to train when your schedule keeps changing; workout plan for unpredictable schedule; how to work out with only 30 minutes; how to keep progress while travelling
-- **User intent:** problem-solving; competent trainee with a temporary constraint
-- **Why it matters to IOFitness:** Duration tiers and priority-ordered session content are real mechanisms, and this is the query where they're most legible. It also feeds the missed-workout article and the equipment-change article.
-- **What current results miss:** Almost all content answers with a *different* plan ("try this 3-day split"). Nobody answers the actual question, which is how to compress the plan you're already on and keep the progression intact.
-- **Why IOFitness can do better:** Compression rules — what stays, what shrinks, what's cut — are how duration-aware templates work. We can also address the 30-minute session honestly instead of pretending it holds a 60-minute session's content.
-- **Suggested internal links:** `/learn/what-to-do-when-you-miss-a-workout`, `/learn/minimum-training-to-maintain-strength`, `/learn/workout-program-that-adapts-to-your-equipment`, `/learn/training-for-two-goals-at-once`.
+- **Thesis:** Compress the plan you already have. Protect high-value work, shrink or cut the rest, keep progression comparable. Do not swap in an unrelated starter split.
+
+### 11. Start a training habit (New Year / consistency hub)
+
+- **Published slug:** `/learn/start-a-training-habit` (drafted 2026-09-06)
+- **Title:** Start a Training Habit (Even If You Don't Know What You're Doing)
+- **Primary query:** how to start a workout habit / new year workout plan for beginners who don't know what to do
+- **Thesis:** Uncertainty and program-hopping kill progress. A repeatable basic week beats another perfect plan you abandon. Fat loss follows adherence. Day one should leave you able to come back tomorrow.
+- **Launch note:** Strong New Year entry page. Links to missed workout, shrinking week, exercise-for-goals, return after time off.
 
 ### Deliberately excluded from the top 10
 
 - Anything targeting "best AI personal trainer app" or "best AI workout generator" — high competition, near-zero originality, and it argues against our positioning.
-- "Progressive overload explained" and "how long until I see results" — authority walls; useful later as supporting spokes, not as opening bets.
+- Generic encyclopedia versions of "progressive overload explained" or "how long until I see results" written as Healthline clones — authority walls if framed that way. The **Expectations** cluster below covers the same reader need in IOFitness voice instead.
 - Any programmatic exercise-page or template-page expansion.
+
+---
+
+## F. Expectations cluster (drafted)
+
+Honest timelines and tradeoffs for muscle, fat loss, food, and consistency. Hub relationship: [start a training habit](/learn/start-a-training-habit) and [pick the right exercises for your goals](/learn/pick-the-right-exercises-for-your-goals) feed into this cluster; this cluster feeds goal hubs later.
+
+### Headline / tone rule for this cluster
+
+Learn titles should **name the situation**, not punchline the advice.
+
+| Move away from | Move toward |
+|---|---|
+| Punchy / snappy | Plain |
+| Slogan-like | Explanatory |
+| Manifesto / "train like you mean it" | Coach-to-adult |
+| Clever-contrarian | Honest and specific |
+| Tweet-thread energy | Calm, complete thoughts |
+| Ad copy | Teaching copy |
+
+**On-brand title pattern:** plain, explanatory, calm, specific, low-drama.  
+**Examples we already like:** *Pick the Right Exercises for Your Goals*; *Start a Training Habit (Even If You Don't Know What You're Doing)*; *What Should Actually Happen to Your Plan When You Miss a Workout*.
+
+**Brand vocabulary to repeat:** show up; come back tomorrow; pick a primary goal; give it enough weeks; eat for the goal; keep the week repeatable; don't blow the streak for one heroic session.
+
+### Articles (drafted 2026-09-06)
+
+Draft order used: 3 → 1 → 4 → 2 → 5 → 7 → 6 → 8.
+
+1. **What to Expect When You're Building Muscle** — `/learn/what-to-expect-when-youre-building-muscle`  
+   Primary need: realistic muscle timelines (weeks vs months). Early signals vs visible change. Why one hard month is not enough.
+
+2. **What to Expect When You're Losing Fat** — `/learn/what-to-expect-when-youre-losing-fat`  
+   Primary need: realistic fat-loss timelines. Why the scale jumps around. Why crash phases break the habit.
+
+3. **Why Building Muscle Usually Needs a Calorie Surplus** — `/learn/why-building-muscle-usually-needs-a-calorie-surplus`  
+   Primary need: the honesty gap — people say they want muscle without planning to eat for it. Training alone does not force growth.
+
+4. **How Training Changes When You're in a Deficit** — `/learn/how-training-changes-when-youre-in-a-deficit`  
+   Primary need: what a fat-loss phase does to recovery, progression, and expectations. Deficit drives fat loss; training protects muscle and the habit.
+
+5. **When Building Muscle and Losing Fat Compete** — `/learn/when-building-muscle-and-losing-fat-compete`  
+   Primary need: recomp rules in plain language. Beginners/returners can sometimes do both slowly; advanced trainees usually need a primary.
+
+6. **How Long to Follow a Plan Before You Change It** — `/learn/how-long-to-follow-a-plan-before-you-change-it`  
+   Primary need: stop program-hopping. Adherence and technique first; measurable change later; don't scrap a plan after a chaotic week.
+
+7. **How to Stay Consistent After Motivation Drops** — `/learn/how-to-stay-consistent-after-motivation-drops`  
+   Primary need: consistency after the New Year spike. Pairs with the habit hub. Showing up beats optimizing.
+
+8. **How to Set Goals That Match Real Timelines** — `/learn/how-to-set-goals-that-match-real-timelines`  
+   Primary need: New Year / life goals that fit physiological clocks. "Get jacked and lean by February" is usually two conflicting plans.
+
+### Optional later spokes
+
+9. **How to Decide Whether to Stay the Course or Change the Plan**  
+10. **How to Track Progress When the Scale Barely Moves**
+
+### Status
+
+- Planned 2026-09-06 after headline-tone correction (punchy drafts rejected; calm explanatory titles locked).
+- Drafted and registered in `content/learn.ts` on `cursor/learn-articles-batch-c123`. Hold publish / IndexNow until approval.
 
 ---
 

@@ -12,7 +12,7 @@ export const adaptiveTrainingArticle: LearnArticle = {
   description:
     "Adaptive training is training that changes the future program in response to evidence about the athlete. Personalization alone is not enough, and more change is not automatically better.",
   date: "2026-09-04",
-  dateModified: "2026-09-05",
+  dateModified: "2026-09-06",
   body: [
     {
       type: "p",
@@ -215,7 +215,7 @@ export const adaptiveTrainingArticle: LearnArticle = {
     },
     {
       type: "p",
-      text: "That consumer test also points to a related question for later: whether an app is truly personalizing the plan, or only dressing a generic template in onboarding answers. Personalization and adaptation should be judged separately.",
+      text: "That consumer test also points to a related question: whether an app is truly personalizing the plan, or only dressing a generic template in onboarding answers. Personalization and adaptation should be judged separately. A concrete product test for that is in [does your fitness app actually personalize anything](/learn/do-fitness-apps-actually-personalize-workouts).",
     },
 
     { type: "h2", text: "What this means for IOFitness" },
@@ -225,7 +225,7 @@ export const adaptiveTrainingArticle: LearnArticle = {
     },
     {
       type: "p",
-      text: "That includes problems already covered in this Learn series: reprogramming after a missed session, and allocating a week when more than one goal is active. Those are not cosmetic features. They are tests of whether the system can adapt the future program while protecting the point of the training.",
+      text: "That includes problems already covered in this Learn series: reprogramming after a missed session, allocating a week when more than one goal is active, choosing exercises by the job they need to do, and compressing a plan when the week shrinks. Those are not cosmetic features. They are tests of whether the system can adapt the future program while protecting the point of the training. Exercise choice is covered in [pick the right exercises for your goals](/learn/pick-the-right-exercises-for-your-goals). Compression is covered in [when your week shrinks](/learn/when-your-week-shrinks).",
     },
 
     { type: "h2", text: "Bottom line" },
