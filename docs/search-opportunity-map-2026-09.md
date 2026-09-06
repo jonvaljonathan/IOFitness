@@ -314,7 +314,7 @@ Ranked in recommended publishing order. Ranking logic: originality of the IOFitn
 - **Why it matters to IOFitness:** We need a definitional page for our own category, and we need it to be neutral enough to be cited by AI assistants answering prompt #8.
 - **What current results miss:** TrainerRoad owns the term but only in a cycling, FTP-driven sense. Flux, Rizin, Sculpt, and SensAI each define adaptive training as whatever their product does — load autoregulation, HRV response, or LLM chat. No page separates the *levels* of adaptation (load → exercise selection → session structure → program structure).
 - **Why IOFitness can do better:** We can publish that ladder of adaptation levels and be honest that most products stop at level one. Being the page that classifies competitors fairly is what earns citations.
-- **Suggested internal links:** `/learn/do-fitness-apps-actually-personalize-workouts`, `/learn/how-workout-apps-choose-exercises`, `/learn/training-for-two-goals-at-once`, `/learn/what-to-do-when-you-miss-a-workout`.
+- **Suggested internal links:** `/learn/do-fitness-apps-actually-personalize-workouts`, `/learn/how-to-choose-exercises-for-your-training-plan`, `/learn/training-for-two-goals-at-once`, `/learn/what-to-do-when-you-miss-a-workout`.
 
 ### 4. Progressing when you can't add weight
 
@@ -369,10 +369,10 @@ Ranked in recommended publishing order. Ranking logic: originality of the IOFitn
 
 ### 9. How exercise selection actually gets decided
 
-- **Published slug:** `/learn/how-workout-apps-choose-exercises` (drafted 2026-09-06)
-- **Proposed title:** How an Exercise Gets Chosen for You (and Why Most Apps Get It Wrong)
-- **Primary query:** how do workout apps decide what exercises to give you
-- **Thesis:** Name the job first, then filter by equipment, tolerance, skill, and progression. Frozen menus and random shuffles both fail.
+- **Published slug:** `/learn/how-to-choose-exercises-for-your-training-plan` (rewritten 2026-09-06)
+- **Title:** How to Choose Exercises for Your Training Plan
+- **Primary query:** how to choose exercises for a workout plan / how do workout apps decide exercises
+- **Thesis:** Name the job, then choose the tool. Active selection stack (job → equipment → tolerance → skill → progression → variety). IOFitness decision logic is the body of the page, not a soft close.
 
 ### 10. Training when the week shrinks
 

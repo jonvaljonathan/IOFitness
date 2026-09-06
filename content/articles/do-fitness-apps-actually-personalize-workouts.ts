@@ -59,7 +59,7 @@ export const appPersonalizationArticle: LearnArticle = {
     },
     {
       type: "p",
-      text: "How workout selection should work in the first place is covered in [how workout apps choose exercises](/learn/how-workout-apps-choose-exercises).",
+      text: "How to choose exercises in the first place is covered in [how to choose exercises for your training plan](/learn/how-to-choose-exercises-for-your-training-plan).",
     },
 
     { type: "h3", text: "2. Can it hold two goals without collapsing them?" },
