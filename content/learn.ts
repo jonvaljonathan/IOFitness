@@ -1,4 +1,5 @@
 import { liftingWithSportsArticle } from "./articles/how-to-combine-lifting-with-sports";
+import { seniorsStrengthTrainingArticle } from "./articles/how-to-start-strength-training-later-in-life";
 import { twoGoalsArticle } from "./articles/how-to-train-for-two-goals-at-once";
 import { returnToTrainingArticle } from "./articles/how-to-return-to-training-after-time-off";
 import { trainWithLimitationArticle } from "./articles/how-to-train-with-a-limitation";
@@ -49,6 +50,7 @@ export const learnArticles: LearnArticle[] = [
   returnToTrainingArticle,
   liftingWithSportsArticle,
   trainWithLimitationArticle,
+  seniorsStrengthTrainingArticle,
 ];
 
 export function getLearnArticles(): LearnArticle[] {

@@ -46,7 +46,7 @@ export const trainWithLimitationArticle: LearnArticle = {
     },
     {
       type: "p",
-      text: "Full time off raises questions about how much you lost and how fast to climb back. That problem belongs in [how to return to training after time off](/learn/how-to-return-to-training-after-time-off). A limitation raises a different set: what version of the movement can you still attack, what else can progress hard this week, and what would justify bringing the full version back.",
+      text: "Full time off raises questions about how much you lost and how fast to climb back. That problem belongs in [how to return to training after time off](/learn/how-to-return-to-training-after-time-off). Starting strength work later in life raises a related caution: the destination still matters, but recreating an old gym habit too fast is a common way to get hurt or quit. That case is covered in [how to start strength training later in life](/learn/how-to-start-strength-training-later-in-life). A limitation raises a different set: what version of the movement can you still attack, what else can progress hard this week, and what would justify bringing the full version back.",
     },
     {
       type: "p",
