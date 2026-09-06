@@ -181,7 +181,7 @@ export const trainingHabitArticle: LearnArticle = {
     },
     {
       type: "p",
-      text: "IOFitness is being designed around that kind of start. The intended model is not another January challenge that tries to impress you on day one. It is a plan that helps you begin simply, leave able to come back, stay consistent, and adapt when life gets loud — so the habit sticks before the program gets clever.",
+      text: "IOFitness is built around that kind of start. The intended model is not another January challenge that tries to impress you on day one. It is a plan that helps you begin simply, leave able to come back, stay consistent, and adapt when life gets loud — so the habit sticks before the program gets clever.",
     },
 
     { type: "h2", text: "Bottom line" },

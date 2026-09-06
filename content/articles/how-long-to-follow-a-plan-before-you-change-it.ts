@@ -95,7 +95,7 @@ export const followPlanBeforeChangingArticle: LearnArticle = {
     },
     {
       type: "p",
-      text: "IOFitness is being designed around that kind of patience with teeth. The intended model is not to freeze a bad plan forever, and not to reinvent the program every quiet Wednesday. It is to keep enough continuity for progress while still responding when the plan is clearly mismatched.",
+      text: "IOFitness is built around that kind of patience with teeth. The intended model is not to freeze a bad plan forever, and not to reinvent the program every quiet Wednesday. It is to keep enough continuity for progress while still responding when the plan is clearly mismatched.",
     },
 
     { type: "h2", text: "Bottom line" },

@@ -273,7 +273,7 @@ export const liftingWithSportsArticle: LearnArticle = {
     },
     {
       type: "p",
-      text: "IOFitness is being designed around that kind of evidence. The intended model treats the fixed sport day as part of total weekly training, estimates what it already supplied and cost, places gym work around the remaining gaps, and updates the next lower-body dose from the actual weekend rather than from a frozen template.",
+      text: "IOFitness is built around that kind of evidence. The intended model treats the fixed sport day as part of total weekly training, estimates what it already supplied and cost, places gym work around the remaining gaps, and updates the next lower-body dose from the actual weekend rather than from a frozen template.",
     },
 
     { type: "h2", text: "Bottom line" },

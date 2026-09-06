@@ -6,7 +6,7 @@ import type { LearnArticle } from "../learn";
  * Thesis: start from the outcome you want — ski, grandkids, injury capacity,
  * bathing-suit confidence — then choose lifts that build the qualities that
  * outcome needs. Name the job, pick the tool, filter by equipment/tolerance/
- * skill/progression. This is the selection logic IOFitness is being designed
+ * skill/progression. This is the selection logic IOFitness is built
  * around.
  */
 export const exerciseSelectionArticle: LearnArticle = {
@@ -155,7 +155,7 @@ export const exerciseSelectionArticle: LearnArticle = {
     { type: "h2", text: "How IOFitness should choose" },
     {
       type: "p",
-      text: "This is the selection logic IOFitness is being designed around: start from what you want to become able to do, turn that into weekly jobs, then pick lifts you can actually progress.",
+      text: "This is the selection logic IOFitness is built around: start from what you want to become able to do, turn that into weekly jobs, then pick lifts you can actually progress.",
     },
     {
       type: "ol",

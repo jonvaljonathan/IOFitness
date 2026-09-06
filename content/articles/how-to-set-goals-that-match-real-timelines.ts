@@ -91,7 +91,7 @@ export const goalsMatchTimelinesArticle: LearnArticle = {
     },
     {
       type: "p",
-      text: "IOFitness is being designed around that kind of goal setting. The intended model is not to collect every wish in onboarding and pretend they all fit one month. It is to help you choose a primary, match the plan to it, and stay with it long enough for the work to count.",
+      text: "IOFitness is built around that kind of goal setting. The intended model is not to collect every wish in onboarding and pretend they all fit one month. It is to help you choose a primary, match the plan to it, and stay with it long enough for the work to count.",
     },
 
     { type: "h2", text: "Bottom line" },

@@ -7,6 +7,9 @@ Edit copy here instead of inside presentational components.
 
 ## Copy skills
 
+Brand source of truth: `docs/brand-bible.md`  
+Short marketing brief: `.agents/product-marketing.md`
+
 Before writing or revising homepage or Learn copy, read:
 
 1. `.cursor/skills/copywriting/SKILL.md` for persuasive page copy

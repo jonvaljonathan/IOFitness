@@ -235,7 +235,7 @@ export const progressiveOverloadArticle: LearnArticle = {
     },
     {
       type: "p",
-      text: "IOFitness is being designed around that kind of decision. The programming model is intended to treat progression as evidence-driven parameter change, not as a fixed calendar of heavier weights. The framework in this article still works with a notebook if you keep the comparisons honest.",
+      text: "IOFitness is built around that kind of decision. The programming model is intended to treat progression as evidence-driven parameter change, not as a fixed calendar of heavier weights. The framework in this article still works with a notebook if you keep the comparisons honest.",
     },
 
     { type: "h2", text: "Bottom line" },

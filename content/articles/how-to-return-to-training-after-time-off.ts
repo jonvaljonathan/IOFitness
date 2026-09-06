@@ -209,7 +209,7 @@ export const returnToTrainingArticle: LearnArticle = {
     },
     {
       type: "p",
-      text: "IOFitness is being designed around that kind of re-entry. The intended model treats the old program as prior information, uses the first return sessions to re-estimate current capacity, and rebuilds volume, intensity, frequency, and complexity from the response rather than from a fixed percentage schedule.",
+      text: "IOFitness is built around that kind of re-entry. The intended model treats the old program as prior information, uses the first return sessions to re-estimate current capacity, and rebuilds volume, intensity, frequency, and complexity from the response rather than from a fixed percentage schedule.",
     },
 
     { type: "h2", text: "Bottom line" },

@@ -136,7 +136,7 @@ export const appPersonalizationArticle: LearnArticle = {
     },
     {
       type: "p",
-      text: "IOFitness is being designed around that deeper end of the test. The intended model is not only to generate a starting plan, and not only to nudge today's numbers. It is to change exercise selection, weekly structure, and next-block decisions when the evidence says the old plan is no longer honest.",
+      text: "IOFitness is built around that deeper end of the test. The intended model is not only to generate a starting plan, and not only to nudge today's numbers. It is to change exercise selection, weekly structure, and next-block decisions when the evidence says the old plan is no longer honest.",
     },
 
     { type: "h2", text: "Bottom line" },

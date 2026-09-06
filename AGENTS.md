@@ -10,6 +10,9 @@ This block is written and re-added by `next dev` — verify at `node_modules/nex
 
 ## Marketing and Learn copy
 
+Brand source of truth: `docs/brand-bible.md`  
+Short marketing brief: `.agents/product-marketing.md`
+
 Before drafting or revising homepage/marketing copy or Learn articles, read the relevant skills:
 
 - `.cursor/skills/copywriting/SKILL.md` (mirrored from `.agents/skills/copywriting`) — conversion copy for pages
