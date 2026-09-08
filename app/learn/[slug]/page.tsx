@@ -33,7 +33,7 @@ export async function generateMetadata({
       canonical: absoluteUrl(`/learn/${article.slug}`),
     },
     openGraph: {
-      title: `${article.title} — IOFitness`,
+      title: `${article.title} · IOFitness`,
       description: article.description,
       url: absoluteUrl(`/learn/${article.slug}`),
       siteName: "IOFitness",

@@ -8,7 +8,9 @@ description: House voice for IOFitness Learn authority articles. Use whenever dr
 Write like a sharp coach talking to a competent adult athlete.
 Do not write like a methods paper, product spec, or internal programming memo.
 
-Before drafting or revising any Learn article, read the openings of two published articles in `content/articles/` and match that register.
+Before drafting or revising any Learn article:
+1. Read `seo-audit/references/ai-writing-detection.md` (em dashes are the primary AI tell; ban them in reader-facing copy).
+2. Read the openings of two published articles in `content/articles/` and match that register.
 
 ## Voice
 
@@ -59,7 +61,8 @@ Avoid these patterns unless quoting another source:
 - Label evidence and judgment separately
 - Cite carefully; do not overclaim
 - Stay on the training side of the medical line
-- Soft product close only: "IOFitness is being designed..."
+- Soft product close only: "IOFitness is built to…" / "IOFitness is built around…" (never "is being designed" / "intended model")
+- No em dashes (`—`) in titles, descriptions, or body copy (see ai-writing-detection)
 - No diagnosis, rehab-protocol, or treatment claims
 
 ## Structure voice
@@ -113,5 +116,8 @@ Before calling Learn copy done, answer yes to all:
 4. Did I remove internal/product jargon from reader-facing lines?
 5. Does the piece still match the tone of articles 1–6?
 6. Is the title plain and explanatory rather than punchy or slogan-like?
+7. Did I pass the AI-writing check (no em dashes, no stock AI phrases, soft close uses "built to/around")?
 
 If any answer is no, rewrite before shipping.
+
+Run `npm run lint:copy` to catch em dashes and banned soft-close phrases in `content/`.

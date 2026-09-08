@@ -4,13 +4,13 @@ import { getLearnArticles, learnCopy } from "@/content/learn";
 import { absoluteUrl, siteConfig } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: { absolute: `${learnCopy.heading} — ${siteConfig.name}` },
+  title: { absolute: `${learnCopy.heading} · ${siteConfig.name}` },
   description: learnCopy.intro,
   alternates: {
     canonical: absoluteUrl("/learn"),
   },
   openGraph: {
-    title: `${learnCopy.heading} — ${siteConfig.name}`,
+    title: `${learnCopy.heading} · ${siteConfig.name}`,
     description: learnCopy.intro,
     url: absoluteUrl("/learn"),
     siteName: siteConfig.name,
