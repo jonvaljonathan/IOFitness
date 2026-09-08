@@ -1,8 +1,18 @@
+export type ProcessPreviewKind = "adapt" | "timer";
+
+export type ProcessItem = {
+  title: string;
+  body: string;
+  preview?: ProcessPreviewKind;
+  previewLabel?: string;
+};
+
 export const homepageCopy = {
   hero: {
     heading: "Get better.",
     product:
       "IOFitness builds adaptive training around your goals, sports, limitations, and how you actually progress — so the plan keeps changing as you get better.",
+    appPreviewLabel: "IOFitness app home — next workout and weekly progress",
   },
   cta: {
     label: "Get the App",
@@ -21,8 +31,8 @@ export const homepageCopy = {
     body: "A single score cannot tell you whether you are becoming more capable. Strength, fitness, athleticism, and the ability to do the things you care about all count, and they count differently for different people.",
   },
   why: {
-    heading: "Why we're building IOFitness",
-    body: "Programming that path is hard to do well on your own. Generic plans do not account for your limitations, the activities you care about, or how you actually progress. We are building IOFitness so the plan can be specific to you, and so it can change when you change.",
+    heading: "Why IOFitness exists",
+    body: "Programming that path is hard to do well on your own. Generic plans do not account for your limitations, the activities you care about, or how you actually progress. IOFitness is built to make the plan specific to you — and to change it when you change.",
   },
   process: {
     heading: "What the plan should decide next",
@@ -39,12 +49,16 @@ export const homepageCopy = {
       {
         title: "Swap the lift, keep the job",
         body: "A tender joint should change the exercise, not pause the whole plan. Progress the substitute from how the next sessions feel.",
+        preview: "adapt",
+        previewLabel: "Adapt — This hurt: pick an easier hinge and keep training",
       },
       {
         title: "Rebuild from current capacity",
         body: "After time off, keep familiar work and reduce uncertain volume until readiness is clear again.",
+        preview: "timer",
+        previewLabel: "Active workout timer — log the work in front of you",
       },
-    ],
+    ] satisfies ProcessItem[],
   },
   situations: {
     heading: "If this is your training week",
