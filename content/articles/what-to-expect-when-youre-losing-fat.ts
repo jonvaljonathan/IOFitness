@@ -12,7 +12,7 @@ export const losingFatExpectationsArticle: LearnArticle = {
   description:
     "Fat loss often shows sooner than muscle growth, but it still takes weeks to months. Expect a noisy scale, protect your training habit, and use a deficit you can sustain.",
   date: "2026-09-06",
-  dateModified: "2026-09-06",
+  dateModified: "2026-09-08",
   body: [
     {
       type: "p",
@@ -111,7 +111,7 @@ export const losingFatExpectationsArticle: LearnArticle = {
     },
     {
       type: "p",
-      text: "IOFitness is being designed around that kind of sustainable phase. The intended model is not a crash challenge. It is a plan that can hold a fat-loss primary, keep training meaningful, and stay repeatable long enough to matter.",
+      text: "IOFitness is built around that kind of sustainable phase. Hold a fat-loss primary, keep training meaningful, and stay repeatable long enough to matter. A crash challenge is the opposite of that.",
     },
 
     { type: "h2", text: "Bottom line" },

@@ -12,7 +12,7 @@ export const muscleFatCompeteArticle: LearnArticle = {
   description:
     "You can sometimes gain some muscle while losing some fat, especially as a beginner or returner. Maximizing both at once is usually the wrong promise. Pick a primary goal and give the other a supporting role.",
   date: "2026-09-06",
-  dateModified: "2026-09-06",
+  dateModified: "2026-09-08",
   body: [
     {
       type: "p",
@@ -87,7 +87,7 @@ export const muscleFatCompeteArticle: LearnArticle = {
     },
     {
       type: "p",
-      text: "IOFitness is being designed around that kind of priority call. The intended model is not to pretend every goal can be maximized together. It is to make the tradeoff explicit so the week has a point.",
+      text: "IOFitness is built around that kind of priority call. Make the tradeoff explicit so the week has a point, instead of pretending every goal can be maximized together.",
     },
 
     { type: "h2", text: "Bottom line" },

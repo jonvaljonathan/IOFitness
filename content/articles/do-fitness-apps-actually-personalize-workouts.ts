@@ -13,7 +13,7 @@ export const appPersonalizationArticle: LearnArticle = {
   description:
     "Most fitness apps ask good onboarding questions and still hand you a template. Run a four-question test: does it change exercise selection, handle two goals, survive a missed week, and remember a constraint you told it once?",
   date: "2026-09-06",
-  dateModified: "2026-09-06",
+  dateModified: "2026-09-08",
   body: [
     {
       type: "p",
@@ -55,7 +55,7 @@ export const appPersonalizationArticle: LearnArticle = {
     },
     {
       type: "p",
-      text: "If the app only lowers the weight on the same lift, that is shallow. If it swaps to a version that still trains the quality you needed — a different press, a different squat pattern, a machine that leaves the joint quiet — that is real selection. Exercise choice is one of the highest-leverage decisions in a program [1]. An app that cannot change the lift is not personalizing much that matters.",
+      text: "If the app only lowers the weight on the same lift, that is shallow. If it swaps to a version that still trains the quality you needed (a different press, a different squat pattern, a machine that leaves the joint quiet), that is real selection. Exercise choice is one of the high-impact decisions in a program [1]. An app that cannot change the lift is not personalizing much that matters.",
     },
     {
       type: "p",
@@ -136,7 +136,7 @@ export const appPersonalizationArticle: LearnArticle = {
     },
     {
       type: "p",
-      text: "IOFitness is being designed around that deeper end of the test. The intended model is not only to generate a starting plan, and not only to nudge today's numbers. It is to change exercise selection, weekly structure, and next-block decisions when the evidence says the old plan is no longer honest.",
+      text: "IOFitness is built around that deeper end of the test. A starting plan matters, and so do today's numbers. The harder job is changing exercise selection, weekly structure, and next-block decisions when the evidence says the old plan is no longer honest.",
     },
 
     { type: "h2", text: "Bottom line" },

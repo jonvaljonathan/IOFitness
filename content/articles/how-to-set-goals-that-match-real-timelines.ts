@@ -12,7 +12,7 @@ export const goalsMatchTimelinesArticle: LearnArticle = {
   description:
     "Ambitious goals fail when the timeline is fantasy. Pick a primary outcome, match training and food to it, and give the block enough weeks for a real trend to show up.",
   date: "2026-09-06",
-  dateModified: "2026-09-06",
+  dateModified: "2026-09-08",
   body: [
     {
       type: "p",
@@ -91,7 +91,7 @@ export const goalsMatchTimelinesArticle: LearnArticle = {
     },
     {
       type: "p",
-      text: "IOFitness is being designed around that kind of goal setting. The intended model is not to collect every wish in onboarding and pretend they all fit one month. It is to help you choose a primary, match the plan to it, and stay with it long enough for the work to count.",
+      text: "IOFitness is built around that kind of goal setting. Choose a primary, match the plan to it, and stay with it long enough for the work to count. Collecting every wish in onboarding and pretending they all fit one month does not help.",
     },
 
     { type: "h2", text: "Bottom line" },

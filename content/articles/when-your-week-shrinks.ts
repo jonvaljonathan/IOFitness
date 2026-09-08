@@ -3,7 +3,7 @@ import type { LearnArticle } from "../learn";
 /**
  * Authority article #10.
  * Primary intent: how to cut a training week down without breaking progression
- * Thesis: when the week shrinks, compress the plan you already have — protect
+ * Thesis: when the week shrinks, compress the plan you already have: protect
  * the highest-value work, shrink or cut the rest, do not swap in a totally
  * different 3-day program and pretend the progression carried over.
  */
@@ -13,7 +13,7 @@ export const shrinkingWeekArticle: LearnArticle = {
   description:
     "When life turns a 5-day plan into a 3-day week, do not throw the program out. Protect the highest-value work, shrink or cut the rest, and keep progression comparable. A shorter week is a compression problem, not a new-identity problem.",
   date: "2026-09-06",
-  dateModified: "2026-09-06",
+  dateModified: "2026-09-08",
   body: [
     {
       type: "p",
@@ -141,7 +141,7 @@ export const shrinkingWeekArticle: LearnArticle = {
     },
     {
       type: "p",
-      text: "IOFitness is being designed around that kind of decision. The intended model is duration-aware and priority-aware: when time or days shrink, the system should cut from the bottom of the priority list, not hand you an unrelated starter template and call it adaptation. If the deeper issue is that you still do not have a habit to compress, start with [start a training habit](/learn/start-a-training-habit). If the week is available but motivation is quiet, use [how to stay consistent after motivation drops](/learn/how-to-stay-consistent-after-motivation-drops).",
+      text: "IOFitness is built around that kind of decision. When time or days shrink, cut from the bottom of the priority list. Do not hand someone an unrelated starter template and call it adaptation. If the deeper issue is that you still do not have a habit to compress, start with [start a training habit](/learn/start-a-training-habit). If the week is available but motivation is quiet, use [how to stay consistent after motivation drops](/learn/how-to-stay-consistent-after-motivation-drops).",
     },
 
     { type: "h2", text: "Bottom line" },

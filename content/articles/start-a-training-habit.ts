@@ -14,7 +14,7 @@ export const trainingHabitArticle: LearnArticle = {
   description:
     "The first workout should not destroy you. The goal is to come back tomorrow. Stop hunting the perfect program, build a week you can repeat, and let consistency do the hard part.",
   date: "2026-09-06",
-  dateModified: "2026-09-06",
+  dateModified: "2026-09-08",
   body: [
     {
       type: "p",
@@ -26,7 +26,7 @@ export const trainingHabitArticle: LearnArticle = {
     },
     {
       type: "callout",
-      text: "Short version: show up. Do not let the first day kill you. Leave enough in the tank to come back tomorrow. Pick a simple week you can repeat. Train the basics. Fat loss, if you want it, comes from sticking around — not from one brutal opener.",
+      text: "Short version: show up. Do not let the first day kill you. Leave enough in the tank to come back tomorrow. Pick a simple week you can repeat. Train the basics. Fat loss, if you want it, comes from sticking around, not from one brutal opener.",
     },
 
     { type: "h2", text: "The real goal is coming back tomorrow" },
@@ -36,7 +36,7 @@ export const trainingHabitArticle: LearnArticle = {
     },
     {
       type: "p",
-      text: "So judge day one by a different scoreboard. Did you show up? Did you finish without needing three days on the couch? Do you still want to train again? If yes, that session worked — even if it looked small on paper.",
+      text: "So judge day one by a different scoreboard. Did you show up? Did you finish without needing three days on the couch? Do you still want to train again? If yes, that session worked, even if it looked small on paper.",
     },
     {
       type: "ul",
@@ -65,7 +65,7 @@ export const trainingHabitArticle: LearnArticle = {
     { type: "h2", text: "Habit first, optimization later" },
     {
       type: "p",
-      text: "A habit gets easier because you have repeated it in the same kind of context, not because you found a flawless spreadsheet. Research on everyday habits shows that automaticity builds at different speeds for different people and different behaviors — there is no universal 21-day finish line [1].",
+      text: "A habit gets easier because you have repeated it in the same kind of context, not because you found a flawless spreadsheet. Research on everyday habits shows that automaticity builds at different speeds for different people and different behaviors. There is no universal 21-day finish line [1].",
     },
     {
       type: "p",
@@ -120,7 +120,7 @@ export const trainingHabitArticle: LearnArticle = {
       title: "A boring week that works",
       body: [
         "Day A: squat or sit-to-stand, hinge, push, pull, easy carry or walk",
-        "Day B: same pattern family with small variations if needed — split squat instead of squat, row instead of pulldown",
+        "Day B: same pattern family with small variations if needed (split squat instead of squat, row instead of pulldown)",
         "Optional Day C: repeat Day A lighter, or shorten it when the week is messy",
         "Leave reps in the tank, especially in week one",
         "If you finish thinking \"I could have done more,\" that is often the correct first-week feeling",
@@ -181,7 +181,7 @@ export const trainingHabitArticle: LearnArticle = {
     },
     {
       type: "p",
-      text: "IOFitness is being designed around that kind of start. The intended model is not another January challenge that tries to impress you on day one. It is a plan that helps you begin simply, leave able to come back, stay consistent, and adapt when life gets loud — so the habit sticks before the program gets clever.",
+      text: "IOFitness is built around that kind of start: a simple week you can repeat, a first-session dose you can walk away from, and a plan that adapts when life gets loud. That is how the habit sticks before the program gets clever, not another January challenge that tries to impress you on day one.",
     },
 
     { type: "h2", text: "Bottom line" },

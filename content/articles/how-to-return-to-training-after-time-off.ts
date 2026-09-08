@@ -12,7 +12,7 @@ export const returnToTrainingArticle: LearnArticle = {
   description:
     "After a training break, treat your old program as useful history rather than today's prescription. Scale load, volume, frequency, and exercise complexity independently, then let the first sessions update the ramp.",
   date: "2026-09-04",
-  dateModified: "2026-09-05",
+  dateModified: "2026-09-08",
   body: [
     {
       type: "p",
@@ -209,7 +209,7 @@ export const returnToTrainingArticle: LearnArticle = {
     },
     {
       type: "p",
-      text: "IOFitness is being designed around that kind of re-entry. The intended model treats the old program as prior information, uses the first return sessions to re-estimate current capacity, and rebuilds volume, intensity, frequency, and complexity from the response rather than from a fixed percentage schedule.",
+      text: "IOFitness is built around that kind of re-entry. Keep the old program as prior information, use the first return sessions to re-estimate current capacity, and rebuild volume, intensity, frequency, and complexity from the response rather than from a fixed percentage schedule.",
     },
 
     { type: "h2", text: "Bottom line" },

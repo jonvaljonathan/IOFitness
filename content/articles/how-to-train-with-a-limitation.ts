@@ -14,7 +14,7 @@ export const trainWithLimitationArticle: LearnArticle = {
   description:
     "When a shoulder, knee, or back will not tolerate the usual lift, do not abandon the quality that area still needs. Find a version you can load honestly, attack that capacity so the weak link improves, and keep the rest of the plan moving.",
   date: "2026-09-05",
-  dateModified: "2026-09-06",
+  dateModified: "2026-09-08",
   body: [
     {
       type: "p",
@@ -238,7 +238,7 @@ export const trainWithLimitationArticle: LearnArticle = {
     },
     {
       type: "p",
-      text: "IOFitness is being designed around that kind of decision. The intended model treats sore joints and limited movements as inputs to exercise choice and progression, not as a reason to freeze the whole program or abandon the quality the athlete still needs.",
+      text: "IOFitness is built around that kind of decision. Treat sore joints and limited movements as inputs to exercise choice and progression, not as a reason to freeze the whole program or abandon the quality the athlete still needs.",
     },
 
     { type: "h2", text: "Bottom line" },

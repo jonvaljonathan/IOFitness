@@ -3,19 +3,18 @@ import type { LearnArticle } from "../learn";
 /**
  * Authority article #9.
  * Primary intent: pick the right exercises for your goals
- * Thesis: start from the outcome you want — ski, grandkids, injury capacity,
- * bathing-suit confidence — then choose lifts that build the qualities that
+ * Thesis: start from the outcome you want (ski, grandkids, injury capacity,
+ * bathing-suit confidence), then choose lifts that build the qualities that
  * outcome needs. Name the job, pick the tool, filter by equipment/tolerance/
- * skill/progression. This is the selection logic IOFitness is being designed
- * around.
+ * skill/progression. This is the selection logic IOFitness is built around.
  */
 export const exerciseSelectionArticle: LearnArticle = {
   slug: "pick-the-right-exercises-for-your-goals",
   title: "Pick the Right Exercises for Your Goals",
   description:
-    "Start from the outcome you want — ski season, picking up grandkids, rebuilding after a setback, looking better in a swimsuit — then pick lifts that build the qualities that goal needs. Do not start from a random exercise menu.",
+    "Start from the outcome you want (ski season, picking up grandkids, rebuilding after a setback, looking better in a swimsuit), then pick lifts that build the qualities that goal needs. Do not start from a random exercise menu.",
   date: "2026-09-06",
-  dateModified: "2026-09-06",
+  dateModified: "2026-09-08",
   body: [
     {
       type: "p",
@@ -23,7 +22,7 @@ export const exerciseSelectionArticle: LearnArticle = {
     },
     {
       type: "p",
-      text: "Most apps skip that step. They stick a goal tag on a template, or shuffle an exercise bank until the session looks full. You get squat, bench, row, curls — and no clear line from those lifts to the life you actually want.",
+      text: "Most apps skip that step. They stick a goal tag on a template, or shuffle an exercise bank until the session looks full. You get squat, bench, row, curls, and no clear line from those lifts to the life you actually want.",
     },
     {
       type: "callout",
@@ -47,7 +46,7 @@ export const exerciseSelectionArticle: LearnArticle = {
     },
     {
       type: "p",
-      text: "Each outcome needs specific qualities: single-leg strength, hinging power, pressing capacity, muscle in the right places, conditioning that leaves something in the tank. The plan should choose exercises because they serve those qualities — not because they look like a standard gym day.",
+      text: "Each outcome needs specific qualities: single-leg strength, hinging power, pressing capacity, muscle in the right places, conditioning that leaves something in the tank. The plan should choose exercises because they serve those qualities, not because they look like a standard gym day.",
     },
 
     { type: "h2", text: "Translate the goal into jobs, then pick tools" },
@@ -61,7 +60,7 @@ export const exerciseSelectionArticle: LearnArticle = {
     },
     {
       type: "p",
-      text: "Only after you name the job do you pick the lift. Barbell deadlift, Romanian deadlift, kettlebell hinge, cable pull-through — different tools, same family of work. Choosing among them comes second.",
+      text: "Only after you name the job do you pick the lift. Barbell deadlift, Romanian deadlift, kettlebell hinge, cable pull-through: different tools, same family of work. Choosing among them comes second.",
     },
 
     { type: "h2", text: "Use this selection stack" },
@@ -155,7 +154,7 @@ export const exerciseSelectionArticle: LearnArticle = {
     { type: "h2", text: "How IOFitness should choose" },
     {
       type: "p",
-      text: "This is the selection logic IOFitness is being designed around: start from what you want to become able to do, turn that into weekly jobs, then pick lifts you can actually progress.",
+      text: "This is the selection logic IOFitness is built around: start from what you want to become able to do, turn that into weekly jobs, then pick lifts you can actually progress.",
     },
     {
       type: "ol",
@@ -179,7 +178,7 @@ export const exerciseSelectionArticle: LearnArticle = {
     },
     {
       type: "p",
-      text: "If the harder problem is the goal itself — too many outcomes, too little time, timelines that fight biology — start with [how to set goals that match real timelines](/learn/how-to-set-goals-that-match-real-timelines) before you refine the exercise menu.",
+      text: "If the harder problem is the goal itself (too many outcomes, too little time, timelines that fight biology), start with [how to set goals that match real timelines](/learn/how-to-set-goals-that-match-real-timelines) before you refine the exercise menu.",
     },
 
     { type: "h2", text: "Bottom line" },

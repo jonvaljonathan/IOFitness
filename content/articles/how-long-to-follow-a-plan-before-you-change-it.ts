@@ -11,9 +11,9 @@ export const followPlanBeforeChangingArticle: LearnArticle = {
   slug: "how-long-to-follow-a-plan-before-you-change-it",
   title: "How Long to Follow a Plan Before You Change It",
   description:
-    "Most plans get abandoned too early. Give a matched plan enough weeks to show a trend. Change when adherence, recovery, or progress evidence says so — not after one flat session.",
+    "Most plans get abandoned too early. Give a matched plan enough weeks to show a trend. Change when adherence, recovery, or progress evidence says so, not after one flat session.",
   date: "2026-09-06",
-  dateModified: "2026-09-06",
+  dateModified: "2026-09-08",
   body: [
     {
       type: "p",
@@ -95,7 +95,7 @@ export const followPlanBeforeChangingArticle: LearnArticle = {
     },
     {
       type: "p",
-      text: "IOFitness is being designed around that kind of patience with teeth. The intended model is not to freeze a bad plan forever, and not to reinvent the program every quiet Wednesday. It is to keep enough continuity for progress while still responding when the plan is clearly mismatched.",
+      text: "IOFitness is built around that kind of patience with teeth. Keep enough continuity for progress, and still respond when the plan is clearly mismatched. Freezing a bad plan forever and reinventing the program every quiet Wednesday are both mistakes.",
     },
 
     { type: "h2", text: "Bottom line" },
