@@ -14,16 +14,16 @@ export const trainingHabitArticle: LearnArticle = {
   description:
     "The first workout should not destroy you. The goal is to come back tomorrow. Stop hunting the perfect program, build a week you can repeat, and let consistency do the hard part.",
   date: "2026-09-06",
-  dateModified: "2026-09-08",
+  dateModified: "2026-09-09",
   job: "reader_decision",
   body: [
     {
       type: "p",
-      text: "January fills up with people who want to get in shape, burn some fat, and finally feel like they have a routine. Then week two arrives. The plan feels wrong. The first workouts left them destroyed. Someone on Instagram has a better split. They freeze, shop, restart, and quit.",
+      text: "January fills up with people who want to get in shape, burn some fat, and finally feel like they have a routine. Then week two arrives. The plan feels wrong. The first workouts left them destroyed. Someone online has a better split. They freeze, shop, restart, and quit.",
     },
     {
       type: "p",
-      text: "The problem usually is not laziness. The problem is treating day one like a final exam. You do not need to prove anything on the first session. You need a session you can walk away from and repeat. Sure, maybe you could dunk once. If you blow out your Achilles doing it, that one dunk was not worth it.",
+      text: "The problem usually is not laziness. The problem is treating day one like a final exam. You do not need to prove anything on the first session. You need a session you can walk away from and repeat.",
     },
     {
       type: "callout",
@@ -108,7 +108,7 @@ export const trainingHabitArticle: LearnArticle = {
     },
     {
       type: "p",
-      text: "Those patterns cover a lot of life: stairs, groceries, posture under fatigue, and enough muscle to look and feel different. If you want the deeper version of matching lifts to outcomes, use [the right exercises for your goals](/learn/pick-the-right-exercises-for-your-goals). In month one, do not let that depth become another delay.",
+      text: "Those patterns cover a lot of life: getting out of a chair, stairs, groceries off the floor, and enough muscle to look and feel different. If you want the deeper version of matching exercises to goals, use [the right exercises for your goals](/learn/pick-the-right-exercises-for-your-goals). In month one, do not let that depth become another delay.",
     },
 
     { type: "h2", text: "A starter week you can survive and repeat" },
@@ -143,7 +143,7 @@ export const trainingHabitArticle: LearnArticle = {
       items: [
         "You showed up again after the first session",
         "You completed most of the planned sessions for several weeks",
-        "The main lifts feel more familiar, not more confusing",
+        "The main exercises feel more familiar, not more confusing",
         "You can repeat the work without dreading it",
         "Clothes, energy, sleep, or strength are drifting the right direction, even slowly",
         "One bad week does not make you scrap the plan",
