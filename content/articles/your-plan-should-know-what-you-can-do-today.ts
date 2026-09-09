@@ -110,7 +110,7 @@ export const startWhereYouAreArticle: LearnArticle = {
     { type: "h2", text: "Bottom line" },
     {
       type: "p",
-      text: "A real goal plus age, an elbow, and an old knee is one picture. Useful programming is detailed and progressive: it knows what you can do today, keeps the goal in view, and climbs in steps you can own. IOFitness is built to take that whole picture when it picks the exercises. You set the destination. The app starts from here.",
+      text: "A real goal plus age, an elbow, and an old knee is one picture. Useful programming is detailed and progressive: it knows what you can do today, keeps the goal in view, and climbs in steps you can own. IOFitness is built to take that whole picture when it picks the exercises. You set the goal. The app picks the starting point and the next steps. Then you show up and train.",
     },
     {
       type: "p",
