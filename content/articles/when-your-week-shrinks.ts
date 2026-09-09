@@ -14,6 +14,7 @@ export const shrinkingWeekArticle: LearnArticle = {
     "When life turns a 5-day plan into a 3-day week, do not throw the program out. Protect the highest-value work, shrink or cut the rest, and keep progression comparable. A shorter week is a compression problem, not a new-identity problem.",
   date: "2026-09-06",
   dateModified: "2026-09-08",
+  job: "reader_decision",
   body: [
     {
       type: "p",

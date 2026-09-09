@@ -13,6 +13,7 @@ export const goalsMatchTimelinesArticle: LearnArticle = {
     "Ambitious goals fail when the timeline is fantasy. Pick a primary outcome, match training and food to it, and give the block enough weeks for a real trend to show up.",
   date: "2026-09-06",
   dateModified: "2026-09-08",
+  job: "reader_decision",
   body: [
     {
       type: "p",

@@ -17,7 +17,7 @@ Before writing or revising homepage or Learn copy, read:
 
 These are also mirrored under `.agents/skills/`.
 
-Run `npm run lint:copy` before shipping copy changes.
+Run `npm run lint:copy` and `npm run grade:learn` before shipping copy changes.
 
 ## Publishing a Learn article
 

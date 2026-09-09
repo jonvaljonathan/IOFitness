@@ -13,6 +13,7 @@ export const losingFatExpectationsArticle: LearnArticle = {
     "Fat loss often shows sooner than muscle growth, but it still takes weeks to months. Expect a noisy scale, protect your training habit, and use a deficit you can sustain.",
   date: "2026-09-06",
   dateModified: "2026-09-08",
+  job: "reader_decision",
   body: [
     {
       type: "p",

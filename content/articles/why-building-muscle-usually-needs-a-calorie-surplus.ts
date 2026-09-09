@@ -14,6 +14,7 @@ export const muscleSurplusArticle: LearnArticle = {
     "If you want to build muscle, training alone is usually not enough. Progressive work needs enough food to support growth. Pick the goal honestly, then eat in a way that matches it.",
   date: "2026-09-06",
   dateModified: "2026-09-08",
+  job: "reader_decision",
   body: [
     {
       type: "p",

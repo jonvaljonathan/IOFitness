@@ -13,6 +13,7 @@ export const muscleFatCompeteArticle: LearnArticle = {
     "You can sometimes gain some muscle while losing some fat, especially as a beginner or returner. Maximizing both at once is usually the wrong promise. Pick a primary goal and give the other a supporting role.",
   date: "2026-09-06",
   dateModified: "2026-09-08",
+  job: "reader_decision",
   body: [
     {
       type: "p",

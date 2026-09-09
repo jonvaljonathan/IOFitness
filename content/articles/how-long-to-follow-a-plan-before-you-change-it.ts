@@ -14,6 +14,7 @@ export const followPlanBeforeChangingArticle: LearnArticle = {
     "Most plans get abandoned too early. Give a matched plan enough weeks to show a trend. Change when adherence, recovery, or progress evidence says so, not after one flat session.",
   date: "2026-09-06",
   dateModified: "2026-09-08",
+  job: "reader_decision",
   body: [
     {
       type: "p",

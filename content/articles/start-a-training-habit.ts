@@ -15,6 +15,7 @@ export const trainingHabitArticle: LearnArticle = {
     "The first workout should not destroy you. The goal is to come back tomorrow. Stop hunting the perfect program, build a week you can repeat, and let consistency do the hard part.",
   date: "2026-09-06",
   dateModified: "2026-09-08",
+  job: "reader_decision",
   body: [
     {
       type: "p",

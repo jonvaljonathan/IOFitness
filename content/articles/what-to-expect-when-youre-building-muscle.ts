@@ -14,6 +14,7 @@ export const buildingMuscleExpectationsArticle: LearnArticle = {
     "Muscle can grow at any training age, but visible change usually takes months. Early progress is often skill and confidence. Plan for enough food, progressive work, and weeks you can repeat.",
   date: "2026-09-06",
   dateModified: "2026-09-08",
+  job: "reader_decision",
   body: [
     {
       type: "p",

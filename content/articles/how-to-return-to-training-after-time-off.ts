@@ -13,6 +13,7 @@ export const returnToTrainingArticle: LearnArticle = {
     "After a training break, treat your old program as useful history rather than today's prescription. Scale load, volume, frequency, and exercise complexity independently, then let the first sessions update the ramp.",
   date: "2026-09-04",
   dateModified: "2026-09-08",
+  job: "reader_decision",
   body: [
     {
       type: "p",

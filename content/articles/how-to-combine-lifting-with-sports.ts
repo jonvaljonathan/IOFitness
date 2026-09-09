@@ -14,6 +14,7 @@ export const liftingWithSportsArticle: LearnArticle = {
     "If you lift during the week and play a fixed weekend sport, put the sport on the calendar first. Scale gym work around what the sport already costs and supplies, then adjust the next week from how hard that sport day actually was.",
   date: "2026-09-04",
   dateModified: "2026-09-08",
+  job: "reader_decision",
   body: [
     {
       type: "p",

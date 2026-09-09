@@ -14,6 +14,7 @@ export const progressiveOverloadArticle: LearnArticle = {
     "Progressive overload means increasing the relevant training stimulus over time. When you cannot add weight, the next lever depends on your goal, the exercise, and whether the work stays comparable.",
   date: "2026-09-04",
   dateModified: "2026-09-08",
+  job: "reader_decision",
   body: [
     {
       type: "p",

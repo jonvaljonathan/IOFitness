@@ -13,6 +13,7 @@ export const consistencyAfterMotivationArticle: LearnArticle = {
     "Motivation gets you started. Consistency keeps you there after the excitement fades. Shrink the session if you must, keep the week recognizable, and protect the habit of coming back tomorrow.",
   date: "2026-09-06",
   dateModified: "2026-09-08",
+  job: "reader_decision",
   body: [
     {
       type: "p",

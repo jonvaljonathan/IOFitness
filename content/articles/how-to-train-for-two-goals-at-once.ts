@@ -12,6 +12,7 @@ export const twoGoalsArticle: LearnArticle = {
     "You can train for two goals at once if you decide which goal is primary, which work is shared, what needs a maintenance dose, and how fatigue gets spent across the week.",
   date: "2026-09-04",
   dateModified: "2026-09-08",
+  job: "reader_decision",
   body: [
     {
       type: "p",

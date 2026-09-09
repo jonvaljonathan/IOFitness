@@ -12,6 +12,7 @@ export const missedWorkoutArticle: LearnArticle = {
     "Missed a workout? Decide whether to skip, shift, preserve sequence, or reprogram based on what you actually trained, not only the calendar.",
   date: "2026-09-03",
   dateModified: "2026-09-08",
+  job: "reader_decision",
   body: [
     {
       type: "p",

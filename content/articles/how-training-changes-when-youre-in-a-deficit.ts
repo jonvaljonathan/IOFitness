@@ -14,6 +14,7 @@ export const deficitTrainingArticle: LearnArticle = {
     "A calorie deficit can help fat loss, but it changes recovery and how fast you progress. Keep training, lower expectations for rapid PRs, and protect a week you can repeat.",
   date: "2026-09-06",
   dateModified: "2026-09-08",
+  job: "reader_decision",
   body: [
     {
       type: "p",
