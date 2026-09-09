@@ -60,7 +60,7 @@ function gradeArticle(article) {
   );
   const systemActor = countMatches(
     text,
-    /\b(IOFitness (picks|chooses|selects|builds|fills)|the (plan|app|system) (picks|chooses|selects|fills|builds)|we (pick|choose|select|build|fill) (the|your|each))\b/gi,
+    /\b(IOFitness (picks|chooses|selects|builds|fills|shapes)|the (plan|app|system) (picks|chooses|selects|fills|builds|shapes)|we (pick|choose|select|build|fill) (the|your|each)|you set the goal\.?\s+IOFitness picks|you set the goal\.?\s+The app picks)\b/gi,
   );
 
   let actorScore = 100;
@@ -180,6 +180,30 @@ function gradeArticle(article) {
   if (parallelNotX >= 3) {
     lectureScore -= 10;
     flags.push({ code: "parallel_lecture", detail: "Opening stacks thesis-pair cadence." });
+  }
+  if (/under the hood/i.test(text)) {
+    lectureScore -= 15;
+    flags.push({ code: "under_the_hood", detail: '"Under the hood" is stock AI/product-blog diction.' });
+  }
+  if (job === "system_capability") {
+    const notStack = countMatches(text, /^Not a /gm) + countMatches(text, /\nNot a /g);
+    // Count "Not a" bullets in flattened text
+    const notBullets = countMatches(text, /\bNot a (one-time|endless|algorithm|body-part)/gi);
+    if (notBullets >= 3) {
+      lectureScore -= 15;
+      flags.push({
+        code: "not_a_stack",
+        detail: 'Stacked "Not a…" bullets read like manifesto AI, not a coach.',
+      });
+    }
+    // system pieces should say the pairing out loud at least once
+    if (!/you set the goal/i.test(text) || !/\b(IOFitness picks|the app picks|IOFitness chooses|the app chooses)\b/i.test(text)) {
+      lectureScore -= 20;
+      flags.push({
+        code: "missing_goal_app_pair",
+        detail: 'Missing the plain pair: "you set the goal" + "the app/IOFitness picks/chooses".',
+      });
+    }
   }
   dims.lecture = Math.max(0, Math.min(100, lectureScore));
 
