@@ -1,6 +1,6 @@
 # Plan: IOFitness Learn Voice Panel
 
-**Status:** plan only (not built yet)  
+**Status:** Pass A in progress — skill + roster locked to Pete / Jon / Carlos / editor; Sarah deferred. Ship philosophy: make **some** people happy, not everyone.  
 **Problem:** `npm run grade:learn` can return **A 100** on structurally correct copy that still sounds rough, choppy, or AI. That grade is lying about ship-readiness.  
 **Goal:** A Yerba-style **community / persona grading skill** for IOFitness Learn (and later homepage), where named readers score the piece and can fail it on ear, clarity, and trust — not just checklist structure.
 

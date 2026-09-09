@@ -144,7 +144,8 @@ Before calling Learn copy done, answer yes to all:
 6. Is the title plain and explanatory rather than punchy or slogan-like?
 7. Did I pass the AI-writing check (no em dashes, no stock AI phrases, soft close uses "built to/around")?
 8. If `job: system_capability`, does the app/plan do the choosing — or did I accidentally assign homework?
+9. Did I run `learn-voice-panel` (Pete, Jon, Carlos, warm-coach editor) and get a `pass` — some happy, no editor Red on craft?
 
 If any answer is no, rewrite before shipping.
 
-Run `npm run lint:copy` and `npm run grade:learn` before shipping copy changes.
+Run `npm run lint:copy`, `npm run grade:learn`, then the **learn-voice-panel** skill. Structural A without voice Greens is not done.
