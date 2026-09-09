@@ -13,7 +13,8 @@ export const liftingWithSportsArticle: LearnArticle = {
   description:
     "If you lift during the week and play a fixed weekend sport, put the sport on the calendar first. Scale gym work around what the sport already costs and supplies, then adjust the next week from how hard that sport day actually was.",
   date: "2026-09-04",
-  dateModified: "2026-09-04",
+  dateModified: "2026-09-08",
+  job: "reader_decision",
   body: [
     {
       type: "p",
@@ -273,7 +274,7 @@ export const liftingWithSportsArticle: LearnArticle = {
     },
     {
       type: "p",
-      text: "IOFitness is being designed around that kind of evidence. The intended model treats the fixed sport day as part of total weekly training, estimates what it already supplied and cost, places gym work around the remaining gaps, and updates the next lower-body dose from the actual weekend rather than from a frozen template.",
+      text: "IOFitness is built around that kind of evidence: treat the fixed sport day as part of total weekly training, estimate what it already supplied and cost, place gym work around the remaining gaps, and update the next lower-body dose from the actual weekend rather than from a frozen template.",
     },
 
     { type: "h2", text: "Bottom line" },

@@ -17,6 +17,7 @@ import { muscleFatCompeteArticle } from "./articles/when-building-muscle-and-los
 import { consistencyAfterMotivationArticle } from "./articles/how-to-stay-consistent-after-motivation-drops";
 import { followPlanBeforeChangingArticle } from "./articles/how-long-to-follow-a-plan-before-you-change-it";
 import { goalsMatchTimelinesArticle } from "./articles/how-to-set-goals-that-match-real-timelines";
+import { startWhereYouAreArticle } from "./articles/your-plan-should-know-what-you-can-do-today";
 
 export type ArticleSource = {
   id: string;
@@ -35,12 +36,20 @@ export type ArticleBlock =
   | { type: "example"; title: string; body: string[] }
   | { type: "callout"; text: string };
 
+export type LearnArticleJob =
+  /** Reader decides what to do next (missed day, shrink week, etc.). */
+  | "reader_decision"
+  /** Explains a job the product/plan owns; reader sets inputs, system chooses. */
+  | "system_capability";
+
 export type LearnArticle = {
   slug: string;
   title: string;
   description: string;
   date: string;
   dateModified: string;
+  /** Defaults to reader_decision when omitted (legacy articles). */
+  job?: LearnArticleJob;
   body: ArticleBlock[];
   sources: ArticleSource[];
 };
@@ -73,6 +82,7 @@ export const learnArticles: LearnArticle[] = [
   consistencyAfterMotivationArticle,
   followPlanBeforeChangingArticle,
   goalsMatchTimelinesArticle,
+  startWhereYouAreArticle,
 ];
 
 export function getLearnArticles(): LearnArticle[] {

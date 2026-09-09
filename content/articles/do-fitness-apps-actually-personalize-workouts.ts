@@ -1,19 +1,19 @@
 import type { LearnArticle } from "../learn";
 
 /**
- * Authority article #8.
- * Primary intent: do fitness apps actually personalize workouts
- * Thesis: most "personalized" apps answer onboarding questions once, then hand
- * you a template. Run a concrete test: selection vs load, two goals, missed
- * week, remembered constraints. Judge the product by what it can change later.
+ * Authority article: do fitness apps actually personalize.
+ * Thesis: most "personalized" apps answer onboarding once, then hand you a
+ * template. Real personalization changes selection, day shape, and memory.
+ * You set the goal; the app picks exercises and shapes days.
  */
 export const appPersonalizationArticle: LearnArticle = {
   slug: "do-fitness-apps-actually-personalize-workouts",
   title: "Does Your Fitness App Actually Personalize Anything?",
   description:
-    "Most fitness apps ask good onboarding questions and still hand you a template. Run a four-question test: does it change exercise selection, handle two goals, survive a missed week, and remember a constraint you told it once?",
+    "Most fitness apps ask good onboarding questions and still hand you a template. Here's how to tell real personalization from a quiz that never updates.",
   date: "2026-09-06",
-  dateModified: "2026-09-06",
+  dateModified: "2026-09-09",
+  job: "system_capability",
   body: [
     {
       type: "p",
@@ -21,87 +21,95 @@ export const appPersonalizationArticle: LearnArticle = {
     },
     {
       type: "p",
-      text: "That gap is the whole problem. Asking questions is not the same as adapting the plan. A useful product should change what happens next when reality shows up: a missed week, a second goal, a joint that will not cooperate, a schedule that shrinks.",
+      text: "That gap is the whole problem. Asking questions is not the same as shaping the work from your capacity, schedule, and constraints as they change.",
     },
     {
       type: "callout",
-      text: "Short version: do not trust the word personalized. Run four tests. Does it change exercise selection, or only the weight? Can it hold two goals without pretending they are one? Does the plan survive a messy week? Does it remember a constraint you told it once? If the answer is mostly no, you bought a questionnaire wrapped around a template.",
+      text: "Short version: do not trust the word personalized. Ask what changes after day one. You set the goal. The app should pick the exercises and shape the days. If it mostly hands you a template, the quiz was theater.",
     },
 
-    { type: "h2", text: "Personalization and adaptation are different jobs" },
+    { type: "h2", text: "What \"personalized\" usually means" },
     {
       type: "p",
-      text: "Personalization is the starting guess. Adaptation is what happens after you train, miss, travel, hurt something, or change your mind.",
+      text: "In marketing, personalized often means you answered onboarding questions, the app stored those answers, and the workouts reference your goal label.",
     },
     {
       type: "p",
-      text: "An app can be good at the first and useless at the second. It can also tweak today's load forever and never touch the bigger structure: which exercises show up, how the week is arranged, or what gets protected when life gets loud. That distinction is the heart of [what adaptive training actually means](/learn/what-is-adaptive-training).",
+      text: "That is filtering. It is not the same as changing the work when your knee flares, your week shrinks, or you travel. If nothing updates, the personalization was a one-time sort, not an ongoing coach.",
     },
     {
       type: "p",
-      text: "So stop asking whether the marketing says personalized. Ask what the system is allowed to change after day one.",
+      text: "Personalization is the starting guess. Adaptation is what happens after you train, miss, travel, hurt something, or change your mind. That distinction is the heart of [what adaptive training actually means](/learn/what-is-adaptive-training).",
     },
 
-    { type: "h2", text: "A four-question test you can run this week" },
+    { type: "h2", text: "Questions that separate the two" },
     {
       type: "p",
       text: "You do not need a lab. You need a few honest experiments inside the product you already have, or inside a free trial.",
     },
 
-    { type: "h3", text: "1. Does it change exercise selection, or only load?" },
+    { type: "h3", text: "Does the goal change the exercises, or only the title?" },
     {
       type: "p",
-      text: "Tell it you cannot overhead press. Or that you have no barbell this week. Or that one knee hates deep lunges.",
+      text: "If \"get stronger\" and \"move better for sport\" produce the same main movements with different labels, the goal was decoration. Exercise choice is one of the high-impact decisions in a program [1]. An app that cannot change the lift is not personalizing much that matters.",
     },
     {
       type: "p",
-      text: "If the app only lowers the weight on the same lift, that is shallow. If it swaps to a version that still trains the quality you needed — a different press, a different squat pattern, a machine that leaves the joint quiet — that is real selection. Exercise choice is one of the highest-leverage decisions in a program [1]. An app that cannot change the lift is not personalizing much that matters.",
-    },
-    {
-      type: "p",
-      text: "How to pick the right exercises for your goals is covered in [pick the right exercises for your goals](/learn/pick-the-right-exercises-for-your-goals).",
+      text: "How to pick the right exercises for your goals is covered in [the right exercises for your goals](/learn/pick-the-right-exercises-for-your-goals).",
     },
 
-    { type: "h3", text: "2. Can it hold two goals without collapsing them?" },
+    { type: "h3", text: "Does capacity show up in the prescription?" },
     {
       type: "p",
-      text: "Say you want muscle and still want to be useful in Saturday soccer. Or strength and a race. Or general fitness and not getting wrecked before a hike.",
-    },
-    {
-      type: "p",
-      text: "A weak app picks one goal and ignores the other. Or it dumps both into a mushy \"hybrid\" week with no priority. A better app asks which goal is primary, keeps a real maintenance dose for the second, and places hard work where the week can absorb it. That allocation problem is the whole point of [training for two goals at once](/learn/how-to-train-for-two-goals-at-once).",
+      text: "A plan that knows what you can do today should not jump to the hardest version of a pattern before you have the joint capacity and control underneath it. See [your plan should know what you can do today](/learn/your-plan-should-know-what-you-can-do-today).",
     },
 
-    { type: "h3", text: "3. Does the plan survive a missed week?" },
+    { type: "h3", text: "Can the day reshape without throwing the program away?" },
     {
       type: "p",
-      text: "Skip two or three sessions on purpose in a trial, or look at what the app did the last time life got busy.",
-    },
-    {
-      type: "p",
-      text: "If it just resumes the printed calendar like nothing happened, it is a tracker with a schedule. If it asks what you missed, what still matters this week, and whether stacking catch-up would wreck the remaining days, it is doing programming. The decision rules for that are in [what should happen when you miss a workout](/learn/what-to-do-when-you-miss-a-workout).",
-    },
-    {
-      type: "p",
-      text: "A longer gap is a harder version of the same idea. Coming back after time off needs more than \"start at 60%.\" That case is covered in [how to return to training after time off](/learn/how-to-return-to-training-after-time-off).",
+      text: "Shorter time, different place, a body check. Real personalization adjusts the session. Fake personalization makes you skip or freestyle. Missed weeks are another version of the same test: does next week change on purpose, or pretend nothing happened?",
     },
 
-    { type: "h3", text: "4. Does it remember a constraint you told it once?" },
+    { type: "h3", text: "Who picks the exercises?" },
     {
       type: "p",
-      text: "Tell the app your left shoulder hates wide-grip pressing. Use the swap it gives you. Come back next week.",
+      text: "You should set the goal and the constraints. The app should pick the exercises and shape the days. If the product trains you to become the programmer, it outsourced the hard part.",
+    },
+
+    { type: "h3", text: "Does feedback stick?" },
+    {
+      type: "p",
+      text: "Tell it you cannot overhead press. Or that one knee hates deep lunges. If the same bad option returns as if you never said anything, the onboarding was theater. A useful system keeps that constraint until you clear it, and it should still progress the quality the movement was there to build [2][3].",
+    },
+
+    { type: "h2", text: "What good personalization feels like" },
+    {
+      type: "p",
+      text: "You open the day and it already accounts for what you told it.",
     },
     {
       type: "p",
-      text: "If the same bad press returns as if you never said anything, the onboarding was theater. A useful system keeps that constraint until you clear it, and it should still progress the quality the press was there to build. That is the same logic as [training with a limitation](/learn/how-to-train-with-a-limitation).",
+      text: "You have forty minutes, not sixty. The session is shorter, not truncated mid-block.",
+    },
+    {
+      type: "p",
+      text: "You are training at home this week. The movements still hit the qualities you need, with the kit you have.",
+    },
+    {
+      type: "p",
+      text: "Your elbow is irritable. Related options stay in the plan. The angry ones drop out until capacity improves.",
+    },
+    {
+      type: "p",
+      text: "You are not rewriting the program in your head before you start.",
     },
 
     { type: "h2", text: "What usually fails the test" },
     {
       type: "ul",
       items: [
-        "Pretty onboarding, identical 4-day bro split underneath",
-        "Load autoregulation only: today's weight moves, the exercise menu never does",
+        "Pretty onboarding, identical four-day bro split underneath",
+        "Load tweaks only: today's weight moves, the exercise menu never does",
         "Chat that sounds smart and still cannot rewrite next week's structure",
         "Injury toggles that delete half the program instead of finding a workable version",
         "\"Adaptive\" that means a random new workout every day with no progression memory",
@@ -112,37 +120,24 @@ export const appPersonalizationArticle: LearnArticle = {
       text: "None of that makes an app evil. It just means the product is doing less than the marketing promised. Autoregulating load can still be useful [2][3]. It is not the same job as rebuilding the plan when goals, constraints, or attendance change.",
     },
 
-    { type: "h2", text: "A fair scorecard" },
+    { type: "h2", text: "Where IOFitness sits" },
     {
-      type: "example",
-      title: "Score the app you are using",
-      body: [
-        "Selection: can it change the lift, not only the load?",
-        "Goals: can it protect a primary goal and maintain a second one?",
-        "Misses: after a messy week, does next week change on purpose?",
-        "Memory: does a constraint stick without you re-entering it every session?",
-        "Honesty: does the product admit what it cannot do yet?",
-      ],
+      type: "p",
+      text: "You set the goal. IOFitness picks the exercises and shapes the days.",
     },
     {
       type: "p",
-      text: "Four yes answers is rare. Two solid yes answers with clear limits is already better than most of the category. Zero yes answers means you are paying for logging and vibes.",
-    },
-
-    { type: "h2", text: "What a smart plan should do here" },
-    {
-      type: "p",
-      text: "A useful training system should start from your situation, then keep updating from evidence: what you completed, what flared up, what the week can hold, and what the long-term goal still needs.",
+      text: "We keep a deep bank of exercises already sorted by demand, equipment, and how they treat specific joints. Sport, seniors, muscle, and injury-aware training change which options show up. Onboarding and the coach collect injuries, sports, schedule, equipment, and philosophy so the first program is not a generic split.",
     },
     {
       type: "p",
-      text: "IOFitness is being designed around that deeper end of the test. The intended model is not only to generate a starting plan, and not only to nudge today's numbers. It is to change exercise selection, weekly structure, and next-block decisions when the evidence says the old plan is no longer honest.",
+      text: "After that, adaptations and progression keep the plan honest as your week and your body change. If an app only personalizes once, you will feel it the first time life refuses to match the template.",
     },
 
     { type: "h2", text: "Bottom line" },
     {
       type: "p",
-      text: "\"Personalized\" is a claim. The test is what changes after you start. If an app cannot swap the wrong lift, hold two goals, survive a missed week, or remember a constraint, it is mostly a template with a quiz. Judge products by the feedback loop, not the onboarding screens.",
+      text: "\"Personalized\" is a claim. The test is what changes after you start. If an app cannot swap the wrong exercise, hold real constraints, survive a messy week, or remember what you told it, it is mostly a template with a quiz. Judge products by the feedback loop, not the onboarding screens.",
     },
   ],
   sources: [
@@ -152,7 +147,7 @@ export const appPersonalizationArticle: LearnArticle = {
       citation:
         "Kassiano W, Nunes JP, Costa B, Ribeiro AS, Schoenfeld BJ, Cyrino ES. Does varying resistance exercises promote superior muscle hypertrophy and strength gains? A systematic review. J Strength Cond Res. 2022;36(6):1753-1762.",
       url: "https://doi.org/10.1519/JSC.0000000000004258",
-      note: "Finds that systematic exercise variation can influence hypertrophy and strength adaptations, while excessive or random variation may blunt gains. Used to support the claim that exercise selection is a high-leverage programming decision, not to claim any specific app implements variation well.",
+      note: "Supports that exercise selection is a high-leverage programming decision.",
     },
     {
       id: "2",
@@ -160,7 +155,7 @@ export const appPersonalizationArticle: LearnArticle = {
       citation:
         "Helms ER, Kwan K, Sousa CA, Cronin JB, Storey AG, Zourdos MC. Methods for regulating and monitoring resistance training. J Hum Kinet. 2020;74:23-42.",
       url: "https://doi.org/10.2478/hukin-2020-0011",
-      note: "Reviews practical autoregulation and monitoring methods. Used to acknowledge that load/effort adjustments can be useful without equating them to full-program personalization.",
+      note: "Reviews practical autoregulation. Used to acknowledge load/effort adjustments as one useful layer without equating them to full-program personalization.",
     },
     {
       id: "3",
@@ -168,7 +163,7 @@ export const appPersonalizationArticle: LearnArticle = {
       citation:
         "Shattock K, Tee JC. Autoregulation in resistance training: a comparison of subjective versus objective methods. J Strength Cond Res. 2022;36(3):641-648.",
       url: "https://doi.org/10.1519/JSC.0000000000003530",
-      note: "Compares subjective and objective autoregulation approaches. Used to support signal-based load adjustment as one valid layer of adaptation, not as proof that load tweaks equal deep personalization.",
+      note: "Supports signal-based load adjustment as one valid layer of adaptation.",
     },
   ],
 };

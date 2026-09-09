@@ -2,195 +2,155 @@ import type { LearnArticle } from "../learn";
 
 /**
  * Authority article #9.
- * Primary intent: pick the right exercises for your goals
- * Thesis: start from the outcome you want — ski, grandkids, injury capacity,
- * bathing-suit confidence — then choose lifts that build the qualities that
- * outcome needs. Name the job, pick the tool, filter by equipment/tolerance/
- * skill/progression. This is the selection logic IOFitness is being designed
- * around.
+ * Primary intent: the right exercises for your goals
+ * Thesis: if you want ski season or grandkids strength, the week has to train
+ * those demands. Most apps fake the match. IOFitness picks the exercises.
+ * "You get out what you put in" earns its place later, not in the open.
  */
 export const exerciseSelectionArticle: LearnArticle = {
   slug: "pick-the-right-exercises-for-your-goals",
-  title: "Pick the Right Exercises for Your Goals",
+  title: "The Right Exercises for Your Goals",
   description:
-    "Start from the outcome you want — ski season, picking up grandkids, rebuilding after a setback, looking better in a swimsuit — then pick lifts that build the qualities that goal needs. Do not start from a random exercise menu.",
+    "If you want to ski hard or pick up your grandkids, your training week has to prepare you for those things. Most apps fill a generic template. IOFitness is built to pick the exercises that match your goals.",
   date: "2026-09-06",
-  dateModified: "2026-09-06",
+  dateModified: "2026-09-09",
+  job: "system_capability",
   body: [
     {
       type: "p",
-      text: "You do not want a prettier workout PDF. You want to ski hard in February, pick up your grandkids without thinking twice, get past that shoulder that keeps derailing pressing, or look better in a swimsuit. Those are goals. Exercises are just tools for getting there.",
+      text: "You want to ski hard in February. Or pick up your grandkids without guessing. Or keep a shoulder from wrecking the rest of your upper-body work.",
     },
     {
       type: "p",
-      text: "Most apps skip that step. They stick a goal tag on a template, or shuffle an exercise bank until the session looks full. You get squat, bench, row, curls — and no clear line from those lifts to the life you actually want.",
+      text: "Those are real goals. The week only helps if the exercises in it prepare you for them. Sweating through a random circuit is not the same thing.",
     },
     {
       type: "callout",
-      text: "Short version: start from the outcome. Translate it into qualities you need. Pick the hardest honest lifts that build those qualities with the equipment and joints you have today. Keep them long enough to improve. Swap when the goal, the joint, or the gym demands it.",
+      text: "Short version: you set the goal. IOFitness picks the exercises. The session should look a little like the life you care about, not like a generic template.",
     },
 
-    { type: "h2", text: "Start from the outcome, not the exercise list" },
+    { type: "h2", text: "You get out what you put in" },
     {
       type: "p",
-      text: "\"What exercise should I do?\" is the wrong first question. Ask what you want to become able to do.",
-    },
-    {
-      type: "ul",
-      items: [
-        "Ski or hike without your legs quitting on day two",
-        "Pick up kids or groceries without guessing and hoping",
-        "Rebuild capacity after a setback instead of parking that quality forever",
-        "Add muscle and shape where you care about how you look",
-        "Stay useful in a weekend sport without arriving wrecked",
-      ],
+      text: "That line is older than any app. Your body gets better at the work you actually do [1][2]. Train the wrong thing and you can still finish tired.",
     },
     {
       type: "p",
-      text: "Each outcome needs specific qualities: single-leg strength, hinging power, pressing capacity, muscle in the right places, conditioning that leaves something in the tank. The plan should choose exercises because they serve those qualities — not because they look like a standard gym day.",
+      text: "So ask a plain question. What does the goal ask your body to do? Then train that.",
     },
 
-    { type: "h2", text: "Translate the goal into jobs, then pick tools" },
+    { type: "h2", text: "Life demand, plain exercise" },
     {
       type: "p",
-      text: "Once you know the outcome, break it into jobs for the week.",
+      text: "Most people never make that link. They want a result and hope \"working out\" covers it.",
     },
     {
       type: "p",
-      text: "Want stronger legs for skiing? You need hard lower-body strength, single-leg control, and enough conditioning that powder days do not bury you. Want to look better in a swimsuit? You need progressive muscle work in the places that matter, not random machine circuits. Want to get over a pressing limitation? You need a pressing version you can load and improve, not a permanent ban on upper-body training.",
+      text: "Want to pick up your grandkids? You need to get something like forty pounds off the ground, stand up with it, and keep your balance. We can train that. Practice picking weight up off the floor, carrying it, and standing tall. Nothing fancy. That is the job.",
     },
     {
       type: "p",
-      text: "Only after you name the job do you pick the lift. Barbell deadlift, Romanian deadlift, kettlebell hinge, cable pull-through — different tools, same family of work. Choosing among them comes second.",
+      text: "Getting ready for skiing? Stretching alone will not do it. Going down the mountain asks your legs to sit and hold under load, over and over. Sitting in a goblet squat with a kettlebell in your hands is a lot closer to that than another polite stretch on the floor.",
+    },
+    {
+      type: "p",
+      text: "Weekend disc golf, golf, or anything that asks you to hold a shape and turn? You need to hold through your middle and rotate without falling apart. If the week never trains holding and turning, the course will teach you the hard way.",
+    },
+    {
+      type: "p",
+      text: "You do not need a jargon chart for this. You need an honest picture of the demand, then exercises that look a little like that demand. The other half is starting from what you can do today, so the plan does not jump to a lift you have not earned. That story is in [your plan should know what you can do today](/learn/your-plan-should-know-what-you-can-do-today).",
+    },
+    {
+      type: "p",
+      text: "Coaches sometimes call that idea SAID: specific adaptation to imposed demands. Same point as you get out what you put in. The acronym is optional. The match is not [1][2].",
     },
 
-    { type: "h2", text: "Use this selection stack" },
+    { type: "h2", text: "Why most plans miss it" },
     {
       type: "p",
-      text: "Choose in this order. Do not reverse it.",
-    },
-    {
-      type: "ol",
-      items: [
-        "Outcome: what do you want to become able to do?",
-        "Job: what quality or pattern must this part of the session train for that outcome?",
-        "Equipment: what can you actually use today?",
-        "Tolerance: what can you load without wrecking tomorrow?",
-        "Skill: can you own the positions under fatigue?",
-        "Progression: what is the clear next step from last time?",
-        "Variety: do you need a fresh variation, or would a change erase useful comparison?",
-      ],
+      text: "That match is hard when you are staring at a giant exercise menu. Sport, later-life strength, muscle, and injury-aware training do not want the same week. A chest-and-arms day can fill time. It cannot decide whether today should teach you to pick weight off the ground, sit and hold for ski legs, or keep training while a shoulder stays quiet.",
     },
     {
       type: "p",
-      text: "If you start with a bank of 400 exercises and sprinkle them into the week, you are working backwards. If the app never leaves the original list after onboarding, it is not choosing for your goals at all.",
+      text: "Most fitness apps skip the match. They stick a goal checkbox on a template, or shuffle movements until the day looks full. You get busy. You do not get closer to grandkids, ski season, or the sport that asked you to hold and turn.",
     },
 
-    { type: "h2", text: "A body-part split is not a goal" },
+    { type: "h2", text: "What IOFitness does" },
     {
       type: "p",
-      text: "\"Chest and tris,\" \"leg day,\" or \"compound then accessories\" can sketch a session. They do not tell you which squat keeps ski legs progressing when your knee complains. They do not tell you whether today's press should build muscle or protect a cranky shoulder. They do not tell you when to keep the same lift so progression stays readable.",
+      text: "You bring the goal, the sport, the schedule, the equipment, and anything that hurts. IOFitness picks the exercises.",
     },
     {
       type: "p",
-      text: "Those decisions separate a goal-driven plan from a checklist. A real system answers them every time it fills the session.",
-    },
-
-    { type: "h2", text: "Keep the lift until a swap earns its place" },
-    {
-      type: "p",
-      text: "Change the exercise when the new version still serves the goal, or when the old version stops working. Do not change for novelty. If you never repeat a lift long enough to improve it, variety turns into noise [1].",
+      text: "We keep a deep bank of exercises already sorted by what they ask your body to do, what gear they need, and how they treat specific joints. Goals go deeper than one checkbox. Weekend sport, general athleticism, later-life strength and balance, and injury-aware options all change which exercises show up in your week.",
     },
     {
       type: "p",
-      text: "A good plan stays boring on purpose for a while. Same outcome. Same job. Same or closely comparable lift. Clear progression. Then it swaps when the goal, the joint, or the equipment demands it.",
-    },
-    {
-      type: "p",
-      text: "When you cannot add weight on that repeated lift, progress the other levers that still count. That problem is covered in [progressive overload without adding weight](/learn/progressive-overload-without-adding-weight).",
+      text: "Then the app builds the days around those demands. It keeps comparable work long enough to improve, and swaps when your joint, gym, or goal says the old option no longer fits [3].",
     },
 
-    { type: "h2", text: "When the usual lift is a bad idea, keep the goal" },
+    { type: "h2", text: "How the app picks the exercises" },
     {
       type: "p",
-      text: "A sore shoulder, angry knee, missing barbell, or hotel dumbbell rack should not delete the quality your goal still needs. Search for the hardest honest version of the same job.",
-    },
-    {
-      type: "ul",
-      items: [
-        "Keep the quality the outcome needs: pressing, hinging, single-leg strength, muscle where it matters",
-        "Change the setup: grip, range, machine vs free weight, bilateral vs split",
-        "Progress that workable version",
-        "Climb back toward the original lift when the next sessions say you can",
-      ],
+      text: "IOFitness reads the life you said you want, figures out what the week must train for that life, and fills each session from the bank. It respects your equipment, what your joints will tolerate, and whether you can own the movement when you get tired. When the goal, the joint, or the gym says the old option is wrong, it changes the exercise and keeps the job.",
     },
     {
       type: "p",
-      text: "That is [training with a limitation](/learn/how-to-train-with-a-limitation), not \"wait until everything feels perfect.\" A system that only knows how to remove exercises is not serving your goals. It is quitting on them.",
+      text: "You do not have to become the programmer. Show up, do the work, and tell the truth about what hurt, what you had available, and what you finished.",
     },
 
-    { type: "h2", text: "Worked example: ski legs with a cranky knee" },
+    { type: "h2", text: "Example: ski legs, cranky knee, busy rack" },
     {
       type: "p",
-      text: "Goal: ski hard in eight weeks. The week needs a hard lower-body strength exposure. Last month you used a back squat. This week your knee hates the bottom position, and the squat rack is busy.",
+      text: "Goal: ski hard in eight weeks. The week still needs legs that can sit and hold under load. Last month the plan used a back squat. This week the knee hates the bottom position, and the squat rack is taken.",
     },
     {
       type: "example",
-      title: "Same goal, better tool for today",
+      title: "Same goal, different exercise",
       body: [
-        "Keep the outcome: stronger, more durable legs for skiing",
-        "Keep the job: hard bilateral or split lower-body strength",
-        "Reject: force a deep back squat because the template says so",
-        "Also reject: a random \"leg burnout\" circuit with no progression target",
-        "Choose: high-box squat, leg press in a pain-free range, or rear-foot-elevated split squat if you can own it",
-        "Log the exact version so next session can progress that setup",
-        "Only later reopen the original squat range when the knee and the week allow it",
+        "IOFitness keeps the goal: stronger legs for skiing",
+        "It keeps the demand: sit, hold, and drive under load",
+        "It does not force a deep back squat because a template says so",
+        "It does not swap in more stretching and call it ski prep",
+        "It picks something you can do: goblet squat, high-box squat, leg press in a quiet range, or a split squat you own",
+        "It remembers that exact version so the next session can improve it",
+        "It only brings back the deeper squat when the knee and the week allow it",
       ],
     },
     {
       type: "p",
-      text: "You still trained for skiing. You changed the tool, not the goal. That is selection.",
-    },
-
-    { type: "h2", text: "How IOFitness should choose" },
-    {
-      type: "p",
-      text: "This is the selection logic IOFitness is being designed around: start from what you want to become able to do, turn that into weekly jobs, then pick lifts you can actually progress.",
-    },
-    {
-      type: "ol",
-      items: [
-        "Anchor the plan to real outcomes, not a generic split label",
-        "Fill each part of the session by the quality that outcome needs",
-        "Resolve equipment and limitations in the open",
-        "Prefer a comparable lift so progression still means something",
-        "Swap when the goal, the joint, or the equipment demands it",
-        "Keep progressing the version you can own",
-      ],
-    },
-    {
-      type: "p",
-      text: "That is deeper than a personalized PDF. It is also deeper than an algorithm that only changes the weight on the same menu. If you want a broader product test, use [does your fitness app actually personalize anything](/learn/do-fitness-apps-actually-personalize-workouts).",
-    },
-
-    {
-      type: "p",
-      text: "If you are still stuck at \"I do not even know where to start,\" build the habit first. That New Year case is covered in [start a training habit](/learn/start-a-training-habit). Come back to finer exercise matching once you are already someone who trains.",
-    },
-    {
-      type: "p",
-      text: "If the harder problem is the goal itself — too many outcomes, too little time, timelines that fight biology — start with [how to set goals that match real timelines](/learn/how-to-set-goals-that-match-real-timelines) before you refine the exercise menu.",
+      text: "You still trained for skiing. The app changed the exercise, not the goal. More on training around a limitation is in [how to train with a limitation](/learn/how-to-train-with-a-limitation).",
     },
 
     { type: "h2", text: "Bottom line" },
     {
       type: "p",
-      text: "Pick exercises for the life you want, not for a prettier template. Start from the outcome. Translate it into jobs. Choose the hardest honest tools you can progress. Keep them until a swap earns its place. If you cannot say how a lift serves the goal, you have not picked the right exercise yet.",
+      text: "If you want to pick forty pounds off the ground, sit and hold for ski legs, or hold and turn through your middle, the week should train those things. You get out what you put in. IOFitness is built to pick the exercises that match. You set the goal. The app picks the exercises. Then you show up and train.",
+    },
+    {
+      type: "p",
+      text: "For the broader question of whether an app is actually personalized, see [does your fitness app actually personalize anything](/learn/do-fitness-apps-actually-personalize-workouts). If the harder problem is still the goal itself, start with [how to set goals that match real timelines](/learn/how-to-set-goals-that-match-real-timelines). If you are not training yet, begin with [start a training habit](/learn/start-a-training-habit).",
     },
   ],
   sources: [
     {
       id: "1",
+      label: "Sale and MacDougall specificity review",
+      citation:
+        "Sale D, MacDougall D. Specificity in strength training: a review for the coach and athlete. Can J Appl Sport Sci. 1981;6(2):87-92.",
+      url: "https://pubmed.ncbi.nlm.nih.gov/7016357/",
+      note: "Classic coaching-facing review of specificity in strength training. Used to support the plain claim that adaptations follow the demands you actually train.",
+    },
+    {
+      id: "2",
+      label: "Stone et al. training-specificity narrative review",
+      citation:
+        "Stone MH, Hornsby WG, Suarez DG, Duca M, Pierce KC. Training specificity for athletes: emphasis on strength-power training: a narrative review. J Funct Morphol Kinesiol. 2022;7(4):102.",
+      url: "https://doi.org/10.3390/jfmk7040102",
+      note: "Narrative review on training specificity and transfer for athletes. Used to support matching training demands to the life you want, not busy generic work.",
+    },
+    {
+      id: "3",
       label: "Kassiano exercise-variation systematic review",
       citation:
         "Kassiano W, Nunes JP, Costa B, Ribeiro AS, Schoenfeld BJ, Cyrino ES. Does varying resistance exercises promote superior muscle hypertrophy and strength gains? A systematic review. J Strength Cond Res. 2022;36(6):1753-1762.",

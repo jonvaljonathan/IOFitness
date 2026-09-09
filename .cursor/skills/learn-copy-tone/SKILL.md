@@ -8,7 +8,9 @@ description: House voice for IOFitness Learn authority articles. Use whenever dr
 Write like a sharp coach talking to a competent adult athlete.
 Do not write like a methods paper, product spec, or internal programming memo.
 
-Before drafting or revising any Learn article, read the openings of two published articles in `content/articles/` and match that register.
+Before drafting or revising any Learn article:
+1. Read `seo-audit/references/ai-writing-detection.md` (em dashes are the primary AI tell; ban them in reader-facing copy).
+2. Read the openings of two published articles in `content/articles/` and match that register.
 
 ## Voice
 
@@ -25,6 +27,32 @@ Every article should answer:
 > What should the training plan do next?
 
 That idea can stay. The wording around it must stay human.
+
+## Who is the actor?
+
+Set `job` on the article module:
+
+| `job` | When | Actor |
+|---|---|---|
+| `reader_decision` (default) | Missed day, shrink week, return from time off | Reader decides what happens next |
+| `system_capability` | How exercise selection / personalization / adaptive planning works | **Reader sets goals and constraints. The app picks.** |
+
+Hard fails for `system_capability` copy:
+
+- Teaching a DIY "selection stack," numbered Outcome→Job→Equipment checklist, or "Choose in this order"
+- Imperatives that make the reader the programmer ("pick the lift," "translate into jobs, then pick tools")
+- Hedged product sections ("How IOFitness should choose") instead of how it chooses / what it is built to do
+- Explaining the problem without selling the system: deep exercise bank, goals broken down (sport, athletics, seniors, injury recovery), days shaped from that, plain SAID (you adapt to what you train)
+
+Good shape for a system_capability piece:
+
+1. Matching exercises to real goals is confusing (most apps fake it)
+2. What IOFitness does: large exercise bank, goals broken down in detail, sessions shaped toward those goals
+3. Plain principle (SAID / specificity) as the reason that matching matters
+4. How the app chooses (goal → qualities/jobs → lift from the bank, with equipment/tolerance/progression)
+5. Soft close: built to do that job for you — not a homework worksheet
+
+If the reader must run a seven-step programming stack for the article to work, rewrite. That is the product's job.
 
 ## Prefer / avoid
 
@@ -59,7 +87,8 @@ Avoid these patterns unless quoting another source:
 - Label evidence and judgment separately
 - Cite carefully; do not overclaim
 - Stay on the training side of the medical line
-- Soft product close only: "IOFitness is being designed..."
+- Soft product close only: "IOFitness is built to…" / "IOFitness is built around…" (never "is being designed" / "intended model")
+- No em dashes (`—`) in titles, descriptions, or body copy (see ai-writing-detection)
 - No diagnosis, rehab-protocol, or treatment claims
 
 ## Structure voice
@@ -92,7 +121,7 @@ Learn titles should **name the situation**, not punchline the advice.
 
 Good title pattern: plain, explanatory, calm, specific, low-drama.
 
-- Good: "Pick the Right Exercises for Your Goals"
+- Good: "The Right Exercises for Your Goals"
 - Good: "Start a Training Habit (Even If You Don't Know What You're Doing)"
 - Good: "What to Expect When You're Building Muscle"
 - Bad: "Muscle Takes Months. Train Like You Mean It."
@@ -113,5 +142,10 @@ Before calling Learn copy done, answer yes to all:
 4. Did I remove internal/product jargon from reader-facing lines?
 5. Does the piece still match the tone of articles 1–6?
 6. Is the title plain and explanatory rather than punchy or slogan-like?
+7. Did I pass the AI-writing check (no em dashes, no stock AI phrases, soft close uses "built to/around")?
+8. If `job: system_capability`, does the app/plan do the choosing — or did I accidentally assign homework?
+9. Did I run `learn-voice-panel` (Pete, Jon, Carlos, warm-coach editor) and get a `pass` — some happy, no editor Red on craft?
 
 If any answer is no, rewrite before shipping.
+
+Run `npm run lint:copy`, `npm run grade:learn`, then the **learn-voice-panel** skill. Structural A without voice Greens is not done.

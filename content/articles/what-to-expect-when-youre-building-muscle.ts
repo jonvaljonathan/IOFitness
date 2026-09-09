@@ -13,7 +13,8 @@ export const buildingMuscleExpectationsArticle: LearnArticle = {
   description:
     "Muscle can grow at any training age, but visible change usually takes months. Early progress is often skill and confidence. Plan for enough food, progressive work, and weeks you can repeat.",
   date: "2026-09-06",
-  dateModified: "2026-09-06",
+  dateModified: "2026-09-08",
+  job: "reader_decision",
   body: [
     {
       type: "p",
@@ -121,7 +122,7 @@ export const buildingMuscleExpectationsArticle: LearnArticle = {
     },
     {
       type: "p",
-      text: "IOFitness is being designed around that kind of expectation setting. The intended model is not to promise fast transformation copy. It is to match the plan to a real muscle-building block and help you keep going long enough for the work to matter.",
+      text: "IOFitness is built around that kind of expectation setting. Match the plan to a real muscle-building block and keep going long enough for the work to matter. Fast transformation copy is marketing, not a training timeline.",
     },
 
     { type: "h2", text: "Bottom line" },

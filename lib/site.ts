@@ -1,7 +1,7 @@
 export const siteConfig = {
   name: "IOFitness",
   url: "https://io.fitness",
-  title: "IOFitness — Adaptive Training to Help You Get Better",
+  title: "IOFitness · Adaptive Training to Help You Get Better",
   description:
     "IOFitness builds adaptive training around your goals, abilities, activities, limitations and progress, helping you get stronger, fitter, more athletic and more capable.",
   brandLine: "Get better.",

@@ -12,7 +12,8 @@ export const consistencyAfterMotivationArticle: LearnArticle = {
   description:
     "Motivation gets you started. Consistency keeps you there after the excitement fades. Shrink the session if you must, keep the week recognizable, and protect the habit of coming back tomorrow.",
   date: "2026-09-06",
-  dateModified: "2026-09-06",
+  dateModified: "2026-09-08",
+  job: "reader_decision",
   body: [
     {
       type: "p",
@@ -91,7 +92,7 @@ export const consistencyAfterMotivationArticle: LearnArticle = {
     },
     {
       type: "p",
-      text: "IOFitness is being designed around that kind of durability. The intended model is not to rely on endless hype. It is to keep the next session obvious and doable when motivation is quiet.",
+      text: "IOFitness is built around that kind of durability. When motivation is quiet, the next session should still be obvious and doable. Hype is optional. Showing up is not.",
     },
 
     { type: "h2", text: "Bottom line" },

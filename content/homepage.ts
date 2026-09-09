@@ -2,7 +2,7 @@ export const homepageCopy = {
   hero: {
     heading: "Get better.",
     product:
-      "IOFitness builds adaptive training around your goals, sports, limitations, and how you actually progress — so the plan keeps changing as you get better.",
+      "IOFitness builds adaptive training around your goals, sports, limitations, and how you actually progress, so the plan keeps changing as you get better.",
   },
   cta: {
     label: "Get the App",
@@ -30,7 +30,7 @@ export const homepageCopy = {
     items: [
       {
         title: "Keep the goal, change the dose",
-        body: "Missed sessions, hard weekends, and fatigue change what the next week can hold — not whether the goal still matters.",
+        body: "Missed sessions, hard weekends, and fatigue change what the next week can hold. They do not change whether the goal still matters.",
       },
       {
         title: "Protect what has to stay fresh",
@@ -67,7 +67,7 @@ export const homepageCopy = {
       },
       {
         title: "The next plate is not the point",
-        body: "What still counts as progressive overload.",
+        body: "Other ways to progress when weight is not the next step.",
         href: "/learn/progressive-overload-without-adding-weight",
       },
       {
@@ -77,13 +77,13 @@ export const homepageCopy = {
       },
       {
         title: "You want the deeper model",
-        body: "What adaptive training is — and what it is not.",
+        body: "What adaptive training is, and what it is not.",
         href: "/learn/what-is-adaptive-training",
       },
     ],
   },
   closing: {
     heading: "Practical training guides",
-    body: "Missed sessions, two goals at once, weekend sport, progressive overload without chasing the next plate — guides that answer what the plan should do next.",
+    body: "Missed sessions, two goals at once, weekend sport, progressive overload without chasing the next plate. Guides that answer what the plan should do next.",
   },
 } as const;

@@ -14,19 +14,20 @@ export const trainingHabitArticle: LearnArticle = {
   description:
     "The first workout should not destroy you. The goal is to come back tomorrow. Stop hunting the perfect program, build a week you can repeat, and let consistency do the hard part.",
   date: "2026-09-06",
-  dateModified: "2026-09-06",
+  dateModified: "2026-09-09",
+  job: "reader_decision",
   body: [
     {
       type: "p",
-      text: "January fills up with people who want to get in shape, burn some fat, and finally feel like they have a routine. Then week two arrives. The plan feels wrong. The first workouts left them destroyed. Someone on Instagram has a better split. They freeze, shop, restart, and quit.",
+      text: "January fills up with people who want to get in shape, burn some fat, and finally feel like they have a routine. Then week two arrives. The plan feels wrong. The first workouts left them destroyed. Someone online has a better split. They freeze, shop, restart, and quit.",
     },
     {
       type: "p",
-      text: "The problem usually is not laziness. The problem is treating day one like a final exam. You do not need to prove anything on the first session. You need a session you can walk away from and repeat. Sure, maybe you could dunk once. If you blow out your Achilles doing it, that one dunk was not worth it.",
+      text: "The problem usually is not laziness. The problem is treating day one like a final exam. You do not need to prove anything on the first session. You need a session you can walk away from and repeat.",
     },
     {
       type: "callout",
-      text: "Short version: show up. Do not let the first day kill you. Leave enough in the tank to come back tomorrow. Pick a simple week you can repeat. Train the basics. Fat loss, if you want it, comes from sticking around — not from one brutal opener.",
+      text: "Short version: show up. Do not let the first day kill you. Leave enough in the tank to come back tomorrow. Pick a simple week you can repeat. Train the basics. Fat loss, if you want it, comes from sticking around, not from one brutal opener.",
     },
 
     { type: "h2", text: "The real goal is coming back tomorrow" },
@@ -36,7 +37,7 @@ export const trainingHabitArticle: LearnArticle = {
     },
     {
       type: "p",
-      text: "So judge day one by a different scoreboard. Did you show up? Did you finish without needing three days on the couch? Do you still want to train again? If yes, that session worked — even if it looked small on paper.",
+      text: "So judge day one by a different scoreboard. Did you show up? Did you finish without needing three days on the couch? Do you still want to train again? If yes, that session worked, even if it looked small on paper.",
     },
     {
       type: "ul",
@@ -65,7 +66,7 @@ export const trainingHabitArticle: LearnArticle = {
     { type: "h2", text: "Habit first, optimization later" },
     {
       type: "p",
-      text: "A habit gets easier because you have repeated it in the same kind of context, not because you found a flawless spreadsheet. Research on everyday habits shows that automaticity builds at different speeds for different people and different behaviors — there is no universal 21-day finish line [1].",
+      text: "A habit gets easier because you have repeated it in the same kind of context, not because you found a flawless spreadsheet. Research on everyday habits shows that automaticity builds at different speeds for different people and different behaviors. There is no universal 21-day finish line [1].",
     },
     {
       type: "p",
@@ -107,7 +108,7 @@ export const trainingHabitArticle: LearnArticle = {
     },
     {
       type: "p",
-      text: "Those patterns cover a lot of life: stairs, groceries, posture under fatigue, and enough muscle to look and feel different. If you want the deeper version of matching lifts to outcomes, use [pick the right exercises for your goals](/learn/pick-the-right-exercises-for-your-goals). In month one, do not let that depth become another delay.",
+      text: "Those patterns cover a lot of life: getting out of a chair, stairs, groceries off the floor, and enough muscle to look and feel different. If you want the deeper version of matching exercises to goals, use [the right exercises for your goals](/learn/pick-the-right-exercises-for-your-goals). In month one, do not let that depth become another delay.",
     },
 
     { type: "h2", text: "A starter week you can survive and repeat" },
@@ -120,7 +121,7 @@ export const trainingHabitArticle: LearnArticle = {
       title: "A boring week that works",
       body: [
         "Day A: squat or sit-to-stand, hinge, push, pull, easy carry or walk",
-        "Day B: same pattern family with small variations if needed — split squat instead of squat, row instead of pulldown",
+        "Day B: same pattern family with small variations if needed (split squat instead of squat, row instead of pulldown)",
         "Optional Day C: repeat Day A lighter, or shorten it when the week is messy",
         "Leave reps in the tank, especially in week one",
         "If you finish thinking \"I could have done more,\" that is often the correct first-week feeling",
@@ -142,7 +143,7 @@ export const trainingHabitArticle: LearnArticle = {
       items: [
         "You showed up again after the first session",
         "You completed most of the planned sessions for several weeks",
-        "The main lifts feel more familiar, not more confusing",
+        "The main exercises feel more familiar, not more confusing",
         "You can repeat the work without dreading it",
         "Clothes, energy, sleep, or strength are drifting the right direction, even slowly",
         "One bad week does not make you scrap the plan",
@@ -181,7 +182,7 @@ export const trainingHabitArticle: LearnArticle = {
     },
     {
       type: "p",
-      text: "IOFitness is being designed around that kind of start. The intended model is not another January challenge that tries to impress you on day one. It is a plan that helps you begin simply, leave able to come back, stay consistent, and adapt when life gets loud — so the habit sticks before the program gets clever.",
+      text: "IOFitness is built around that kind of start: a simple week you can repeat, a first-session dose you can walk away from, and a plan that adapts when life gets loud. That is how the habit sticks before the program gets clever, not another January challenge that tries to impress you on day one.",
     },
 
     { type: "h2", text: "Bottom line" },

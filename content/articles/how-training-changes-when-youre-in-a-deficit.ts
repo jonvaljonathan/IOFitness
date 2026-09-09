@@ -13,7 +13,8 @@ export const deficitTrainingArticle: LearnArticle = {
   description:
     "A calorie deficit can help fat loss, but it changes recovery and how fast you progress. Keep training, lower expectations for rapid PRs, and protect a week you can repeat.",
   date: "2026-09-06",
-  dateModified: "2026-09-06",
+  dateModified: "2026-09-08",
+  job: "reader_decision",
   body: [
     {
       type: "p",
@@ -96,7 +97,7 @@ export const deficitTrainingArticle: LearnArticle = {
     },
     {
       type: "p",
-      text: "IOFitness is being designed around that kind of phase awareness. The intended model is not to run the same progression logic forever regardless of goal. It is to recognize when fat loss is primary and adjust training stress so the plan still fits a real life in a deficit.",
+      text: "IOFitness is built around that kind of phase awareness: recognize when fat loss is primary and adjust training stress so the plan still fits a real life in a deficit. Do not run the same progression logic forever regardless of goal.",
     },
 
     { type: "h2", text: "Bottom line" },

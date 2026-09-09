@@ -1,30 +1,49 @@
 import type { LearnArticle } from "../learn";
 
 /**
- * Authority article #3.
- * Primary intent: what is adaptive training
- * Thesis: adaptive training changes the future program in response to evidence,
- * and products that use the word "adaptive" often do so at very different depths.
+ * Authority article: adaptive training.
+ * Thesis: adaptive means the future plan changes from evidence. Personalization
+ * alone is not enough. You set the goal; the app picks exercises and shapes
+ * days as capacity, schedule, and constraints shift.
  */
 export const adaptiveTrainingArticle: LearnArticle = {
   slug: "what-is-adaptive-training",
   title: "What Is Adaptive Training?",
   description:
-    "Adaptive training is training that changes the future program in response to evidence about the athlete. Personalization alone is not enough, and more change is not automatically better.",
+    "Your body changes. Good training changes with it. Adaptive training means the plan keeps updating from evidence, not starting over every Monday.",
   date: "2026-09-04",
-  dateModified: "2026-09-06",
+  dateModified: "2026-09-09",
+  job: "system_capability",
   body: [
     {
       type: "p",
-      text: "Adaptive training is training in which the future program changes in response to evidence about the athlete. That evidence might be completed sessions, missed sessions, performance, schedule changes, available equipment, sport demands, or a shift in goals. The useful idea is simple: the plan is not finished when it is first generated. It keeps updating as reality shows up.",
+      text: "Adaptive training means your plan changes when your body or your week changes.",
     },
     {
       type: "p",
-      text: "That definition is broader than any one app feature. Fitness companies use \"adaptive\" for many different things. Some change the weight on a lift. Some swap today's workout. Some reshuffle a week after you miss sessions. Some claim to revise the larger training strategy. Those are not the same depth of adaptation.",
+      text: "Not a new program from scratch every Monday. Not the same three workouts forever while life moves on. A plan that still aims at your goal, and adjusts the work when something real shifts.",
     },
     {
       type: "callout",
-      text: "Short version: a personalized plan is built for you. An adaptive plan keeps changing because of what you actually do. The hard questions are what the system can observe, what it is allowed to change, how quickly it responds, and whether it still protects the long-term goal while making those changes.",
+      text: "Short version: you set the goal. The app picks the exercises and shapes the days. When capacity, schedule, or a joint changes, the prescription should change with it.",
+    },
+
+    { type: "h2", text: "Why static plans fall behind" },
+    {
+      type: "p",
+      text: "A static plan assumes a steady version of you: same joints, same sleep, same schedule, same equipment.",
+    },
+    {
+      type: "p",
+      text: "That version does not last.",
+    },
+    {
+      type: "p",
+      text: "You sleep poorly for a week. Your knee flares after a long walk. Work runs late and you only have thirty minutes. You travel and the gym is a hotel room. The goal is still the goal. The session that made sense last month may not make sense today.",
+    },
+    {
+      type: "p",
+      text: "If the plan ignores that, you either force a bad fit or skip. Neither teaches the plan anything.",
     },
 
     { type: "h2", text: "Personalization is not the same as adaptation" },
@@ -34,204 +53,86 @@ export const adaptiveTrainingArticle: LearnArticle = {
     },
     {
       type: "p",
-      text: "Imagine an app asks for age, goal, equipment, experience, and schedule, then generates a 12-week plan. That is personalized programming. It may be a good plan. But if nothing changes when the athlete gets stronger faster than expected, misses Tuesday, adds Saturday soccer, loses a training day, stalls on a lift, or changes equipment, the plan is not meaningfully adaptive after generation.",
+      text: "Imagine an app asks for age, goal, equipment, experience, and schedule, then generates a twelve-week plan. That is personalized programming. It may be a good plan. But if nothing changes when you get stronger faster than expected, miss Tuesday, add Saturday soccer, lose a training day, stall on a lift, or change equipment, the plan is not meaningfully adaptive after generation.",
     },
     {
       type: "p",
-      text: "The reverse is also true. Adaptation without good personalization can stay shallow. A generic plan that lowers today's intensity because readiness looks low is adapting something. It may still know very little about the person's goals, sport demands, or what qualities need to be developed versus maintained.",
+      text: "The reverse is also true. Adaptation without good personalization can stay shallow. A generic plan that lowers today's intensity because readiness looks low is adapting something. It may still know very little about your goals, sport demands, or what needs to be developed versus maintained.",
     },
     {
       type: "p",
-      text: "So personalization answers, \"What plan should we start with?\" Adaptation answers, \"What should the plan do next, given what has happened?\" A strong system needs both. They are not synonyms.",
+      text: "So personalization answers, \"What plan should we start with?\" Adaptation answers, \"What should the plan do next, given what has happened?\" A strong system needs both. They are not synonyms. That gap is the heart of [whether fitness apps actually personalize](/learn/do-fitness-apps-actually-personalize-workouts).",
     },
 
-    { type: "h2", text: "Adaptive training needs a feedback loop" },
+    { type: "h2", text: "What actually changes" },
     {
       type: "p",
-      text: "In coaching and sports science, the closest established idea is autoregulation: adjusting training from measured performance or perceived readiness to perform [1][2]. Autoregulation can happen inside a session, between sessions, or across a longer program [1]. That research does not hand consumers a single official definition of \"adaptive training\" for fitness apps. It does support the core principle: good adjustments respond to a signal.",
-    },
-    {
-      type: "p",
-      text: "Useful evidence can include:",
+      text: "Adaptive training is not vibes. It is specific adjustments to the work [1][2].",
     },
     {
       type: "ul",
       items: [
-        "Completed workouts and missed workouts",
-        "Actual loads, reps, pace, power, or duration",
-        "RPE, RIR, or other effort ratings [2][3]",
-        "Training consistency and recent progression history",
-        "Schedule changes, travel, or fewer available days",
-        "Sport participation and other physical demands outside the gym",
-        "Available equipment and known limitations",
-        "Changes in goal priority",
+        "Load and volume. When you are recovering or short on time, intensity and set count come down. When you are ready, they climb again. Progressive overload still applies. The slope just flexes.",
+        "Exercise choice. If a movement aggravates a joint, a related option that keeps the same training quality can take its place. You should not have to invent that swap yourself mid-session.",
+        "Session shape. A busy day might mean a shorter main block, not a cancelled week. The plan still points at the goal. The day fits the calendar you actually have.",
+        "Rehab and constraints. If you are working around an injury, cleared tasks and current capacity should open or close options over time. The plan that knew you were early in recovery should know when you are further along.",
       ],
     },
     {
       type: "p",
-      text: "Readiness and recovery metrics need more caution. Sleep scores, HRV, soreness ratings, and wearable summaries can provide context. They should not automatically become commands. A system should be able to explain why it is changing the plan. If it cannot identify a relevant signal behind the adjustment, the change is difficult to justify.",
+      text: "Those are the same ideas behind [a plan that knows what you can do today](/learn/your-plan-should-know-what-you-can-do-today). Adaptive training is that idea applied across weeks, not only inside one workout.",
     },
 
-    { type: "h2", text: "A practical framework: levels of adaptation" },
+    { type: "h2", text: "What the system needs to see" },
     {
       type: "p",
-      text: "There does not appear to be a settled scientific taxonomy that every fitness product uses for \"adaptive training.\" The levels below are a practical framework proposed by IOFitness for judging how deep the adaptation actually goes. They are informed by coaching practice and by research on autoregulation, progression, and training-load management [1][2][4]. They are not an official consensus scale.",
+      text: "Good adjustments respond to a signal. Coaches have long changed the next session from how the last one went and how ready you feel today [1][2]. Useful evidence can include completed and missed workouts, actual loads and reps, how hard it felt, schedule changes, sport outside the gym, available equipment, and known limitations [2][3].",
     },
     {
       type: "p",
-      text: "Levels 0 and 1 are useful reference points. In this framework, ongoing adaptation begins at Level 2, when new evidence starts changing future prescriptions.",
+      text: "Sleep scores and wearables can add context. They should not become automatic commands. A system should be able to explain why it is changing the plan. If it cannot name a relevant signal, the change is hard to trust.",
     },
 
-    { type: "h3", text: "Level 0: Static plan" },
+    { type: "h2", text: "What adaptive is not" },
     {
       type: "p",
-      text: "The plan does not change in response to new evidence about the athlete. It may still include planned progression, deload weeks, changing rep ranges, or predefined phases. Those changes were decided in advance. A template that raises squat load from 100 lb to 105 lb to 110 lb across three weeks because the spreadsheet already said so is still static in this sense. PDFs, fixed templates, and locked calendars sit here. They can still be useful. They are not adaptive.",
+      text: "It is not guessing what you want because you clicked a goal checkbox once.",
+    },
+    {
+      type: "p",
+      text: "It is not regenerating a brand-new program every time you miss a session.",
+    },
+    {
+      type: "p",
+      text: "It is not dumping the hard work on you: reading the room, rewriting the day, picking replacements, and hoping you got the programming right.",
+    },
+    {
+      type: "p",
+      text: "You bring the signal. What hurts. What cleared. How long you have. Where you are training. The system should turn that into the next session.",
     },
 
-    { type: "h3", text: "Level 1: Personalized starting plan" },
+    { type: "h2", text: "How IOFitness uses this" },
     {
       type: "p",
-      text: "Inputs shape the initial program. After that, the plan mostly runs as generated, including any progression that was written into it up front. This is common and often valuable. It is a better starting point than a generic PDF. By itself, it is still not ongoing adaptation.",
-    },
-
-    { type: "h3", text: "Level 2: Parameter adaptation" },
-    {
-      type: "p",
-      text: "The basic structure stays familiar, but numbers change because of what the athlete actually did: load, pace, reps, intensity, or difficulty. Strength apps that raise weight after repeated successful sets, or endurance tools that recalibrate intensity from recent performance, often live here [2][6][7][8]. That is also where decisions like [progressive overload without adding weight](/learn/progressive-overload-without-adding-weight) live: more quality reps at the same load, a small jump when earned, or holding the prescription when conditions do not support a change.",
-    },
-
-    { type: "h3", text: "Level 3: Session adaptation" },
-    {
-      type: "p",
-      text: "The system can change the content of the session itself: exercise selection, volume, duration, substitutions, or which muscles get trained. The feedback loop reaches what the workout contains, not only the numbers on a fixed template [2][7].",
-    },
-
-    { type: "h3", text: "Level 4: Schedule and sequence adaptation" },
-    {
-      type: "p",
-      text: "The system can reason about a disrupted week. Missed workouts, travel, added sport, or fewer training days change which future sessions are recommended, and in what order, rather than merely sliding calendar labels. This is where [what to do when you miss a workout](/learn/what-to-do-when-you-miss-a-workout) stops being a user improvisation problem and becomes a programming problem [5][6]. A longer layoff raises the same issue at a larger scale: [returning to training after time off](/learn/how-to-return-to-training-after-time-off) means the old plan is still useful history, but current capacity has to be re-estimated from new sessions.",
-    },
-
-    { type: "h3", text: "Level 5: Program adaptation" },
-    {
-      type: "p",
-      text: "The system can alter the larger training strategy: goal allocation, weekly dose, progression model, exercise emphasis, block structure, or which qualities are being developed versus maintained. This is the deepest level in this framework. It matters when someone is [training for two goals at once](/learn/how-to-train-for-two-goals-at-once) and the week has to keep reallocating limited recovery.",
+      text: "You set the goal and the constraints. IOFitness picks the exercises and shapes the days.",
     },
     {
       type: "p",
-      text: "A product can sit between levels or combine capabilities from several of them. The point of the framework is not to crown winners. It is to stop treating the word \"adaptive\" as if it meant one thing.",
-    },
-
-    { type: "h2", text: "Three examples that make the levels concrete" },
-    {
-      type: "example",
-      title: "Example A: you beat the target reps twice",
-      body: [
-        "Preplanned/static plan: follows the progression that was already written, whether you barely hit the target or exceeded it easily",
-        "Parameter-adaptive plan: changes the next load or target because of what you actually did",
-        "Deeper adaptation: also checks whether that faster progress should change nearby sessions, weekly dose, or the current block emphasis",
-      ],
-    },
-    {
-      type: "example",
-      title: "Example B: Monday lower-body session is missed",
-      body: [
-        "Calendar system: serves Tuesday anyway, or slides Monday onto Tuesday",
-        "Schedule-adaptive system: asks what exposure was missed, what remains, and whether fitting it back in would stack fatigue badly",
-        "Program-adaptive system: may also revise later priorities if the miss changes what the week can still accomplish",
-      ],
-    },
-    {
-      type: "example",
-      title: "Example C: you want muscle and still play weekend field sport",
-      body: [
-        "Simple personalization: chooses a muscle-building template",
-        "Better adaptation: tracks which goal is primary, which athletic qualities need maintenance, and how match day changes the fatigue budget",
-        "Weak adaptation: grows gym volume while quietly deleting the speed or power work the sport still needs",
-        "Deeper adaptation: treats Saturday sport as an anchor session and changes Monday's lower-body dose when the match was easy versus brutal; see [how to combine lifting with a weekend sport](/learn/how-to-combine-lifting-with-sports)",
-      ],
+      text: "We keep a deep bank of exercises sorted by what they ask your body to do, what gear they need, and how they treat specific joints. Sport, later-life strength, muscle, and injury-aware training do not want the same week. Goals go deeper than one checkbox, so the days fill from that bank instead of a generic template.",
     },
     {
       type: "p",
-      text: "Current products already show how differently \"adaptive\" can behave. TrainerRoad's Adaptive Training monitors workout performance and can swap upcoming structured cycling workouts as fitness and schedule change; its documentation states that it changes which future workouts the plan recommends, not the internals of individual workouts [5]. Stryd Adaptive Training recalibrates running prescription from Critical Power and can alter schedule, phases, and return logic when fitness or circumstances change [6]. Fitbod generates future strength sessions, including exercise selection, sets, reps, and loads, from logged history and recovery estimates [7]. Those are real forms of adaptation. They are not identical forms.",
-    },
-
-    { type: "h2", text: "More adaptation is not automatically better" },
-    {
-      type: "p",
-      text: "Constant change is not the same thing as intelligent coaching.",
+      text: "When you adapt for time, place, or a body check, those choices feed the next prescription instead of vanishing into a one-off edit. Missed weeks, cleared rehab tasks, and progression history matter for what comes next, not only for today's log [4].",
     },
     {
       type: "p",
-      text: "A system can overreact. It can treat one unusually poor workout as more informative than it is. It can chase wearable noise. It can swap exercises so often that progression becomes hard to judge. It can protect short-term comfort while quietly abandoning the quality the block was supposed to develop. Autoregulation research is useful here as a reminder that adjustments should be tied to relevant performance or readiness signals, not to restlessness [1][2][8].",
-    },
-
-    { type: "h2", text: "Stability and responsiveness both matter" },
-    {
-      type: "p",
-      text: "Good adaptive training needs both responsiveness and stability. Responsiveness means the plan can change when the evidence warrants it: a repeated miss, a clear stall, a new sport day, faster-than-expected progress. Stability means enough of the program stays continuous for progression, comparison, and learning. If the exercises, doses, and priorities keep flipping, you cannot tell whether the athlete adapted poorly or the plan never stayed still long enough to work.",
-    },
-    {
-      type: "p",
-      text: "That tradeoff is why deeper adaptation is not a score to maximize. A Level 2 system that progresses load cleanly can outperform a noisier Level 3 system that invents a new session every day. The useful question is not \"how much does it change?\" It is \"does it change the right parts, for a clear reason, without destroying the thread of progression?\"",
-    },
-
-    { type: "h2", text: "What adaptive training is not" },
-    {
-      type: "ul",
-      items: [
-        "Not random workout generation",
-        "Not an AI chatbot inventing a new session every day with no memory of the plan",
-        "Not personalization alone",
-        "Not changing something merely because a wearable number moved",
-        "Not constant novelty",
-        "Not synonymous with machine learning",
-      ],
-    },
-    {
-      type: "p",
-      text: "That last point matters. A rules-based system can be adaptive if it observes outcomes and changes future programming for clear reasons. Machine learning can power adaptation. \"Uses AI\" and \"adapts training\" are still different claims.",
-    },
-
-    { type: "h2", text: "A quick test: does this app really adapt?" },
-    {
-      type: "p",
-      text: "When an app says it is adaptive, ask what happens if:",
-    },
-    {
-      type: "ol",
-      items: [
-        "You miss two workouts",
-        "You progress much faster than expected",
-        "Your training days change mid-block",
-        "You add a sport or hard recreational session",
-        "You stop progressing on a main lift or key workout",
-        "Your goal priority changes",
-      ],
-    },
-    {
-      type: "p",
-      text: "Then ask the decisive follow-up: does the app only modify today's workout, or does it update the future program? A product that only tweaks today's difficulty may still be useful. It is not doing the same job as a system that can revise sequence, weekly dose, or goal allocation when the evidence changes.",
-    },
-    {
-      type: "p",
-      text: "That consumer test also points to a related question: whether an app is truly personalizing the plan, or only dressing a generic template in onboarding answers. Personalization and adaptation should be judged separately. A concrete product test for that is in [does your fitness app actually personalize anything](/learn/do-fitness-apps-actually-personalize-workouts).",
-    },
-
-    { type: "h2", text: "What this means for IOFitness" },
-    {
-      type: "p",
-      text: "IOFitness is being designed around the deeper end of this framework. The intended model is not only to generate a starting plan, and not only to nudge today's numbers. It is to use what someone actually did, plus their goals, activities, limitations, and progression history, to decide what training should do next. One body part that will not cooperate is one of the clearest tests of that idea: find a version of the movement you can still load, attack that capacity so the weak link improves, keep the rest of training moving, and update from how the next sessions feel rather than freezing the whole week. That case is covered in [how to train with a limitation](/learn/how-to-train-with-a-limitation).",
-    },
-    {
-      type: "p",
-      text: "That includes problems already covered in this Learn series: reprogramming after a missed session, allocating a week when more than one goal is active, choosing exercises by the job they need to do, and compressing a plan when the week shrinks. Those are not cosmetic features. They are tests of whether the system can adapt the future program while protecting the point of the training. Exercise choice is covered in [pick the right exercises for your goals](/learn/pick-the-right-exercises-for-your-goals). Compression is covered in [when your week shrinks](/learn/when-your-week-shrinks).",
+      text: "That is adaptive training in practice: same destination, honest updates along the way. Exercise choice is covered in [the right exercises for your goals](/learn/pick-the-right-exercises-for-your-goals). Compressing a busy week is covered in [when your week shrinks](/learn/when-your-week-shrinks).",
     },
 
     { type: "h2", text: "Bottom line" },
     {
       type: "p",
-      text: "Adaptive training means the future program changes in response to evidence about the athlete. Personalization gets the starting point closer. Adaptation keeps the plan honest after reality intervenes. Judge a system by what it can observe, what it is allowed to change, how quickly it responds, and whether those changes still serve the long-term goal. The word \"adaptive\" by itself tells you almost nothing. The feedback loop and the depth of change tell you much more.",
+      text: "Adaptive training means the future program changes in response to evidence about you. Personalization gets the starting point closer. Adaptation keeps the plan honest after reality intervenes. Judge a system by what it can observe, what it is allowed to change, and whether those changes still serve the long-term goal. The word \"adaptive\" by itself tells you almost nothing. The feedback loop tells you much more.",
     },
   ],
   sources: [
@@ -241,7 +142,7 @@ export const adaptiveTrainingArticle: LearnArticle = {
       citation:
         "Greig L, Stephens Hemingway BH, Aspe RR, Cooper K, Comfort P, Swinton PA. Autoregulation in resistance training: addressing the inconsistencies. Sports Med. 2020;50(11):1873-1887.",
       url: "https://doi.org/10.1007/s40279-020-01330-8",
-      note: "Defines autoregulation as adjusting training from measured performance or perceived capability, across within-session, between-session, and longer program timescales. Used as the closest established scientific framing, not as a consumer taxonomy of adaptive apps.",
+      note: "Defines autoregulation as adjusting training from measured performance or perceived capability. Closest established scientific framing for adaptive training in apps.",
     },
     {
       id: "2",
@@ -249,7 +150,7 @@ export const adaptiveTrainingArticle: LearnArticle = {
       citation:
         "Helms ER, Kwan K, Sousa CA, Cronin JB, Storey AG, Zourdos MC. Methods for regulating and monitoring resistance training. J Hum Kinet. 2020;74:23-42.",
       url: "https://doi.org/10.2478/hukin-2020-0011",
-      note: "Reviews practical autoregulation and monitoring methods such as velocity, RIR-based RPE, and performance-based load progression. Supports the idea that useful adjustments are tied to measurable signals. Also available via PMC7706636.",
+      note: "Reviews practical autoregulation and monitoring methods. Supports signal-tied adjustments.",
     },
     {
       id: "3",
@@ -257,7 +158,7 @@ export const adaptiveTrainingArticle: LearnArticle = {
       citation:
         "Helms ER, Cronin J, Storey A, Zourdos MC. Application of the repetitions in reserve-based rating of perceived exertion scale for resistance training. Strength Cond J. 2016;38(4):42-49.",
       url: "https://doi.org/10.1519/SSC.0000000000000218",
-      note: "Practical reference for effort-based autoregulation using repetitions in reserve. Used as an example of a training signal, not as proof that any one app implements it well.",
+      note: "Practical reference for effort-based autoregulation as one example of a training signal.",
     },
     {
       id: "4",
@@ -265,39 +166,7 @@ export const adaptiveTrainingArticle: LearnArticle = {
       citation:
         "NSCA. Central Concepts Related to Periodization. Kinetic Select.",
       url: "https://www.nsca.com/education/articles/kinetic-select/central-concepts-related-to-periodization/",
-      note: "Stimulus-fatigue-recovery-adaptation framing for why longer-term program structure still matters even when short-term adjustments are available.",
-    },
-    {
-      id: "5",
-      label: "TrainerRoad Adaptive Training overview",
-      citation:
-        "TrainerRoad. Adaptive Training Overview. TrainerRoad Support.",
-      url: "https://support.trainerroad.com/hc/en-us/articles/4404060687387-Adaptive-Training-Overview",
-      note: "Vendor documentation: Adaptive Training monitors workout performance and can change upcoming plan workouts as fitness and schedule change. It swaps future recommended workouts rather than modifying the internals of individual workouts. Used as an example of future-workout / schedule-plan adaptation.",
-    },
-    {
-      id: "6",
-      label: "Stryd Adaptive Training documentation",
-      citation:
-        "Stryd. Stryd Adaptive Training How To. Stryd Help Center.",
-      url: "https://help.stryd.com/en/articles/12580285-stryd-adaptive-training-how-to",
-      note: "Vendor documentation: Adaptive Training recalibrates running prescription from Critical Power and can adjust schedule, phases, and return logic after interruptions. Used for parameter/fitness recalibration and schedule-responsive planning, not as evidence of rewriting a session's exercise list mid-workout.",
-    },
-    {
-      id: "7",
-      label: "Fitbod algorithm documentation",
-      citation:
-        "Fitbod. How Fitbod Generates Your Personalized Workouts: Meet The Fitbod Algorithm. Fitbod Blog.",
-      url: "https://fitbod.me/blog/fitbod-algorithm/",
-      note: "Vendor documentation: Fitbod selects exercises and recommends sets, reps, and loads from training history, recovery estimates, goals, and equipment. Used as an example of session- and parameter-level strength adaptation.",
-    },
-    {
-      id: "8",
-      label: "Shattock and Tee autoregulation comparison",
-      citation:
-        "Shattock K, Tee JC. Autoregulation in resistance training: a comparison of subjective versus objective methods. J Strength Cond Res. 2022;36(3):641-648.",
-      url: "https://doi.org/10.1519/JSC.0000000000003530",
-      note: "Compares subjective and objective autoregulation methods. Used to support the broader point that multiple valid signals exist and that adjustments should be signal-tied, not to endorse one commercial implementation. Online ahead of print dated 2020; journal issue listed as 2022;36(3).",
+      note: "Stimulus-fatigue-recovery-adaptation framing for why longer-term structure still matters when short-term adjustments are available.",
     },
   ],
 };

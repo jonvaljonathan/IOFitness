@@ -18,6 +18,12 @@
       "sourceType": "github",
       "skillPath": "skills/cro/SKILL.md",
       "computedHash": "07f7a27c57e48f4b67230712f8efbc5bcc01611b35321b3c2c2e5279c9304bcd"
+    },
+    "seo-audit": {
+      "source": "coreyhaines31/marketingskills",
+      "sourceType": "github",
+      "skillPath": "skills/seo-audit/SKILL.md",
+      "computedHash": "9420a6c1ffcf7212766bcb618c28766ecb084631bed8045f3115d42b1230d368"
     }
   }
 }

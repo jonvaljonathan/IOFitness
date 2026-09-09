@@ -13,7 +13,8 @@ export const progressiveOverloadArticle: LearnArticle = {
   description:
     "Progressive overload means increasing the relevant training stimulus over time. When you cannot add weight, the next lever depends on your goal, the exercise, and whether the work stays comparable.",
   date: "2026-09-04",
-  dateModified: "2026-09-05",
+  dateModified: "2026-09-08",
+  job: "reader_decision",
   body: [
     {
       type: "p",
@@ -227,7 +228,7 @@ export const progressiveOverloadArticle: LearnArticle = {
     { type: "h2", text: "What adaptive programming should do" },
     {
       type: "p",
-      text: "Parameter adaptation is one of the simplest forms of [adaptive training](/learn/what-is-adaptive-training). A useful system does not add 5 lb every Monday forever. It observes completed performance, missed sessions, effort, and constraints, then chooses an appropriate next target: more reps, a small load increase, unchanged prescription after a hard week, or a different lever when equipment forces the issue. The same decision appears when a body part will not tolerate the usual lift: keep what that exercise was there to do, find a version you can load honestly, and progress that version from how the next sessions feel. That case is covered in [how to train with a limitation](/learn/how-to-train-with-a-limitation). Why that lift belongs in the session in the first place is covered in [pick the right exercises for your goals](/learn/pick-the-right-exercises-for-your-goals).",
+      text: "Parameter adaptation is one of the simplest forms of [adaptive training](/learn/what-is-adaptive-training). A useful system does not add 5 lb every Monday forever. It observes completed performance, missed sessions, effort, and constraints, then chooses an appropriate next target: more reps, a small load increase, unchanged prescription after a hard week, or a different lever when equipment forces the issue. The same decision appears when a body part will not tolerate the usual lift: keep what that exercise was there to do, find a version you can load honestly, and progress that version from how the next sessions feel. That case is covered in [how to train with a limitation](/learn/how-to-train-with-a-limitation). Why that lift belongs in the session in the first place is covered in [the right exercises for your goals](/learn/pick-the-right-exercises-for-your-goals).",
     },
     {
       type: "p",
@@ -235,7 +236,7 @@ export const progressiveOverloadArticle: LearnArticle = {
     },
     {
       type: "p",
-      text: "IOFitness is being designed around that kind of decision. The programming model is intended to treat progression as evidence-driven parameter change, not as a fixed calendar of heavier weights. The framework in this article still works with a notebook if you keep the comparisons honest.",
+      text: "IOFitness is built around that kind of decision: treat progression as evidence-driven parameter change, not as a fixed calendar of heavier weights. The framework in this article still works with a notebook if you keep the comparisons honest.",
     },
 
     { type: "h2", text: "Bottom line" },
