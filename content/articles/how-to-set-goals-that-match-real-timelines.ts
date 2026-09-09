@@ -56,7 +56,7 @@ export const goalsMatchTimelinesArticle: LearnArticle = {
         "[Why building muscle usually needs a calorie surplus](/learn/why-building-muscle-usually-needs-a-calorie-surplus)",
         "[How training changes when you're in a deficit](/learn/how-training-changes-when-youre-in-a-deficit)",
         "[Start a training habit](/learn/start-a-training-habit)",
-        "[Pick the right exercises for your goals](/learn/pick-the-right-exercises-for-your-goals)",
+        "[The right exercises for your goals](/learn/pick-the-right-exercises-for-your-goals)",
       ],
     },
 

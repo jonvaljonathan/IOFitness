@@ -107,7 +107,7 @@ export const trainingHabitArticle: LearnArticle = {
     },
     {
       type: "p",
-      text: "Those patterns cover a lot of life: stairs, groceries, posture under fatigue, and enough muscle to look and feel different. If you want the deeper version of matching lifts to outcomes, use [pick the right exercises for your goals](/learn/pick-the-right-exercises-for-your-goals). In month one, do not let that depth become another delay.",
+      text: "Those patterns cover a lot of life: stairs, groceries, posture under fatigue, and enough muscle to look and feel different. If you want the deeper version of matching lifts to outcomes, use [the right exercises for your goals](/learn/pick-the-right-exercises-for-your-goals). In month one, do not let that depth become another delay.",
     },
 
     { type: "h2", text: "A starter week you can survive and repeat" },

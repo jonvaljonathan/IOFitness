@@ -60,7 +60,7 @@ export const appPersonalizationArticle: LearnArticle = {
     },
     {
       type: "p",
-      text: "How to pick the right exercises for your goals is covered in [pick the right exercises for your goals](/learn/pick-the-right-exercises-for-your-goals).",
+      text: "How to pick the right exercises for your goals is covered in [the right exercises for your goals](/learn/pick-the-right-exercises-for-your-goals).",
     },
 
     { type: "h3", text: "2. Can it hold two goals without collapsing them?" },

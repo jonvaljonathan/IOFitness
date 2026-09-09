@@ -121,7 +121,7 @@ Learn titles should **name the situation**, not punchline the advice.
 
 Good title pattern: plain, explanatory, calm, specific, low-drama.
 
-- Good: "Pick the Right Exercises for Your Goals"
+- Good: "The Right Exercises for Your Goals"
 - Good: "Start a Training Habit (Even If You Don't Know What You're Doing)"
 - Good: "What to Expect When You're Building Muscle"
 - Bad: "Muscle Takes Months. Train Like You Mean It."
