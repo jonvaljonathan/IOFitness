@@ -5,7 +5,7 @@ import type { LearnArticle } from "../learn";
  * Primary intent: the right exercises for your goals
  * Thesis: if you want ski season or grandkids strength, the week has to train
  * those demands. Most apps fake the match. IOFitness picks the exercises.
- * "You get out what you put in" earns its place later — not in the open.
+ * "You get out what you put in" earns its place later, not in the open.
  */
 export const exerciseSelectionArticle: LearnArticle = {
   slug: "pick-the-right-exercises-for-your-goals",
