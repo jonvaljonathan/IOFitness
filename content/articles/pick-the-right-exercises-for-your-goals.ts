@@ -58,7 +58,7 @@ export const exerciseSelectionArticle: LearnArticle = {
     },
     {
       type: "p",
-      text: "You do not need a jargon chart for this. You need an honest picture of the demand, then exercises that look a little like that demand.",
+      text: "You do not need a jargon chart for this. You need an honest picture of the demand, then exercises that look a little like that demand. The other half is starting from what you can do today, so the plan does not jump to a lift you have not earned. That story is in [your plan should know what you can do today](/learn/your-plan-should-know-what-you-can-do-today).",
     },
     {
       type: "p",
