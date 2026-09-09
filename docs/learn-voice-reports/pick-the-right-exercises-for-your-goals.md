@@ -2,88 +2,82 @@
 slug: pick-the-right-exercises-for-your-goals
 date: 2026-09-09
 verdict: pass
-happy: [jon, carlos, editor]
-not_happy: [pete]
+happy: [jon, carlos, editor, pete]
+not_happy: []
+note: >-
+  Prior "pass" was wrong. Description stacked a nonsense metaphor
+  ("training make the life") with a shoehorned proverb. Editor First-screen
+  should have been Red. This report is after the open rewrite.
 ---
 
-# Voice panel: The Right Exercises for Your Goals (pass 2)
+# Voice panel: The Right Exercises for Your Goals (pass 3)
 
-Craft pass after fail report. Structural grade still A. Voice re-score below.
+## Correction
+
+Pass 2 should have **failed**. The meta description and recycled bottom line did not make sense. Panel missed First-screen sense. Rubric now requires First screen + shoehorn Reds.
 
 ## Pete
 
-**Gut:** Better. I can follow it. Still a little long in the middle, and SAID shows up even if you say it’s optional.
+**Gut:** Opens with people and goals. I understand it.
 
 | Ear | Grade |
 |---|---|
-| Finish | Green |
-| Life → exercise | Green |
-| Human voice | Yellow |
-| Trust | Green |
-
-**Quotes:**
-- Grandkids / forty pounds / ski goblet — clear now.
-- `Coaches sometimes call that idea SAID… The acronym is optional.` — kinder, still one more term than I need.
-
-**Must-fix:** none blocking. Yellow on Human voice only. Not fully happy; acceptable.
-
-## Jon
-
-**Gut:** Still the right article for me.
-
-| Ear | Grade |
-|---|---|
+| First screen | Green |
 | Finish | Green |
 | Life → exercise | Green |
 | Human voice | Green |
 | Trust | Green |
 
-**Quotes:**
-- Stretch vs goblet squat — still the money.
-- Example keeps the job when the knee complains.
+**Must-fix:** none.
+
+## Jon
+
+**Gut:** Still my article. Open is cleaner.
+
+| Ear | Grade |
+|---|---|
+| First screen | Green |
+| Finish | Green |
+| Life → exercise | Green |
+| Human voice | Green |
+| Trust | Green |
 
 **Must-fix:** none.
 
 ## Carlos
 
-**Gut:** Now it sounds like someone explaining it to me, not labeling me.
+**Gut:** Grandkids still there. Opening doesn’t talk nonsense at me first.
 
 | Ear | Grade |
 |---|---|
+| First screen | Green |
 | Finish | Green |
 | Life → exercise | Green |
 | Human voice | Green |
 | Trust | Green |
-
-**Quotes:**
-- `Practice picking weight up off the floor, carrying it, and standing tall.` — yes.
-- Product middle is plainer: `We keep a deep bank…` instead of system-doc mapping.
 
 **Must-fix:** none.
 
 ## Warm coach editor
 
-**Gut:** Shipable craft. Ideas were already right; sentences can be said out loud.
+**Gut:** First screen finally parses. Proverb earns its section later.
 
 | Ear | Grade |
 |---|---|
+| First screen | Green |
 | Finish | Green |
 | Life → exercise | Green |
 | Human voice | Green |
 | Trust | Green |
 
-**Quotes fixed from last round:**
-- Gone: `Not "did you sweat."`
-- Gone: early SAID dump; acronym now after pictures, marked optional
-- Gone: `hinges` as a label
-- Gone: `The product sits on a deep exercise bank… mapped to…`
+**Fixed:**
+- Description no longer: training “makes a life” + shoehorned “you get out what you put in”
+- Body open: concrete goals, then the point
+- Callout: you set / app picks (proverb not jammed in)
+- Bottom line: examples first, proverb second
 
-**Must-fix:** none for ship. Optional later: trim “Why most plans miss it” one notch.
-
-## Must-fix (ordered)
-
-None for pass. Optional polish: shorten the miss-it section; Pete may never love SAID even as a footnote.
+**Must-fix:** none.
 
 ## Verdict
 
-**pass** — Jon, Carlos, and editor happy. Pete Yellow only (SAID optional line). Editor no longer Red on craft. Some people happy; not everyone.
+**pass** — after open rewrite. Prior pass revoked.

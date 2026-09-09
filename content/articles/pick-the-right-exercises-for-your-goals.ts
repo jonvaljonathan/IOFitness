@@ -3,32 +3,30 @@ import type { LearnArticle } from "../learn";
 /**
  * Authority article #9.
  * Primary intent: the right exercises for your goals
- * Thesis: does your training build the life you want? You get out what you
- * put in. Link real life demands to concrete exercises in plain language.
- * IOFitness picks the exercises. Reader sets the goal.
- *
- * Voice panel target: Jon + Carlos + editor happy; Pete may stay Yellow.
+ * Thesis: if you want ski season or grandkids strength, the week has to train
+ * those demands. Most apps fake the match. IOFitness picks the exercises.
+ * "You get out what you put in" earns its place later — not in the open.
  */
 export const exerciseSelectionArticle: LearnArticle = {
   slug: "pick-the-right-exercises-for-your-goals",
   title: "The Right Exercises for Your Goals",
   description:
-    "Does your training make the life you want to live? You get out what you put in. If you want to pick up grandkids or ski hard, the week has to train those things. IOFitness is built to pick the exercises that match.",
+    "If you want to ski hard or pick up your grandkids, your training week has to prepare you for those things. Most apps fill a generic template. IOFitness is built to pick the exercises that match your goals.",
   date: "2026-09-06",
   dateModified: "2026-09-09",
   job: "system_capability",
   body: [
     {
       type: "p",
-      text: "Does your training make the life you want to live?",
+      text: "You want to ski hard in February. Or pick up your grandkids without guessing. Or keep a shoulder from wrecking the rest of your upper-body work.",
     },
     {
       type: "p",
-      text: "Sweating is easy to measure. Ready for ski season, or ready to pick up your grandkids, is harder. The week only helps if the exercises in it train the things that life actually asks for.",
+      text: "Those are real goals. The week only helps if the exercises in it prepare you for them. Sweating through a random circuit is not the same thing.",
     },
     {
       type: "callout",
-      text: "Short version: you get out what you put in. You set the goal. IOFitness picks the exercises that match that goal, instead of filling the week from a generic menu.",
+      text: "Short version: you set the goal. IOFitness picks the exercises. The session should look a little like the life you care about, not like a generic template.",
     },
 
     { type: "h2", text: "You get out what you put in" },
@@ -38,7 +36,7 @@ export const exerciseSelectionArticle: LearnArticle = {
     },
     {
       type: "p",
-      text: "So start with a plain question. What does the life you want ask your body to do? Then train that.",
+      text: "So ask a plain question. What does the goal ask your body to do? Then train that.",
     },
 
     { type: "h2", text: "Life demand, plain exercise" },
@@ -127,7 +125,7 @@ export const exerciseSelectionArticle: LearnArticle = {
     { type: "h2", text: "Bottom line" },
     {
       type: "p",
-      text: "Does your training make the life you want to live? You get out what you put in. If life asks you to pick forty pounds off the ground, sit and hold for ski legs, or hold and turn through your middle, the week should train those things. IOFitness is built to pick the exercises that match. You set the goal. The app picks the exercises. Then you show up and train.",
+      text: "If you want to pick forty pounds off the ground, sit and hold for ski legs, or hold and turn through your middle, the week should train those things. You get out what you put in. IOFitness is built to pick the exercises that match. You set the goal. The app picks the exercises. Then you show up and train.",
     },
     {
       type: "p",

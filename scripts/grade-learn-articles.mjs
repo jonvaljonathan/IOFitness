@@ -205,7 +205,24 @@ function gradeArticle(article) {
       });
     }
   }
+// First-screen sense (description + opening)
+  const firstScreen = `${article.description}\n${(article.body||[]).filter(b=>b.type==="p"||b.type==="callout").slice(0,3).map(b=>b.text||"").join("\n")}`;
+  if (/training make the life|make the life you want/i.test(firstScreen)) {
+    lectureScore -= 40;
+    flags.push({
+      code: "nonsense_open",
+      detail: "Opening uses a nonsense metaphor (training does not make a life). Rewrite the first screen.",
+    });
+  }
+  if (/^[^\n]{0,80}you get out what you put in/i.test(article.description) && !/grandkid|ski|pick|floor|squat/i.test(article.description.split(/you get out what you put in/i)[0]||"")) {
+    lectureScore -= 25;
+    flags.push({
+      code: "shoehorn_proverb",
+      detail: "Description leads with or jams in \"you get out what you put in\" before a concrete picture.",
+    });
+  }
   dims.lecture = Math.max(0, Math.min(100, lectureScore));
+
 
   // Weighted total
   const weights =
