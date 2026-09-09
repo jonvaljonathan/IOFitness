@@ -4,18 +4,16 @@ import type { LearnArticle } from "../learn";
  * Authority article #9.
  * Primary intent: the right exercises for your goals
  * Thesis: does your training build the life you want? You get out what you
- * put in. Link real life demands to concrete exercises in plain language
- * (grandkids → pick weight off the ground; ski → loaded squat stance, not
- * only stretching; disc/golf → hold + turn the trunk). IOFitness picks the
- * exercises. Reader sets the goal.
+ * put in. Link real life demands to concrete exercises in plain language.
+ * IOFitness picks the exercises. Reader sets the goal.
  *
- * Tone: warm coach; life pictures over jargon; folk truth first.
+ * Voice panel target: Jon + Carlos + editor happy; Pete may stay Yellow.
  */
 export const exerciseSelectionArticle: LearnArticle = {
   slug: "pick-the-right-exercises-for-your-goals",
   title: "The Right Exercises for Your Goals",
   description:
-    "Does your training make the life you want to live? You get out what you put in. If you want to pick up grandkids or ski hard, the week has to train those demands. IOFitness is built to pick the exercises that match.",
+    "Does your training make the life you want to live? You get out what you put in. If you want to pick up grandkids or ski hard, the week has to train those things. IOFitness is built to pick the exercises that match.",
   date: "2026-09-06",
   dateModified: "2026-09-09",
   job: "system_capability",
@@ -26,21 +24,21 @@ export const exerciseSelectionArticle: LearnArticle = {
     },
     {
       type: "p",
-      text: "Not \"did you sweat.\" Did the week make you more ready for the thing you care about: ski season, picking up grandkids, a quieter shoulder, a weekend sport that asks you to hold on and turn.",
+      text: "Sweating is easy to measure. Ready for ski season, or ready to pick up your grandkids, is harder. The week only helps if the exercises in it train the things that life actually asks for.",
     },
     {
       type: "callout",
-      text: "Short version: you get out what you put in. Name the life demand in plain words. IOFitness picks the exercises that train that demand, instead of filling the week from a generic menu.",
+      text: "Short version: you get out what you put in. You set the goal. IOFitness picks the exercises that match that goal, instead of filling the week from a generic menu.",
     },
 
     { type: "h2", text: "You get out what you put in" },
     {
       type: "p",
-      text: "That line is older than any app. Coaches also call it SAID: specific adaptation to imposed demands. Same idea. Your body gets better at the work you actually do [1][2].",
+      text: "That line is older than any app. Your body gets better at the work you actually do [1][2]. Train the wrong thing and you can still finish tired.",
     },
     {
       type: "p",
-      text: "So the useful question is simple. What does the life you want ask your body to do? Then train that.",
+      text: "So start with a plain question. What does the life you want ask your body to do? Then train that.",
     },
 
     { type: "h2", text: "Life demand, plain exercise" },
@@ -50,29 +48,33 @@ export const exerciseSelectionArticle: LearnArticle = {
     },
     {
       type: "p",
-      text: "Want to pick up your grandkids? You need to get something like forty pounds off the ground, stand up with it, and not fold in half. We can train that. Hinges, carries, and getting weight from the floor to standing are not fancy. They are the job.",
+      text: "Want to pick up your grandkids? You need to get something like forty pounds off the ground, stand up with it, and keep your balance. We can train that. Practice picking weight up off the floor, carrying it, and standing tall. Nothing fancy. That is the job.",
     },
     {
       type: "p",
-      text: "Getting ready for skiing? Stretching alone will not do it. Going down the mountain asks your legs to sit and hold under load, over and over. Sitting in a goblet squat with a kettlebell in your hands is a lot closer to that demand than another round of polite stretches on the floor.",
+      text: "Getting ready for skiing? Stretching alone will not do it. Going down the mountain asks your legs to sit and hold under load, over and over. Sitting in a goblet squat with a kettlebell in your hands is a lot closer to that than another polite stretch on the floor.",
     },
     {
       type: "p",
-      text: "Weekend disc golf, golf, or anything that asks you to hold a shape and turn? You need to be able to hold on through your trunk and rotate without falling apart. If the week never trains holding and turning, the course will teach you the hard way.",
+      text: "Weekend disc golf, golf, or anything that asks you to hold a shape and turn? You need to hold through your middle and rotate without falling apart. If the week never trains holding and turning, the course will teach you the hard way.",
     },
     {
       type: "p",
-      text: "None of that needs a jargon chart. It needs honesty about the demand, then exercises that look a little like that demand.",
+      text: "You do not need a jargon chart for this. You need an honest picture of the demand, then exercises that look a little like that demand.",
+    },
+    {
+      type: "p",
+      text: "Coaches sometimes call that idea SAID: specific adaptation to imposed demands. Same point as you get out what you put in. The acronym is optional. The match is not [1][2].",
     },
 
     { type: "h2", text: "Why most plans miss it" },
     {
       type: "p",
-      text: "Matching is confusing when you are staring at a giant exercise menu. Sport, later-life strength, muscle, and injury-aware training do not want the same week. A body-part split can sketch a session. It cannot decide whether today should teach you to pick weight off the ground, sit and hold for ski legs, or keep a shoulder quiet while you still train.",
+      text: "That match is hard when you are staring at a giant exercise menu. Sport, later-life strength, muscle, and injury-aware training do not want the same week. A chest-and-arms day can fill time. It cannot decide whether today should teach you to pick weight off the ground, sit and hold for ski legs, or keep training while a shoulder stays quiet.",
     },
     {
       type: "p",
-      text: "Most fitness apps skip the match. They stick a goal checkbox on a template, or shuffle movements until the day looks full. You get busy. You do not get closer to grandkids, ski season, or the sport that actually asked for hold-and-turn strength.",
+      text: "Most fitness apps skip the match. They stick a goal checkbox on a template, or shuffle movements until the day looks full. You get busy. You do not get closer to grandkids, ski season, or the sport that asked you to hold and turn.",
     },
 
     { type: "h2", text: "What IOFitness does" },
@@ -82,21 +84,21 @@ export const exerciseSelectionArticle: LearnArticle = {
     },
     {
       type: "p",
-      text: "The product sits on a deep exercise bank: hundreds of movements mapped to what they ask your body to do, what equipment they need, and how hard they are on specific joints. Goals are broken down past a single checkbox. Weekend sport, general athleticism, later-life strength and balance, and injury-aware progressions all change which exercises belong in the week.",
+      text: "We keep a deep bank of exercises already sorted by what they ask your body to do, what gear they need, and how they treat specific joints. Goals go deeper than one checkbox. Weekend sport, general athleticism, later-life strength and balance, and injury-aware options all change which exercises show up in your week.",
     },
     {
       type: "p",
-      text: "Then the app shapes the days around those demands. It keeps comparable work long enough to improve, and swaps when your joint, gym, or goal says the old option no longer fits [3].",
+      text: "Then the app builds the days around those demands. It keeps comparable work long enough to improve, and swaps when your joint, gym, or goal says the old option no longer fits [3].",
     },
 
     { type: "h2", text: "How the app picks the exercises" },
     {
       type: "p",
-      text: "IOFitness reads the life you said you want, turns it into the demands the week must train, then fills each session from the bank. It respects equipment, joint tolerance, and whether you can own the movement when you get tired. When the goal, the joint, or the gym says the old option is wrong, it changes the exercise and keeps the job.",
+      text: "IOFitness reads the life you said you want, figures out what the week must train for that life, and fills each session from the bank. It respects your equipment, what your joints will tolerate, and whether you can own the movement when you get tired. When the goal, the joint, or the gym says the old option is wrong, it changes the exercise and keeps the job.",
     },
     {
       type: "p",
-      text: "You do not have to become the programmer. Your job is to train the session and tell the truth about what hurt, what you had available, and what you actually finished.",
+      text: "You do not have to become the programmer. Show up, do the work, and tell the truth about what hurt, what you had available, and what you finished.",
     },
 
     { type: "h2", text: "Example: ski legs, cranky knee, busy rack" },
@@ -108,28 +110,28 @@ export const exerciseSelectionArticle: LearnArticle = {
       type: "example",
       title: "Same goal, different exercise",
       body: [
-        "IOFitness keeps the outcome: stronger legs for skiing",
+        "IOFitness keeps the goal: stronger legs for skiing",
         "It keeps the demand: sit, hold, and drive under load",
         "It does not force a deep back squat because a template says so",
         "It does not swap in more stretching and call it ski prep",
-        "It picks a workable option: goblet squat, high-box squat, leg press in a quiet range, or a split squat you can own",
-        "It logs that exact version so the next session can progress it",
-        "It only reopens the original squat range when the knee and the week allow it",
+        "It picks something you can do: goblet squat, high-box squat, leg press in a quiet range, or a split squat you own",
+        "It remembers that exact version so the next session can improve it",
+        "It only brings back the deeper squat when the knee and the week allow it",
       ],
     },
     {
       type: "p",
-      text: "You still trained for skiing. The app changed the exercise, not the goal. More on training around a limitation lives in [how to train with a limitation](/learn/how-to-train-with-a-limitation).",
+      text: "You still trained for skiing. The app changed the exercise, not the goal. More on training around a limitation is in [how to train with a limitation](/learn/how-to-train-with-a-limitation).",
     },
 
     { type: "h2", text: "Bottom line" },
     {
       type: "p",
-      text: "Does your training make the life you want to live? You get out what you put in. If the life asks you to pick forty pounds off the ground, sit and hold for ski legs, or hold and turn through your trunk, the week should train those things. IOFitness is built to pick the exercises that match. You set the goal. The app picks the exercises. Then you show up and train.",
+      text: "Does your training make the life you want to live? You get out what you put in. If life asks you to pick forty pounds off the ground, sit and hold for ski legs, or hold and turn through your middle, the week should train those things. IOFitness is built to pick the exercises that match. You set the goal. The app picks the exercises. Then you show up and train.",
     },
     {
       type: "p",
-      text: "For the broader \"is this actually personalized?\" test, see [does your fitness app actually personalize anything](/learn/do-fitness-apps-actually-personalize-workouts). If the harder problem is still the goal itself, start with [how to set goals that match real timelines](/learn/how-to-set-goals-that-match-real-timelines). If you are not training yet, begin with [start a training habit](/learn/start-a-training-habit).",
+      text: "For the broader question of whether an app is actually personalized, see [does your fitness app actually personalize anything](/learn/do-fitness-apps-actually-personalize-workouts). If the harder problem is still the goal itself, start with [how to set goals that match real timelines](/learn/how-to-set-goals-that-match-real-timelines). If you are not training yet, begin with [start a training habit](/learn/start-a-training-habit).",
     },
   ],
   sources: [
@@ -147,7 +149,7 @@ export const exerciseSelectionArticle: LearnArticle = {
       citation:
         "Stone MH, Hornsby WG, Suarez DG, Duca M, Pierce KC. Training specificity for athletes: emphasis on strength-power training: a narrative review. J Funct Morphol Kinesiol. 2022;7(4):102.",
       url: "https://doi.org/10.3390/jfmk7040102",
-      note: "Narrative review on training specificity and transfer for athletes. Used to support matching training demands to the qualities the goal needs, not busy generic work.",
+      note: "Narrative review on training specificity and transfer for athletes. Used to support matching training demands to the life you want, not busy generic work.",
     },
     {
       id: "3",
