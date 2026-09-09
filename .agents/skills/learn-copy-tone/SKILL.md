@@ -28,6 +28,32 @@ Every article should answer:
 
 That idea can stay. The wording around it must stay human.
 
+## Who is the actor?
+
+Set `job` on the article module:
+
+| `job` | When | Actor |
+|---|---|---|
+| `reader_decision` (default) | Missed day, shrink week, return from time off | Reader decides what happens next |
+| `system_capability` | How exercise selection / personalization / adaptive planning works | **Reader sets goals and constraints. The app picks.** |
+
+Hard fails for `system_capability` copy:
+
+- Teaching a DIY "selection stack," numbered Outcome→Job→Equipment checklist, or "Choose in this order"
+- Imperatives that make the reader the programmer ("pick the lift," "translate into jobs, then pick tools")
+- Hedged product sections ("How IOFitness should choose") instead of how it chooses / what it is built to do
+- Explaining the problem without selling the system: deep exercise bank, goals broken down (sport, athletics, seniors, injury recovery), days shaped from that, plain SAID (you adapt to what you train)
+
+Good shape for a system_capability piece:
+
+1. Matching exercises to real goals is confusing (most apps fake it)
+2. What IOFitness does: large exercise bank, goals broken down in detail, sessions shaped toward those goals
+3. Plain principle (SAID / specificity) as the reason that matching matters
+4. How the app chooses (goal → qualities/jobs → lift from the bank, with equipment/tolerance/progression)
+5. Soft close: built to do that job for you — not a homework worksheet
+
+If the reader must run a seven-step programming stack for the article to work, rewrite. That is the product's job.
+
 ## Prefer / avoid
 
 | Prefer | Avoid |
@@ -117,7 +143,8 @@ Before calling Learn copy done, answer yes to all:
 5. Does the piece still match the tone of articles 1–6?
 6. Is the title plain and explanatory rather than punchy or slogan-like?
 7. Did I pass the AI-writing check (no em dashes, no stock AI phrases, soft close uses "built to/around")?
+8. If `job: system_capability`, does the app/plan do the choosing — or did I accidentally assign homework?
 
 If any answer is no, rewrite before shipping.
 
-Run `npm run lint:copy` to catch em dashes and banned soft-close phrases in `content/`.
+Run `npm run lint:copy` and `npm run grade:learn` before shipping copy changes.

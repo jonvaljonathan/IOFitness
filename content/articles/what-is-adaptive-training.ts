@@ -13,6 +13,7 @@ export const adaptiveTrainingArticle: LearnArticle = {
     "Adaptive training is training that changes the future program in response to evidence about the athlete. Personalization alone is not enough, and more change is not automatically better.",
   date: "2026-09-04",
   dateModified: "2026-09-08",
+  job: "system_capability",
   body: [
     {
       type: "p",

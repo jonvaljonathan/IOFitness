@@ -14,6 +14,7 @@ export const appPersonalizationArticle: LearnArticle = {
     "Most fitness apps ask good onboarding questions and still hand you a template. Run a four-question test: does it change exercise selection, handle two goals, survive a missed week, and remember a constraint you told it once?",
   date: "2026-09-06",
   dateModified: "2026-09-08",
+  job: "system_capability",
   body: [
     {
       type: "p",

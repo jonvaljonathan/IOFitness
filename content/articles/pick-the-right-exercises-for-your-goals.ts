@@ -15,6 +15,7 @@ export const exerciseSelectionArticle: LearnArticle = {
     "Start from the outcome you want (ski season, picking up grandkids, rebuilding after a setback, looking better in a swimsuit), then pick lifts that build the qualities that goal needs. Do not start from a random exercise menu.",
   date: "2026-09-06",
   dateModified: "2026-09-08",
+  job: "system_capability",
   body: [
     {
       type: "p",

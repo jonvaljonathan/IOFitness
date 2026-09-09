@@ -35,12 +35,20 @@ export type ArticleBlock =
   | { type: "example"; title: string; body: string[] }
   | { type: "callout"; text: string };
 
+export type LearnArticleJob =
+  /** Reader decides what to do next (missed day, shrink week, etc.). */
+  | "reader_decision"
+  /** Explains a job the product/plan owns; reader sets inputs, system chooses. */
+  | "system_capability";
+
 export type LearnArticle = {
   slug: string;
   title: string;
   description: string;
   date: string;
   dateModified: string;
+  /** Defaults to reader_decision when omitted (legacy articles). */
+  job?: LearnArticleJob;
   body: ArticleBlock[];
   sources: ArticleSource[];
 };
